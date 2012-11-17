@@ -1,7 +1,7 @@
-/*	xtyle 2012
- *	license: MIT
- *	author: Mariz Melo
- *	url: http://xchema.github.com/xtyle
+/*  xtyle 2012
+ *  license: MIT
+ *  author: Mariz Melo
+ *  url: http://xchema.github.com/xtyle
  */
 /* CHARSET */
 @charset "UTF-8";
@@ -40,17 +40,18 @@
 html, body,
 div, span, p,
 ul, li, dl, dt, dd, ol{
-	border:					0;	
-	margin: 				0;
-	outline-style: 	none;	
-	padding: 				0;
+  border:         0;  
+  margin:         0;
+  outline-style:  none; 
+  padding:        0;
 }
 
 /* HTML TAGS */
 body{
-	font:    			62.5% "Roboto", Sans-serif, Arial;
-	height: 			100%;
-	text-align:		center;
+  background-color: white;
+  font:             62.5% "Roboto", Sans-serif, Arial;
+  height:           100%;
+  text-align:       center;
 }
 
 /* XTYLE */
