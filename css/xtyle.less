@@ -3,19 +3,31 @@
  *	author: 	Mariz Melo
  *	demo: 		http://xchema.github.com/xtyle
  *	github: 	http://github.com/xchema/xtyle
+ *	desc:			CSS charset, fonts, reset, base mixins
  */
 
 /* CHARSET */
 @charset "UTF-8";
 
-/* VARIABLES */
-@fixed-width: 	960px;		//fixed size of project (when using fixed layout)
-@base: 					#663333;	//base color for link and colors
+/* SETUP */
+//layouts
+@mediaFluid:		100%;
+@mediaMobile: 	340px;
+@mediaTabled:		640px;		
+@mediaDesktop: 	960px;		
+
+//color schema
+@color: 		#5db2c3;
+@links:			#000;
+
+/* GOOGLE WEBFONTS */
+@import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold);
 
 /* RESET */
 html, body,
 div, span, p,
-ul, li, dl, dt, dd, ol{
+ul, li, dl, dt, dd, ol,
+h1, h2, h3, h4, h5, h6{
 	border:					0;
 	margin:					0;
 	outline-style: 	0;
@@ -29,59 +41,55 @@ body{
 	height: 					100%;
 	text-align:				center;
 }
-
-/* XTYLE */
-/* MOBILE */
-@import url("xtyle-mobile.less");
-/* DESKTOP */
-@import url("xtyle-desktop.less");
-
+div{
+	font-size: 1.4em;
+}
 
 /* LESS MIXINS */
 //color schema
-.color-base   	{color: @base;}
+.color   				{color: @color;}
 //complimentary colors
-@complement1:		spin(@base, 180);
-@complement2: 	darken(spin(@base, 180), 5%);
-@lighten1: 			lighten(@base, 15%);
-@lighten2: 			lighten(@base, 30%);
-.color-comp1  	{color: @complement1;}
-.color-comp2 		{color: @complement2;}
-.color-comp3  	{color: @lighten1;}
-.color-comp4  	{color: @lighten2;}
+@complement1:		spin(@color, 180);
+@complement2: 	darken(spin(@color, 180), 5%);
+@lighten1: 			lighten(@color, 15%);
+@lighten2: 			lighten(@color, 30%);
+.colorComp1  		{color: @complement1;}
+.colorComp2 		{color: @complement2;}
+.colorComp3  		{color: @lighten1;}
+.colorComp4  		{color: @lighten2;}
 //subtle colors
-@lighter1: 			lighten(spin(@base, 5), 10%);
-@lighter2: 			lighten(spin(@base, 10), 20%);
-@darker1: 			darken(spin(@base, -5), 10%);
-@darker2: 			darken(spin(@base, -10), 20%);
-.color-subtle1 	{color: @lighter1;}
-.color-subtle2 	{color: @lighter2;}
-.color-subtle3 	{color: @darker1;}
-.color-subtle4 	{color: @darker2;}
+@lighter1: 			lighten(spin(@color, 5), 10%);
+@lighter2: 			lighten(spin(@color, 10), 20%);
+@darker1: 			darken(spin(@color, -5), 10%);
+@darker2: 			darken(spin(@color, -10), 20%);
+.colorSubtle1 	{color: @lighter1;}
+.colorSubtle2 	{color: @lighter2;}
+.colorSubtle3 	{color: @darker1;}
+.colorSubtle4 	{color: @darker2;}
 
 //border radius
-.border-radius(@radius: 5px){
+.border-radius (@radius: 5px){
 	-webkit-border-radius: 	@radius;
 	-moz-border-radius: 		@radius;
 	border-radius: 					@radius;
 }
-.border-radius-top(@radius: 5px){
+.border-radius-top (@radius: 5px){
   -moz-border-radius: 		0px 0px @radius @radius;
   -webkit-border-radius: 	0px 0px @radius @radius;
   border-radius: 					0px 0px @radius @radius;
 }
-.border-radius-bottom(@radius: 5px){
+.border-radius-bottom (@radius: 5px){
   -moz-border-radius: 		@radius @radius 0px 0px;
   -webkit-border-radius: 	@radius @radius 0px 0px;
   border-radius: 					@radius @radius 0px 0px;
 }
-.border-radius-custom(@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px){
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px){
 	-webkit-border-radius: 	@topleft @topright @bottomright @bottomleft;
 	-moz-border-radius: 		@topleft @topright @bottomright @bottomleft;
 	border-radius: 					@topleft @topright @bottomright @bottomleft;
 }
 // Clearing floats like a boss: goo.gl/zm1oD
-.clean{
+.clear{
   zoom: 1;
 	&:before, &:after {
     display: table;
@@ -91,7 +99,7 @@ body{
 	}
 }
 // Content columns
-.content-columns(@columnCount, @columnGap: 20px) {
+.content-column (@columnCount, @columnGap: 20px) {
 	-webkit-column-count:	@columnCount;
   -moz-column-count: 		@columnCount;
   column-count: 				@columnCount;
@@ -99,8 +107,25 @@ body{
 	-moz-column-gap: 			@columnGap;
   column-gap: 					@columnGap;
 }
+//filters
+.filter (@arguments) {
+	//  grayscale(<number> | <percentage>)
+	//  sepia(<number> | <percentage>)
+	//  saturate(<number> | <percentage>)
+	//  hue-rotate(<angle>)
+	//  invert(<number> | <percentage>)
+	//  opacity(<number> | <percentage>)
+	//  brightness(<number> | <percentage>)
+	//  contrast(<number> | <percentage>)
+	//  blur(<length>)
+	//  drop-shadow(<shadow>)
+  -webkit-filter: @arguments;
+  -moz-filter: 		@arguments;
+  -ms-filter: 		@arguments;
+  -o-filter: 			@arguments;
+}
 // Gradients
-.gradient-x(@start:#000, @stop:#111) {
+.gradient-x (@start:#000, @stop:#111) {
   background-color:		@stop;
   background-repeat:	repeat-x;
   background-image:		-webkit-gradient(linear, left top, right top, from(@start), to(@stop));
@@ -109,8 +134,9 @@ body{
 	background-image:		-o-linear-gradient(left, @start 0%, @stop 100%);
   background-image:		-ms-linear-gradient(left, @start 0%, @stop 100%);
 	background-image:		linear-gradient(left, @start 0%, @stop 100%);
+	background: #999; /* for non-css3 browsers */
 }
-.gradient-y(@start:#000, @stop:#111) {
+.gradientY (@start:#fff, @stop:#7f7f7f) {
   background-color:		@stop;
   background-repeat:	repeat-x;
   background-image:		-webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
@@ -119,8 +145,9 @@ body{
 	background-image:		-o-linear-gradient(top, @start 0%, @stop 100%);
   background-image:		-ms-linear-gradient(top, @start 0%, @stop 100%);
 	background-image:		linear-gradient(top, @start 0%, @stop 100%);
+	filter: 						progid:DXImageTransform.Microsoft.gradient(startColorstr=@start, endColorstr=@stop);
 }
-.gradient-deg(@start: #555, @stop: #333, @deg: 45deg) {
+.gradientDeg (@start: #555, @stop: #333, @deg: 45deg) {
   background-color: 	@stop;
   background-repeat:	repeat-x;
   background-image: 	-webkit-linear-gradient(@deg, @start, @stop);
@@ -129,27 +156,30 @@ body{
   background-image: 	-ms-linear-gradient(@deg, @start, @stop);
   background-image: 	linear-gradient(@deg, @start, @stop);
 }
-.opacity(@opacity: 100){
+.opacity (@opacity: 100){
 	-webkit-opacity:	@opacity / 100;
 	-moz-opacity: 		@opacity / 100;
 	-o-opacity: 			@opacity / 100;
 	filter: 					e(%("alpha(opacity=%d)", @opacity));
 	opacity: 					@opacity / 100;
 }
-.placeholder(@color: #ccc, @text-style: normal){
+.placeHolder (@color: #ccc, @text-style: normal){
   :-moz-placeholder{ color: @color; text-style:	@text-style; }
   ::-webkit-input-placeholder{ color: @color; text-style:	@text-style; }
 }
 //shadows
-.box-shadow(@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
+.boxShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
   -moz-box-shadow: 		@horizontal @vertical @blur @color;
   -webkit-box-shadow: @horizontal @vertical @blur @color; 
   box-shadow: 				@horizontal @vertical @blur @color;
 }
-.inner-shadow(@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
+.innerShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
   -moz-box-shadow: 		@horizontal @vertical @blur @color inset;
   -webkit-box-shadow: @horizontal @vertical @blur @color inset; 
   box-shadow: 				@horizontal @vertical @blur @color inset;
+}
+.textShadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)){
+	text-shadow: @string;
 }
 //transitions
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -166,4 +196,52 @@ body{
 	-o-transform: 			rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 	-ms-transform: 			rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 	transform: 					rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+/* XTYLE DESKTOP FIXED */
+.container{
+	position: 		relative;
+	margin-left: 	auto;
+	margin-right: auto;
+	text-align: 	left;
+	width: 				@mediaDesktop;
+}
+.text-shadow{
+	.textShadow();
+}
+nav{
+	position: absolute;
+	margin: 150px 0 0 550px;
+	list-style: none;
+	a{
+		float: left;
+		margin-right: 10px;
+	}
+}
+.btn{
+	padding: 5px;
+	.gradientY(#323539, #26282C);
+	.border-radius();
+	border-top: 1px solid #3F4347;
+	border-bottom: 1px solid #161719;
+	color: #81858C;
+	text-decoration: none;
+	.transition (background-image, 0.2s, ease-in);
+
+	&:hover{
+		color: white;
+		.gradientY(#323539, #26282C);
+	}
+	&:active{
+		.gradientY(#26282C, #323539);
+	}
+}
+
+.btn.medium{
+	padding: 10px;
+	font-size: 1.1em;
+}
+.btn.large{
+	padding: 15px;
+	font-size: 1.2em;
 }
