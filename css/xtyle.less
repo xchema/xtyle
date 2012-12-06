@@ -70,22 +70,22 @@ div{
 .colorSubtle4 	{color: @darker2;}
 
 //border radius
-.border-radius (@radius: 5px){
+.borderRadius (@radius: 5px){
 	-webkit-border-radius: 	@radius;
 	-moz-border-radius: 		@radius;
 	border-radius: 					@radius;
 }
-.border-radius-top (@radius: 5px){
+.borderRadiusTop (@radius: 5px){
   -moz-border-radius: 		0px 0px @radius @radius;
   -webkit-border-radius: 	0px 0px @radius @radius;
   border-radius: 					0px 0px @radius @radius;
 }
-.border-radius-bottom (@radius: 5px){
+.borderRadiusBottom (@radius: 5px){
   -moz-border-radius: 		@radius @radius 0px 0px;
   -webkit-border-radius: 	@radius @radius 0px 0px;
   border-radius: 					@radius @radius 0px 0px;
 }
-.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px){
+.borderRadiusCustom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px){
 	-webkit-border-radius: 	@topleft @topright @bottomright @bottomleft;
 	-moz-border-radius: 		@topleft @topright @bottomright @bottomleft;
 	border-radius: 					@topleft @topright @bottomright @bottomleft;
@@ -212,18 +212,17 @@ div{
 	.textShadow();
 }
 .border-radius{
-	.border-radius();
+	.borderRadius();
 }
 .border-radius-top{
-	.border-radius-top();
+	.borderRadiusTop();
 }
 .border-radius-bottom{
-	.border-radius-bottom();
+	.borderRadiusBottom();
 }
 .btn{
 	padding: 5px;
 	.gradientY(#323539, #26282C);
-	.border-radius();
 	border-top: 1px solid #3F4347;
 	border-bottom: 1px solid #161719;
 	color: #81858C;
