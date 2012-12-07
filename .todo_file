@@ -1,9 +1,16 @@
++ npm module for nodejs
++ define themes
++ use Color functions LESS
++ grid system
++ market of layouts, designers can sell their layout exclusively and royality free
++ http://designshack.net/articles/css/focal-point-intelligent-cropping-of-responsive-images/
++ xtyle.less will contain only mixins, theme.less will contain presentation that calls mixins
++ SITE - add browser fontello icons
 + SITE - code and preview together
 + SITE - always visible menu
 + SITE - download buttons
 + demos
 + ios icons
-+ favicon
 + forms
 + lists
 + mobile design
@@ -13,3 +20,4 @@
 + bin/ create compressor/minifier
 - fontello
 - create pages branch
+- favicon
