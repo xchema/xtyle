@@ -39,12 +39,9 @@ h1, h2, h3, h4, h5, h6{
 /* HTML TAGS */
 body{
 	background-color: white;
-	font:    					62.5% "Roboto", Sans-serif, Arial;
+	font:    					64.5% "Roboto", Sans-serif, Arial;
 	height: 					100%;
 	text-align:				center;
-}
-div{
-	font-size: 1.4em;
 }
 
 /* LESS MIXINS */
@@ -76,14 +73,14 @@ div{
 	border-radius: 					@radius;
 }
 .borderRadiusTop (@radius: 5px){
-  -moz-border-radius: 		0px 0px @radius @radius;
-  -webkit-border-radius: 	0px 0px @radius @radius;
-  border-radius: 					0px 0px @radius @radius;
-}
-.borderRadiusBottom (@radius: 5px){
-  -moz-border-radius: 		@radius @radius 0px 0px;
+	-moz-border-radius: 		@radius @radius 0px 0px;
   -webkit-border-radius: 	@radius @radius 0px 0px;
   border-radius: 					@radius @radius 0px 0px;
+}
+.borderRadiusBottom (@radius: 5px){
+	 -moz-border-radius: 		0px 0px @radius @radius;
+  -webkit-border-radius: 	0px 0px @radius @radius;
+  border-radius: 					0px 0px @radius @radius;
 }
 .borderRadiusCustom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px){
 	-webkit-border-radius: 	@topleft @topright @bottomright @bottomleft;
@@ -158,7 +155,7 @@ div{
   background-image: 	-ms-linear-gradient(@deg, @start, @stop);
   background-image: 	linear-gradient(@deg, @start, @stop);
 }
-.opacity (@opacity: 100){
+.opacity (@opacity: 50){
 	-webkit-opacity:	@opacity / 100;
 	-moz-opacity: 		@opacity / 100;
 	-o-opacity: 			@opacity / 100;
@@ -200,6 +197,11 @@ div{
 	transform: 					rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
 
+//vertical align
+.verticalAlign(@position: middle){
+	vertical-align: @position;
+}
+
 /* XTYLE DESKTOP FIXED */
 .container{
 	position: 		relative;
@@ -207,6 +209,10 @@ div{
 	margin-right: auto;
 	text-align: 	left;
 	width: 				@mediaDesktop;
+}
+.fluid{
+	width: 				@mediaFluid;
+	text-align: 	left;
 }
 .text-shadow{
 	.textShadow();
@@ -219,6 +225,13 @@ div{
 }
 .border-radius-bottom{
 	.borderRadiusBottom();
+}
+.background-cover-fixed{
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .btn{
 	padding: 5px;
@@ -245,4 +258,24 @@ div{
 .btn.large{
 	padding: 15px;
 	font-size: 1.2em;
+}
+
+.vertical-align-middle{
+	.verticalAlign();
+}
+.vertical-align-top{
+	.verticalAlign(top);
+}
+.vertical-align-bottom{
+	.verticalAlign(bottom);
+}
+.vertical-align-sub{
+	.verticalAlign(sub);
+}
+.vertical-align-super{
+	.verticalAlign(super);
+}
+
+.transparent{
+	.opacity();
 }
