@@ -26,26 +26,40 @@
 
 <h3 class="lighter">xtyle | demos</h3>
 
-<p>Discover everything you can do with <a href="//github.com/xchema/xtyle">xtyle</a> reading on this document.
+<p><a href="//github.com/xchema/xtyle">Xtyle</a> is a simple HTML, CSS, and JavaScript framework for creating amazing web applications created and maintained by <a href="http://xchema.com">xchema</a>.
 
 <h1 class="titles">Typography</h1>
 
 <div id="font">
-	<h4>Font</h4>
-	<p>
+	
+
+<section class=""> 
+  <h4>Font</h4>
+  <p>
     <b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="#">Google</a> as its default body font. You can change this option on <i>xtyle.less</i> file.
   </p>
-  <p>
-    <span style="font-size: 700%;" class="thin block">Thin</span><br/>
-    <span style="font-size: 760%; margin-top: -80px;" class="block"><b>BOLD</b></span><br/>
-    <span style="font-size: 400%; margin-top: -65px;" class="block"><b><i>italic</i></b></span><br/>
-  </p>
+    <div class="example">
+      <div class="preview">
+        <thin style="font-size: 660%; margin-top: -30px;">Thin</thin><br/>
+        <span style="font-size: 660%; margin-top: -70px;" class="block"><strong>BOLD</strong></span><br/>
+        <span style="font-size: 400%; margin-top: -50px;" class="block"><i>italic</i></span><br/>
+      </div>
+
+<pre>
+&lt;span class="thin"&gt;Thin&lt;/span&gt;
+&lt;strong&gt;BOLD&lt;/strong&gt;
+&lt;em&gt;italic&lt;/em&gt;
+</pre>
+
+    </div>
+</section>
+
 </div>
 
 <div id="headings" style="overflow: auto;width: 100%;">
 	<h4>Headings</h4>
     <p>Use HTML heading tags between <code>&lt;h1&gt;</code> and <code>&lt;h6&gt;</code> </p>
-	<section class="float left" style="width: 280px; margin-right: 20px;">
+	<section class="floatleft" style="width: 280px; margin-right: 20px;">
 	    <div class="example">
 		<div class="preview">
 		    <h1>heading 1</h1>
@@ -56,16 +70,14 @@
 		    <h6>heading 6</h6>
 		</div>
 <pre>
-<code>&lt;h1&gt;</code>headings<code>&lt;/h1&gt;</code>
-&lt;h2&gt;...&lt;/h2&gt;
-&lt;h3&gt;...&lt;/h3&gt;
-&lt;h4&gt;...&lt;/h4&gt;
-&lt;h5&gt;...&lt;/h5&gt;
-&lt;h6&gt;...&lt;/h6&gt;
+<code>&lt;h1&gt;</code>
+  headings
+<code>&lt;/h1&gt;</code>
+...
 </pre>
 	    </div>
 	</section>
-	<section class="float left" style="width: 280px;">
+	<section class="floatleft" style="width: 280px;">
 	    <div class="example">
 		<div class="preview">
 		    <h1 class="lighter">heading 1</h1>
@@ -77,13 +89,9 @@
 		</div>
 <pre>
 <code>&lt;h1 class="lighter"&gt;</code>
-  heading 1 
+  headings
 <code>&lt;/h1&gt;</code>
-&lt;h2 class="normal"&gt;heading 2&lt;/h2&gt;
-&lt;h3&gt;heading 3&lt;/h3&gt;
-&lt;h4&gt;heading 4&lt;/h4&gt;
-&lt;h5&gt;heading 5&lt;/h5&gt;
-&lt;h6&gt;heading 6&lt;/h6&gt;
+...
 </pre>
 	    </div>
 	</section>

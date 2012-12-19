@@ -11,10 +11,10 @@
 
 /* SETUP */
 //layouts
-@mediaFluid:	100%;
-@mediaMobile:	340px;
-@mediaTabled:	640px;
-@mediaDesktop:	960px;
+@mediaFluid: 100%;
+@mediaMobile: 340px;
+@mediaTabled: 640px;
+@mediaDesktop: 960px;
 
 //font color schema
 @fontFallback: Helveltica, Sans-serif, Arial;
@@ -42,6 +42,8 @@ pre{
   margin: 0;
   outline-style:  none;
   padding:  0;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 /* HTML TAGS */
@@ -67,6 +69,26 @@ p{
     padding: 3px 4px;
     .borderRadius(3px);
   }
+}
+//source code
+pre{
+  background: #F6F6FF;
+  border: 1px solid #e8e8e8;
+  color: gray;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 20px;
+  .borderRadius(3px);
+  code{
+    color: #5db2c3;
+  }
+  //#D6D6FF
+}
+section pre{
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  .borderRadiusTop(0);
 }
 //headings
 h1,h2,h3,h4,h5,h6{
@@ -280,16 +302,13 @@ section{
 	padding: @top @right*2 @bottom @left*2;
 }
 //text-selection
-::selection, ::-moz-selection, ::-webkit-selection, ::-ms-selection, ::-o-selection{
-  background: @selection;
+.selection{
+  ::selection, ::-moz-selection, ::-webkit-selection, ::-ms-selection, ::-o-selection{
+    background: @selection;
+  }
 }
 
-//XTYLE BASE STYLES
-
-//TYPOGRAPHY
-//Body font
-//Headings
-
+//CLASSES
 
 .container{
   position: relative;
@@ -373,8 +392,9 @@ section{
 }
 
 //font styles
-.thin{ 
-  font-weight: 100; 
+thin{
+  display: block;
+  font-weight: 100;
 }
 //font weights
 .normal{ 
