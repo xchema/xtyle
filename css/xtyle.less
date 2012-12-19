@@ -29,7 +29,7 @@
 @padding: @size;
 
 /* GOOGLE WEBFONTS */
-@import url(//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold);
+@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
 
 /* RESET */
 html, body,
@@ -51,11 +51,37 @@ html{
 body{
 	color: @color;
 	background-color:  white;
-	font:  @fontSize "Roboto", @fontFallback;
+	font:  @fontSize "Roboto", Arial;
 	height:  100%;
 	line-height: 1.4;  
 }
 
+//TYPOGRAPHY
+//paragraphs
+p{
+  margin: 0 0 @margin;
+  code{
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    color: #c02b41;
+    padding: 3px 4px;
+    .borderRadius(3px);
+  }
+}
+//headings
+h1,h2,h3,h4,h5,h6{
+  &.lighter{
+    font-weight: 100;
+  }
+}
+h1{font-size: 250%;}
+h2{font-size: 225%;}
+h3{font-size: 200%;}
+h4{font-size: 175%;}
+h5{font-size: 150%;}
+h6{font-size: 125%;}
+
+//LINKS
 a{
   color: @links; 
   text-decoration: none;
@@ -69,13 +95,13 @@ a{
   &:visited{ /* not implemented */}
 }
 
+//LAYOUT
+//sections
 section{
   &.column{float:left; .margin(); .padding(); }
 }
 
-p{
-  margin: 0 0 @margin;
-}
+
 
 /* LESS MIXINS */
 //color schema
@@ -263,12 +289,7 @@ p{
 //TYPOGRAPHY
 //Body font
 //Headings
-h1{font-size: 250%;}
-h2{font-size: 225%;}
-h3{font-size: 200%;}
-h4{font-size: 175%;}
-h5{font-size: 150%;}
-h6{font-size: 125%;}
+
 
 .container{
   position: relative;
@@ -284,22 +305,24 @@ h6{font-size: 125%;}
 .text-shadow{
   .textShadow();
 }
-.border-radius{
+.rounded{
   .borderRadius();
 }
-.border-radius-top{
+.rounded-top{
   .borderRadiusTop();
 }
-.border-radius-bottom{
+.rounded-bottom{
   .borderRadiusBottom();
 }
 
-.background-cover-fixed{
-  background-attachment: fixed;
+.background-cover{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  &.fixed{
+    background-attachment: fixed;
+  }
 }
 
 .btn{
@@ -329,19 +352,19 @@ h6{font-size: 125%;}
   font-size: 1.2em;
 }
 
-.vertical-align-middle{
+.vertical-middle{
   .verticalAlign();
 }
-.vertical-align-top{
+.vertical-top{
   .verticalAlign(top);
 }
-.vertical-align-bottom{
+.vertical-bottom{
   .verticalAlign(bottom);
 }
-.vertical-align-sub{
+.vertical-sub{
   .verticalAlign(sub);
 }
-.vertical-align-super{
+.vertical-super{
   .verticalAlign(super);
 }
 
@@ -350,33 +373,42 @@ h6{font-size: 125%;}
 }
 
 //font styles
-.font-family-thin{
-  font-family: 'Roboto-Thin', @fontFallback;
+.thin{ 
+  font-weight: 100; 
 }
 //font weights
-.font-weight-normal{
-  font-weight: normal;
+.normal{ 
+  font-weight: normal; 
 }
-.font-weight-lighter{
-  font-weight: lighter;
+.lighter{ 
+  font-weight: lighter; 
 }
-.font-weight-bold{
-  font-weight: bold;
+.bold{ 
+  font-weight: bold; 
 }
 //font variants
-.font-small-caps{
-  font-variant: small-caps;
+.small-caps{
+  font-variant: small-caps; 
 }
-.text-left{
-  text-align: left;
+.left{
+  text-align: left; 
 }
-.text-center{
-  text-align: center;
+.center{
+  text-align: center; 
 }
-.text-right{
-  text-align: right;
+.right{
+  text-align: right; 
 }
 
 //floats
-.float-left{float: left;}
-.float-right{float: right;}
+.floatleft{
+  float: left; 
+}
+.floatright{
+  float: right; 
+}
+
+//display
+.block{
+  display: block; 
+}
