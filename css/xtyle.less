@@ -18,17 +18,18 @@
 
 //color schema
 @color: #5db2c3;
-@links: #000;
+@links: #4ea3b6;
 
 /* GOOGLE WEBFONTS */
-@import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,light,thin,italic,bold);
+@import url(//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold);
 
 /* RESET */
 html, body,
 div, span, p,
 ul, li, dl, dt, dd, ol,
 nav, a,
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6,
+pre{
   border: 0;
   margin: 0;
   outline-style: none;
@@ -43,6 +44,7 @@ body{
   background-color: white;
   font: 14px "Roboto", Sans-serif, Arial;
   height: 100%;
+  line-height: 1.4;
 }
 
 /* LESS MIXINS */
@@ -209,13 +211,29 @@ body{
   -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
   transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
-
 //vertical align
 .verticalAlign(@position: middle){
   vertical-align: @position;
 }
 
-/* XTYLE DESKTOP FIXED */
+//XTYLE BASE STYLES
+
+//TYPOGRAPHY
+//Body font
+//Headings
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+	&.lighter{
+		font-weight: 100;
+	}
+}
+h1{font-size: 250%;}
+h2{font-size: 225%;}
+h3{font-size: 200%;}
+h4{font-size: 175%;}
+h5{font-size: 150%;}
+h6{font-size: 100%;}
+
 .container{
   position: relative;
   margin-left: auto;

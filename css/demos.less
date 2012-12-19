@@ -1,6 +1,53 @@
 @import "xtyle";
 
 body{
-  padding: 20px 30px;
-  padding-left: 200px;
+	padding: 20px 20px;
+	//padding-left: 200px;
 }
+
+.titles{
+	color: #ccc;
+	margin-bottom: 10px;
+}
+.example{
+	border: 1px solid #e8e8e8;
+	margin: 20px 0;
+	padding-top: 20px;
+	.borderRadius();
+	h3{
+	margin: 0;
+	}
+}
+.preview{
+    padding: 0 20px;
+}
+
+pre{
+	color: #c3c3c3;
+	background: #f7f7f7;
+	padding: 20px;
+	margin: 20px;
+	border: 1px solid #e8e8e8;
+	.borderRadius(3px);
+	code{
+		color: #5db2c3;
+	}
+}
+
+p code{
+	background: #f7f7f7;
+	border: 1px solid #e8e8e8;
+	color: #c02b41;
+	padding: 3px 4px;
+	.borderRadius(3px);
+}
+
+.float{
+	&.left{
+		float: left;
+	}
+	&.right{
+		float: right;
+	}
+}
+
