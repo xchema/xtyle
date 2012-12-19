@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
   <title>xtyle | html</title>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <meta name="description" content="raw html page, without styles"/>
   <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
 <style type="text/less">
 
 /* GOOGLE WEBFONTS */
-@import url(//fonts.googleapis.com/css?family=Roboto:regular,medium,thin,italic,mediumitalic,bold);
+@import url("http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold");
 
 /* CHARSET */
 @charset "UTF-8";
@@ -22,6 +22,7 @@
 @mediaDesktop: 	960px;
 
 //font
+@fontFallback: Helveltica, Sans-serif, Arial;
 @fontSize: 14px;
 @color: #303030;
 @links: #08C;
@@ -48,12 +49,14 @@
 }
 /* RESET */
 html{height: 100%;}
-html,body{margin: 0; padding: 0;}
+
+html,body,
+h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
 
 /* HTML */
 body{
 	color: 	@color;
-	font: 	@fontSize "Roboto", Sans-serif, Arial;
+	font: 	@fontSize "Roboto", @fontFallback;
 	line-height: 1.4;
 }
 a{
@@ -66,6 +69,7 @@ a{
 	&:active{
 		color: saturate(@links, 15%);
 	}
+	&:visited{ /* not implemented */}
 }
 section{
 	&.column{float:left; .margin(); .padding(); }
@@ -78,38 +82,25 @@ section{
 //TYPOGRAPHY
 //Body font
 //Headings
-h1,h2,h3,h4,h5,h6{
-	margin: 0;
-	&.lighter{
-		font-weight: lighter;
-		font-family: 'Roboto-Light';
-	}
-	&.italic{
-		font-style: italic;
-		font-weight: normal;
-	}
-	&.medium{
-		font-weight: normal;
-		font-family: 'Roboto-Medium';
-	}
-	&.thin{
-		font-weight: normal;
-		font-family: 'Roboto-Thin';
-	}
-}
 h1{font-size: 250%;}
 h2{font-size: 225%;}
 h3{font-size: 200%;}
 h4{font-size: 175%;}
 h5{font-size: 150%;}
-h6{font-size: 100%;}
+h6{font-size: 125%;}
 
 //paragraph
 p{
 	margin: 0 0 @margin;
-	&
+}
+//font styles
+.thin{
+	font-family: 'Roboto-Thin', @fontFallback;
 }
 //font weights
+.normal{
+	font-weight: normal;
+}
 .lighter{
 	font-weight: lighter;
 }
@@ -120,7 +111,18 @@ p{
 .small-caps{
 	font-variant: small-caps;
 }
-
+.left{
+	text-align: left;
+}
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;
+}
+//floats
+.float-left{float: left;}
+.float-right{float: right;}
 
 </style>
   
@@ -130,7 +132,7 @@ p{
 </head>
 <body style="margin: 20px 20px;">
 
-<h3 class="lighter">xtyle | demos</h3>
+<h3 class="normal thin">xtyle | demos</h3>
 
 <div id="typography">
 	
@@ -139,17 +141,8 @@ p{
 	<div id="body" style="margin-top: 10px;">
 		<h4>Body</h4>
 		<p>
-			<b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="#">Google</a> as its default body font. You can add new fonts on <i>xtyle.less</i> file.
+			<b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="http://google.com">Google</a> as its default body font. You can add new fonts on <i>xtyle.less</i> file.
 		</p>
-
-		<h1 style="font-size: 800%;" class="lighter">Lighter</h1>
-		<h1 style="font-size: 800%; margin-top: -50px" class="">Bold</h1>
-		<h1 style="font-size: 600%; margin-top: -50px" class="italic">italic</h1>
-		<h1 style="font-size: 800%; margin-top: -30px; font-weight: normal;" class="thin">THIN</h1>
-<h1 style="font-size: 500%; margin-top: -30px; font-weight: normal;" class="medium">medium</h1>
-		<h1 style="font-size: 500%; margin-top: -30px; font-weight: normal;" class="">REGULAR</h1>
-		
-		
 		
 	</div><!-- #body -->
 
