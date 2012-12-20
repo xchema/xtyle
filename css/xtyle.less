@@ -11,6 +11,7 @@
 
 /* GOOGLE WEBFONTS */
 @import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900,200italic,400italic,700italic,900italic);
 
 /* VARIABLES */
 //layouts
@@ -20,7 +21,8 @@
 @mediaDesktop: 960px;
 
 //font color schema
-@fontFamily: 'Roboto', Helveltica, Sans-serif, Arial;
+//@fontFamily: 'Roboto', Helveltica, Sans-serif, Arial;
+@fontFamily:"Source Sans Pro", "Helvetica", "Arial", sans-serif;
 @fontSize: 14px;
 @color: #303030;
 @links: #08C;
@@ -42,7 +44,6 @@ pre{
   margin: 0;
   outline-style:  none;
   padding:  0;
-  word-break: break-all;
   word-wrap: break-word;
 }
 
@@ -55,12 +56,13 @@ body{
 	background-color:  white;
 	font:  @fontSize @fontFamily;
 	height:  100%;
-	line-height: 1.4; 
+	line-height: 1.4;
 }
 
 //TYPOGRAPHY
 //paragraphs
 p{
+  word-wrap:break-word;
   margin: 0 0 @margin;
   code{
     background: #f7f7f7;
@@ -82,10 +84,17 @@ pre{
   letter-spacing: 1.5px;
   margin: 20px;
   padding: 20px;
-  white-space: pre-line;
   .borderRadius(3px);
-  code{
-    color: #527ee3;
+  &.html{
+    .tag{
+      color: #527ee3;
+    }
+    .attr{
+      color: #281;
+    }
+    .str{
+      color: #C02B41;
+    }
   }
 }
 section pre{

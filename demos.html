@@ -14,7 +14,6 @@
   <!-- <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4-precomposed.png"/> -->
   <!-- <link rel="alternate" type="application/rss+xml" title="" href=""/> -->
   <link href="favicon.ico" rel="icon" type="image/x-icon"/>
-  <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
   <link rel="stylesheet/less" type="text/css" href="css/demos.less"/>
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.1/less.min.js"></script>
 
@@ -26,31 +25,42 @@
 
 <h3 class="lighter" style="margin-bottom: 10px;">xtyle | demos</h3>
 
-<p><a href="//github.com/xchema/xtyle">Xtyle</a> is a simple HTML, CSS, and JavaScript framework for creating amazing web applications created and maintained by <a href="http://xchema.com">xchema</a>.
+<p><a href="//github.com/xchema/xtyle">Xtyle</a> is a simple HTML, CSS, and JavaScript framework for creating amazing web applications created and maintained by <a href="http://xchema.com">xchema</a>.</p>
 
 <h1 class="titles">Typography</h1>
 
 <div id="font">
+  
   <h4>Font</h4>
+    
     <p>
-      <b>Xtyle</b> uses the excellent <a href="https://developer.android.com/design/style/typography.html">Roboto</a> font from <a href="http://google.com">Google</a> as its default body font. You can change this option on <i>xtyle.less</i> file.
+      <b>Xtyle</b> uses the excellent <a href="http://www.google.com/webfonts/specimen/Source+Sans+Pro">Source Sans Pro</a> font from <a href="http://www.google.com/webfonts">Google Webfonts</a> as its default body font. You can change this option on <i>xtyle.less</i> file.
     </p>
+
   <section class="rounded">
       <div class="example">
+        
         <div class="preview">
           <thin style="font-size: 660%; margin-top: -20px;">Thin</thin>
           <span style="font-size: 400%; margin-top: -40px;" class="block">regular</span><br/><br/>
           <strong  style="font-size: 660%; margin-top: -70px;" class="block">BOLD</strong><br/>
           <i style="font-size: 400%; margin-top: -50px;" class="block">italic</i><br/>
         </div>
-        <pre class="prettyprint">
-          &lt;thin&gt;Thin&lt;/thin&gt;
-          &lt;span&gt;regular&lt;/span&gt;
-          &lt;strong&gt;BOLD&lt;/strong&gt;
-          &lt;em&gt;italic&lt;/em&gt;
-        </pre>
-      </div>
+ 
+<pre class="html">
+<code class="tag">&lt;thin&gt;</code>Thin<code class="tag">&lt;/thin&gt;</code>
+<code class="tag">&lt;span&gt;</code>regular<code class="tag">&lt;/span&gt;</code>
+<code class="tag">&lt;strong&gt;</code>BOLD<code class="tag">&lt;/strong&gt;</code>
+<code class="tag">&lt;em&gt;</code>italic<code class="tag">&lt;/em&gt;</code>
+</pre>
+
+      </div><!-- .example -->
+
+       <p>
+        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags which should be used when you want to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags should be used while designing layouts and interfaces.
+      </p>
   </section>
+
 </div><!-- #font -->
 
 
@@ -68,10 +78,10 @@
 		    <h6>heading 6</h6>
 		</div>
     <br/>
-<pre>
-<code>&lt;h1&gt;</code>
+<pre class="html">
+<code class="tag">&lt;h1&gt;</code>
   headings
-<code>&lt;/h1&gt;</code>
+<code class="tag">&lt;/h1&gt;</code>
 ...
 </pre>
 	    </div>
@@ -87,10 +97,10 @@
 		    <h6 class="lighter">heading 6</h6>
 		</div>
     <br/>
-<pre>
-<code>&lt;h1 class="lighter"&gt;</code>
+<pre class="html">
+<code class="tag">&lt;h1 <code class="attr">class=</code><code class="str">"lighter"</code>&gt;</code>
   headings
-<code>&lt;/h1&gt;</code>
+<code class="tag">&lt;/h1&gt;</code>
 ...
 </pre>
 	    </div>
@@ -107,7 +117,7 @@
 </pre>
     </div>
 </section>
-
+<br/>
 
 <!-- SCRIPTS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
