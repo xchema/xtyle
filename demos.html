@@ -24,37 +24,34 @@
 </head>
 <body>
 
-<h3 class="lighter">xtyle | demos</h3>
+<h3 class="lighter" style="margin-bottom: 10px;">xtyle | demos</h3>
 
 <p><a href="//github.com/xchema/xtyle">Xtyle</a> is a simple HTML, CSS, and JavaScript framework for creating amazing web applications created and maintained by <a href="http://xchema.com">xchema</a>.
 
 <h1 class="titles">Typography</h1>
 
 <div id="font">
-	
-
-<section class=""> 
   <h4>Font</h4>
-  <p>
-    <b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="#">Google</a> as its default body font. You can change this option on <i>xtyle.less</i> file.
-  </p>
-    <div class="example">
-      <div class="preview">
-        <thin style="font-size: 660%; margin-top: -30px;">Thin</thin><br/>
-        <span style="font-size: 660%; margin-top: -70px;" class="block"><strong>BOLD</strong></span><br/>
-        <span style="font-size: 400%; margin-top: -50px;" class="block"><i>italic</i></span><br/>
-      </div>
-
+    <p>
+      <b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="#">Google</a> as its default body font. You can change this option on <i>xtyle.less</i> file.
+    </p>
+  <section class="rounded">
+      <div class="example">
+        <div class="preview">
+          <thin style="font-size: 660%; margin-top: -20px;">Thin</thin>
+          <span style="font-size: 400%; margin-top: -40px;" class="block">regular</span><br/><br/>
+          <strong  style="font-size: 660%; margin-top: -70px;" class="block">BOLD</strong><br/>
+          <i style="font-size: 400%; margin-top: -50px;" class="block">italic</i><br/>
+        </div>
 <pre>
-&lt;span class="thin"&gt;Thin&lt;/span&gt;
-&lt;strong&gt;BOLD&lt;/strong&gt;
-&lt;em&gt;italic&lt;/em&gt;
+<code>&lt;thin&gt;</code>Thin<code>&lt;/thin&gt;</code>
+<code>&lt;strong&gt;</code>BOLD<code>&lt;/strong&gt;</code>
+<code>&lt;em&gt;</code>italic<code>&lt;/em&gt;</code>
 </pre>
+      </div>
+  </section>
+</div><!-- #font -->
 
-    </div>
-</section>
-
-</div>
 
 <div id="headings" style="overflow: auto;width: 100%;">
 	<h4>Headings</h4>
@@ -69,6 +66,7 @@
 		    <h5>heading 5</h5>
 		    <h6>heading 6</h6>
 		</div>
+    <br/>
 <pre>
 <code>&lt;h1&gt;</code>
   headings
@@ -87,6 +85,7 @@
 		    <h5 class="lighter">heading 5</h5>
 		    <h6 class="lighter">heading 6</h6>
 		</div>
+    <br/>
 <pre>
 <code>&lt;h1 class="lighter"&gt;</code>
   headings

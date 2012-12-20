@@ -21,7 +21,6 @@
 @fontSize: 14px;
 @color: #303030;
 @links: #08C;
-@selection: #EBEBEB;
 
 //margin/padding
 @size: 10px;
@@ -55,7 +54,7 @@ body{
 	background-color:  white;
 	font:  @fontSize "Roboto", Arial;
 	height:  100%;
-	line-height: 1.4;  
+	line-height: 1.4; 
 }
 
 //TYPOGRAPHY
@@ -74,15 +73,18 @@ p{
 pre{
   background: #F6F6FF;
   border: 1px solid #e8e8e8;
-  color: gray;
-  line-height: 1.6;
+  color: #999;
+  font-family: 'Roboto', @fontFallback;
+  font-size: 13px;
+  display: block;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
   margin: 20px;
   padding: 20px;
   .borderRadius(3px);
   code{
-    color: #5db2c3;
+    color: #527ee3;
   }
-  //#D6D6FF
 }
 section pre{
   margin: 0;
@@ -302,7 +304,7 @@ section{
 	padding: @top @right*2 @bottom @left*2;
 }
 //text-selection
-.selection{
+.selection(@selection: #EBEBEB){
   ::selection, ::-moz-selection, ::-webkit-selection, ::-ms-selection, ::-o-selection{
     background: @selection;
   }
