@@ -9,7 +9,10 @@
 /* CHARSET */
 @charset "UTF-8";
 
-/* SETUP */
+/* GOOGLE WEBFONTS */
+@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
+
+/* VARIABLES */
 //layouts
 @mediaFluid: 100%;
 @mediaMobile: 340px;
@@ -17,7 +20,7 @@
 @mediaDesktop: 960px;
 
 //font color schema
-@fontFallback: Helveltica, Sans-serif, Arial;
+@fontFamily: 'Roboto', Helveltica, Sans-serif, Arial;
 @fontSize: 14px;
 @color: #303030;
 @links: #08C;
@@ -27,8 +30,6 @@
 @margin: @size; 
 @padding: @size;
 
-/* GOOGLE WEBFONTS */
-@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
 
 /* RESET */
 html, body,
@@ -52,7 +53,7 @@ html{
 body{
 	color: @color;
 	background-color:  white;
-	font:  @fontSize "Roboto", Arial;
+	font:  @fontSize @fontFamily;
 	height:  100%;
 	line-height: 1.4; 
 }
@@ -74,13 +75,14 @@ pre{
   background: #F6F6FF;
   border: 1px solid #e8e8e8;
   color: #999;
-  font-family: 'Roboto', @fontFallback;
+  font-family: @fontFamily;
   font-size: 13px;
   display: block;
   line-height: 1.8;
   letter-spacing: 1.5px;
   margin: 20px;
   padding: 20px;
+  white-space: pre-line;
   .borderRadius(3px);
   code{
     color: #527ee3;
