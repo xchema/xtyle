@@ -57,7 +57,7 @@
       </div><!-- .example -->
 
        <p>
-        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags which should be used when you want to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags should be used while designing layouts and interfaces.
+        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags which should be used when you want to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags should be used only for designing layouts and interface elements.
       </p>
   </section>
 
@@ -157,9 +157,7 @@
 </pre>
       </div>
   </section>
-
-
-</div>
+</div><!-- #headings -->
 
 <section id="paragraphs">
     <h3>Paragraphs</h3>
@@ -167,17 +165,25 @@
     <div class="example">
     	<div class="preview">
         <p>
-          Donec auctor rhoncus orci nec cursus. <strong>Aenean tincidunt</strong> faucibus urna, at scelerisque velit malesuada vitae. Pellentesque nec gravida quam. Aliquam consequat, ante quis gravida tincidunt, libero orci hendrerit nulla, vitae consequat ante dolor quis nisl. Suspendisse adipiscing risus euismod augue suscipit pulvinar. Nam at orci odio, <thin>et porta ante</thin>. Etiam a commodo justo. Cras ultrices <em>elementum tortor</em>, sed elementum dolor sagittis vel.
+          First paragraph. This a <strong>strong</strong> text, this is an <em>italic text</em>, and this is a <thin>thin text</thin> example.
         </p>
-        <blockquote cite="http://xchema.com">This is a blockquote."</blockquote>
+        <blockquote cite="http://xchema.com">
+          <p>"This is a blockquote."</p>
+        </blockquote>
         <p>
-          Nulla blandit purus quis justo aliquam consequat. Mauris hendrerit turpis a tellus dignissim eu euismod arcu ullamcorper. In faucibus blandit sapien, vitae aliquam tortor varius tempus. Pellentesque nec elit dui. In non sapien ac velit consectetur congue et a tellus. Quisque nunc ipsum, porta at placerat in, ultricies eu quam. Maecenas mollis euismod posuere.
+          Another paragraph example.
         </p>
     	</div>
-<pre>
+<pre class="html">
+<code class="tag">&lt;p&gt;</code>First paragraph. This a <code class="tag">&lt;strong&gt;</code>strong<code class="tag">&lt;/strong&gt;</code> text, this is an <code class="tag">&lt;em&gt;</code>italic text<code class="tag">&lt;/em&gt;</code>, and this is a <code class="tag">&lt;/thin&gt;</code>thin text<code class="tag">&lt;thin&gt;</code> example.<code class="tag">&lt;p&gt;</code>
+<code class="tag">&lt;blockquote <code class="attr">cite=</code><code class="str">"http://xchema.com"</code>&gt;</code>"This is a blockquote."<code class="tag">&lt;/blockquote&gt;</code>
+<code class="tag">&lt;p&gt;</code>Another paragraph example.<code class="tag">&lt;p&gt;</code>
 </pre>
     </div>
 </section>
+
+
+
 <br/>
 
 <!-- SCRIPTS -->

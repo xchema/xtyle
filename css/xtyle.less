@@ -58,7 +58,6 @@ body{
 	color: @color;
 	background-color:  white;
 	font:  @fontSize @fontFamily;
-	height:  100%;
 	line-height: 1.4;
 }
 
@@ -75,13 +74,13 @@ p{
     .borderRadius(3px);
   }
 }
-//blockquotes
+//blockquotes - http://htmldog.com/reference/htmltags/blockquote/
 blockquote{
-  padding: 0 20px @paragraph 20px;
   font-size: 140%;
   font-weight: lighter;
+  padding-left: @paragraph;
 }
-//source code
+//pre - http://htmldog.com/reference/htmltags/pre/
 pre{
   background: #F6F6FF;
   border: 1px solid #e8e8e8;
