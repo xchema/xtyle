@@ -1,4 +1,4 @@
-+ create syntax highlight
++ separate blockquote from paragraph
 + print css style
 + npm module for nodejs
 + define themes
@@ -23,3 +23,4 @@
 - fontello
 - create pages branch
 - favicon
+- create syntax highlight
