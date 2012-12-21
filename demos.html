@@ -41,7 +41,7 @@
       <div class="example">
         
         <div class="preview">
-          <thin style="font-size: 660%; margin-top: -20px;">Thin</thin>
+          <thin style="font-size: 660%; margin-top: -20px;" class="block">Thin</thin>
           <span style="font-size: 400%; margin-top: -40px;" class="block">regular</span><br/><br/>
           <strong  style="font-size: 660%; margin-top: -70px;" class="block">BOLD</strong><br/>
           <i style="font-size: 400%; margin-top: -50px;" class="block">italic</i><br/>
@@ -64,10 +64,13 @@
 </div><!-- #font -->
 
 
-<div id="headings" style="overflow: auto;width: 100%;">
+<div id="headings" class="wrap">
 	<h4>Headings</h4>
     <p>Use HTML heading tags between <code>&lt;h1&gt;</code> and <code>&lt;h6&gt;</code> </p>
-	<section class="floatleft" style="width: 280px; margin-right: 20px;">
+
+
+  <!-- HEADINGS -->
+  <section class="floatleft" style="width: 280px; margin-right: 20px;">
 	    <div class="example">
 		<div class="preview">
 		    <h1>heading 1</h1>
@@ -86,7 +89,10 @@
 </pre>
 	    </div>
 	</section>
-	<section class="floatleft" style="width: 280px;">
+
+
+  <!-- HEADINGS LIGHTER -->
+	<section class="floatleft" style="width: 280px; margin-right: 20px;">
 	    <div class="example">
 		<div class="preview">
 		    <h1 class="lighter">heading 1</h1>
@@ -105,6 +111,54 @@
 </pre>
 	    </div>
 	</section>
+
+
+  <!-- HEADINGS ITALIC -->
+  </section>
+  <section class="floatleft" style="width: 280px; margin-right: 20px;">
+      <div class="example">
+    <div class="preview">
+        <h1><em>heading 1</em></h1>
+        <h2><em>heading 2</em></h2>
+        <h3><em>heading 3</em></h3>
+        <h4><em>heading 4</em></h4>
+        <h5><em>heading 5</em></h5>
+        <h6><em>heading 6</em></h6>
+    </div>
+    <br/>
+<pre class="html">
+<code class="tag">&lt;h1&gt;</code>
+  <code class="tag">&lt;em&gt;</code>headings<code class="tag">&lt;/em&gt;</code>
+<code class="tag">&lt;/h1&gt;</code>
+...
+</pre>
+      </div>
+  </section>
+
+
+  <!-- HEADINGS LIGHTER ITALIC -->
+  </section>
+  <section class="floatleft" style="width: 280px;">
+      <div class="example">
+    <div class="preview">
+        <h1 class="lighter"><em>heading 1</em></h1>
+        <h2 class="lighter"><em>heading 2</em></h2>
+        <h3 class="lighter"><em>heading 3</em></h3>
+        <h4 class="lighter"><em>heading 4</em></h4>
+        <h5 class="lighter"><em>heading 5</em></h5>
+        <h6 class="lighter"><em>heading 6</em></h6>
+    </div>
+    <br/>
+<pre class="html">
+<code class="tag">&lt;h1 <code class="attr">class=</code><code class="str">"lighter"</code>&gt;</code>
+ <code class="tag">&lt;em&gt;</code>headings<code class="tag">&lt;/em&gt;</code>
+<code class="tag">&lt;/h1&gt;</code>
+...
+</pre>
+      </div>
+  </section>
+
+
 </div>
 
 <section id="paragraphs">
@@ -112,6 +166,13 @@
     <p>Paragraphs are defined using the <code>&lt;p&gt;</code> tag. Use paragraphs to separate your texts.</p>
     <div class="example">
     	<div class="preview">
+        <p>
+          Donec auctor rhoncus orci nec cursus. <strong>Aenean tincidunt</strong> faucibus urna, at scelerisque velit malesuada vitae. Pellentesque nec gravida quam. Aliquam consequat, ante quis gravida tincidunt, libero orci hendrerit nulla, vitae consequat ante dolor quis nisl. Suspendisse adipiscing risus euismod augue suscipit pulvinar. Nam at orci odio, <thin>et porta ante</thin>. Etiam a commodo justo. Cras ultrices <em>elementum tortor</em>, sed elementum dolor sagittis vel.
+        </p>
+        <blockquote cite="http://xchema.com">This is a blockquote."</blockquote>
+        <p>
+          Nulla blandit purus quis justo aliquam consequat. Mauris hendrerit turpis a tellus dignissim eu euismod arcu ullamcorper. In faucibus blandit sapien, vitae aliquam tortor varius tempus. Pellentesque nec elit dui. In non sapien ac velit consectetur congue et a tellus. Quisque nunc ipsum, porta at placerat in, ultricies eu quam. Maecenas mollis euismod posuere.
+        </p>
     	</div>
 <pre>
 </pre>

@@ -11,7 +11,7 @@
 
 /* GOOGLE WEBFONTS */
 @import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900,200italic,400italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
 /* VARIABLES */
 //layouts
@@ -32,14 +32,17 @@
 @margin: @size; 
 @padding: @size;
 
+//text
+@paragraph: 20px;
+
 
 /* RESET */
 html, body,
-div, span, p,
+div, span, p, blockquote,
 ul, li, dl, dt, dd, ol,
 nav, a,
 h1, h2, h3, h4, h5, h6,
-pre{
+pre,code{
   border: 0;
   margin: 0;
   outline-style:  none;
@@ -63,7 +66,7 @@ body{
 //paragraphs
 p{
   word-wrap:break-word;
-  margin: 0 0 @margin;
+  margin: 0 0 @margin*2;
   code{
     background: #f7f7f7;
     border: 1px solid #e8e8e8;
@@ -71,6 +74,12 @@ p{
     padding: 3px 4px;
     .borderRadius(3px);
   }
+}
+//blockquotes
+blockquote{
+  padding: 0 20px @paragraph 20px;
+  font-size: 140%;
+  font-weight: lighter;
 }
 //source code
 pre{
@@ -106,7 +115,7 @@ section pre{
 //headings
 h1,h2,h3,h4,h5,h6{
   &.lighter{
-    font-weight: 100;
+    font-weight: 200;
   }
 }
 h1{font-size: 250%;}
@@ -406,8 +415,7 @@ section{
 
 //font styles
 thin{
-  display: block;
-  font-weight: 100;
+  font-weight: 200;
 }
 //font weights
 .normal{ 
@@ -444,4 +452,10 @@ thin{
 //display
 .block{
   display: block; 
+}
+
+//wrap for float elements
+.wrap{
+  overflow: auto; 
+  width: 100%;
 }
