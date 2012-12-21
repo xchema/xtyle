@@ -1,4 +1,3 @@
-+ separate blockquote from paragraph
 + print css style
 + npm module for nodejs
 + define themes
@@ -24,3 +23,5 @@
 - create pages branch
 - favicon
 - create syntax highlight
+- separate blockquote from paragraph
+- Dropcap typography

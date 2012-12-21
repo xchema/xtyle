@@ -17,15 +17,15 @@
 //layouts
 @mediaFluid: 100%;
 @mediaMobile: 340px;
-@mediaTabled: 640px;
+@mediaTablet: 640px;
 @mediaDesktop: 960px;
 
-//font color schema
-//@fontFamily: 'Roboto', Helveltica, Sans-serif, Arial;
-@fontFamily:"Source Sans Pro", "Helvetica", "Arial", sans-serif;
-@fontSize: 14px;
-@color: #303030;
-@links: #08C;
+//Typography
+@fontFamily:"Source Sans Pro", "Helvetica", "Arial", sans-serif; 
+@fontSize: 14px;  //default body font size
+@color: #111; //body font color
+@links: #08C; //link color
+@blockquoteborder: #ddd;
 
 //margin/padding
 @size: 10px;
@@ -73,10 +73,18 @@ p{
     padding: 3px 4px;
     .borderRadius(3px);
   }
+  //dropcaps - http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/
+  .drop{
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 90%;
+    padding-right: 2px;
+    float: left;
+    display: block;
+  }
 }
 //blockquotes - http://htmldog.com/reference/htmltags/blockquote/
 blockquote{
-  @blockquoteborder: #ddd;
   font-size: 140%;
   font-weight: lighter;
   padding-left: @paragraph;
@@ -84,7 +92,7 @@ blockquote{
   cite{
     font-size: 70%;
     font-weight: normal;
-    margin-top: -@paragraph;
+    margin-top: -(3+@paragraph);
     margin-bottom: @paragraph;
     padding: 0;
     display: block;
@@ -101,10 +109,9 @@ pre{
   background: #F6F6FF;
   border: 1px solid #e8e8e8;
   color: #3F639E;
-  font-family: @fontFamily;
+  font-family: "Courier New", Courier, monospace @fontFamily;
   font-size: 90%;
   line-height: 1.8;
-  letter-spacing: 1.5px;
   padding: 20px;
   .borderRadius(3px);
   
@@ -400,11 +407,9 @@ section{
 
 .btn.medium{
   padding: 10px;
-  font-size: 1.1em;
 }
 .btn.large{
   padding: 15px;
-  font-size: 1.2em;
 }
 
 .vertical-middle{

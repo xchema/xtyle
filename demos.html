@@ -57,7 +57,7 @@
       </div><!-- .example -->
 
        <p>
-        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags which should be used when you want to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags should be used only for designing layouts and interface elements.
+        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> tags which should be used when you want to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags should be used only for design elements.
       </p>
   </section>
 
@@ -179,6 +179,26 @@
 
 
 
+<section id="dropcaps">
+    <h4>Drop caps</h4>
+    <p>Paragraphs are defined using the <code>&lt;p&gt;</code> tag. Use paragraphs to separate your texts.</p>
+    <div class="example">
+      <div class="preview">
+        <p>
+          <span class="drop">P</span>roin eu erat nunc, id viverra urna. Donec id quam ac lacus ultrices commodo quis id elit. Sed vitae diam nulla, ac convallis lacus. Nunc eu sapien quis tortor tempor ornare non eget massa. Nulla in eros odio, sed congue mi. Curabitur suscipit pulvinar hendrerit. Maecenas vestibulum nibh non erat auctor accumsan porta erat commodo. In dapibus volutpat nisl, ut egestas sem pellentesque ut. Nam tincidunt dapibus nunc non dapibus. Quisque a risus eros, tincidunt vulputate ante. Quisque pharetra aliquet eros a hendrerit. In non gravida nisl. Pellentesque nulla nisl, lobortis a euismod non, dapibus eu tellus. Nunc pellentesque metus et nisl euismod tincidunt. Vestibulum viverra rutrum massa in porta.
+        </p>
+      </div>
+<pre class="html">
+<code class="tag">&lt;p&gt;</code>
+&lt;span <code class="attr">class=</code><code class="str">"drop"</code>&gt;P&lt;/span&gt;
+roin eu erat nunc, id viverra urna. Donec id ... 
+<code class="tag">&lt;p&gt;</code>
+</pre>
+    </div>
+</section>
+
+
+
 <div id="blockquote" class="wrap">
   
   <h4>Blockquote</h4>
@@ -188,13 +208,13 @@
       <div class="example">
         <div class="preview" style="height: 65px;">
           <blockquote>
-            <p>"This is a blockquote."</p>
+            <p>"A blockquote."</p>
           </blockquote>
         </div>
 
 <pre class="html" style="height: 120px;">
 <code class="tag">&lt;blockquote&gt;</code>
-  <code class="tag">&lt;p&gt;</code>"This is a blockquote."<code class="tag">&lt;/p&gt;</code>
+  <code class="tag">&lt;p&gt;</code>"A blockquote."<code class="tag">&lt;/p&gt;</code>
 <code class="tag">&lt;/blockquote&gt;</code>
 </pre>
 
@@ -207,13 +227,13 @@
       <div class="example">
         <div class="preview" style="height: 65px;">
           <blockquote class="right">
-            <p>"This is a blockquote."</p>
+            <p>"Right side blockquote."</p>
           </blockquote>
         </div>
 
 <pre class="html" style="height: 120px;">
 <code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"right"</code>&gt;</code>
-  <code class="tag">&lt;p&gt;</code>"This is a blockquote."<code class="tag">&lt;/p&gt;</code>
+  <code class="tag">&lt;p&gt;</code>"Right side blockquote."<code class="tag">&lt;/p&gt;</code>
 <code class="tag">&lt;/blockquote&gt;</code>
 </pre>
 
@@ -226,16 +246,16 @@
       <div class="example">
         <div class="preview" style="height: 65px;">
           <blockquote>
-            <p>"Blockquote and citation."</p>
+            <p>"With citation."</p>
             <cite>&#8211; by xchema</cite>
           </blockquote>
         </div>
 
 <pre class="html" style="height: 120px;">
 <code class="tag">&lt;blockquote&gt;</code>
-<code class="tag">&lt;p&gt;</code>"This is a blockquote."<code class="tag">&lt;/p&gt;</code>
+<code class="tag">&lt;p&gt;</code>"With citation."<code class="tag">&lt;/p&gt;</code>
 <code class="tag">&lt;cite&gt;</code>
-  &#38;#8211; by xchema<code class="tag">&lt;/cite&gt;
+  &#38;#8211;by xchema<code class="tag">&lt;/cite&gt;
 </code><code class="tag">&lt;/blockquote&gt;</code>
 </pre>
 
