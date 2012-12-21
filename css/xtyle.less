@@ -65,7 +65,7 @@ body{
 //paragraphs
 p{
   word-wrap:break-word;
-  margin: 0 0 @margin*2;
+  margin: 0 0 @paragraph;
   code{
     background: #f7f7f7;
     border: 1px solid #e8e8e8;
@@ -76,27 +76,41 @@ p{
 }
 //blockquotes - http://htmldog.com/reference/htmltags/blockquote/
 blockquote{
+  @blockquoteborder: #ddd;
   font-size: 140%;
   font-weight: lighter;
   padding-left: @paragraph;
-  border-left: 2px solid #ddd;
+  border-left: 2px solid @blockquoteborder;
+  cite{
+    font-size: 70%;
+    font-weight: normal;
+    margin-top: -@paragraph;
+    margin-bottom: @paragraph;
+    padding: 0;
+    display: block;
+  }
+  &.right{
+    padding-left: 0;
+    padding-right: @paragraph;
+    border-left: none;
+    border-right: 2px solid @blockquoteborder;
+  }
 }
 //pre - http://htmldog.com/reference/htmltags/pre/
 pre{
   background: #F6F6FF;
   border: 1px solid #e8e8e8;
-  color: #999;
+  color: #3F639E;
   font-family: @fontFamily;
-  font-size: 13px;
-  display: block;
+  font-size: 90%;
   line-height: 1.8;
   letter-spacing: 1.5px;
-  margin: 20px;
   padding: 20px;
   .borderRadius(3px);
+  
   &.html{
     .tag{
-      color: #527ee3;
+      color: #4aa3b7;
     }
     .attr{
       color: #281;
