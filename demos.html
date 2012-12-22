@@ -42,16 +42,20 @@
         
         <div class="preview">
           <thin style="font-size: 660%; margin-top: -20px;" class="block">Thin</thin>
-          <span style="font-size: 400%; margin-top: -40px;" class="block">regular</span><br/><br/>
-          <strong  style="font-size: 660%; margin-top: -70px;" class="block">BOLD</strong><br/>
-          <i style="font-size: 400%; margin-top: -50px;" class="block">italic</i><br/>
+          <span style="font-size: 400%; margin-top: -40px;" class="block">regular</span><br><br>
+          <strong  style="font-size: 660%; margin-top: -70px;" class="block">BOLD</strong><br>
+          <i style="font-size: 400%; margin-top: -60px;" class="block">italic</i><br>
+          <mark style="font-size: 400%; margin-top: -30px; width: 130px;" class="block">mark</mark>
+          <del style="font-size: 300%; margin-top: -5px;" class="block">deleted</del>
+          <br>
         </div>
  
 <pre class="html">
 <code class="tag">&lt;thin&gt;</code>Thin<code class="tag">&lt;/thin&gt;</code>
 <code class="tag">&lt;span&gt;</code>regular<code class="tag">&lt;/span&gt;</code>
 <code class="tag">&lt;strong&gt;</code>BOLD<code class="tag">&lt;/strong&gt;</code>
-<code class="tag">&lt;em&gt;</code>italic<code class="tag">&lt;/em&gt;</code>
+<code class="tag">&lt;mark&gt;</code>mark<code class="tag">&lt;/mark&gt;</code>
+<code class="tag">&lt;del&gt;</code>deleted<code class="tag">&lt;/del&gt;</code>
 </pre>
 
       </div><!-- .example -->
@@ -80,7 +84,7 @@
 		    <h5>heading 5</h5>
 		    <h6>heading 6</h6>
 		</div>
-    <br/>
+    <br>
 <pre class="html">
 <code class="tag">&lt;h1&gt;</code>
   headings
@@ -102,7 +106,7 @@
 		    <h5 class="lighter">heading 5</h5>
 		    <h6 class="lighter">heading 6</h6>
 		</div>
-    <br/>
+    <br>
 <pre class="html">
 <code class="tag">&lt;h1 <code class="attr">class=</code><code class="str">"lighter"</code>&gt;</code>
   headings
@@ -124,7 +128,7 @@
         <h5><em>heading 5</em></h5>
         <h6><em>heading 6</em></h6>
     </div>
-    <br/>
+    <br>
 <pre class="html">
 <code class="tag">&lt;h1&gt;</code>
   <code class="tag">&lt;em&gt;</code>headings<code class="tag">&lt;/em&gt;</code>
@@ -146,7 +150,7 @@
         <h5 class="lighter"><em>heading 5</em></h5>
         <h6 class="lighter"><em>heading 6</em></h6>
     </div>
-    <br/>
+    <br>
 <pre class="html">
 <code class="tag">&lt;h1 <code class="attr">class=</code><code class="str">"lighter"</code>&gt;</code>
  <code class="tag">&lt;em&gt;</code>headings<code class="tag">&lt;/em&gt;</code>
@@ -164,15 +168,15 @@
     <div class="example">
     	<div class="preview">
         <p>
-          First <mark>paragraph</mark>. This is a <strong>strong</strong> text, this is an <em>italic text</em>, this is a <thin>thin text</thin>, and this is a <del>deleted text</del> example.
+          Proin tristique nunc enim, id scelerisque libero. Vestibulum viverra, tortor a vestibulum blandit, leo eros pellentesque mi, eu faucibus massa dolor ac lacus. Praesent et quam augue. In eget est nisi, et mattis ligula. Phasellus ut elit vel lorem faucibus molestie ac vehicula tortor.
         </p>
         <p>
-          You can also <sup>superscript</sup> and <sub>subscript</sub> a text.
+          Vivamus elementum tempus scelerisque. Maecenas id lectus orci, ut condimentum dui. Suspendisse eget dui eu nunc dignissim tincidunt at a massa. Phasellus feugiat fermentum adipiscing. Praesent pharetra ultrices sodales. Pellentesque sed diam nunc, sit amet auctor magna.
         </p>
     	</div>
 <pre class="html">
-<code class="tag">&lt;p&gt;</code>First <code class="tag">&lt;mark&gt;</code>paragraph<code class="tag">&lt;/mark&gt;</code>. This a <code class="tag">&lt;strong&gt;</code>strong<code class="tag">&lt;/strong&gt;</code> text, this is an <code class="tag">&lt;em&gt;</code>italic text<code class="tag">&lt;/em&gt;</code>, this is a <code class="tag">&lt;/thin&gt;</code>thin text<code class="tag">&lt;thin&gt;</code>, and this is a <code class="tag">&lt;del&gt;</code>deleted text<code class="tag">&lt;/del&gt;</code> example.<code class="tag">&lt;p&gt;</code>
-<code class="tag">&lt;p&gt;</code>You can also <code class="tag">&lt;sup&gt;</code>superscript<code class="tag">&lt;/sup&gt;</code> and <code class="tag">&lt;sub&gt;</code>subscript<code class="tag">&lt;/sub&gt;</code> a text.<code class="tag">&lt;p&gt;</code>
+<code class="tag">&lt;p&gt;</code>Proin tristique nunc enim, id scelerisque ...<code class="tag">&lt;p&gt;</code>
+<code class="tag">&lt;p&gt;</code>Vivamus elementum tempus scelerisque. Maecenas ...<code class="tag">&lt;p&gt;</code>
 </pre>
     </div>
 </section>
@@ -271,7 +275,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
   <h4>List styles</h4>
   <p>You can make your lists using the <code>&lt;ul&gt;</code> for unordered lists, <code>&lt;ol&gt;</code> for ordered lists, and <code>&lt;dt&gt;</code> for definition lists. Use <code>&lt;ul class="reset"&gt;</code> to remove styles from lists.</p>
  
-<!-- BLOCKQUOTE -->
+<!-- LIST STYLES : UNORDERED LIST -->
 <section class="floatleft" style="width: 280px; margin-right: 20px;">
     <div class="example">
       <div class="preview" style="">
@@ -301,7 +305,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
 
 
 
-<!-- BLOCKQUOTE WITH CITATION -->
+<!-- LIST STYLES : UNORDERED LIST (RESET) -->
 <section class="floatleft" style="width: 280px; margin-right: 20px;">
     <div class="example">
       <div class="preview">
@@ -330,7 +334,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
 
 
 
-<!-- BLOCKQUOTE ON THE RIGHT CORNER -->
+<!-- LIST STYLES : ORDERED LIST -->
 <section class="floatleft" style="width: 280px; margin-right: 20px;">
     <div class="example">
       <div class="preview">
@@ -386,8 +390,37 @@ roin eu erat nunc, id viverra urna. Donec id ...
       </div><!-- .example -->
   </section>
 
+</div><!-- #liststyles -->
 
-</div><!-- #blockquote -->
+
+
+
+<!-- ADDRESSES -->
+<section id="addresses">
+    <h4>Addresses</h4>
+    <p>To capitalize the first word of your paragraph you can use <a href="http://www.htmldog.com/articles/dropcaps/">drop caps</a>. You can define a drop caps using the <code>&lt;span class="first-letter"&gt;</code> tag inside a paragraph.</p>
+    <div class="example">
+      <div class="preview">
+        <address class="vcard">
+          <a class="fn org url" href="http://xchema.com">xchema</a>
+          <p class="adr">
+          <span class="street-address">South Whisman Road</span><br>
+          <span class="region">Mountain View,</span>
+          <abbr class="region" title="California">CA</abbr>
+          <span class="postal-code">94041</span><br>
+          <span class="country-name">United States</span><br>
+          <span class="tel">+1 (123) 456-7890</span>
+          </p>
+        </address>
+      </div>
+<pre class="html">
+<code class="tag">&lt;p&gt;</code>
+&lt;span <code class="attr">class=</code><code class="str">"first-letter"</code>&gt;P&lt;/span&gt;
+roin eu erat nunc, id viverra urna. Donec id ... 
+<code class="tag">&lt;p&gt;</code>
+</pre>
+    </div>
+</section>
 
 
 

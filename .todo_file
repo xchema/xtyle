@@ -1,3 +1,5 @@
++ code (pre/code)
++ tables
 + print css style
 + npm module for nodejs
 + define themes
@@ -23,3 +25,5 @@
 - SITE - download buttons
 - create syntax highlight
 - separate blockquote from paragraph
+- abbreviations
+- address
