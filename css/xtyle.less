@@ -114,29 +114,20 @@ ul,ol{
   margin: 0 0 @lists @lists;
   padding: 0;
 }
-dl{
-  margin-bottom: @lists;
-}
-ul ul,ol ol,ol ul,ul ol, dl dl{
-  margin-bottom: 0;
-}
-dl dl{
-  margin-left: @lists;
-}
-ul.reset ul{
-  list-style: disc;
-}
+dl{ margin-bottom: @lists; }
+ul ul,ol ol,ol ul,ul ol, dl dl{ margin-bottom: 0; }
+dl dl{ margin-left: @lists; }
+ul.reset ul{ list-style: disc; }
 ul.reset,ol.reset{
   list-style: none;
   margin-left: 0;
 }
 //definition lists
-dt{
-  font-weight: bold;
-}
-dd{
-  font-weight: normal;
-}
+dt{ font-weight: bold; }
+dd{ font-weight: normal; }
+
+//text highlight
+mark{ background: rgba(255, 255, 0, 0.4); padding: 0 .25em }
 
 
 //pre - http://htmldog.com/reference/htmltags/pre/

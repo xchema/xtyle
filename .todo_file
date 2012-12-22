@@ -1,5 +1,3 @@
-+ mobile design based on ioselements
-+ separate blockquote from paragraph
 + print css style
 + npm module for nodejs
 + define themes
@@ -24,3 +22,4 @@
 - SITE - always visible menu
 - SITE - download buttons
 - create syntax highlight
+- separate blockquote from paragraph
