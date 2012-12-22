@@ -129,6 +129,18 @@ dd{ font-weight: normal; }
 //text highlight
 mark{ background: rgba(255, 255, 0, 0.4); padding: 0 .25em }
 
+//deleted text
+del {
+text-decoration: line-through;
+}
+
+//superscript/subscript
+sub{
+  .verticalAlign(sub);
+}
+sup{
+  .verticalAlign(super);
+}
 
 //pre - http://htmldog.com/reference/htmltags/pre/
 pre{
@@ -446,12 +458,6 @@ section{
 }
 .vertical-bottom{
   .verticalAlign(bottom);
-}
-.vertical-sub{
-  .verticalAlign(sub);
-}
-.vertical-super{
-  .verticalAlign(super);
 }
 
 .transparent{
