@@ -26,6 +26,7 @@
 @color: #111; //body font color
 @links: #08C; //link color
 @blockquoteborder: #ddd;
+@lists: 20px;
 
 //margin/padding
 @size: 10px;
@@ -53,6 +54,10 @@ pre,code{
 /* HTML TAGS */
 html{
   height: 100%;
+}
+html, html a{
+  -webkit-font-smoothing: antialiased !important; //smoother fonts
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); //smoother fonts
 }
 body{
 	color: @color;
@@ -104,6 +109,36 @@ blockquote{
     border-right: 2px solid @blockquoteborder;
   }
 }
+//list styles
+ul,ol{
+  margin: 0 0 @lists @lists;
+  padding: 0;
+}
+dl{
+  margin-bottom: @lists;
+}
+ul ul,ol ol,ol ul,ul ol, dl dl{
+  margin-bottom: 0;
+}
+dl dl{
+  margin-left: @lists;
+}
+ul.reset ul{
+  list-style: disc;
+}
+ul.reset,ol.reset{
+  list-style: none;
+  margin-left: 0;
+}
+//definition lists
+dt{
+  font-weight: bold;
+}
+dd{
+  font-weight: normal;
+}
+
+
 //pre - http://htmldog.com/reference/htmltags/pre/
 pre{
   background: #F6F6FF;

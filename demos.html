@@ -178,10 +178,10 @@
 </section>
 
 
-
+<!-- DROP CAPS -->
 <section id="dropcaps">
     <h4>Drop caps</h4>
-    <p>Paragraphs are defined using the <code>&lt;p&gt;</code> tag. Use paragraphs to separate your texts.</p>
+    <p>To capitalize the first word of your paragraph you can use <a href="http://www.htmldog.com/articles/dropcaps/">drop caps</a>. You can define a drop caps using the <code>&lt;span class="drop"&gt;</code> tag inside a paragraph.</p>
     <div class="example">
       <div class="preview">
         <p>
@@ -199,10 +199,11 @@ roin eu erat nunc, id viverra urna. Donec id ...
 
 
 
-<div id="blockquote" class="wrap">
-  
-  <h4>Blockquote</h4>
-  <p>Write quotes using the <code>&lt;blockquote&gt;</code> tag. Use paragraphs inside a blockquote to write content on it.</p>
+<!-- BLOCKQUOTES -->
+<div id="blockquotes" class="wrap">
+  <h4>Blockquotes</h4>
+  <p>Write quotes using the <code>&lt;blockquote&gt;</code> tag. Use paragraphs <code>&lt;p&gt;</code> inside blockquote to write content on it. You can also include the source of your quote using the <code>&lt;cite&gt;</code> tag.</p>
+ 
   <!-- BLOCKQUOTE -->
   <section class="floatleft" style="width: 280px; margin-right: 20px;">
       <div class="example">
@@ -258,7 +259,6 @@ roin eu erat nunc, id viverra urna. Donec id ...
   &#38;#8211;by xchema<code class="tag">&lt;/cite&gt;
 </code><code class="tag">&lt;/blockquote&gt;</code>
 </pre>
-
       </div><!-- .example -->
   </section>
 
@@ -266,7 +266,142 @@ roin eu erat nunc, id viverra urna. Donec id ...
 
 
 
-<br/>
+<!-- LIST STYLES -->
+<div id="liststyles" class="wrap">
+  <h4>List Styles</h4>
+  <p>You can make your lists using the <code>&lt;ul&gt;</code> for unordered lists, <code>&lt;ol&gt;</code> for ordered lists, and <code>&lt;dt&gt;</code> for definition lists. Use <code>&lt;ul class="reset"&gt;</code> to remove styles from lists.</p>
+ 
+<!-- BLOCKQUOTE -->
+<section class="floatleft" style="width: 280px; margin-right: 20px;">
+    <div class="example">
+      <div class="preview" style="">
+        <ul>
+          <li>
+            Apples
+            <ul>
+              <li>Aceymac</li>
+              <li>Adanac</li>
+            </ul>
+          </li>
+          <li>Oranges</li>
+        </ul>
+      </div>
+
+<pre class="html">
+<code class="tag">&lt;ul&gt;</code>
+<code class="tag">&lt;li&gt;</code>Apples
+  <code class="tag">&lt;ul&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Aceymac<code class="tag">&lt;/li&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Adanac<code class="tag">&lt;/li&gt;</code>
+  <code class="tag">&lt;/ul&gt;</code>
+<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;/ul&gt;</code>
+</pre>
+
+    </div><!-- .example -->
+</section>
+
+
+
+<!-- BLOCKQUOTE WITH CITATION -->
+<section class="floatleft" style="width: 280px; margin-right: 20px;">
+    <div class="example">
+      <div class="preview">
+        <ul class="reset">
+          <li>
+            Apples
+            <ul>
+              <li>Aceymac</li>
+              <li>Adanac</li>
+            </ul>
+          </li>
+          <li>Oranges</li>
+        </ul>
+      </div>
+
+<pre class="html">
+<code class="tag">&lt;ul <code class="attr">class=</code><code class="str">"reset"</code>&gt;</code>
+<code class="tag">&lt;li&gt;</code>Apples
+  <code class="tag">&lt;ul&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Aceymac<code class="tag">&lt;/li&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Adanac<code class="tag">&lt;/li&gt;</code>
+  <code class="tag">&lt;/ul&gt;</code>
+<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;/ul&gt;</code>
+</pre>
+    </div><!-- .example -->
+</section>
+
+
+
+<!-- BLOCKQUOTE ON THE RIGHT CORNER -->
+<section class="floatleft" style="width: 280px; margin-right: 20px;">
+    <div class="example">
+      <div class="preview">
+        <ol>
+          <li>
+            Apple
+            <ul>
+              <li>Aceymac</li>
+              <li>Adanac</li>
+            </ul>
+          </li>
+          <li>Orange</li>
+        </ol>
+      </div>
+
+<pre class="html">
+<code class="tag">&lt;ol&gt;</code>
+<code class="tag">&lt;li&gt;</code>Apples
+  <code class="tag">&lt;ul&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Aceymac<code class="tag">&lt;/li&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Adanac<code class="tag">&lt;/li&gt;</code>
+  <code class="tag">&lt;/ul&gt;</code>
+<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;/ol&gt;</code>
+</pre>
+
+    </div><!-- .example -->
+</section>
+
+
+  <!-- LIST STYLE : DEFINITION LISTS -->
+  <section class="floatleft" style="width: 280px; margin-right: 20px;">
+      <div class="example">
+        <div class="preview">
+          <dl>
+            <dt>
+              Apples
+              <dl>
+                <dd>Aceymac</dd>
+                <dd>Adanac</dd>
+              </dl>
+            </dt>
+            <dt>Oranges</dt>
+          </dl>
+        </div>
+
+<pre class="html">
+<code class="tag">&lt;ul <code class="attr">class=</code><code class="str">"reset"</code>&gt;</code>
+<code class="tag">&lt;li&gt;</code>Apples
+  <code class="tag">&lt;ul&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Aceymac<code class="tag">&lt;/li&gt;</code>
+    <code class="tag">&lt;li&gt;</code>Adanac<code class="tag">&lt;/li&gt;</code>
+  <code class="tag">&lt;/ul&gt;</code>
+<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
+<code class="tag">&lt;/ul&gt;</code>
+</pre>
+      </div><!-- .example -->
+  </section>
+
+
+</div><!-- #blockquote -->
+
+
 
 <!-- SCRIPTS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
