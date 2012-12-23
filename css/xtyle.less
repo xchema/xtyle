@@ -1,7 +1,7 @@
 /*	xchema | xtyle 2012
  *	license:	MIT
  *	author: Mariz Melo
- *	demo: http://xchema.github.com/xtyle
+ *	page: http://xchema.github.com/xtyle
  *	github: http://github.com/xchema/xtyle
  *	desc: CSS charset, fonts, reset, base mixins
  */
@@ -22,8 +22,8 @@
 
 //Typography
 @fontFamily:"Source Sans Pro", "Helvetica", "Arial", sans-serif; 
-@fontSize: 14px;  //default body font size
-@color: #111; //body font color
+@fontSize: 14px; //default body font size
+@color: #444; //body font color
 @links: #08C; //link color
 @blockquoteborder: #ddd;
 @lists: 20px;
@@ -33,7 +33,7 @@
 @margin: @size; 
 @padding: @size;
 
-//text
+//paragraphs
 @paragraph: 20px;
 
 
@@ -63,7 +63,7 @@ body{
 	color: @color;
 	background-color:  white;
 	font:  @fontSize @fontFamily;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 //TYPOGRAPHY
@@ -83,14 +83,14 @@ p{
     font-size: 300%;
     font-weight: bold;
     line-height: 90%;
-    padding-right: 2px;
+    padding: 5px 5px 0 0;
     float: left;
     display: block;
   }
-}
-p.idented{
+  &.idented{
     text-indent: 2em;
     margin-top: 0;
+  }
 }
 //blockquotes - http://htmldog.com/reference/htmltags/blockquote/
 blockquote{
@@ -131,20 +131,18 @@ dt{ font-weight: bold; }
 dd{ font-weight: normal; }
 
 //text highlight
-mark{ background: rgba(255, 255, 0, 0.4); padding: 0 .25em }
+mark{ 
+  background: rgba(255, 255, 0, 0.4); 
+  color: @color;
+  padding: 0 .25em;
+}
 
 //deleted text
-del {
-text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
 //superscript/subscript
-sub{
-  .verticalAlign(sub);
-}
-sup{
-  .verticalAlign(super);
-}
+sub{ .verticalAlign(sub); }
+sup{ .verticalAlign(super); }
 
 //address
 address{ font-style: normal; }
@@ -185,6 +183,9 @@ section pre{
 }
 //headings
 h1,h2,h3,h4,h5,h6{
+  color: darken(@color, 15%);
+  line-height: 1.1;
+  margin-bottom: @margin;
   &.lighter{
     font-weight: 200;
   }
@@ -213,7 +214,11 @@ a{
 //LAYOUT
 //sections
 section{
-  &.column{float:left; .margin(); .padding(); }
+  margin-bottom: @margin;
+  &.column{
+    float:left; .margin(); 
+    .padding(); 
+  }
 }
 
 
