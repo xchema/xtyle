@@ -1,7 +1,7 @@
 /*	xchema | xtyle 2012
  *	license:	MIT
  *	author: Mariz Melo
- *	page: http://xchema.github.com/xtyle
+ *	page: http://xtyle.xchema.com
  *	github: http://github.com/xchema/xtyle
  *	desc: CSS charset, fonts, reset, base mixins
  */
@@ -10,7 +10,7 @@
 @charset "UTF-8";
 
 /* GOOGLE WEBFONTS */
-@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
+//@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
 /* VARIABLES */
@@ -27,6 +27,8 @@
 @links: #08C; //link color
 @blockquoteborder: #ddd;
 @lists: 20px;
+@code: #d50e14;
+@dfn: #968145;
 
 //margin/padding
 @size: 10px;
@@ -64,6 +66,9 @@ body{
 	background-color:  white;
 	font:  @fontSize @fontFamily;
 	line-height: 1.5;
+  &.menu{
+    padding-top: @padding*5;
+  }
 }
 
 //TYPOGRAPHY
@@ -71,13 +76,6 @@ body{
 p{
   word-wrap:break-word;
   margin: 0 0 @paragraph;
-  code{
-    background: #f7f7f7;
-    border: 1px solid #e8e8e8;
-    color: #c02b41;
-    padding: 3px 4px;
-    .borderRadius(3px);
-  }
   //dropcaps - http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/
   .first-letter{
     font-size: 300%;
@@ -91,6 +89,14 @@ p{
     text-indent: 2em;
     margin-top: 0;
   }
+}
+//code
+code{
+  background: #f7f7f7;
+  border: 1px solid #e8e8e8;
+  color: @code;
+  padding: 3px 4px;
+  .borderRadius(3px);
 }
 //blockquotes - http://htmldog.com/reference/htmltags/blockquote/
 blockquote{
@@ -115,14 +121,16 @@ blockquote{
 }
 //list styles
 ul,ol{
-  margin: 0 0 @lists @lists;
+  margin-left: @lists;
   padding: 0;
 }
-dl{ margin-bottom: @lists; }
-ul ul,ol ol,ol ul,ul ol, dl dl{ margin-bottom: 0; }
-dl dl{ margin-left: @lists; }
+dl dl,
+dl dd{
+  margin-left: @lists/2;
+}
 ul.reset ul{ list-style: disc; }
-ul.reset,ol.reset{
+ul.reset,
+ol.reset{
   list-style: none;
   margin-left: 0;
 }
@@ -135,6 +143,26 @@ mark{
   background: rgba(255, 255, 0, 0.4); 
   color: @color;
   padding: 0 .25em;
+}
+//alerts (.warnings (default) | .error | .success)
+alert{
+  font-style: normal;
+  background: #fff8e5;
+  border: 1px solid lighten(@dfn, 45%);
+  color: lighten(@dfn, 10%);
+  display: block;
+  padding: 6px 10px;
+  .borderRadius(3px);
+  a{
+    color: lighten(@dfn, 30%);
+    &:hover{
+      color: @dfn;
+    }
+    &:active{
+      color: @dfn;
+    }
+    &:visited{ /* not implemented */}
+  }
 }
 
 //deleted text
@@ -154,15 +182,22 @@ abbr{
 
 //pre - http://htmldog.com/reference/htmltags/pre/
 pre{
-  background: #F4F4F4;
+  background: #f7f7f7;
   border: 1px solid #e8e8e8;
   color: #3F639E;
   font-family: "Courier New", Courier, monospace @fontFamily;
   font-size: 90%;
   line-height: 1.8;
-  padding: 20px;
-  .borderRadius(3px);
-  
+  padding: @margin;
+  code{
+    background: none;
+    border: 0;
+    color: inherit;
+    padding: 0;
+  }
+  &.rounded{
+    .borderRadius(3px);
+  }
   &.html{
     .tag{
       color: #4aa3b7;
@@ -175,11 +210,10 @@ pre{
     }
   }
 }
-section pre{
-  margin: 0;
-  border-left: none;
-  border-right: none;
-  .borderRadiusTop(0);
+section{
+  border: 1px solid #e8e8e8;
+  padding: 20px;
+  margin: 20px 0;
 }
 //headings
 h1,h2,h3,h4,h5,h6{
@@ -212,6 +246,30 @@ a{
 }
 
 //LAYOUT
+//navigation menu
+nav{
+  *{
+    float: left;
+    padding-right: @margin*2;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  display: block;
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+  &.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e8e8e8;
+    padding: @padding;
+  }
+}
+
 //sections
 section{
   margin-bottom: @margin;
