@@ -3,142 +3,23 @@
 <head>
   <title>xtyle | html</title>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <meta name="description" content="raw html page, without styles"/>
-  <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
-<style type="text/less">
-
-/* GOOGLE WEBFONTS */
-@import url("http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold");
-
-/* CHARSET */
-@charset "UTF-8";
-
-/* VARIABLES */
-//layouts
-@mediaFluid: 	100%;
-@mediaMobile:	340px;
-@mediaTabled: 	640px;
-@mediaDesktop: 	960px;
-
-//font
-@fontFallback: Helveltica, Sans-serif, Arial;
-@fontSize: 14px;
-@color: #303030;
-@links: #08C;
-@selection: #EBEBEB;
-
-//margin/padding
-@size: 10px;
-@margin: @size; 
-@padding: @size;
-
-/* MIXINS */
-.transition(@prop: all, @time: 1s, @ease: linear) {
-  -webkit-transition: @prop @time @ease;
-  -moz-transition: @prop @time @ease;
-  -o-transition: @prop @time @ease;
-  -ms-transition: @prop @time @ease;
-  transition: @prop @time @ease;
-}
-.margin(@top: @margin, @right: @margin, @bottom: @margin, @left: @margin){
-	margin: @top @right @bottom @left;
-}
-.padding(@top: @padding, @right: @padding, @bottom: @padding, @left: @padding){
-	padding: @top @right*2 @bottom @left*2;
-}
-/* RESET */
-html{height: 100%;}
-
-html,body,
-h1,h2,h3,h4,h5,h6{margin: 0; padding: 0;}
-
-/* HTML */
-body{
-	color: 	@color;
-	font: 	@fontSize "Roboto", @fontFallback;
-	line-height: 1.4;
-}
-a{
-	color: @links; 
-	text-decoration: none;
-	.transition(color, .1s, linear);
-	&:hover{
-		color: lighten(@links, 15%);
-	}
-	&:active{
-		color: saturate(@links, 15%);
-	}
-	&:visited{ /* not implemented */}
-}
-section{
-	&.column{float:left; .margin(); .padding(); }
-}
-::selection, ::-moz-selection, ::-webkit-selection, ::-ms-selection, ::-o-selection{
-	background: @selection;
-}
-
-/* XTYLE */
-//TYPOGRAPHY
-//Body font
-//Headings
-h1{font-size: 250%;}
-h2{font-size: 225%;}
-h3{font-size: 200%;}
-h4{font-size: 175%;}
-h5{font-size: 150%;}
-h6{font-size: 125%;}
-
-//paragraph
-p{
-	margin: 0 0 @margin;
-}
-//font styles
-.thin{
-	font-family: 'Roboto-Thin', @fontFallback;
-}
-//font weights
-.normal{
-	font-weight: normal;
-}
-.lighter{
-	font-weight: lighter;
-}
-.bold{
-	font-weight: bold;
-}
-//font variants
-.small-caps{
-	font-variant: small-caps;
-}
-.left{
-	text-align: left;
-}
-.center{
-	text-align: center;
-}
-.right{
-	text-align: right;
-}
-//floats
-.float-left{float: left;}
-.float-right{float: right;}
-
-</style>
-  
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="raw html page, without styles">
+  <link rel="stylesheet" type="text/css" href="css/fontello.css">
+  <link rel="stylesheet/less" type="text/css" href="css/demos.less">
   <!-- SCRIPTS -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.1/less.min.js"></script>
-  
 </head>
-<body style="margin: 20px 20px;">
+<body>
 
-<h3 class="normal thin">xtyle | demos</h3>
+<h4 class="lighter">xtyle | demos</h4>
 
 <div id="typography">
 	
 	<h1 style="color: #CCC;">Typography</h1>
 	
-	<div id="body" style="margin-top: 10px;">
+	<div id="body">
 		<h4>Body</h4>
 		<p>
 			<b>Xtyle</b> uses the excellent <a href="#">Roboto</a> font from <a href="http://google.com">Google</a> as its default body font. You can add new fonts on <i>xtyle.less</i> file.
