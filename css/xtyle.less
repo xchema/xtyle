@@ -72,6 +72,17 @@ body{
 }
 
 //TYPOGRAPHY
+//font styles
+thin{
+  font-weight: 200;
+}
+//font variants
+small{
+  font-size: 80%;
+}
+caps{
+  font-variant: small-caps; 
+}
 //paragraphs
 p{
   word-wrap:break-word;
@@ -149,7 +160,7 @@ alert{
   font-style: normal;
   background: #fff8e5;
   border: 1px solid lighten(@dfn, 45%);
-  color: lighten(@dfn, 10%);
+  color: darken(#fff8e5, 58%);
   display: block;
   padding: 6px 10px;
   .borderRadius(3px);
@@ -162,6 +173,16 @@ alert{
       color: @dfn;
     }
     &:visited{ /* not implemented */}
+  }
+  &.error{
+    background: lighten(#be5d60, 39%);
+    color: #be5d60;
+    border-color: lighten(#be5d60, 34%);
+  }
+  &.info{
+    background: lighten(#5994bc, 39%);
+    color: #5994bc;
+    border-color: lighten(#5994bc, 34%);
   }
 }
 
@@ -274,6 +295,12 @@ nav{
     background: black;
     h1,h2,h3,h4,h5,h6{
       color: white;
+    }
+    a{
+      color: gray;
+      &:hover{
+        color: white;
+      }
     }
   }
 }
@@ -547,17 +574,6 @@ section{
   .opacity();
 }
 
-//font styles
-thin{
-  font-weight: 200;
-}
-//font variants
-small{
-  font-size: 80%;
-}
-smallcaps{
-  font-variant: small-caps; 
-}
 //font weights
 .normal{ 
   font-weight: normal; 

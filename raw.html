@@ -13,7 +13,7 @@
 </head>
 <body class="menu">
 
-<nav class="menu">
+<nav class="menu inverse">
   <h5 class="lighter floatleft" style="margin-top: -2px;">xtyle | demos</h5>
   <a href="#">CSS</a>
   <a href="#">JavaScript</a>
@@ -38,7 +38,7 @@
       <mark>marked</mark><br>
       <del>deleted</del><br>
       <small>small</small><br>
-      <smallcaps>Small Caps</smallcaps>
+      <caps>Small Caps</caps>
     </p>
 
   </p>
@@ -51,7 +51,7 @@ regular
 <code class="tag">&lt;mark&gt;</code>marked<code class="tag">&lt;/mark&gt;</code>
 <code class="tag">&lt;del&gt;</code>deleted<code class="tag">&lt;/del&gt;</code>
 <code class="tag">&lt;small&gt;</code>small<code class="tag">&lt;/small&gt;</code>
-<code class="tag">&lt;smallcaps&gt;</code>Small Caps<code class="tag">&lt;/smallcaps&gt;</code>
+<code class="tag">&lt;caps&gt;</code>Small Caps<code class="tag">&lt;/caps&gt;</code>
 </pre>
   <br>
   <alert>
@@ -266,6 +266,37 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <span class="tel">+1 (123) 456-7890</span>
       </p>
     </address>
+
+  </p>
+<pre class="rounded html">
+<code class="tag">&lt;address&gt;</code>
+  ...
+  <code class="tag">&lt;abbr <code class="attr">title=</code><code class="str">"California"</code>&gt;</code>CA<code class="tag">&lt;/abbr&gt;</code>
+  ...
+<code class="tag">&lt;/address&gt;</code>
+</pre>
+</section>
+
+
+
+<!-- ALERTS -->
+<section id="typography_alerts" class="rounded">
+  <header><h4>Alerts</h4></header>
+  <p>
+    Alerts are the easiest way to drive attention to important content. Use the tag <code>&lt;alert&gt;</code> with the classes <code>.warning</code> (default), <code>.error</code>, <code>.info</code>, and <code>.success</code>:
+    
+    <p>
+      <alert><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
+    </p>
+    <p>
+      <alert class="error"><i class="icon-block"></i><strong>Error!</strong> Use this tag when something goes wrong.</alert>
+    </p>
+    <p>
+      <alert class="info"><i class="icon-info"></i><strong>Information!</strong> Use this tag to provide important information.</alert>
+    </p>
+    <p>
+      <alert class="success"><i class="icon-check"></i><strong>Success!</strong> Use this tag when some task or action end successfuly.</alert>
+    </p>
 
   </p>
 <pre class="rounded html">
