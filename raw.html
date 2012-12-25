@@ -15,9 +15,9 @@
 
 <nav class="menu">
   <h5 class="lighter floatleft" style="margin-top: -2px;">xtyle | demos</h5>
-  <a href="#">Typography</a>
-  <a href="#">Layout</a>
-  <a href="#">Paragraphs</a>
+  <a href="#">CSS</a>
+  <a href="#">JavaScript</a>
+  <a href="#">Templates</a>
 </nav>
 
 <!-- TYPOGRAPHY -->
@@ -32,11 +32,13 @@
     <p>
       regular<br>
       <thin>thin</thin><br>
-      <strong>STRONG</strong><br>
+      <strong>Strong</strong><br>
       <em>italic</em><br>
       <a href="#">links</a><br>
       <mark>marked</mark><br>
-      <del>deleted</del>
+      <del>deleted</del><br>
+      <small>small</small><br>
+      <smallcaps>Small Caps</smallcaps>
     </p>
 
   </p>
@@ -48,6 +50,8 @@ regular
 <code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code>&gt;</code>links<code class="tag">&lt;/a&gt;</code>
 <code class="tag">&lt;mark&gt;</code>marked<code class="tag">&lt;/mark&gt;</code>
 <code class="tag">&lt;del&gt;</code>deleted<code class="tag">&lt;/del&gt;</code>
+<code class="tag">&lt;small&gt;</code>small<code class="tag">&lt;/small&gt;</code>
+<code class="tag">&lt;smallcaps&gt;</code>Small Caps<code class="tag">&lt;/smallcaps&gt;</code>
 </pre>
   <br>
   <alert>
@@ -240,6 +244,36 @@ roin eu erat nunc, id viverra urna. Donec id ...
 <code class="tag">&lt;/li&gt;</code>
 <code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
 <code class="tag">&lt;/ul&gt;</code>
+</pre>
+</section>
+
+
+
+<!-- ADDRESSES -->
+<section id="typography_addresses" class="rounded">
+  <header><h4>Addresses</h4></header>
+  <p>
+    The <code>&lt;address&gt;</code> element is used to provide contact information. Use <code>&lt;abbr&gt;</code> to write abbreviations:
+    
+    <address class="vcard">
+      <a href="http://xchema.com" class="fn org url">xchema</a>
+      <p class="adr">
+        <span class="street-address">South Whisman Road</span><br>
+        <span class="region">Mountain View,</span>
+        <abbr class="region" title="California">CA</abbr>
+        <span class="postal-code">94041</span><br>
+        <span class="country-name">United States</span><br>
+        <span class="tel">+1 (123) 456-7890</span>
+      </p>
+    </address>
+
+  </p>
+<pre class="rounded html">
+<code class="tag">&lt;address&gt;</code>
+  ...
+  <code class="tag">&lt;abbr <code class="attr">title=</code><code class="str">"California"</code>&gt;</code>CA<code class="tag">&lt;/abbr&gt;</code>
+  ...
+<code class="tag">&lt;/address&gt;</code>
 </pre>
 </section>
 

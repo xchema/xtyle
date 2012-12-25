@@ -173,6 +173,7 @@ sub{ .verticalAlign(sub); }
 sup{ .verticalAlign(super); }
 
 //address
+//hcard - http://microformats.org/wiki/hcard
 address{ font-style: normal; }
 address .org{ font-weight: bold; }
 abbr{ 
@@ -187,7 +188,6 @@ pre{
   color: #3F639E;
   font-family: "Courier New", Courier, monospace @fontFamily;
   font-size: 90%;
-  line-height: 1.8;
   padding: @margin;
   code{
     background: none;
@@ -267,6 +267,14 @@ nav{
     background: #f7f7f7;
     border-bottom: 1px solid #e8e8e8;
     padding: @padding;
+  }
+  &.inverse{
+    border-bottom: 1px solid black;
+    color: white;
+    background: black;
+    h1,h2,h3,h4,h5,h6{
+      color: white;
+    }
   }
 }
 
@@ -543,6 +551,13 @@ section{
 thin{
   font-weight: 200;
 }
+//font variants
+small{
+  font-size: 80%;
+}
+smallcaps{
+  font-variant: small-caps; 
+}
 //font weights
 .normal{ 
   font-weight: normal; 
@@ -553,10 +568,7 @@ thin{
 .bold{ 
   font-weight: bold; 
 }
-//font variants
-.small-caps{
-  font-variant: small-caps; 
-}
+
 .left{
   text-align: left; 
 }
