@@ -1,15 +1,10 @@
-+ alert warning
-+ widgets store, developers can provide their widgets (slideshow, uploaders, etc) on it
-+ grid as background to demos
 + PAGES - make the minibrowser a slideshow
-+ code (pre/code)
 + tables
 + print css style
 + npm module for nodejs
 + define themes
 + use Color functions LESS
 + grid system
-+ market of layouts, designers can sell their layout exclusively and royality free
 + http://designshack.net/articles/css/focal-point-intelligent-cropping-of-responsive-images/
 + xtyle.less will contain only mixins, theme.less will contain presentation that calls mixins
 + SITE - code and preview together
@@ -31,3 +26,5 @@
 - separate blockquote from paragraph
 - abbreviations
 - address
+- alert warning
+- code (pre/code)
