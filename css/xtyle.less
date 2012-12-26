@@ -35,6 +35,9 @@
 @margin: @size; 
 @padding: @size;
 
+//border
+@border: #E8E8E8;
+
 //paragraphs
 @paragraph: 20px;
 
@@ -99,6 +102,12 @@ input[type=password]{
   }
   &.search{
     .borderRadius(20px);
+  }
+}
+input[disabled='disabled']{
+  background: lighten(#E8E8E8, 7%);
+  &:hover{
+    border-color: none;
   }
 }
 :-moz-placeholder{ color: #ccc; text-style: normal; }
@@ -339,7 +348,7 @@ a{
 //LAYOUT
 //navigation menu
 nav{
-  *{
+  a{
     float: left;
     padding-right: @margin*2;
     &:last-child{
