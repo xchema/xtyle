@@ -166,29 +166,59 @@ alert{
   padding: 6px 10px;
   .borderRadius(3px);
   a{
-    color: lighten(@dfn, 30%);
+    color: @warning;
+    text-decoration: underline;
     &:hover{
-      color: @dfn;
+      color: darken(@warning, 15%);
     }
     &:active{
-      color: @dfn;
+      color: @warning;
     }
-    &:visited{ /* not implemented */}
   }
   &.error{
-    background: lighten(#be5d60, 39%);
+    @error: #be5d60;
+    background: lighten(@error, 39%);
     color: #be5d60;
-    border-color: lighten(#be5d60, 34%);
+    border-color: lighten(@error, 34%);
+    a{
+      color: @error;
+      &:hover{
+        color: darken(@error, 15%);
+      }
+      &:active{
+        color: @error;
+      }
+    }
   }
   &.info{
-    background: lighten(#5994bc, 39%);
-    color: #5994bc;
-    border-color: lighten(#5994bc, 34%);
+    @info: #5994bc;
+    background: lighten(@info, 39%);
+    color: @info;
+    border-color: lighten(@info, 34%);
+    a{
+      color: @info;
+      &:hover{
+        color: darken(@info, 15%);
+      }
+      &:active{
+        color: @info;
+      }
+    }
   }
   &.success{
-    background: lighten(#5f9f4d, 45%);
-    color: #5f9f4d;
-    border-color: lighten(#5f9f4d, 35%);
+    @success: #5f9f4d;
+    background: lighten(@success, 45%);
+    color: @success;
+    border-color: lighten(@success, 35%);
+    a{
+      color: @success;
+      &:hover{
+        color: darken(@success, 15%);
+      }
+      &:active{
+        color: @success;
+      }
+    }
   }
 }
 
