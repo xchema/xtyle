@@ -89,8 +89,8 @@ label{
 //input
 input[type=text],
 input[type=email],
-input[type=password]{
-  margin-bottom: @margin*2;
+input[type=password],
+textarea{
   border: 1px solid #E8E8E8;
   padding: @padding;
   .transition(border-color, .1s, linear);
@@ -107,13 +107,17 @@ input[type=password]{
 input[disabled='disabled']{
   background: lighten(#E8E8E8, 7%);
   &:hover{
-    border-color: none;
+    cursor: blocked;
   }
 }
 :-moz-placeholder{ color: #ccc; text-style: normal; }
 ::-webkit-input-placeholder{ color: #ccc; text-style: normal; }
 input:-moz-placeholder { color: #ccc; text-style: normal; }
-
+textarea{
+  &.noresize{
+    resize: none;
+  }
+}
 //TYPOGRAPHY
 //font styles
 thin{
