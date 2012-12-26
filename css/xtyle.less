@@ -45,12 +45,29 @@ div, span, p, blockquote,
 ul, li, dl, dt, dd, ol,
 nav, a,
 h1, h2, h3, h4, h5, h6,
-pre,code{
+pre,code,
+input,select,textarea,button{
   border: 0;
   margin: 0;
-  outline-style:  none;
+  outline:  none;
   padding:  0;
   word-wrap: break-word;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+// input[type="text"], 
+// input[type="email"], 
+// input[type="search"], 
+// input[type="password"]{
+//   -webkit-appearance: caret;
+//   -moz-appearance: caret; /* mobile firefox too! */
+// }
+label{
+  display: block;
 }
 
 /* HTML TAGS */
@@ -70,6 +87,23 @@ body{
     padding-top: @padding*5;
   }
 }
+
+//FORMS
+//input
+input[type=text]{
+  border: 1px solid #E8E8E8;
+  padding: @padding;
+  .transition(border-color, .1s, linear);
+  &:focus{
+    border-color: lighten(@links, 15%);
+  }
+  &.search{
+    .borderRadius(20px);
+  }
+}
+:-moz-placeholder{ color: #ccc; text-style: normal; }
+::-webkit-input-placeholder{ color: #ccc; text-style: normal; }
+input:-moz-placeholder { color: red; }
 
 //TYPOGRAPHY
 //font styles
@@ -469,10 +503,6 @@ section{
   -o-opacity: @opacity / 100;
   filter: e(%("alpha(opacity=%d)", @opacity));
   opacity: @opacity / 100;
-}
-.placeHolder (@color: #ccc, @text-style: normal){
-  :-moz-placeholder{ color: @color; text-style:	@text-style; }
-  ::-webkit-input-placeholder{ color: @color; text-style:	@text-style; }
 }
 //shadows
 .boxShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
