@@ -59,10 +59,6 @@ input{
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
-label{
-  padding-right: @padding;
-  //display: block;
-}
 
 /* HTML TAGS */
 html{
@@ -83,13 +79,20 @@ body{
 }
 
 //FORMS
+//label
+label{
+  padding-right: @padding;
+}
 //input
 input[type=text],
 input[type=email]{
-  margin: @margin 0;
+  margin-bottom: @margin*2;
   border: 1px solid #E8E8E8;
   padding: @padding;
   .transition(border-color, .1s, linear);
+  &:hover{
+    border-color: darken(#E8E8E8, 8%);
+  }
   &:focus{
     border-color: lighten(@links, 15%);
   }
