@@ -10,7 +10,6 @@
 + SITE - code and preview together
 + demos
 + ios icons
-+ forms
 + lists
 + background to base64 img
 + button inverse (black)
@@ -30,3 +29,4 @@
 - code (pre/code)
 - alerts inside links
 - alerts close links for other alerts
+- forms
