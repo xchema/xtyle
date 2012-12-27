@@ -56,7 +56,7 @@ form,label,input,select,textarea,button{
   padding:  0;
   word-wrap: break-word;
 }
-input{
+input,textarea{
   .borderRadius(0); //remove rounded border on iOS
   //remove shadows on iOS devices
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
@@ -110,6 +110,8 @@ input[disabled='disabled'], textarea[disabled='disabled']{
   &:hover{
     cursor: blocked;
   }
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+  background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
 :-moz-placeholder{ color: #ccc; text-style: normal; }
 ::-webkit-input-placeholder{ color: #ccc; text-style: normal; }
