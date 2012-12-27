@@ -106,6 +106,7 @@ textarea{
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
+  opacity: 1; //normalize ios opacity for disabled elements
   background: lighten(#E8E8E8, 7%);
   &:hover{
     cursor: blocked;
@@ -358,6 +359,7 @@ a{
 //LAYOUT
 //navigation menu
 nav{
+  z-index: 10000;
   a{
     float: left;
     padding-right: @margin*2;
