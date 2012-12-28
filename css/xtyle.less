@@ -61,8 +61,11 @@ form,label,input,select,textarea,button{
   outline:  none;
   padding:  0;
   word-wrap: break-word;
+  font-weight: normal;
+  font-size: @fontSize;
 }
-input,textarea{
+input,textarea,select{
+  font-family: inherit;
   //remove shadows on iOS devices
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
@@ -91,11 +94,16 @@ body{
     padding-top: @padding*6;
   }
 }
+.input{
+  font: @fontSize @fontFamily;
+}
 
 //FORMS
 //label
 input[type=submit],
-button{
+button, a.btn{
+  font: @fontSize @fontFamily;
+  font-weight: normal;
   vertical-align: bottom;
   margin-right: @margin;
   background: #F7F7F7;
@@ -117,9 +125,11 @@ button{
     background: darken(#F7F7F7, 80%);
     border-color: black;
     &:hover{
+      color: white;
       background: black;
     }
     &:active{
+      color: white;
       background: darken(#F7F7F7, 80%);
     }
   }
@@ -128,9 +138,11 @@ button{
     background: lighten(@warning, 10%);
     border-color: lighten(@warning, 4%);
     &:hover{
+      color: white;
       background: lighten(@warning, 7%);
     }
     &:active{
+      color: white;
       background: lighten(@warning, 10%);
     }
   }
@@ -139,9 +151,11 @@ button{
     background: @error;
     border-color: darken(@error, 5%);
     &:hover{
+      color: white;
       background: darken(@error, 3%);
     }
     &:active{
+      color: white;
       background: @error;
     }
   }
@@ -150,9 +164,11 @@ button{
     background: @info;
     border-color: darken(@info, 5%);
     &:hover{
+      color: white;
       background: darken(@info, 3%);
     }
     &:active{
+      color: white;
       background: @info;
     }
   }
@@ -161,11 +177,24 @@ button{
     background: @success;
     border-color: darken(@success, 5%);
     &:hover{
+      color: white;
       background: darken(@success, 3%);
     }
     &:active{
+      color: white;
       background: @success;
     }
+  }
+}
+a.btn{
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  &:hover{
+    color: black;
+  }
+  &:active{
+    color: black;
   }
 }
 label{
@@ -669,7 +698,7 @@ section{
 
 //CLASSES
 
-.container{
+.fixed{
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -701,31 +730,6 @@ section{
   &.fixed{
     background-attachment: fixed;
   }
-}
-
-.btn{
-  padding: 5px;
-  .gradientY(#323539, #26282C);
-  border-top: 1px solid #3F4347;
-  border-bottom: 1px solid #161719;
-  color: #81858C;
-  text-decoration: none;
-  .transition (background-image, 0.2s, ease-in);
-
-  &:hover{
-    color: white;
-    .gradientY(#323539, #26282C);
-  }
-  &:active{
-    .gradientY(#26282C, #323539);
-  }
-}
-
-.btn.medium{
-  padding: 10px;
-}
-.btn.large{
-  padding: 15px;
 }
 
 .vertical-middle{
