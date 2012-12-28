@@ -41,6 +41,12 @@
 //paragraphs
 @paragraph: 20px;
 
+//colors
+@warning: #B39527;
+@error: #be5d60;
+@info: #5994bc;
+@success: #5f9f4d;
+
 
 /* RESET */
 html, body,
@@ -112,6 +118,53 @@ button{
     border-color: black;
     &:hover{
       background: black;
+    }
+    &:active{
+      background: darken(#F7F7F7, 80%);
+    }
+  }
+  &.warning{
+    color: white;
+    background: lighten(@warning, 10%);
+    border-color: lighten(@warning, 4%);
+    &:hover{
+      background: lighten(@warning, 7%);
+    }
+    &:active{
+      background: lighten(@warning, 10%);
+    }
+  }
+  &.error{
+    color: white;
+    background: @error;
+    border-color: darken(@error, 5%);
+    &:hover{
+      background: darken(@error, 3%);
+    }
+    &:active{
+      background: @error;
+    }
+  }
+  &.info{
+    color: white;
+    background: @info;
+    border-color: darken(@info, 5%);
+    &:hover{
+      background: darken(@info, 3%);
+    }
+    &:active{
+      background: @info;
+    }
+  }
+  &.success{
+    color: white;
+    background: @success;
+    border-color: darken(@success, 5%);
+    &:hover{
+      background: darken(@success, 3%);
+    }
+    &:active{
+      background: @success;
     }
   }
 }
@@ -243,7 +296,6 @@ mark{
 }
 //alerts (.warnings (default) | .error | .success)
 alert{
-  @warning: #B39527;
   font-style: normal;
   background: lighten(@warning, 50%);
   border: 1px solid lighten(@warning, 38%);
@@ -262,7 +314,6 @@ alert{
     }
   }
   &.error{
-    @error: #be5d60;
     background: lighten(@error, 39%);
     color: #be5d60;
     border-color: lighten(@error, 34%);
@@ -277,7 +328,6 @@ alert{
     }
   }
   &.info{
-    @info: #5994bc;
     background: lighten(@info, 39%);
     color: @info;
     border-color: lighten(@info, 34%);
@@ -292,7 +342,6 @@ alert{
     }
   }
   &.success{
-    @success: #5f9f4d;
     background: lighten(@success, 45%);
     color: @success;
     border-color: lighten(@success, 35%);
