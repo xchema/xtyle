@@ -103,20 +103,19 @@ body{
 input[type=submit],
 button, a.btn{
   font: @fontSize @fontFamily;
-  font-weight: normal;
   vertical-align: bottom;
   margin-right: @margin;
   background: #F7F7F7;
-  border: 1px solid #E8E8E8;
-  border-bottom: 2px solid #E8E8E8;
+  border: 1px solid @border;
+  border-bottom: 2px solid @border;
   cursor: pointer;
   padding: @padding/2 @padding;
   &:hover{
     background: darken(#F7F7F7, 2%);
   }
   &:active{
-    border-top: 2px solid #E8E8E8;
-    border-bottom: 1px solid #E8E8E8;
+    border-top: 2px solid @border;
+    border-bottom: 1px solid @border;
     background: #F7F7F7;
   }
 
@@ -185,6 +184,13 @@ button, a.btn{
       background: @success;
     }
   }
+
+  &.small{
+    font-size: 80%;
+  }
+  &.large{
+    font-size: 150%;
+  }
 }
 a.btn{
   display: inline-block;
@@ -206,11 +212,11 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea{
-  border: 1px solid #E8E8E8;
+  border: 1px solid @border;
   padding: @padding/2 @padding;
   .transition(border-color, .1s, linear);
   &:hover{
-    border-color: darken(#E8E8E8, 8%);
+    border-color: darken(@border, 8%);
   }
   &:focus{
     border-color: lighten(@links, 15%);
@@ -221,7 +227,7 @@ textarea{
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
   opacity: 1; //normalize ios opacity for disabled elements
-  background: lighten(#E8E8E8, 7%);
+  background: lighten(@border, 7%);
   &:hover{
     cursor: blocked;
   }
@@ -272,7 +278,7 @@ p{
 //code
 code{
   background: #f7f7f7;
-  border: 1px solid #e8e8e8;
+  border: 1px solid @border;
   color: @code;
   padding: 3px 4px;
   .borderRadius(3px);
@@ -405,7 +411,7 @@ abbr{
 //pre
 pre{
   background: #f7f7f7;
-  border: 1px solid #e8e8e8;
+  border: 1px solid @border;
   color: #3F639E;
   font-family: "Courier New", Courier, monospace @fontFamily;
   font-size: 90%;
@@ -432,7 +438,7 @@ pre{
   }
 }
 section{
-  border: 1px solid #e8e8e8;
+  border: 1px solid @border;
   padding: 20px;
   margin: 20px 0;
 }
@@ -488,7 +494,7 @@ nav{
     left: 0;
     width: 100%;
     background: #f7f7f7;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid @border;
     padding: @padding;
   }
   &.inverse{
