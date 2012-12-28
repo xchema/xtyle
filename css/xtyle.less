@@ -14,73 +14,12 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
 /* VARIABLES */
-//layouts
-@mediaFluid: 100%;
-@mediaMobile: 340px;
-@mediaTablet: 640px;
-@mediaDesktop: 960px;
-
-//Typography
-@fontFamily:"Source Sans Pro", "Helvetica", "Arial", sans-serif; 
-@fontSize: 14px; //default body font size
-@color: #444; //body font color
-@links: #08C; //link color
-@blockquoteborder: #ddd;
-@lists: 20px;
-@code: #d50e14;
-@dfn: #968145;
-
-//margin/padding
-@size: 10px;
-@margin: @size; 
-@padding: @size;
-
-//border
-@border: #E8E8E8;
-
-//paragraphs
-@paragraph: 20px;
-
-//colors
-@warning: #B39527;
-@error: #be5d60;
-@info: #5994bc;
-@success: #5f9f4d;
-
+@import "less/vars";
 
 /* RESET */
-html, body,
-div, span, p, blockquote,
-ul, li, dl, dt, dd, ol,
-nav, a,
-h1, h2, h3, h4, h5, h6,
-pre,code,
-form,label,input,select,textarea,button{
-  border: 0;
-  margin: 0;
-  outline:  none;
-  padding:  0;
-  word-wrap: break-word;
-  font-weight: normal;
-  font-size: @fontSize;
-}
-input,textarea,select{
-  font-family: inherit;
-  //remove shadows on iOS devices
-  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
-  background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
-}
-input[type=submit]{
-  -webkit-border-radius:0;
-  border-radius:0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
+@import "less/reset";
 
 /* HTML TAGS */
-html{
-  height: 100%;
-}
 html, html a{
   -webkit-font-smoothing: antialiased !important; //smoother fonts
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004); //smoother fonts
