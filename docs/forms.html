@@ -5,33 +5,69 @@
 <section id="typography_font" class="rounded">
   <header><h4>Input fields</h4></header>
   <p>
-    You can use different elements with your forms.
-
+    Input fields are used to send information using forms.
+  </p>
+    <h6>Text</h6>
     <form>
       <p>
       <label>Label</label>
       <input type="text" placeholder="Text input">
       </p>
-      <p>
-      <label>Label</label>
-      <input type="text" placeholder="Text input rounded" class="rounded">
-      </p>
-      <p>
-      <label>Label</label>
-      <input type="password" placeholder="Password">
-      </p>
-      <p>
-      <label>Label</label>
-      <input type="text" placeholder="Disabled input" disabled="disabled">
-      </p>
+    </form>
+    <p>
+<pre class="rounded html">
+<code class="tag">&lt;form&gt;</code>
+  <code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
+  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
+<code class="tag">&lt;/form&gt;</code>
+</pre>
+    </p>
+
+    <h6>Text (rounded)</h6>  
+    <p>
+    <label>Label</label>
+    <input type="text" placeholder="Text input rounded" class="rounded">
+    </p>
+    <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code> <code class="attr">class=</code><code class="str">"rounded"</code>&gt;</code>
+</pre>
+    </p>
+
+    <h6>Password</h6> 
+    <p>
+    <input type="password" placeholder="Password">
+    </p>
+    <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"password"</code> <code class="attr">placecholder=</code><code class="str">"Password"</code>&gt;</code>
+</pre>
+    </p>
+
+    <h6>Disabled</h6>
+    <p>
+    <label>Label</label>
+    <input type="text" placeholder="Disabled input" disabled="disabled">
+    </p>
+    <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Disabled input"</code> <code class="attr">disabled=</code><code class="str">"disabled"</code>&gt;</code>
+</pre>
+    </p>
+
+    <form>
       <p>
       <label class="vertical-top">Label</label>
       <textarea placeholder="Textarea content..."></textarea>
       </p>
+    </form>
+    <form>
       <p>
       <label class="vertical-top">Label</label>
       <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
       </p>
+    </form>
+    <form>
       <p>
       <label class="block">Label block</label>
       <input type="email" placeholder="E-mail input">
@@ -81,16 +117,4 @@
       <a href="#" class="btn success rounded">Success</a>
     </p>
 
-  </p>
-<pre class="rounded html">
-regular
-<code class="tag">&lt;thin&gt;</code>thin<code class="tag">&lt;/thin&gt;</code>
-<code class="tag">&lt;strong&gt;</code>STRONG<code class="tag">&lt;/strong&gt;</code>
-<code class="tag">&lt;em&gt;</code>italic<code class="tag">&lt;/em&gt;</code>
-<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code>&gt;</code>links<code class="tag">&lt;/a&gt;</code>
-<code class="tag">&lt;mark&gt;</code>marked<code class="tag">&lt;/mark&gt;</code>
-<code class="tag">&lt;del&gt;</code>deleted<code class="tag">&lt;/del&gt;</code>
-<code class="tag">&lt;small&gt;</code>small<code class="tag">&lt;/small&gt;</code>
-<code class="tag">&lt;caps&gt;</code>Small Caps<code class="tag">&lt;/caps&gt;</code>
-</pre>
 </section>
