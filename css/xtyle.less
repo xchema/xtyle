@@ -110,7 +110,7 @@ button, a.btn{
   border: 1px solid #E8E8E8;
   border-bottom: 2px solid #E8E8E8;
   cursor: pointer;
-  padding: @padding;
+  padding: @padding/2 @padding;
   &:hover{
     background: darken(#F7F7F7, 2%);
   }
@@ -122,15 +122,15 @@ button, a.btn{
 
   &.inverse{
     color: white;
-    background: darken(#F7F7F7, 80%);
-    border-color: black;
+    background: @color;
+    border-color: @color;
     &:hover{
       color: white;
-      background: black;
+      background: darken(#F7F7F7, 80%);
     }
     &:active{
       color: white;
-      background: darken(#F7F7F7, 80%);
+      background: @color;
     }
   }
   &.warning{
@@ -189,12 +189,12 @@ button, a.btn{
 a.btn{
   display: inline-block;
   vertical-align: middle;
-  color: black;
+  color: @color;
   &:hover{
-    color: black;
+    color: @color;
   }
   &:active{
-    color: black;
+    color: @color;
   }
 }
 label{
@@ -207,7 +207,7 @@ input[type=password],
 input[type=number],
 textarea{
   border: 1px solid #E8E8E8;
-  padding: @padding;
+  padding: @padding/2 @padding;
   .transition(border-color, .1s, linear);
   &:hover{
     border-color: darken(#E8E8E8, 8%);
@@ -438,6 +438,7 @@ section{
 }
 //headings
 h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
   color: darken(@color, 15%);
   line-height: 1.1;
   margin-bottom: @margin;
