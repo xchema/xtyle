@@ -6,27 +6,26 @@ div, span, p, blockquote,
 ul, li, dl, dt, dd, ol,
 nav, a,
 h1, h2, h3, h4, h5, h6,
-pre,code,
-form,label,input,select,textarea,button{
+pre, code,
+form, label, input, select, textarea, button{
   border: 0;
-  margin: 0;
+  font-weight: normal;
   outline: none;
+  margin: 0;
   padding: 0;
   word-wrap: break-word;
-  font-weight: normal;
 }
 html{
   height: 100%;
 }
 input,textarea,select{
-  font-family: inherit;
   /*remove shadows on iOS devices*/
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+  font-family: inherit;
+  margin-right: @margin/2;
 }
 input[type=submit]{
-  -webkit-border-radius:0;
-  border-radius:0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }

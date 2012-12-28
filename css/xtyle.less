@@ -10,7 +10,6 @@
 @charset "UTF-8";
 
 /* GOOGLE WEBFONTS */
-//@import url(//fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold,light);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
 /* VARIABLES */
@@ -33,12 +32,8 @@ body{
     padding-top: @padding*6;
   }
 }
-.input{
-  font: @fontSize @fontFamily;
-}
 
 //FORMS
-//label
 input[type=submit],
 button, a.btn{
   font: @fontSize @fontFamily;
@@ -49,6 +44,7 @@ button, a.btn{
   border-bottom: 2px solid @border;
   cursor: pointer;
   padding: @padding/2 @padding;
+  .transition(border-color, .1s, linear);
   &:hover{
     background: darken(#F7F7F7, 2%);
   }
@@ -56,6 +52,9 @@ button, a.btn{
     border-top: 2px solid @border;
     border-bottom: 1px solid @border;
     background: #F7F7F7;
+  }
+  &:focus{
+    border-color: darken(@border, 10%);
   }
 
   &.inverse{
@@ -70,6 +69,9 @@ button, a.btn{
       color: white;
       background: @color;
     }
+    &:focus{
+      border-color: darken(@border, 100%);
+    }
   }
   &.warning{
     color: white;
@@ -82,6 +84,9 @@ button, a.btn{
     &:active{
       color: white;
       background: lighten(@warning, 10%);
+    }
+    &:focus{
+      border-color: darken(@warning, 8%);
     }
   }
   &.error{
@@ -96,6 +101,9 @@ button, a.btn{
       color: white;
       background: @error;
     }
+    &:focus{
+      border-color: darken(@error, 20%);
+    }
   }
   &.info{
     color: white;
@@ -109,6 +117,9 @@ button, a.btn{
       color: white;
       background: @info;
     }
+    &:focus{
+      border-color: darken(@info, 20%);
+    }
   }
   &.success{
     color: white;
@@ -121,6 +132,9 @@ button, a.btn{
     &:active{
       color: white;
       background: @success;
+    }
+    &:focus{
+      border-color: darken(@success, 15%);
     }
   }
 
@@ -143,7 +157,7 @@ a.btn{
   }
 }
 label{
-  padding-right: @padding;
+  padding-right: @padding/2;
 }
 //input
 input[type=text],
@@ -152,6 +166,7 @@ input[type=password],
 input[type=number],
 textarea{
   border: 1px solid @border;
+  border-top: 2px solid @border;
   padding: @padding/2 @padding;
   .transition(border-color, .1s, linear);
   &:hover{
