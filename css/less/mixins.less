@@ -60,53 +60,36 @@
   column-gap: @columnGap;
 }
 //filters
-.filderGrayscale (@value){
-  -webkit-filter: grayscale(@value);
-  -moz-filter: grayscale(@value);
-  -ms-filter: grayscale(@value);
-  -o-filter: grayscale(@value);
+.filters (@filter,@value){
+  -webkit-filter: @filter(@value);
+  -moz-filter: @filter(@value);
+  -ms-filter: @filter(@value);
+  -o-filter: @filter(@value);
+  filter: @filter(@value);
+}
+.filterGrayscale (@value){
+  .filter(grayscale,@value);
 }
 .filterSepia (@value){
-  -webkit-filter: sepia(@value);
-  -moz-filter: sepia(@value);
-  -ms-filter: sepia(@value);
-  -o-filter: sepia(@value);
+  .filter(sepia,@value);
 }
 .filterSaturate (@value){
-  -webkit-filter: saturate(@value);
-  -moz-filter: saturate(@value);
-  -ms-filter: saturate(@value);
-  -o-filter: saturate(@value);
+  .filter(saturate,@value);
 }
 .filterHueRotate (@value){
-  -webkit-filter: hue-rotate(@value);
-  -moz-filter: hue-rotate(@value);
-  -ms-filter: hue-rotate(@value);
-  -o-filter: hue-rotate(@value);
+  .filter(hue-rotate,@value);
 }
 .filterInvert (@value){
-  -webkit-filter: invert(@value);
-  -moz-filter: invert(@value);
-  -ms-filter: invert(@value);
-  -o-filter: invert(@value);
+  .filter(invert,@value);
 }
 .filterBrightness (@value){
-  -webkit-filter: brightness(@value);
-  -moz-filter: brightness(@value);
-  -ms-filter: brightness(@value);
-  -o-filter: brightness(@value);
+  .filter(brightness,@value);
 }
 .filterContrast (@value){
-  -webkit-filter: contrast(@value);
-  -moz-filter: contrast(@value);
-  -ms-filter: contrast(@value);
-  -o-filter: contrast(@value);
+  .filter(contrast,@value);
 }
 .filterBlur (@value){
-  -webkit-filter: blur(@value);
-  -moz-filter: blur(@value);
-  -ms-filter: blur(@value);
-  -o-filter: blur(@value);
+  .filter(blur,@value);
 }
 // Gradients
 .gradientX (@start:#000, @stop:#111) {
