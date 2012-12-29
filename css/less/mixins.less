@@ -60,24 +60,56 @@
   column-gap: @columnGap;
 }
 //filters
-.filter (@arguments) {
-  //  grayscale(<number> | <percentage>)
-  //  sepia(<number> | <percentage>)
-  //  saturate(<number> | <percentage>)
-  //  hue-rotate(<angle>)
-  //  invert(<number> | <percentage>)
-  //  opacity(<number> | <percentage>)
-  //  brightness(<number> | <percentage>)
-  //  contrast(<number> | <percentage>)
-  //  blur(<length>)
-  //  drop-shadow(<shadow>)
-  -webkit-filter: @arguments;
-  -moz-filter: @arguments;
-  -ms-filter: @arguments;
-  -o-filter: @arguments;
+.filderGrayscale (@value){
+  -webkit-filter: grayscale(@value);
+  -moz-filter: grayscale(@value);
+  -ms-filter: grayscale(@value);
+  -o-filter: grayscale(@value);
+}
+.filterSepia (@value){
+  -webkit-filter: sepia(@value);
+  -moz-filter: sepia(@value);
+  -ms-filter: sepia(@value);
+  -o-filter: sepia(@value);
+}
+.filterSaturate (@value){
+  -webkit-filter: saturate(@value);
+  -moz-filter: saturate(@value);
+  -ms-filter: saturate(@value);
+  -o-filter: saturate(@value);
+}
+.filterHueRotate (@value){
+  -webkit-filter: hue-rotate(@value);
+  -moz-filter: hue-rotate(@value);
+  -ms-filter: hue-rotate(@value);
+  -o-filter: hue-rotate(@value);
+}
+.filterInvert (@value){
+  -webkit-filter: invert(@value);
+  -moz-filter: invert(@value);
+  -ms-filter: invert(@value);
+  -o-filter: invert(@value);
+}
+.filterBrightness (@value){
+  -webkit-filter: brightness(@value);
+  -moz-filter: brightness(@value);
+  -ms-filter: brightness(@value);
+  -o-filter: brightness(@value);
+}
+.filterContrast (@value){
+  -webkit-filter: contrast(@value);
+  -moz-filter: contrast(@value);
+  -ms-filter: contrast(@value);
+  -o-filter: contrast(@value);
+}
+.filterBlur (@value){
+  -webkit-filter: blur(@value);
+  -moz-filter: blur(@value);
+  -ms-filter: blur(@value);
+  -o-filter: blur(@value);
 }
 // Gradients
-.gradient-x (@start:#000, @stop:#111) {
+.gradientX (@start:#000, @stop:#111) {
   background-color: @stop;
   background-repeat: repeat-x;
   background-image: -webkit-gradient(linear, left top, right top, from(@start), to(@stop));
