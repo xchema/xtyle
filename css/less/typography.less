@@ -1,11 +1,96 @@
-thin{
-  font-weight: 200;
+a{
+  color: @links; 
+  text-decoration: none;
+  .transition(color, .1s, linear);
+  &:hover{
+    color: lighten(@links, 15%);
+  }
+  &:active{
+    color: saturate(@links, 15%);
+  }
+  &:visited{ /* not implemented */}
 }
-small{
-  font-size: 80%;
+abbr{
+  cursor: help;
+  border-bottom: 1px dotted lighten(@color, 60%); 
+}
+address{ 
+  font-style: normal; 
+}
+address .org{ 
+  font-weight: bold; 
+}
+alert{
+  font-style: normal;
+  background: lighten(@warning, 50%);
+  border: 1px solid lighten(@warning, 38%);
+  color: @warning;
+  display: block;
+  padding: 6px 10px;
+  .borderRadius(3px);
+  a{
+    color: @warning;
+    text-decoration: underline;
+    &:hover{
+      color: darken(@warning, 15%);
+    }
+    &:active{
+      color: @warning;
+    }
+  }
+  &.error{
+    background: lighten(@error, 39%);
+    color: #be5d60;
+    border-color: lighten(@error, 34%);
+    a{
+      color: @error;
+      &:hover{
+        color: darken(@error, 15%);
+      }
+      &:active{
+        color: @error;
+      }
+    }
+  }
+  &.info{
+    background: lighten(@info, 39%);
+    color: @info;
+    border-color: lighten(@info, 34%);
+    a{
+      color: @info;
+      &:hover{
+        color: darken(@info, 15%);
+      }
+      &:active{
+        color: @info;
+      }
+    }
+  }
+  &.success{
+    background: lighten(@success, 45%);
+    color: @success;
+    border-color: lighten(@success, 35%);
+    a{
+      color: @success;
+      &:hover{
+        color: darken(@success, 15%);
+      }
+      &:active{
+        color: @success;
+      }
+    }
+  }
+}
+del { 
+  text-decoration: line-through; 
 }
 caps{
   font-variant: small-caps; 
+}
+mark{ 
+  background: rgba(255, 255, 0, 0.4); 
+  color: @color;
+  padding: 0 .25em;
 }
 p{
   word-wrap:break-word;
@@ -43,3 +128,43 @@ blockquote{
     border-right: 2px solid @blockquote;
   }
 }
+section{
+  border: 1px solid @border;
+  padding: 20px;
+  margin: 20px 0;
+  margin-bottom: @margin;
+  &.column{
+    float:left; .margin(); 
+    .padding(); 
+  }
+}
+small{
+  font-size: 80%;
+}
+sub{ 
+  .verticalAlign(sub); 
+}
+sup{ 
+  .verticalAlign(super); 
+}
+thin{
+  font-weight: 200;
+}
+// lists
+ul,ol{
+  margin-left: @lists;
+  padding: 0;
+}
+dl dl,
+dl dd{
+  margin-left: @lists/2;
+}
+ul.reset ul{ list-style: disc; }
+ul.reset,
+ol.reset{
+  list-style: none;
+  margin-left: 0;
+}
+//definition lists
+dt{ font-weight: bold; }
+dd{ font-weight: normal; }

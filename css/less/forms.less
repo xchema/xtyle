@@ -1,9 +1,6 @@
 input,a.btn,button{
   margin: @margin/2 @margin @margin 0;
 }
-textarea{
-  margin: 0 @margin @margin/1.2 0;
-}
 input[type=text],
 input[type=email],
 input[type=password],
@@ -32,9 +29,9 @@ input[disabled='disabled'], textarea[disabled='disabled']{
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
-:-moz-placeholder{ color: #ccc; text-style: normal; }
-::-webkit-input-placeholder{ color: #ccc; text-style: normal; }
-input:-moz-placeholder { color: #ccc; text-style: normal; }
+:-moz-placeholder{ color: @placeholder; text-style: normal; }
+::-webkit-input-placeholder{ color: @placeholder; text-style: normal; }
+input:-moz-placeholder { color: @placeholder; text-style: normal; }
 textarea{
   &.noresize{
     resize: none;
@@ -156,4 +153,7 @@ button, a.btn{
 }
 label{
   padding-right: @padding/2;
+}
+textarea{
+  margin: 0 @margin @margin/1.2 0;
 }

@@ -16,7 +16,29 @@ form, label, input, select, textarea, button{
   word-wrap: break-word;
 }
 html{
+  -webkit-font-smoothing: antialiased; //smoother fonts
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004); //smoother fonts
   height: 100%;
+}
+body{
+  color: @color;
+  background-color:  white;
+  font:  @fontSize @fontFamily;
+  line-height: 1.5;
+  &.menu{
+    padding-top: @padding*6;
+  }
+}
+a.btn{
+  display: inline-block;
+  vertical-align: middle;
+  color: @color;
+  &:hover{
+    color: @color;
+  }
+  &:active{
+    color: @color;
+  }
 }
 input,textarea,select{
   /*remove shadows on iOS devices*/
@@ -26,6 +48,7 @@ input,textarea,select{
   margin-right: @margin/2;
 }
 input[type=submit]{
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
 }

@@ -1,0 +1,97 @@
+//CLASSES
+.nopadding{
+  padding: 0;
+}
+.nomargin{
+  margin: 0;
+}
+.nomargin-bottom{
+  margin-bottom: 0;
+}
+.fixed{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:   left;
+  width: @mediaDesktop;
+}
+.fluid{
+  width: @mediaFluid;
+  text-align: left;
+}
+.text-shadow{
+  .textShadow();
+}
+
+.rounded{
+  .borderRadius();
+}
+.rounded-top{
+  .borderRadiusTop();
+}
+.rounded-bottom{
+  .borderRadiusBottom();
+}
+
+.background-cover{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &.fixed{
+    background-attachment: fixed;
+  }
+}
+
+.vertical-middle{
+  .verticalAlign();
+}
+.vertical-top{
+  .verticalAlign(top);
+}
+.vertical-bottom{
+  .verticalAlign(bottom);
+}
+
+.transparent{
+  .opacity();
+}
+
+//font weights
+.normal{ 
+  font-weight: normal; 
+}
+.lighter{ 
+  font-weight: lighter; 
+}
+.bold{ 
+  font-weight: bold; 
+}
+.left{
+  text-align: left; 
+}
+.center{
+  text-align: center; 
+}
+.right{
+  text-align: right; 
+}
+
+//floats
+.floatleft{
+  float: left; 
+}
+.floatright{
+  float: right; 
+}
+
+//display
+.block{
+  display: block; 
+}
+
+//wrap for float elements
+.wrap{
+  overflow: auto; 
+  width: 100%;
+}
