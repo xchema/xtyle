@@ -1,7 +1,8 @@
 <!-- FORMS -->
 <h1 id="forms" style="color: #CCC;">Forms</h1>
 
-<!-- FONT -->
+
+<!-- STRUCTURE -->
 <section id="forms_structure" class="rounded">
   <header><h4>Structure</h4></header>
   <p>
@@ -23,7 +24,9 @@
 </pre>
 </section>
 
-<section id="forms_input">
+
+<!-- INPUT FIELDS -->
+<section id="forms_input" class="rounded">
   <header><h4>Input fields</h4></header>
   <h6>Text</h6> 
   <p>
@@ -32,12 +35,10 @@
   <p>
   <input type="text" placeholder="Text input rounded" class="rounded">
   </p>
-  <p>
 <pre class="rounded html">
 <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
 <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input rounded"</code> <code class="attr">class=</code><code class="str">"rounded"</code>&gt;</code>
 </pre>
-  </p>
 
   <h6>Password</h6> 
   <p>
@@ -59,38 +60,62 @@
 </pre>
   </p>
 
-  <form>
-    <p>
-    <label class="vertical-top">Label</label>
-    <textarea placeholder="Textarea content..."></textarea>
-    </p>
-  </form>
-  <form>
-    <p>
-    <label class="vertical-top">Label</label>
-    <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
-    </p>
-  </form>
-  <form>
-    <p>
-    <label class="block">Label block</label>
-    <input type="email" placeholder="E-mail input">
-    </p>
-  </form>
-
+  <h6>Textarea</h6>
   <p>
-  <form>
-    <input id="radio_male" type="radio" name="sex" value="male" checked="checked"><label for="radio_male">Male</label><br>
-    <input id="radio_female" type="radio" name="sex" value="female"><label for="radio_female">Female</label>
-  </form>
+    <textarea placeholder="Textarea content..."></textarea>
+  </p>
+  <p>
+    <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
+  </p>
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
+<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea no resize..."</code> <code class="attr">class=</code><code class="str">"noresize"</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
+</pre>
   </p>
 
+  <h6>Radio buttons</h6>
+  <p>
+  <form>
+    <input id="radio_male" type="radio" name="gender" value="male" checked="checked"><label for="radio_male">Male</label><br>
+    <input id="radio_female" type="radio" name="gender" value="female"><label for="radio_female">Female</label>
+  </form>
+  </p>
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_male"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"male"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_male"</code>&gt;</code>Male<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_female"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"female"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_female"</code>&gt;</code>Female<code class="tag">&lt;/label&gt;</code>
+</pre>
+  </p>
+
+  <h6>Checkbox</h6>
   <p>
   <form>
     <input id="check_apples" type="checkbox" name="grocery" value="apples" checked="checked"><label for="check_apples">Apples</label><br>
     <input id="check_oranges" type="checkbox" name="grocery" value="oranges"><label for="check_oranges">Oranges</label>
   </form>
   </p>
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_apples"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_apples"</code>&gt;</code>Apples<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_oranges"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/label&gt;</code>
+</pre>
+  </p>
+
+  <p>
+    <label class="vertical-top">Label</label>
+    <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
+  </p>
+  <p>
+    <label class="block">Label block</label>
+    <input type="email" placeholder="E-mail input">
+  </p>
+
+
 
   <p>
     <button class="">Button</button>     

@@ -1,0 +1,153 @@
+label{
+  padding-right: @padding/2;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea{
+  border: 1px solid @border;
+  border-top: 2px solid @border;
+  padding: @padding/2 @padding;
+  .transition(border-color, .1s, linear);
+  &:hover{
+    border-color: darken(@border, 8%);
+  }
+  &:focus{
+    border-color: lighten(@links, 15%);
+  }
+  &.search{
+    .borderRadius(20px);
+  }
+}
+input[disabled='disabled'], textarea[disabled='disabled']{
+  opacity: 1; //normalize ios opacity for disabled elements
+  background: lighten(@border, 7%);
+  &:hover{
+    cursor: blocked;
+  }
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+  background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+}
+:-moz-placeholder{ color: #ccc; text-style: normal; }
+::-webkit-input-placeholder{ color: #ccc; text-style: normal; }
+input:-moz-placeholder { color: #ccc; text-style: normal; }
+textarea{
+  &.noresize{
+    resize: none;
+  }
+}
+input[type=radio],
+input[type=checkbox]{
+  margin: @margin/2;
+}
+input[type=submit],
+button, a.btn{
+  font: @fontSize @fontFamily;
+  vertical-align: bottom;
+  margin-right: @margin;
+  background: @background;
+  border: 1px solid @border;
+  border-bottom: 2px solid @border;
+  cursor: pointer;
+  padding: @padding/2 @padding;
+  .transition(border-color, .1s, linear);
+  &:hover{
+    background: darken(@background, 2%);
+  }
+  &:active{
+    border-top: 2px solid @border;
+    border-bottom: 1px solid @border;
+    background: @background;
+  }
+  &:focus{
+    border-color: darken(@border, 10%);
+  }
+
+  &.inverse{
+    color: white;
+    background: @color;
+    border-color: darken(@color, 8%);
+    &:hover{
+      color: white;
+      background: darken(@color, 5%);
+    }
+    &:active{
+      color: white;
+      background: @color;
+    }
+    &:focus{
+      border-color: darken(@border, 100%);
+    }
+  }
+  &.warning{
+    color: white;
+    background: lighten(@warning, 10%);
+    border-color: lighten(@warning, 4%);
+    &:hover{
+      color: white;
+      background: lighten(@warning, 7%);
+    }
+    &:active{
+      color: white;
+      background: lighten(@warning, 10%);
+    }
+    &:focus{
+      border-color: darken(@warning, 8%);
+    }
+  }
+  &.error{
+    color: white;
+    background: @error;
+    border-color: darken(@error, 5%);
+    &:hover{
+      color: white;
+      background: darken(@error, 3%);
+    }
+    &:active{
+      color: white;
+      background: @error;
+    }
+    &:focus{
+      border-color: darken(@error, 20%);
+    }
+  }
+  &.info{
+    color: white;
+    background: @info;
+    border-color: darken(@info, 5%);
+    &:hover{
+      color: white;
+      background: darken(@info, 3%);
+    }
+    &:active{
+      color: white;
+      background: @info;
+    }
+    &:focus{
+      border-color: darken(@info, 20%);
+    }
+  }
+  &.success{
+    color: white;
+    background: @success;
+    border-color: darken(@success, 5%);
+    &:hover{
+      color: white;
+      background: darken(@success, 3%);
+    }
+    &:active{
+      color: white;
+      background: @success;
+    }
+    &:focus{
+      border-color: darken(@success, 15%);
+    }
+  }
+  &.small{
+    font-size: 80%;
+  }
+  &.large{
+    font-size: 150%;
+  }
+}

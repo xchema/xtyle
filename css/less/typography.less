@@ -1,0 +1,45 @@
+thin{
+  font-weight: 200;
+}
+small{
+  font-size: 80%;
+}
+caps{
+  font-variant: small-caps; 
+}
+p{
+  word-wrap:break-word;
+  margin: 0 0 @paragraph;
+  .first-letter{
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 90%;
+    padding: 5px 5px 0 0;
+    float: left;
+    display: block;
+  }
+  &.idented{
+    text-indent: 2em;
+    margin-top: 0;
+  }
+}
+blockquote{
+  font-size: 140%;
+  font-weight: lighter;
+  padding-left: @paragraph;
+  border-left: 2px solid @blockquote;
+  cite{
+    font-size: 70%;
+    font-weight: normal;
+    margin-top: -(3+@paragraph);
+    margin-bottom: @paragraph;
+    padding: 0;
+    display: block;
+  }
+  &.right{
+    padding-left: 0;
+    padding-right: @paragraph;
+    border-left: none;
+    border-right: 2px solid @blockquote;
+  }
+}
