@@ -44,11 +44,19 @@ input,textarea,select{
   /*remove shadows on iOS devices*/
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
-  font-family: inherit;
-  margin-right: @margin/2;
+  font-family: @fontFamily;
 }
-input[type=submit]{
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=button],
+input[type=submit],
+select{
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
+}
+select{
+  cursor: pointer;
 }
