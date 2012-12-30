@@ -27,18 +27,6 @@ textarea{
     .borderRadius(20px);
   }
 }
-input[disabled='disabled'], textarea[disabled='disabled']{
-  opacity: 1; //normalize ios opacity for disabled elements
-  background: lighten(@border, 7%);
-  &:hover{
-    cursor: blocked;
-  }
-  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
-  background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
-}
-:-moz-placeholder{ color: @placeholder; text-style: normal; }
-::-webkit-input-placeholder{ color: @placeholder; text-style: normal; }
-input:-moz-placeholder { color: @placeholder; text-style: normal; }
 textarea{
   &.noresize{
     resize: none;
@@ -157,6 +145,12 @@ button, a.btn, select{
   &.large{
     font-size: 150%;
   }
+}
+input[disabled='disabled'], textarea[disabled='disabled'], select[disabled='disabled']{
+  opacity: 1; //normalize ios opacity for disabled elements
+  background: lighten(@border, 7%);
+  background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+  background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
 select{
   padding-right: 25px;
