@@ -1,15 +1,14 @@
++ verify mechanism - if support html5 use it, it not, use javascript
 + JavaScript for form elements
 + Modernizr - http://modernizr.com/
 + style for radio/checkbox
 + other input types - reset, number, etc
-+ fieldset, legend tags
 + hcard - http://microformats.org/wiki/hcard
 + PAGES - make the minibrowser a slideshow
 + tables
 + print css style
 + npm module for nodejs
 + define themes
-+ grid system
 + SITE - code and preview together
 + ios icons
 + bin/ create compressor/minifier
@@ -34,3 +33,5 @@
 - lists
 - button inverse (black)
 - demos
+- fieldset, legend tags
+- grid system

@@ -1,6 +1,3 @@
-//grid
-@unit: 40px;
-
 .unit(@unit){
   margin: @margin;
   padding: @padding;
@@ -9,7 +6,7 @@
   float: left;
 }
 div{
-  &.unit{
+  &.unit1{
     .unit(@unit);
   }
   &.unit2{
@@ -44,29 +41,5 @@ div{
   }
   &.unit12{
     .unit(44*@margin+12*@unit);
-  }
-  &.unit13{
-    .unit(48*@margin+13*@unit);
-  }
-  &.unit14{
-    .unit(52*@margin+14*@unit);
-  }
-  &.unit15{
-    .unit(56*@margin+15*@unit);
-  }
-  &.unit16{
-    .unit(60*@margin+16*@unit);
-  }
-  &.unit17{
-    .unit(64*@margin+17*@unit);
-  }
-  &.unit18{
-    .unit(68*@margin+18*@unit);
-  }
-  &.unit19{
-    .unit(72*@margin+19*@unit);
-  }
-  &.unit20{
-    .unit(76*@margin+20*@unit);
   }
 }
