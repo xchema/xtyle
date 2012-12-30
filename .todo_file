@@ -1,21 +1,12 @@
 + hcard - http://microformats.org/wiki/hcard
-+ forms - select boxes
 + PAGES - make the minibrowser a slideshow
 + tables
 + print css style
 + npm module for nodejs
 + define themes
-+ use Color functions LESS
 + grid system
-+ http://designshack.net/articles/css/focal-point-intelligent-cropping-of-responsive-images/
-+ xtyle.less will contain only mixins, theme.less will contain presentation that calls mixins
 + SITE - code and preview together
-+ demos
 + ios icons
-+ lists
-+ background to base64 img
-+ button inverse (black)
-+ button style
 + bin/ create compressor/minifier
 - fontello
 - create pages branch
@@ -32,3 +23,9 @@
 - alerts inside links
 - alerts close links for other alerts
 - forms
+- forms - select boxes
+- use Color functions LESS
+- button style
+- lists
+- button inverse (black)
+- demos

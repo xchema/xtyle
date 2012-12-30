@@ -10,16 +10,6 @@ a{
   }
   &:visited{ /* not implemented */}
 }
-abbr{
-  cursor: help;
-  border-bottom: 1px dotted lighten(@color, 60%); 
-}
-address{ 
-  font-style: normal; 
-}
-address .org{ 
-  font-weight: bold; 
-}
 del { 
   text-decoration: line-through; 
 }
@@ -89,21 +79,3 @@ sup{
 thin{
   font-weight: 200;
 }
-// lists
-ul,ol{
-  margin-left: @lists;
-  padding: 0;
-}
-dl dl,
-dl dd{
-  margin-left: @lists/2;
-}
-ul.reset ul{ list-style: disc; }
-ul.reset,
-ol.reset{
-  list-style: none;
-  margin-left: 0;
-}
-//definition lists
-dt{ font-weight: bold; }
-dd{ font-weight: normal; }
