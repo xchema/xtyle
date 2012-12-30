@@ -165,3 +165,12 @@ textarea{
   pointer-events: none;
   position: absolute; margin: 6px 0 0 -30px; .opacity();
 }
+fieldset{
+  border: 1px solid @border;
+  .padding();
+  legend{
+    font-size: 120%;
+    font-weight: bold;
+    .padding(0,@padding/3,0,@padding/3);
+  }
+}

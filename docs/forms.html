@@ -9,15 +9,15 @@
     All form elements should be used within a <code>&lt;form&gt;</code> tag.
   </p>
 
-    <form>
-      <p>
-        <label>Label</label>
-        <input type="text" placeholder="Text input">
-        <input type="submit" class="rounded">
-      </p>
-    </form>
+  <form>
+    <p>
+      <label>Label</label>
+      <input type="text" placeholder="Text input">
+      <input type="submit" class="rounded">
+    </p>
+  </form>
 
-<pre class="rounded html nomargin-bottom">
+<pre class="rounded html nomargin">
 <code class="tag">&lt;form&gt;</code>
   <code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
   <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
@@ -124,7 +124,35 @@
 <code class="tag">&lt;/select&gt;</code>
 <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-down-dir select"</code>&gt;</code><code class="tag">&lt;/i&gt;</code>
 </pre>
-<p class="nomargin-bottom">*Include <code>&lt;i&gt;</code> after the <code>&lt;select&gt;</code> tag. That is how you differentiate a select box from other buttons.</p>
+<p class="nomargin">*Include <code>&lt;i&gt;</code> after the <code>&lt;select&gt;</code> tag. That is how you differentiate a select box from other buttons.</p>
+</section>
+
+
+<!-- FIELDSET -->
+<section id="forms_fieldset" class="rounded">
+  <header><h4>Fieldset</h4></header>
+  <p>You can group form elments using the <code>&lt;fieldset&gt;</code> tag element.</p>
+  <p>
+    <form>
+      <fieldset>
+        <legend>Group</legend>
+        <input type="text" placeholder="First name"><input type="text" placeholder="Last name">
+        <br>
+        <input type="submit">
+      </fieldset>
+    </form>
+  </p>
+
+<pre class="html rounded nomargin">
+<code class="tag">&lt;form&gt;</code>
+  <code class="tag">&lt;fieldset&gt;</code>
+    <code class="tag">&lt;legend&gt;</code>Group<code class="tag">&lt;/legend&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"First name"</code>&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"Last name"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
+  <code class="tag">&lt;/fieldset&gt;</code>
+<code class="tag">&lt;/form&gt;</code> 
+</pre>
 </section>
 
 
@@ -160,7 +188,7 @@
     <textarea placeholder="Textarea content..."></textarea>
   </p>
 
-<pre class="html rounded nomargin-bottom">
+<pre class="html rounded nomargin">
 <code class="tag">&lt;label <code class="attr">class=</code><code class="str">"vertical-top"</code>&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
 <code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code> 
 </pre>
@@ -190,7 +218,7 @@
   <button class="info rounded">Info</button>
   <button class="success rounded">Success</button>
 
-<pre class="html rounded nomargin-bottom">
+<pre class="html rounded nomargin">
 <code class="tag">&lt;button <code class="attr">class=</code><code class="str">"inverse rounded"</code>&gt;</code>Inverse<code class="tag">&lt;/button&gt;</code> 
 <code class="tag">&lt;button <code class="attr">class=</code><code class="str">"warning rounded"</code>&gt;</code>Warning<code class="tag">&lt;/button&gt;</code> 
 <code class="tag">&lt;button <code class="attr">class=</code><code class="str">"error rounded"</code>&gt;</code>Error<code class="tag">&lt;/button&gt;</code>
