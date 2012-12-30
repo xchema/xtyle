@@ -109,20 +109,22 @@
 </pre>
   </p>
 
-  <h6>Select</h6>
+  <h6>Select*</h6>
   <p>
     <select>
       <option value="apples" selected>Apples</option>
-      <option>Oranges</option>
+      <option value="oranges">Oranges</option>
     </select>
     <i class="icon-down-dir select"></i>
   </p>
-<pre class="rounded html nomargin-bottom">
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_apples"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_apples"</code>&gt;</code>Apples<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_oranges"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/label&gt;</code>
+<pre class="rounded html">
+<code class="tag">&lt;select&gt;</code>
+<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">selected</code>&gt;</code>Apples<code class="tag">&lt;/option&gt;</code>
+<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/option&gt;</code>
+<code class="tag">&lt;/select&gt;</code>
+<code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-down-dir select"</code>&gt;</code><code class="tag">&lt;/i&gt;</code>
 </pre>
+<p class="nomargin-bottom">*Include <code>&lt;i&gt;</code> after the <code>&lt;select&gt;</code> tag. That is how you differentiate a select box from other buttons.</p>
 </section>
 
 
