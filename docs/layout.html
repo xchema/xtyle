@@ -1,0 +1,228 @@
+<!-- LAYOUT -->
+<h1 id="layout" style="color: #CCC;">Layout</h1>
+
+
+<!-- STRUCTURE -->
+<section id="forms_structure" class="rounded">
+  <header><h4>Structure</h4></header>
+  <p>
+    All form elements should be used within a <code>&lt;form&gt;</code> tag.
+  </p>
+
+  <form>
+    <p>
+      <label>Label</label>
+      <input type="text" placeholder="Text input">
+      <input type="submit" class="rounded">
+    </p>
+  </form>
+
+<pre class="rounded html nomargin">
+<code class="tag">&lt;form&gt;</code>
+  <code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
+  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
+  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
+<code class="tag">&lt;/form&gt;</code>
+</pre>
+</section>
+
+
+<!-- INPUT FIELDS -->
+<section id="forms_input" class="rounded">
+  <header><h4>Input fields</h4></header>
+  <h6>Text</h6> 
+  <p>
+    <input type="text" placeholder="Text input">
+    <br>
+    <input type="text" placeholder="Text input rounded" class="rounded">
+  </p>
+
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input rounded"</code> <code class="attr">class=</code><code class="str">"rounded"</code>&gt;</code>
+</pre>
+
+  <h6>Password</h6> 
+  <p>
+  <input type="password" placeholder="Password">
+  </p>
+
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"password"</code> <code class="attr">placecholder=</code><code class="str">"Password"</code>&gt;</code>
+</pre>
+  </p>
+
+  <h6>Disabled</h6>
+  <p>
+  <input type="text" placeholder="Disabled input" disabled="disabled">
+  </p>
+
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Disabled input"</code> <code class="attr">disabled=</code><code class="str">"disabled"</code>&gt;</code>
+</pre>
+  </p>
+
+  <h6>Textarea</h6>
+  <p>
+    <textarea placeholder="Textarea content..."></textarea>
+    <br>
+    <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
+  </p>
+
+<pre class="rounded html">
+<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
+<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea no resize..."</code> <code class="attr">class=</code><code class="str">"noresize"</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
+</pre>
+
+  <h6>Radio buttons</h6>
+  <p>
+  <form>
+    <input id="radio_male" type="radio" name="gender" value="male" checked="checked"><label for="radio_male">Male</label><br>
+    <input id="radio_female" type="radio" name="gender" value="female"><label for="radio_female">Female</label>
+  </form>
+  </p>
+
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_male"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"male"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_male"</code>&gt;</code>Male<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_female"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"female"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_female"</code>&gt;</code>Female<code class="tag">&lt;/label&gt;</code>
+</pre>
+  </p>
+
+  <h6>Checkbox</h6>
+  <p>
+  <form>
+    <input id="check_apples" type="checkbox" name="grocery" value="apples" checked="checked"><label for="check_apples">Apples</label><br>
+    <input id="check_oranges" type="checkbox" name="grocery" value="oranges"><label for="check_oranges">Oranges</label>
+  </form>
+  </p>
+  <p>
+<pre class="rounded html">
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_apples"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_apples"</code>&gt;</code>Apples<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_oranges"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>
+<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/label&gt;</code>
+</pre>
+  </p>
+
+  <h6>Select*</h6>
+  <p>
+    <select>
+      <option value="apples" selected="selected">Apples</option>
+      <option value="oranges">Oranges</option>
+    </select>
+    <i class="icon-down-dir select"></i>
+  </p>
+<pre class="rounded html">
+<code class="tag">&lt;select&gt;</code>
+<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">selected=</code><code class="str">"selected"</code>&gt;</code>Apples<code class="tag">&lt;/option&gt;</code>
+<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/option&gt;</code>
+<code class="tag">&lt;/select&gt;</code>
+<code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-down-dir select"</code>&gt;</code><code class="tag">&lt;/i&gt;</code>
+</pre>
+<p class="nomargin">*Include <code>&lt;i&gt;</code> after the <code>&lt;select&gt;</code> tag. That is how you differentiate a select box from other buttons.</p>
+</section>
+
+
+<!-- FIELDSET -->
+<section id="forms_fieldset" class="rounded">
+  <header><h4>Fieldset</h4></header>
+  <p>You can group form elments using the <code>&lt;fieldset&gt;</code> tag element.</p>
+  <p>
+    <form>
+      <fieldset>
+        <legend>Group</legend>
+        <input type="text" placeholder="First name"><input type="text" placeholder="Last name">
+        <br>
+        <input type="submit">
+      </fieldset>
+    </form>
+  </p>
+
+<pre class="html rounded nomargin">
+<code class="tag">&lt;form&gt;</code>
+  <code class="tag">&lt;fieldset&gt;</code>
+    <code class="tag">&lt;legend&gt;</code>Group<code class="tag">&lt;/legend&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"First name"</code>&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"Last name"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
+    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
+  <code class="tag">&lt;/fieldset&gt;</code>
+<code class="tag">&lt;/form&gt;</code> 
+</pre>
+</section>
+
+
+<!-- LABELS -->
+<section id="forms_lables" class="rounded">
+  <header><h4>Labels</h4></header>
+  <p>Labels are the perfect way to give an idea for your users how to fill the input fields.</p>
+  <p>
+    <label>Label</label>
+    <input type="text" placeholder="Text input">
+  </p>
+
+<pre class="html rounded">
+<code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>  
+</pre>
+
+  <p>
+    <label class="block">Label</label>
+    <input type="text" placeholder="Text input">
+    <br>
+    <label class="block">Label</label>
+    <textarea placeholder="Textarea content..."></textarea>
+  </p>
+
+<pre class="html rounded">
+<code class="tag">&lt;label <code class="attr">class=</code><code class="str">"block"</code>&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>  
+</pre>
+
+  <p>
+    <label class="vertical-top">Label</label>
+    <textarea placeholder="Textarea content..."></textarea>
+  </p>
+
+<pre class="html rounded nomargin">
+<code class="tag">&lt;label <code class="attr">class=</code><code class="str">"vertical-top"</code>&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
+<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code> 
+</pre>
+</section>
+
+
+<!-- BUTTONS -->
+<section id="forms_buttons" class="rounded">
+  <header><h4>Buttons</h4></header>
+  <p>You can create buttons using the <code>&lt;button&gt;</code> tag, using an input <code>type="submit"</code>, or creating a link with class <code>.btn</code>.</p>
+  <button>Button</button>     
+  <input type="submit">
+  <button class="rounded">Rounded</button>
+  <a href="#" class="btn">Link</a>
+
+<pre class="html rounded">
+<code class="tag">&lt;button&gt;</code>button<code class="tag">&lt;/button&gt;</code>
+<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
+<code class="tag">&lt;button <code class="attr">class=</code><code clas="str">"rounded"</code>&gt;</code>Rounded<code class="tag">&lt;/button&gt;</code>
+<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code> <code class="attr">class=</code><code class="str">"btn"</code>&gt;</code>Link<code class="tag">&lt;/a&gt;</code>
+</pre>
+
+  <h6>Colors</h6>
+  <button class="inverse rounded">Inverse</button>
+  <button class="warning rounded">Warning</button>
+  <button class="error rounded">Error</button>
+  <button class="info rounded">Info</button>
+  <button class="success rounded">Success</button>
+
+<pre class="html rounded nomargin">
+<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"inverse rounded"</code>&gt;</code>Inverse<code class="tag">&lt;/button&gt;</code> 
+<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"warning rounded"</code>&gt;</code>Warning<code class="tag">&lt;/button&gt;</code> 
+<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"error rounded"</code>&gt;</code>Error<code class="tag">&lt;/button&gt;</code>
+<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"info rounded"</code>&gt;</code>Info<code class="tag">&lt;/button&gt;</code>
+<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"success rounded"</code>&gt;</code>Success<code class="tag">&lt;/button&gt;</code> 
+</pre>
+</section>
