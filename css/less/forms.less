@@ -41,14 +41,15 @@ button, a.btn, select{
   font: @fontSize @fontFamily;
   vertical-align: bottom;
   margin-right: @margin;
-  background: @background;
+  background: darken(@background, 2%);
   border: 1px solid @border;
   border-bottom: 2px solid @border;
   cursor: pointer;
   padding: @padding/2 @padding;
   .transition(border-color, .1s, linear);
+  .transition(background, .1s, linear);
   &:hover{
-    background: darken(@background, 2%);
+    background: @background;
   }
   &:active{
     border-top: 2px solid @border;
@@ -61,11 +62,11 @@ button, a.btn, select{
 
   &.inverse{
     color: white;
-    background: @color;
-    border-color: darken(@color, 8%);
+    background: darken(@color, 6%);
+    border-color: darken(@color, 10%);
     &:hover{
       color: white;
-      background: darken(@color, 5%);
+      background: @color;
     }
     &:active{
       color: white;
@@ -77,11 +78,11 @@ button, a.btn, select{
   }
   &.warning{
     color: white;
-    background: lighten(@warning, 10%);
-    border-color: lighten(@warning, 4%);
+    background: lighten(@warning, 5%);
+    border-color: lighten(@warning, 2%);
     &:hover{
       color: white;
-      background: lighten(@warning, 7%);
+      background: lighten(@warning, 10%);
     }
     &:active{
       color: white;
@@ -93,11 +94,11 @@ button, a.btn, select{
   }
   &.error{
     color: white;
-    background: @error;
-    border-color: darken(@error, 5%);
+    background: darken(@error, 5%);
+    border-color: darken(@error, 10%);
     &:hover{
       color: white;
-      background: darken(@error, 3%);
+      background: @error;
     }
     &:active{
       color: white;
@@ -109,11 +110,11 @@ button, a.btn, select{
   }
   &.info{
     color: white;
-    background: @info;
-    border-color: darken(@info, 5%);
+    background: darken(@info, 5%);
+    border-color: darken(@info, 10%);
     &:hover{
       color: white;
-      background: darken(@info, 3%);
+      background: @info;
     }
     &:active{
       color: white;
@@ -125,11 +126,11 @@ button, a.btn, select{
   }
   &.success{
     color: white;
-    background: @success;
-    border-color: darken(@success, 5%);
+    background: darken(@success, 5%);
+    border-color: darken(@success, 8%);
     &:hover{
       color: white;
-      background: darken(@success, 3%);
+      background: @success;
     }
     &:active{
       color: white;
