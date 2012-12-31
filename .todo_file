@@ -1,3 +1,14 @@
++ make compatible with xmaker
++ JS - photo/video gallery
++ JS - form validation
++ JS - number input
++ JS - selectbox
++ JS - checkbox
++ JS - slideshow
++ JS - tabs
++ JS - accordion
++ JS - dropdown
++ layouts - aside element for side menus
 + verify mechanism - if support html5 use it, it not, use javascript
 + JavaScript for form elements
 + Modernizr - http://modernizr.com/
