@@ -8,6 +8,7 @@
 .nomargin-bottom{
   margin-bottom: 0;
 }
+
 .fixed{
   position: relative;
   margin-left: auto;
@@ -68,7 +69,7 @@
   font-weight: bold; 
 }
 .left{
-  text-align: left; 
+  text-align: left;
 }
 .center{
   text-align: center; 
@@ -82,7 +83,7 @@
   float: left; 
 }
 .floatright{
-  float: right; 
+  float: right;
 }
 
 //display
@@ -94,4 +95,8 @@
 .wrap{
   overflow: auto; 
   width: 100%;
+  &.fixed{
+    width: @mediaDesktop;
+    margin: 0;
+  }
 }
