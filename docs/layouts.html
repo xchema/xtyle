@@ -2,13 +2,12 @@
 <h1 id="layouts" style="color: #CCC;">Layouts</h1>
 
 
-<!-- STRUCTURE -->
+<!-- GRID SYSTEM -->
 <section id="layout_grid" class="rounded">
   <header><h4>Grid system</h4></header>
   <p>
     Xtyle uses a grid system to organize content on the page. This system is separate in <strong>unit</strong> classes starting from <code>.unit1</code> until <code>.unit12</code>. This classes are <strong>responsive</strong>, they will change depending on your screen resolution or device (try resize your browser window). Always use this elements within the <code>.wrap</code> class.
   </p>
-
   <div class="wrap fixed">
     <div class="unit12 center">12</div>
     
@@ -36,10 +35,48 @@
   </div>
   <br>
 <pre class="rounded html nomargin">
-<code class="tag">&lt;form&gt;</code>
-  <code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
-  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
-  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
-<code class="tag">&lt;/form&gt;</code>
+<code class="tag">&lt;div <code class="attr">class=</code><code class="str">"wrap"</code>&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit12 center"</code>&gt;</code>12<code class="tag">&lt;/div&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit11 center"</code>&gt;</code>12<code class="tag">&lt;/div&gt;</code>
+  ...
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit1 center"</code>&gt;</code>1<code class="tag">&lt;/div&gt;</code>
+<code class="tag">&lt;/div&gt;</code>
+</pre>
+</section>
+
+
+
+<!-- EXAMPLES -->
+<section id="layout_examples" class="rounded">
+  <header><h4>Examples</h4></header>
+  <p>
+    Divide 12 by the <strong>number of columns</strong> you want to obtain the correct <strong>unit class</strong> to use.</p>
+  </p>
+
+  <h6>2 columns layout</h6>
+  <p>Use <code>.unit6</code> on each column.</p>
+  <div class="wrap fixed">
+    <div class="unit6 center">6</div><div class="unit6 center">6</div>
+  </div>
+  <br>
+<pre class="rounded html">
+<code class="tag">&lt;div <code class="attr">class=</code><code class="str">"wrap"</code>&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit6 center"</code>&gt;</code>6<code class="tag">&lt;/div&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit6 center"</code>&gt;</code>6<code class="tag">&lt;/div&gt;</code>
+<code class="tag">&lt;/div&gt;</code>
+</pre>
+
+  <h6>3 columns layout</h6>
+  <p>Use <code>.unit4</code> on each column.</p>
+  <div class="wrap fixed">
+    <div class="unit4 center">4</div><div class="unit4 center">4</div><div class="unit4 center">4</div>
+  </div>
+  <br>
+<pre class="rounded html nomargin">
+<code class="tag">&lt;div <code class="attr">class=</code><code class="str">"wrap"</code>&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit4 center"</code>&gt;</code>4<code class="tag">&lt;/div&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit4 center"</code>&gt;</code>4<code class="tag">&lt;/div&gt;</code>
+  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit4 center"</code>&gt;</code>4<code class="tag">&lt;/div&gt;</code>
+<code class="tag">&lt;/div&gt;</code>
 </pre>
 </section>
