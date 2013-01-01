@@ -12,7 +12,15 @@ function fileExists[] {
 
 # GENERATE CSS SINGLE FILE
 function less[] {
-  /usr/bin/less $1
+  # /usr/bin/less $1
+  # call less.awk to create file
+  echo "less called for file \"$1\""
+}
+
+# PROGRAM HELP
+function help[] {
+  # how to use the program
+  echo "help called"
 }
 
 # MAIN FUNCTION
@@ -22,6 +30,9 @@ function main[] {
       if [ $2 ]; then
         less[] "$2"
       fi
+    fi
+    if [ $1 == "help" ]; then
+      help[]
     fi
   fi
 }
