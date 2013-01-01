@@ -27,5 +27,34 @@
 @import "less/navigation";
 @import "less/classes";
 
-/* MOBILE STYLESHEET */
-@import "xtyle-mobile";
+/* RESPONSIVE STYLESHEET */
+.mobile{
+  display: none;
+}
+@media screen and (max-width: @mediaMobile){
+  nav a{
+    display: none;
+  }
+  .mobile{
+    display: inline;
+  }
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: @mediaDesktop){
+  div{
+    &.fixed{
+      width: 100%;
+    }
+    &.unit1,&.unit2,&.unit3,&.unit4,&.unit5,&.unit6,&.unit7,&.unit8,&.unit9,&.unit10,&.unit11,&.unit12{
+      width: auto;
+      float: none;
+      margin: @margin 0;
+    }
+  }
+  .wrap.fixed{
+    width: 100%;
+  }
+}
