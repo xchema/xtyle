@@ -9,7 +9,7 @@ pre{
   background: @background;
   border: 1px solid @border;
   color: #3F639E;
-  font-family: "Courier New", Courier, monospace @fontFamily;
+  font-family: "Courier New", Courier, monospace, @fontFamily;
   font-size: 90%;
   padding: @margin;
   margin-bottom: @margin*2;
@@ -17,6 +17,7 @@ pre{
     background: none;
     border: 0;
     color: inherit;
+    font-size: inherit;
     padding: 0;
   }
   &.rounded{
