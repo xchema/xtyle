@@ -27,3 +27,8 @@ function main[] {
 }
 
 main[] "$1" "$2" #passing file name to program
+
+
+# ^[\s]*@import.*.less";$
+# sed -n "/\(@import\).*\(.less\)/p" xtyle.less 
+# sed -n "/\(@import \"\).*\(.less\)/p" xtyle.less | sed -e "s/@import \"//g" -e "s/.less\";/.less/g" -e "s/^[ \t]*//g"
