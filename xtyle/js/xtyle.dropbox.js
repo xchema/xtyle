@@ -7,9 +7,8 @@
  */
 (function($){
   $.fn.dropbox = function(){ 
-    var $element = "#"+$(this).attr("id"); 
     var $config = {
-      
+
     }
   }//fn.dropbox
   

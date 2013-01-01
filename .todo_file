@@ -1,3 +1,5 @@
++ bash - minify scripts/css
++ bash - compile less files (with @import)
 + make compatible with xmaker
 + JS - photo/video gallery
 + JS - form validation
