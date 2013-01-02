@@ -1,3 +1,6 @@
++ HTML - jade
++ JS - coffescript
++ remove recess, replace by xchema version
 + bash - minify scripts/css
 + bash - compile less files (with @import)
 + make compatible with xmaker
@@ -48,3 +51,4 @@
 - demos
 - fieldset, legend tags
 - grid system
+- recess - temporary script
