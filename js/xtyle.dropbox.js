@@ -8,7 +8,7 @@
 (function($){
   $.fn.dropbox = function(){ 
     var $config = {
-
+      
     }
   }//fn.dropbox
   
