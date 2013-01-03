@@ -10,7 +10,13 @@
 (function($){
   $.fn.widget-menus-dropdown = function(){ 
     var $config = {
-      
+      selectors : {
+        "width",
+        "height",
+        "background" : {
+          ""
+        }
+      }
     }
   }//fn.dropbox
   
