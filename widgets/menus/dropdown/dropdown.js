@@ -1,7 +1,7 @@
 /*! xchema | xtyle
  *  created: Jan 2, 2013
  *  by: Mariz Melo
- *  desc: Dropbox widget JavaScript file
+ *  desc: Dropdown widget JavaScript file
  */
 
 // dropdown horizontal
