@@ -1,6 +1,7 @@
++ tdd with travis
++ create npm module
 + add sufix --docs to remove documentation when downloading
 + http://progrium.com/localtunnel/
-+ HTML - jade
 + JS - coffescript
 + remove recess, replace by xchema version
 + bash - minify scripts/css
@@ -54,3 +55,4 @@
 - fieldset, legend tags
 - grid system
 - recess - temporary script
+- HTML - jade

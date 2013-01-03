@@ -1,7 +1,7 @@
 {
     "name": "xtyle"
   , "description": "Simple HTML, CSS, and JavaScript framework for creating amazing web applications."
-  , "version": "0.1b"
+  , "version": "0.1"
   , "keywords": ["xtyle", "design", "css"]
   , "homepage": "http://xtyle.xchema.com"
   , "author": "xchema"
@@ -16,6 +16,6 @@
     }
   ]
   , "devDependencies": {
-    "recess": "1.0.3"
+    "recess": ">=1.0.3"
   }
 }
