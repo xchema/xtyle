@@ -44,7 +44,8 @@
 $(function () {
     $("#loadcontent").load("docs/home.html"); //load homepage
     $(".menu a").on("click", function(event){
-        $(".menu a").removeClass("active");
+        $(".menu a").removeClass("active"); //add highlight to link
+        //different behavior for links
         if( !$(this).attr('rel')){
             event.preventDefault();
             console.log($(this).attr("href"));
