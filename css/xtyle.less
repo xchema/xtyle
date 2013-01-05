@@ -13,7 +13,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,light,thin,italic,bold);
 //@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
-
 // FONTELLO
 @import "css/fontello.css";
 
@@ -32,19 +31,18 @@
 @import "less/navigation.less";
 @import "less/classes.less";
 
-// RESPONSIVE STYLESHEET
-.mobile{
-  display: none;
+// DESKTOP
+@media screen and (max-width: @mediaDesktop){
+  @import "less/desktop.less";
 }
+// TABLETS
+@media screen and (max-width: @mediaTablet){
+}
+// MOBILE PHONES
 @media screen and (max-width: @mediaMobile){
   @import "less/mobile.less";
 }
 
-@media screen and (max-width: @mediaTablet){
-}
 
-@media screen and (max-width: @mediaDesktop){
-  @import "less/desktop.less";
-}
 
 // WIDGETS 

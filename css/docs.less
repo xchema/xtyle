@@ -6,6 +6,7 @@ body{
 }
 
 .browser{
+    margin: 20px 80px;
     i{
 		font-size: 130%;
         .textShadow(0px 1px 0px #fff);
@@ -49,7 +50,8 @@ body{
     i{
         font-size: 480%;
     }
-    padding: 20px;
+    padding: 50px;
+    padding-top: 20px;
     background: white;
 }
 
@@ -65,3 +67,25 @@ body{
 .preview{
     padding: 0 20px;
 }
+
+
+@media screen and (max-width: 640px){
+    .browser{
+        margin: 20px 40px;   
+    }
+}
+
+@media screen and (max-width: 480px){
+    .browser{
+        margin: 0;
+    }
+    .browser-content{
+        i{
+            font-size: 300%;
+        }
+        h2{
+            font-size: 180%;
+        }
+    }
+}
+
