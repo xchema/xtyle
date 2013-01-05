@@ -1,83 +1,84 @@
 a{
-  color: @links; 
-  text-decoration: none;
-  .transition(color, .1s, linear);
-  &:hover{
-    color: lighten(@links, 15%);
-  }
-  &:active{
-    color: saturate(@links, 15%);
-  }
-  &:visited{ /* not implemented */}
+    color: @links; 
+    text-decoration: none;
+    .transition(color, .1s, linear);
+    &:hover{
+        color: lighten(@links, 15%);
+    }
+    &:active{
+        color: saturate(@links, 15%);
+    }
+    &:visited{ /* not implemented */}
 }
 del { 
-  text-decoration: line-through; 
+    text-decoration: line-through; 
 }
 caps{
-  font-variant: small-caps; 
+    font-variant: small-caps; 
 }
 mark{ 
-  background: rgba(255, 255, 0, 0.4); 
-  color: @color;
-  padding: 0 .25em;
+    background: rgba(255, 255, 0, 0.4); 
+    color: @color;
+    padding: 0 .25em;
 }
 p{
-  word-wrap:break-word;
-  margin: 0 0 @paragraph;
-  .first-letter{
-    font-size: 300%;
-    font-weight: bold;
-    line-height: 90%;
-    padding: 5px 5px 0 0;
-    float: left;
-    display: block;
-  }
-  &.idented{
-    text-indent: 2em;
-    margin-top: 0;
-  }
+    word-wrap:break-word;
+    margin: 0 0 @paragraph;
+    .first-letter{
+        font-size: 300%;
+        font-weight: bold;
+        line-height: 90%;
+        padding: 5px 5px 0 0;
+        float: left;
+        display: block;
+    }
+    &.idented{
+        text-indent: 2em;
+        margin-top: 0;
+    }
 }
 blockquote{
-  p{
-    font-size: 120%;
-  }
-  font-weight: lighter;
-  padding-left: @paragraph;
-  border-left: 2px solid @blockquote;
-  cite{
-    font-weight: normal;
-    margin-top: -(3+@paragraph);
-    margin-bottom: @paragraph;
-    padding: 0;
-    display: block;
-  }
-  &.right{
-    padding-left: 0;
-    padding-right: @paragraph;
-    border-left: none;
-    border-right: 2px solid @blockquote;
-  }
+    font-weight: lighter;
+    padding-left: @paragraph;
+    border-left: 2px solid @blockquote;
+    p{
+        font-size: 120%;
+    }
+    cite{
+        font-weight: normal;
+        margin-top: -(3+@paragraph);
+        margin-bottom: @paragraph;
+        padding: 0;
+        display: block;
+    }
+    &.right{
+        padding-left: 0;
+        padding-right: @paragraph;
+        border-left: none;
+        border-right: 2px solid @blockquote;
+    }
 }
 section{
-  overflow: hidden;
-  border: 1px solid @border;
-  padding: 20px;
-  margin: 20px 0;
-  margin-bottom: @margin;
-  &.column{
-    float:left; .margin(); 
-    .padding(); 
-  }
+    background: white;
+    overflow: hidden;
+    border: 1px solid @border;
+    padding: 20px;
+    margin: 20px 0;
+    margin-bottom: @margin;
+    &.column{
+        float:left; .margin(); 
+        .padding(); 
+    }
 }
 small{
-  font-size: 80%;
+    font-size: 80%;
 }
 sub{ 
-  .verticalAlign(sub); 
+    .verticalAlign(sub); 
 }
 sup{ 
-  .verticalAlign(super); 
+    .verticalAlign(super); 
 }
 thin{
-  font-weight: 200;
+    font-weight: 200;
 }
