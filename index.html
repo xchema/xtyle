@@ -25,18 +25,18 @@
 
 <nav class="menu top inverse dropbox">
     <span class="logo">xtyle</span>
-    <a href="/docs/home">Home</a>
+    <a href="docs/home">Home</a>
     <ul>
         <li>
-            <a href="/docs/typography">Typography</a>
+            <a href="docs/typography">Typography</a>
             <ul class="hide">
                 <li>option 1</li>
                 <li>option 2 </li>
             </ul>
         </li>
     </ul>
-    <a href="/docs/layouts">Layouts</a>
-    <a href="/docs/forms">Forms</a>
+    <a href="docs/layouts">Layouts</a>
+    <a href="docs/forms">Forms</a>
     <a href="https://github.com/xchema/xtyle/archive/master.zip" rel="download">Download</a>
 </nav>
 
@@ -44,37 +44,14 @@
     
 <!-- SCRIPTS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/history.js"></script>
 <script>
 $(function () {
-    var History = window.History;
-    
-    // Content update and back/forward button handler
-    History.Adapter.bind(window, 'statechange', function() {
-        updateContent(History.getState());
-    });
-    
-    if (History.enabled) {
-        State = History.getState();
-        History.pushState({urlPath: "/"}, $("title").text(), State.urlPath);
-        $("#loadcontent").load("docs/home.html");
-    } else {
-        return false;
-    }
-    
-    var updateContent = function(State) {
-        if(State.data.urlPath !== "/")
-            $("#loadcontent").load(State.url+".html");
-        else
-            $("#loadcontent").load("docs/home.html");
-    };
+    $("#loadcontent").load("docs/home.html");
     
     // navigation link handler
     $('body').on('click', 'a', function(e) {
-        var urlPath = $(this).attr('href');
-        var title = $(this).text();
-        History.pushState({urlPath: urlPath}, title, urlPath);
-        return false; // prevents default click action of <a ...>
+        e.preventDefault();
+        $("#loadcontent").load($(this).attr('href')+".html");
     });
 });
 </script>
