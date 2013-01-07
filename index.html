@@ -40,26 +40,7 @@
     <a href="https://github.com/xchema/xtyle/archive/master.zip" rel="download">Download</a>
 </nav>
 
-<div id="loadcontent">
-
-<div class="browser rounded">
-    <div class="browser-nav-bar rounded-top">
-        <i class="icon-left-dir"></i><i class="icon-right-dir"></i><i class="icon-retweet"></i>
-    </div>
-    <div class="browser-content center slideshow rounded-bottom">
-        <nav class="browser-logos">
-            <i class="browser-icon-chrome"></i>
-            <i class="browser-icon-android"></i>
-            <i class="browser-icon-firefox"></i>
-            <i class="browser-icon-safari"></i>
-            <i class="browser-icon-opera"></i>
-            <i class="browser-icon-ie"></i>
-        </nav>
-        <h2 class="lighter">Simple HTML, CSS, and JavaScript framework for creating amazing web applications.<br/><span style="font-size: 60%">Anywhere!</span> </h2>
-    </div>
-</div>    
-    
-</div>
+<div id="loadcontent"></div>
     
 <!-- SCRIPTS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -67,25 +48,30 @@
 <script>
 $(function () {
     var History = window.History;
-    if (History.enabled) {
-        State = History.getState();
-        History.pushState({urlPath: window.location.pathname}, $("title").text(), State.urlPath);
-    } else {
-        return false;
-    }
-    
-    var updateContent = function(State) {
-        $("#loadcontent").load(State.url);
-    };
     
     // Content update and back/forward button handler
     History.Adapter.bind(window, 'statechange', function() {
         updateContent(History.getState());
     });
     
+    if (History.enabled) {
+        State = History.getState();
+        History.pushState({urlPath: "/"}, $("title").text(), State.urlPath);
+        $("#loadcontent").load("docs/home.html");
+    } else {
+        return false;
+    }
+    
+    var updateContent = function(State) {
+        if(State.data.urlPath !== "/")
+            $("#loadcontent").load(State.url+".html");
+        else
+            $("#loadcontent").load("docs/home.html");
+    };
+    
     // navigation link handler
     $('body').on('click', 'a', function(e) {
-        var urlPath = $(this).attr('href')+".html";
+        var urlPath = $(this).attr('href');
         var title = $(this).text();
         History.pushState({urlPath: urlPath}, title, urlPath);
         return false; // prevents default click action of <a ...>
