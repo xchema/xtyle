@@ -1,24 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,light,thin,italic,bold);
 
-@import "fontello.css";
+@import "css/fontello.css";
 
 /*!	xchema | xtyle 2013
- *	license:	MIT
+ *	license: MIT
  *	author: Mariz Melo
  *	page: http://xtyle.xchema.com
  *	github: http://github.com/xchema/xtyle
  *	desc: CSS charset, fonts, reset, base mixins
  */
 
-/* CHARSET */
-
 @charset "UTF-8";
-
-/* GOOGLE WEBFONTS */
-
-/* FONTELLO */
-
-/* XTYLE */
 
 html,
 body,
@@ -52,7 +44,7 @@ fieldset,
 legend {
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 100%;
   font-weight: normal;
   word-wrap: break-word;
   border: 0;
@@ -72,15 +64,15 @@ html {
 }
 
 body {
-  padding: 20px 30px;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
   line-height: 1.5;
   color: #444444;
   background-color: white;
 }
 
-body.top {
-  padding-top: 55px;
+body.menu {
+  padding-top: 60px;
 }
 
 body.bottom {
@@ -104,7 +96,7 @@ a.btn:active {
 input,
 textarea,
 select {
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
@@ -190,12 +182,26 @@ input:-moz-placeholder {
   clear: both;
 }
 
+.units .unit1,
+.units .unit2,
+.units .unit3,
+.units .unit4,
+.units .unit5,
+.units .unit6,
+.units .unit7,
+.units .unit8,
+.units .unit9,
+.units .unit10,
+.units .unit11,
+.units .unit12 {
+  background: #f7f7f7;
+}
+
 div.unit1 {
   float: left;
   width: 40px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit2 {
@@ -203,7 +209,6 @@ div.unit2 {
   width: 120px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit3 {
@@ -211,7 +216,6 @@ div.unit3 {
   width: 200px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit4 {
@@ -219,7 +223,6 @@ div.unit4 {
   width: 280px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit5 {
@@ -227,7 +230,6 @@ div.unit5 {
   width: 360px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit6 {
@@ -235,7 +237,6 @@ div.unit6 {
   width: 440px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit7 {
@@ -243,7 +244,6 @@ div.unit7 {
   width: 520px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit8 {
@@ -251,7 +251,6 @@ div.unit8 {
   width: 600px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit9 {
@@ -259,7 +258,6 @@ div.unit9 {
   width: 680px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit10 {
@@ -267,7 +265,6 @@ div.unit10 {
   width: 760px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit11 {
@@ -275,7 +272,6 @@ div.unit11 {
   width: 840px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 div.unit12 {
@@ -283,7 +279,6 @@ div.unit12 {
   width: 920px;
   padding: 10px;
   margin: 10px;
-  background: #f7f7f7;
 }
 
 input,
@@ -358,7 +353,7 @@ a.btn,
 select {
   padding: 5px 10px;
   margin-right: 10px;
-  font: 14px "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
   vertical-align: bottom;
   cursor: pointer;
   background: #f2f2f2;
@@ -702,6 +697,7 @@ section {
   margin: 20px 0;
   margin-bottom: 10px;
   overflow: hidden;
+  background: white;
   border: 1px solid #e8e8e8;
 }
 
@@ -832,7 +828,7 @@ code {
 pre {
   padding: 10px;
   margin-bottom: 20px;
-  font-family: "Courier New", Courier, monospace, "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: "Courier New", Courier, monospace, "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 90%;
   color: #3F639E;
   background: #f7f7f7;
@@ -887,27 +883,27 @@ h6.lighter {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 225%;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 200%;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 175%;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 150%;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 125%;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 ul,
@@ -946,11 +942,11 @@ nav {
 
 nav a {
   float: left;
-  padding-right: 20px;
+  padding: 10px;
 }
 
-nav a:last-child {
-  padding-right: 0;
+nav a.active {
+  background: #efefef;
 }
 
 nav h1,
@@ -966,14 +962,13 @@ nav.menu {
   position: fixed;
   left: 0;
   width: 100%;
-  padding: 10px;
   background: #f7f7f7;
   border-bottom: 1px solid #e8e8e8;
 }
 
 nav.inverse {
   color: white;
-  background: black;
+  background: #232323;
   border-bottom: 1px solid black;
 }
 
@@ -983,15 +978,19 @@ nav.inverse h3,
 nav.inverse h4,
 nav.inverse h5,
 nav.inverse h6 {
-  color: white;
+  color: inherit;
 }
 
 nav.inverse a {
-  color: gray;
+  color: #b3b3b3;
 }
 
 nav.inverse a:hover {
   color: white;
+}
+
+nav.inverse a.active {
+  background: #000000;
 }
 
 nav.top {
@@ -1000,6 +999,13 @@ nav.top {
 
 nav.bottom {
   bottom: 0;
+}
+
+nav .logo {
+  float: left;
+  padding: 2px 20px;
+  font-size: 180%;
+  font-weight: lighter;
 }
 
 nav ul {
@@ -1020,6 +1026,10 @@ nav ul li {
 
 .nomargin-bottom {
   margin-bottom: 0;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .fixed {
@@ -1057,14 +1067,15 @@ nav ul li {
           border-radius: 0 0px 5px 5px;
 }
 
-.background-cover {
+.background-cover,
+.background-cover-fixed {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
 }
 
-.background-cover.fixed {
+.background-cover-fixed {
   background-attachment: fixed;
 }
 
@@ -1143,31 +1154,11 @@ div.resize {
   display: none;
 }
 
-/* RESPONSIVE STYLESHEET */
-
 .mobile {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
-  nav a {
-    display: none;
-  }
-  .mobile {
-    display: inline;
-  }
-  .desktop {
-    display: none;
-  }
-  pre {
-    font-size: 80%;
-  }
-  alert {
-    font-size: 80%;
-  }
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   div.unit1,
   div.unit2,
   div.unit3,
@@ -1186,5 +1177,29 @@ div.resize {
   }
   .wrap.fixed {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 75%;
+  }
+  nav a {
+    display: none;
+  }
+  nav a.logo {
+    display: block;
+  }
+  .mobile {
+    display: inline;
+  }
+  .desktop {
+    display: none;
+  }
+  pre {
+    font-size: 80%;
+  }
+  alert {
+    font-size: 80%;
   }
 }
