@@ -49,8 +49,10 @@ $(function () {
     $("#loadcontent").load("docs/home.html");
     
     // navigation link handler
-    $('body').on('click', 'a', function(e) {
+    $('nav.menu').on('click', 'a', function(e) {
         e.preventDefault();
+        $('nav.menu a').removeClass("active");
+        $(this).addClass("active");
         $("#loadcontent").load($(this).attr('href')+".html");
     });
 });
