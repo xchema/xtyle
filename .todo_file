@@ -1,3 +1,5 @@
++ @border, maybe change to size+color instead only color
++ fontello warning icon not workign in opera
 + tdd with testem
 + load pages add history on url bar
 + tdd with travis

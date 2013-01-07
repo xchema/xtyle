@@ -82,3 +82,32 @@ sup{
 thin{
     font-weight: 200;
 }
+
+table{
+    border-collapse: collapse;
+    margin: @margin*2 0;
+    
+    &.stripes{
+       tr:nth-child(even){
+            background: @background;
+        }
+    }
+}
+th{
+    background: @border;
+    font-weight: bold;
+    padding: @padding/2 @padding;
+    border: 1px solid @border;
+    text-align: left;
+}
+th.clean{
+    border: none;
+}
+td{
+    border: 1px solid @border;
+    padding: @padding/2 @padding;
+}
+td.clean{
+    border-left: none;
+    border-right: none;
+}
