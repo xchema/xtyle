@@ -40,17 +40,35 @@
     <a href="https://github.com/xchema/xtyle/archive/master.zip" rel="download">Download</a>
 </nav>
 
-<div id="loadcontent"></div>
+<div id="loadcontent">
+
+<div class="browser rounded">
+    <div class="browser-nav-bar rounded-top">
+        <i class="icon-left-dir"></i><i class="icon-right-dir"></i><i class="icon-retweet"></i>
+    </div>
+    <div class="browser-content center slideshow rounded-bottom">
+        <nav class="browser-logos">
+            <i class="browser-icon-chrome"></i>
+            <i class="browser-icon-android"></i>
+            <i class="browser-icon-firefox"></i>
+            <i class="browser-icon-safari"></i>
+            <i class="browser-icon-opera"></i>
+            <i class="browser-icon-ie"></i>
+        </nav>
+        <h2 class="lighter">Simple HTML, CSS, and JavaScript framework for creating amazing web applications.<br/><span style="font-size: 60%">Anywhere!</span> </h2>
+    </div>
+</div>    
+    
+</div>
     
 <!-- SCRIPTS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/history.js/1.7.1/bundled/html4+html5/jquery.history.js"></script>
 <script>
 $(function () {
-
+    var History = window.History;
     if (History.enabled) {
         State = History.getState();
-        History.pushState({urlPath: "/docs/home.html"}, $("title").text(), State.urlPath);
+        History.pushState({urlPath: window.location.pathname}, $("title").text(), State.urlPath);
     } else {
         return false;
     }
