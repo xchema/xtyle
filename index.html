@@ -25,18 +25,18 @@
 
 <nav class="menu top inverse dropbox">
     <span class="logo">xtyle</span>
-    <a href="docs/home">Home</a>
+    <a href="docs/home.html">Home</a>
     <ul>
         <li>
-            <a href="docs/typography">Typography</a>
+            <a href="docs/typography.html">Typography</a>
             <ul class="hide">
                 <li>option 1</li>
                 <li>option 2 </li>
             </ul>
         </li>
     </ul>
-    <a href="docs/layouts">Layouts</a>
-    <a href="docs/forms">Forms</a>
+    <a href="docs/forms.html">Forms</a>
+    <a href="docs/grid.html">Grid</a>
     <a href="https://github.com/xchema/xtyle/archive/master.zip" rel="download">Download</a>
 </nav>
 
@@ -53,7 +53,7 @@ $(function () {
         e.preventDefault();
         $('nav.menu a').removeClass("active");
         $(this).addClass("active");
-        $("#loadcontent").load($(this).attr('href')+".html");
+        $("#loadcontent").load($(this).attr('href'));
     });
 });
 </script>
