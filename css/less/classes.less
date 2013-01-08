@@ -116,14 +116,24 @@ div.resize{
 }
 
 //margin/padding classes
-.nomargin{ margin: 0 !important; }
-.nomargin-top{ margin-top: 0 !important; }
-.nomargin-right{ margin-right: 0 !important; }
-.nomargin-bottom{ margin-bottom: 0 !important; }
-.nomargin-left{ margin-left: 0 !important; }
+.margin{ margin: @margin; }
+.margin-top{ margin-top: @margin; }
+.margin-right{ margin-right: @margin; }
+.margin-bottom{ margin-bottom: @margin; }
+.margin-left{ margin-left: @margin; }
 
-.nopadding{ padding: 0 !important; }
-.padding-top{ padding-top: 0 !important; }
-.padding-right{ padding-right: 0 !important; }
-.padding-bottom{ padding-bottom: 0 !important; }
-.padding-left{ padding-left: 0 !important; }
+.padding{ padding: @padding; }
+.padding-top{ padding-top: @padding; }
+.padding-right{ padding-right: @padding; }
+.padding-bottom{ padding-bottom: @padding; }
+.padding-left{ padding-left: @padding; }
+
+.nopadding{
+  padding: 0;
+}
+.nomargin{
+  margin: 0;
+}
+.nomargin-bottom{
+  margin-bottom: 0;
+}
