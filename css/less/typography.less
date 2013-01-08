@@ -93,6 +93,20 @@ table{
         }
     }
 }
+tr{
+    &.warning{
+        background: lighten(@warning, 50%);
+    }
+    &.error{
+        background: lighten(@error,30%);
+    }
+    &.info{
+        background: lighten(@info, 30%);
+    }
+    &.success{
+        background: lighten(@success, 30%);
+    }
+}
 th{
     background: @border;
     font-weight: bold;
