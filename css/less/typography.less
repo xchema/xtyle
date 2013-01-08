@@ -92,8 +92,19 @@ table{
             background: @background;
         }
     }
+    &.hover{
+        tr:hover{
+            background: @background;
+        }
+        &.pointer{
+            tr:hover{
+                cursor: pointer;
+            }
+        }
+    }
 }
 tr{
+    .transition(background, .1s, linear);
     &.warning{
         background: lighten(@warning, 50%);
     }
@@ -113,16 +124,16 @@ th{
     padding: @padding/2 @padding;
     border: 1px solid @border;
     text-align: left;
-}
-th.clean{
-    background: none;
-    border: none;
+    &.clean{
+        background: none;
+        border: none;
+    }
 }
 td{
     border: 1px solid @border;
     padding: @padding/2 @padding;
-}
-td.clean{
-    border-left: none;
-    border-right: none;
+    &.clean{
+        border-left: none;
+        border-right: none;
+    }
 }
