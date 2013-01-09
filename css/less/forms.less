@@ -1,6 +1,17 @@
 input,a.btn,button{
   margin: @margin/2 @margin @margin 0;
 }
+input{
+  &.small{
+    width: @inputSmall;
+  }
+  &.medium{
+    width: @inputMedium;
+  }
+  &.large{
+    width: @inputLarge;
+  }
+}
 input[type=text],
 input[type=email],
 input[type=password],

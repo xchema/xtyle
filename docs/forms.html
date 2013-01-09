@@ -228,26 +228,41 @@
 </section>
 
 
-<!-- EXAMPLES -->
-<section id="forms_examples" class="rounded">
-  <header><h4>Exampless</h4></header>
-  <p>Some examples of how you can create forms using <strong>xtyle</strong> elements.</p>
+<!-- EXAMPLE -->
+<section id="forms_example" class="rounded">
+  <header><h4>Example</h4></header>
+  <p>An example of how you can create forms using <strong>xtyle</strong> elements.</p>
 
   <h6>Contact form</h6>  
   <form class="wrap">
-    <div class="unit2 margin-right padding border">
-      <img src="http://placehold.it/120x120" label="Image">
+    <div class="unit2 margin-right margin-bottom padding border">
+      <img src="http://placehold.it/120x145&text=Photo" label="Photo">
     </div>
-    <input type="text" id="first_name" name="first_name" placeholder="First Name" class="span2">
-    <input type="text" id="last_name" name="last_name" placeholder="Last Name">
-    <br>
-    <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+    <div class="floatleft">
+      <input type="text" id="f_first_name" name="f_first_name" placeholder="First Name" class="small">
+      <input type="text" id="f_last_name" name="f_last_name" placeholder="Last Name" class="small">
+      <br>
+      <input type="text" id="f_phone" name="f_phone" placeholder="(000) 000-0000" class="small">
+      <input type="text" id="f_company" name="f_company" placeholder="Company" class="small">
+      <br>
+      <input type="text" id="f_email" name="f_email" placeholder="E-mail" class="medium">
+      <br>
+      <input type="submit" value="Submit Form">
+    </div>
   </form>
-  <br>
-<pre class="html rounded">
-<code class="tag">&lt;button&gt;</code>button<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
-<code class="tag">&lt;button <code class="attr">class=</code><code clas="str">"rounded"</code>&gt;</code>Rounded<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code> <code class="attr">class=</code><code class="str">"btn"</code>&gt;</code>Link<code class="tag">&lt;/a&gt;</code>
+<pre class="html rounded nomargin">
+<code class="tag">&lt;form <code class="attr">class=</code><code class="str">wrap</code>&gt;</code>
+  <code>&lt;div <code class="attr">class=</code><code class="str">"unit2 margin-right padding border"</code>&gt;</code>
+    <code>&lt;img <code class="attr">src=</code><code class="str">"http://placehold.it/120x145&text=Photo"</code> <code class="attr">label=</code><code class="str">"Photo"</code>&gt;</code>
+  <code>&lt;/div&gt;</code>
+  <code>&lt;div <code class="attr">class=</code><code class="str">"floatleft"</code>&gt;</code>
+    <code>&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_first_name"</code> <code class="attr">name=</code><code class="str">"f_first_name"</code> <code class="attr">placeholder=</code><code class="str">"First Name"</code> <code class="attr">class=</code><code class="str">"small"</code>&gt;</code>
+    <code>&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_last_name"</code> <code class="attr">name=</code><code class="str">"f_last_name"</code> <code class="attr">placeholder=</code><code class="str">"Last Name"</code> <code class="attr">class=</code><code class="str">"small"</code>&gt;</code>
+    <code>&lt;br&gt;</code>
+    <code>&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_email"</code> <code class="attr">name=</code><code class="str">"f_email"</code> <code class="attr">placeholder=</code><code class="str">"E-mail"</code> <code class="attr">class=</code><code class="str">"medium"</code>&gt;</code>
+    <code>&lt;br&gt;</code>
+    <code>&lt;input <code class="attr">type=</code><code class="str">"submit"</code> <code class="attr">value=</code><code class="str">"Submit Form"</code>&gt;</code>
+  <code>&lt;/div&gt;</code>
+<code>&lt;/form&gt;</code>
 </pre>
 </section>
