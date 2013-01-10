@@ -1,7 +1,10 @@
 input,a.btn,button{
   margin: @margin/2 @margin @margin 0;
 }
-input{
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number]{
   &.small{
     width: @inputSmall;
   }
@@ -154,8 +157,13 @@ button, a.btn, select{
   &.small{
     font-size: 80%;
   }
+  &.medium{
+    font-size: 120%;
+    padding: @padding @padding*1.5;
+  }
   &.large{
     font-size: 150%;
+    padding: @padding*1.5 @padding*2;
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled'], select[disabled='disabled']{
