@@ -1,0 +1,25 @@
+ul,ol{
+  margin-left: @lists;
+  padding: 0;
+}
+dl dl,
+dl dd{
+  margin-left: @lists/2;
+}
+ul.reset ul{ list-style: disc; }
+ul.reset,
+ol.reset{
+  list-style: none;
+  margin-left: 0;
+}
+//definition lists
+dt{ font-weight: bold; }
+dd{ font-weight: normal; }
+
+ul.inline{
+    margin: 0;
+    li{
+        display: inline;
+        padding: @padding/2 @padding;
+    }
+}

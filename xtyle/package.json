@@ -1,0 +1,21 @@
+{
+    "name": "xtyle"
+  , "description": "Simple HTML, CSS, and JavaScript framework for creating amazing web applications."
+  , "version": "0.1"
+  , "keywords": ["xtyle", "design", "css"]
+  , "homepage": "http://xtyle.xchema.com"
+  , "author": "xchema"
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/xchema/xtyle.git"
+  }
+  , "licenses": [
+    {
+        "type": "MIT"
+      , "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+  , "devDependencies": {
+    "recess": ">=1.0.3"
+  }
+}
