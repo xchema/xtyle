@@ -1,4 +1,4 @@
-+ white margins on fontello icons on black background - fix
++ no obstrutive js for form fields, use attr xtyle='number' etc
 + improve grid system
 + make github address redirect to domain address
 + site on linode instead of github
@@ -67,3 +67,4 @@
 - history.js redeclare script problem
 - tables
 - SITE - code and preview together
+- white margins on fontello icons on black background - fix

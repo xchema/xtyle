@@ -1,5 +1,3 @@
- @import "xtyle";
-
 body{
 	padding: 20px 30px;
 	//padding-left: 200px;
@@ -11,7 +9,7 @@ body{
 		font-size: 130%;
 		color: #4b4b4b;
 	}
-    border: 1px solid @border;
+    border: 1px solid #E8E8E8;
 }
 
 .browser-logos{
@@ -36,13 +34,21 @@ body{
 	}
 }//.browser-logos
 
-.browser-nav-bar{
-    .gradientY(#e3e3e3,#c3c3c3);
-    padding: 5px;
-    border-top: 1px solid white;
-	border-bottom: 1px solid #aeaeae;
-    left: 0;
-    top: 0;
+.browser-nav-bar {
+  top: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #c3c3c3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#c3c3c3));
+  background-image: -webkit-linear-gradient(top, #e3e3e3, #c3c3c3);
+  background-image: -moz-linear-gradient(top, #e3e3e3 0%, #c3c3c3 100%);
+  background-image: -o-linear-gradient(top, #e3e3e3 0%, #c3c3c3 100%);
+  background-image: -ms-linear-gradient(top, #e3e3e3 0%, #c3c3c3 100%);
+  background-image: linear-gradient(top, #e3e3e3 0%, #c3c3c3 100%);
+  background-repeat: repeat-x;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #aeaeae;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3e3e3, endColorstr=#c3c3c3);
 }
 
 .browser-content{
@@ -64,7 +70,6 @@ body{
 	border: 1px solid #e8e8e8;
 	margin: 0 0 20px 0;
 	padding-top: 20px;
-	.borderRadius();
 	h3{
 	margin: 0;
 	}
