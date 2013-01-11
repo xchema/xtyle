@@ -1,4 +1,5 @@
+xtyle/
 bin/
-.todo_*
+.todo_tmp
 widgets/README.md
 .nide

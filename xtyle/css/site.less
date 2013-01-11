@@ -1,0 +1,102 @@
+ @import "xtyle";
+
+body{
+	padding: 20px 30px;
+	//padding-left: 200px;
+}
+
+.browser{
+    margin: 20px 80px;
+    i{
+		font-size: 130%;
+		color: #4b4b4b;
+	}
+    border: 1px solid @border;
+}
+
+.browser-logos{
+    padding: 20px 0;
+	.browser-icon-chrome{
+		color: #5881C5;
+	}
+	.browser-icon-android{
+		color: #A4C639;
+	}
+	.browser-icon-safari{
+		color: #2DA0D5;
+	}
+	.browser-icon-firefox{
+		color: #ff5601;
+	}
+	.browser-icon-opera{
+		color: #CE0317;
+	}
+	.browser-icon-ie{
+		color: #1954EB;
+	}
+}//.browser-logos
+
+.browser-nav-bar{
+    .gradientY(#e3e3e3,#c3c3c3);
+    padding: 5px;
+    border-top: 1px solid white;
+	border-bottom: 1px solid #aeaeae;
+    left: 0;
+    top: 0;
+}
+
+.browser-content{
+    i{
+        font-size: 480%;
+    }
+    padding: 50px;
+    padding-top: 20px;
+    background: white;
+    a i{
+        font-size: 100%;
+        &.white{
+            color: white;
+        }
+    }
+}
+
+.example{
+	border: 1px solid #e8e8e8;
+	margin: 0 0 20px 0;
+	padding-top: 20px;
+	.borderRadius();
+	h3{
+	margin: 0;
+	}
+}
+.preview{
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 900px){
+    .browser{
+        margin: 20px 30px;   
+    }
+}
+
+@media screen and (max-width: 480px){
+    .browser{
+        margin: 0;
+    }
+    .browser-content{
+        padding: 20px;
+        i{
+            font-size: 350%;
+        }
+        h2{
+
+        }
+        a i{
+            font-size: 80%;
+            &.white{
+                color: white;
+            }
+        }
+    }
+}
