@@ -1,0 +1,3 @@
+[submodule "xtyle"]
+	path = xtyle
+	url = git@github-marizmelo:xchema/xtyle.git
