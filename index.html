@@ -37,9 +37,11 @@ $(function () {
     // navigation link handler
     $('nav.menu').on('click', 'a', function(e) {
         e.preventDefault();
+        var url = $(this).attr('href');
         $('nav.menu a').removeClass("active");
         $(this).addClass("active");
-        $("#loadcontent").load($(this).attr('href'));
+        $("#loadcontent").load(url);
+        $('html, body').animate({ scrollTop: 0 }, 0);
     });
 });
 </script>
