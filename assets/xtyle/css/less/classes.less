@@ -1,0 +1,143 @@
+//CLASSES
+.position-relative{
+    position: relative;
+}
+
+.fixed{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:   left;
+  width: @mediaFixed;
+}
+.fluid{
+  width: @mediaFluid;
+  text-align: left;
+}
+.text-shadow{
+  .textShadow();
+}
+
+.rounded{
+  .borderRadius() !important;
+}
+.rounded-top{
+  .borderRadiusTop();
+}
+.rounded-bottom{
+  .borderRadiusBottom();
+}
+
+.background-cover,.background-cover-fixed{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.background-cover-fixed{
+    background-attachment: fixed;
+}
+
+.vertical-middle{
+  .verticalAlign();
+}
+.vertical-top{
+  .verticalAlign(top);
+}
+.vertical-bottom{
+  .verticalAlign(bottom);
+}
+
+.transparent{
+  .opacity();
+}
+
+//font weights
+.normal{ 
+  font-weight: normal; 
+}
+.lighter{ 
+  font-weight: lighter; 
+}
+.bold{ 
+  font-weight: bold; 
+}
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center; 
+}
+.right{
+  text-align: right; 
+}
+
+//floats
+.floatleft{
+  float: left; 
+}
+.floatright{
+  float: right;
+}
+
+//display
+.block{
+  display: block; 
+}
+
+//wrap for float elements
+.wrap{
+  overflow: auto; 
+  width: 100%;
+  &.fixed{
+    width: @mediaFixed;
+    margin: 0;
+  }
+}
+
+//resize for elements
+div.resize{
+  resize: both;
+  overflow: auto;
+}
+
+.hide{
+  display: none;
+}
+
+// hide divs for mobile only
+.mobile{
+  display: none;
+}
+
+//cursor pointer
+.pointer{
+    cursor: pointer;
+}
+
+//margin/padding classes
+.margin{ margin: @margin; }
+.margin-top{ margin-top: @margin; }
+.margin-right{ margin-right: @margin; }
+.margin-bottom{ margin-bottom: @margin; }
+.margin-left{ margin-left: @margin; }
+
+.padding{ padding: @padding; }
+.padding-top{ padding-top: @padding; }
+.padding-right{ padding-right: @padding; }
+.padding-bottom{ padding-bottom: @padding; }
+.padding-left{ padding-left: @padding; }
+
+.nopadding{
+  padding: 0;
+}
+.nomargin{
+  margin: 0;
+}
+.nomargin-bottom{
+  margin-bottom: 0;
+}
+
+.border{
+  border: 1px solid @border;
+}
