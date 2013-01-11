@@ -123,6 +123,10 @@
   background-image: -ms-linear-gradient(@deg, @start, @stop);
   background-image: linear-gradient(@deg, @start, @stop);
 }
+.gradientText (@start: #555, @stop: #333) {
+  background: -webkit-linear-gradient(@start, @stop);
+  -webkit-text-fill-color: transparent;
+}
 .opacity (@opacity: 50){
   -webkit-opacity:  @opacity / 100;
   -moz-opacity: @opacity / 100;
