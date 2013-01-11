@@ -55,6 +55,7 @@ body {
   border-top: 1px solid white;
   border-bottom: 1px solid #aeaeae;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e3e3e3, endColorstr=#c3c3c3);
+  text-shadow: 0px 1px 0px #ffffff;
 }
 
 .browser-content {
