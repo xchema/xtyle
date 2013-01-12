@@ -1343,10 +1343,18 @@ div.grid .show .unit12 {
   width: 920px;
 }
 
-input,
-a.btn,
-button {
-  margin: 5px 10px 10px 0;
+a.upload {
+  position: relative;
+  padding: 10px;
+}
+
+a.upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 input[type=text].small,
@@ -1428,6 +1436,12 @@ textarea.noresize {
 input[type=radio],
 input[type=checkbox] {
   margin: 5px;
+}
+
+input,
+a.btn,
+button {
+  margin: 5px 10px 10px 0;
 }
 
 input[type=submit],
@@ -2412,7 +2426,7 @@ div.resize {
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 75%;
+    font-size: 80%;
   }
   nav a {
     display: none;
@@ -2425,12 +2439,6 @@ div.resize {
   }
   .desktop {
     display: none;
-  }
-  pre {
-    font-size: 80%;
-  }
-  alert {
-    font-size: 80%;
   }
   input.small,
   input.medium,
