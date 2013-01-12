@@ -1343,10 +1343,22 @@ div.grid .show .unit12 {
   width: 920px;
 }
 
-input,
-a.btn,
-button {
-  margin: 5px 10px 10px 0;
+a.upload {
+  position: relative;
+  padding: 10px;
+}
+
+a.upload i {
+  line-height: 0.8;
+}
+
+a.upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
 input[type=text].small,
@@ -1428,6 +1440,12 @@ textarea.noresize {
 input[type=radio],
 input[type=checkbox] {
   margin: 5px;
+}
+
+input,
+a.btn,
+button {
+  margin: 5px 10px 10px 0;
 }
 
 input[type=submit],
@@ -1783,6 +1801,22 @@ blockquote.right {
   padding-left: 0;
   border-right: 2px solid #dddddd;
   border-left: none;
+}
+
+blockquote.inverse {
+  border-color: #000000;
+}
+
+blockquote.error {
+  border-color: #cd8184;
+}
+
+blockquote.info {
+  border-color: #7dabcb;
+}
+
+blockquote.success {
+  border-color: #7ab669;
 }
 
 section {
@@ -2412,7 +2446,7 @@ div.resize {
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 75%;
+    font-size: 80%;
   }
   nav a {
     display: none;
@@ -2425,12 +2459,6 @@ div.resize {
   }
   .desktop {
     display: none;
-  }
-  pre {
-    font-size: 80%;
-  }
-  alert {
-    font-size: 80%;
   }
   input.small,
   input.medium,
