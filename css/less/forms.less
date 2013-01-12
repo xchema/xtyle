@@ -1,14 +1,14 @@
 a.upload {
   padding: @padding;
   position: relative;
-}
-a.upload input[type="file"] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
+  input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  }
 }
 input[type=text],
 input[type=email],
@@ -59,15 +59,10 @@ input[type=radio],
 input[type=checkbox]{
   margin: @margin/2;
 }
-
-file{
-  position: relative;
-}
-
-file, input, a.btn, button{
+input, a.btn, button{
   margin: @margin/2 @margin @margin 0;
 }
-file, input[type=submit],
+input[type=submit],
 button, a.btn, select{
   font: @fontSize @fontFamily;
   vertical-align: bottom;
