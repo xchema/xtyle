@@ -57,6 +57,18 @@ blockquote{
         border-left: none;
         border-right: 2px solid @blockquote;
     }
+    &.inverse{
+        border-color: darken(@blockquote, 100%);
+    }
+    &.error{
+        border-color: lighten(@error, 10%);
+    }
+    &.info{
+        border-color: lighten(@info, 10%);
+    }
+    &.success{
+        border-color: lighten(@success, 10%);
+    }
 }
 section{
     background: white;
