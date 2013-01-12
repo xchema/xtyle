@@ -1807,6 +1807,10 @@ blockquote.inverse {
   border-color: #000000;
 }
 
+blockquote.warning {
+  border-color: #d4b339;
+}
+
 blockquote.error {
   border-color: #cd8184;
 }
