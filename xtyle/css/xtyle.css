@@ -1348,6 +1348,10 @@ a.upload {
   padding: 10px;
 }
 
+a.upload i {
+  line-height: 0.8;
+}
+
 a.upload input[type="file"] {
   position: absolute;
   top: 0;
@@ -1797,6 +1801,26 @@ blockquote.right {
   padding-left: 0;
   border-right: 2px solid #dddddd;
   border-left: none;
+}
+
+blockquote.inverse {
+  border-color: #000000;
+}
+
+blockquote.warning {
+  border-color: #d4b339;
+}
+
+blockquote.error {
+  border-color: #cd8184;
+}
+
+blockquote.info {
+  border-color: #7dabcb;
+}
+
+blockquote.success {
+  border-color: #7ab669;
 }
 
 section {
