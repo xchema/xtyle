@@ -1344,6 +1344,7 @@ div.grid .show .unit12 {
 }
 
 span.radio {
+  padding: 3.3333333333333335px;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
@@ -1355,17 +1356,42 @@ span.radio span {
           border-radius: 10px;
 }
 
+span.radio.active {
+  border-color: #0088cc;
+}
+
+span.radio.active span {
+  background: #0088cc;
+}
+
 span.checkbox {
+  position: relative;
+  padding: 6.666666666666667px;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+}
+
+span.checkbox .icon-check {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: none;
+  color: #0088cc;
+}
+
+span.checkbox.active {
+  border-color: #0088cc;
+}
+
+span.checkbox.active .icon-check {
+  display: inline;
 }
 
 span.radio,
 span.checkbox {
   display: inline-block;
   *display: block;
-  padding: 3.3333333333333335px;
   margin: 2.2222222222222223px 5px;
   vertical-align: middle;
   background: white;
@@ -1397,16 +1423,6 @@ span.checkbox:hover {
 span.radio:focus,
 span.checkbox:focus {
   border-color: #1ab2ff;
-}
-
-span.radio.active,
-span.checkbox.active {
-  border-color: #0088cc;
-}
-
-span.radio.active span,
-span.checkbox.active span {
-  background: #0088cc;
 }
 
 a.upload {
