@@ -2,8 +2,10 @@ span.radio{
   .borderRadius(10px);
   background: white;
   padding: @padding/3;
-  display: block;
-  float: left;
+  display: inline-block;
+  *display: block;
+  zoom: 1;
+  vertical-align: middle;
   margin: @margin/4.5 @margin/2;
   border: 1px solid @border;
   .transition(border-color, .1s, linear);
