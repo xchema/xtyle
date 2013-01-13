@@ -1,5 +1,13 @@
 span.radio{
   .borderRadius(10px);
+  span{
+    .borderRadius(10px);
+  }
+}
+span.checkbox{
+  .borderRadius(4px);
+}
+span.radio, span.checkbox{
   background: white;
   padding: @padding/3;
   display: inline-block;
@@ -13,7 +21,6 @@ span.radio{
     .transition(background, .1s, linear);
     display: block;
     padding: @padding/3;
-    .borderRadius(10px);
   }
   &:hover{
     border-color: darken(@border, 8%);

@@ -1,4 +1,4 @@
-+ xtyle.js not working in ajax content
++ checkbox with js
 + improve grid system
 + Grid - better documentation
 + fontello warning icon not workign in opera
@@ -69,3 +69,4 @@
 - make input small/medium/large responsive
 - check and radio button javascript replace
 - JS - checkbox
+- xtyle.js not working in ajax content
