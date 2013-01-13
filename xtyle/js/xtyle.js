@@ -24,7 +24,7 @@ $(function(){
                 $('input[type=radio]').each(function(){
                     $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="radio" />').wrap('<span />');
                 });//each()
-                $("span").on('click','.radio', function(){
+                $('span.radio').on('click', function(){
                     x.controller._radio.radioButton("#"+$(this).attr("id"));
                 });//on()
             },
@@ -37,7 +37,7 @@ $(function(){
         },
         _checkbox : {
             init : function(){
-                $("span").on('click', '.checkbox', function(){
+                $('span.checkbox').on('click', function(){
                     x.controller._checkbox.checkBox($(this));
                 });
             },
