@@ -37,22 +37,27 @@ $(function(){
         },
         _checkbox : {
             init : function(){
+                // wrap input type checkbox with spans and hide it
+                $('input[type=checkbox]').each(function(){
+                    $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<span />');
+                });//each()
                 $('span.checkbox').on('click', function(){
-                    x.controller._checkbox.checkBox($(this));
+                    x.controller._checkbox.checkBox("#"+$(this).attr("id"));
                 });
             },
             checkBox : function(elem){
-                elem.hasClass('active') ? elem.removeClass('active') : elem.addClass('active');
+                $('span'+elem).hasClass('active') ? $('span'+elem).removeClass('active') : $('span'+elem).addClass('active');
             }
         }
     }//x.controller
     x.view = {
         events : function(){
             //INITIALIZE MODULES
-            if($.inArray('radio', x.model.modules) == 0){
+            if($.inArray('radio', x.model.modules) >= 0){
                 x.controller._radio.init();
             }//if
-            if($.inArray('checkbox', x.model.modules) == 0){
+            if($.inArray('checkbox', x.model.modules) >= 0){
+                
                 x.controller._checkbox.init();
             }//if
 
@@ -62,6 +67,9 @@ $(function(){
                 switch(type){
                     case 'radio':
                       x.controller._radio.radioButton('#'+$(this).attr('for'));
+                      break;
+                    case 'checkbox':
+                      x.controller._checkbox.checkBox('#'+$(this).attr('for'));
                       break;  
                 }//switch
             });
