@@ -1,3 +1,32 @@
+span.radio{
+  .borderRadius(10px);
+  background: white;
+  padding: @padding/3;
+  display: block;
+  float: left;
+  margin: @margin/4.5 @margin/2;
+  border: 1px solid @border;
+  .transition(border-color, .1s, linear);
+  span{
+    .transition(background, .1s, linear);
+    display: block;
+    padding: @padding/3;
+    .borderRadius(10px);
+  }
+  &:hover{
+    border-color: darken(@border, 8%);
+  }
+  &:focus{
+    border-color: lighten(@links, 15%);
+  }
+  &.active{
+    border-color: @links;
+    span{
+      background: @links;
+    }
+  }
+}
+
 a.upload {
   padding: @padding;
   position: relative;

@@ -1,10 +1,7 @@
-+ no obstrutive js for form fields, use attr xtyle='number' etc
++ check and radio button javascript replace
 + improve grid system
-+ make github address redirect to domain address
 + site on linode instead of github
-+ big download button on the homepage (with success class)
 + Grid - better documentation
-+ make input small/medium/large responsive
 + fontello warning icon not workign in opera
 + tdd with testem
 + load pages add history on url bar
@@ -68,3 +65,7 @@
 - tables
 - SITE - code and preview together
 - white margins on fontello icons on black background - fix
+- no obstrutive js for form fields, use attr xtyle='number' etc
+- make github address redirect to domain address
+- big download button on the homepage (with success class)
+- make input small/medium/large responsive
