@@ -39,7 +39,7 @@ $(function(){
             init : function(){
                 // wrap input type checkbox with spans and hide it
                 $('input[type=checkbox]').each(function(){
-                    $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<span />');
+                    $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<i class="icon-check" />');
                 });//each()
                 $('span.checkbox').on('click', function(){
                     x.controller._checkbox.checkBox("#"+$(this).attr("id"));

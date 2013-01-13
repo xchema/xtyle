@@ -1,15 +1,36 @@
 span.radio{
+  padding: @padding/3;
   .borderRadius(10px);
   span{
     .borderRadius(10px);
   }
+  &.active{
+    border-color: @links;
+    span{
+      background: @links;
+    }
+  }
 }
 span.checkbox{
+  padding: @padding/1.5;
   .borderRadius(4px);
+  position: relative;
+  .icon-check{
+    display: none;
+    color: @links;
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+  &.active{
+    border-color: @links;
+    .icon-check{
+      display: inline;
+    }
+  }
 }
 span.radio, span.checkbox{
   background: white;
-  padding: @padding/3;
   display: inline-block;
   *display: block;
   zoom: 1;
@@ -27,12 +48,6 @@ span.radio, span.checkbox{
   }
   &:focus{
     border-color: lighten(@links, 15%);
-  }
-  &.active{
-    border-color: @links;
-    span{
-      background: @links;
-    }
   }
 }
 
