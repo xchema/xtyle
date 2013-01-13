@@ -1,6 +1,5 @@
-+ check and radio button javascript replace
++ xtyle.js not working in ajax content
 + improve grid system
-+ site on linode instead of github
 + Grid - better documentation
 + fontello warning icon not workign in opera
 + tdd with testem
@@ -18,7 +17,6 @@
 + JS - form validation
 + JS - number input
 + JS - selectbox
-+ JS - checkbox
 + JS - slideshow
 + JS - tabs
 + JS - accordion
@@ -69,3 +67,5 @@
 - make github address redirect to domain address
 - big download button on the homepage (with success class)
 - make input small/medium/large responsive
+- check and radio button javascript replace
+- JS - checkbox
