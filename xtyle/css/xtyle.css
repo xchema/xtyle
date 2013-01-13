@@ -1343,6 +1343,54 @@ div.grid .show .unit12 {
   width: 920px;
 }
 
+span.radio {
+  display: inline-block;
+  *display: block;
+  padding: 3.3333333333333335px;
+  margin: 2.2222222222222223px 5px;
+  vertical-align: middle;
+  background: white;
+  border: 1px solid #e8e8e8;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  zoom: 1;
+  -webkit-transition: border-color 0.1s linear;
+     -moz-transition: border-color 0.1s linear;
+      -ms-transition: border-color 0.1s linear;
+       -o-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
+}
+
+span.radio span {
+  display: block;
+  padding: 3.3333333333333335px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transition: background 0.1s linear;
+     -moz-transition: background 0.1s linear;
+      -ms-transition: background 0.1s linear;
+       -o-transition: background 0.1s linear;
+          transition: background 0.1s linear;
+}
+
+span.radio:hover {
+  border-color: #d4d4d4;
+}
+
+span.radio:focus {
+  border-color: #1ab2ff;
+}
+
+span.radio.active {
+  border-color: #0088cc;
+}
+
+span.radio.active span {
+  background: #0088cc;
+}
+
 a.upload {
   position: relative;
   padding: 10px;
