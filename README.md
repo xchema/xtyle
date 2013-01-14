@@ -11,56 +11,21 @@ Installation
 ------------
 Download **xtyle** [clicking here](http://xchema.github.com/xtyle/xtyle.zip).
 
-[Unzip](http://en.wikipedia.org/wiki/Zip_(file_format)) on your project directory. You will have a folder called **xtyle**. This is the structure of this file:
-```
-xtyle/
-  - start.html
-    css/
-      - xtyle.css
-      - xtyle.min.css
-    js/
-      - xtyle.js
-```
-Look **start.html** for an example how to place the files on this directory into your own **index.html** file.
+[Installation](https://github.com/xchema/xtyle/wiki/Installation)
 
-###CSS File###
-For the css file (preferable **xtyle.min.css**):
-```html
-...
-   <link rel="stylesheet" type="text/css" href="css/xtyle.min.css">
-...
-```
+Copyright and license
+---------------------
+Copyright 2013 xchema.
 
-###JavaScript File###
-To install the xtyle JavaScript file you will need to follow this two steps:
+Your duties:
 
-(1) Download [JQuery](http://jquery.com/) and place it on the bottom of your **index.html** (preferable):
-```html
-...
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-</body>
-</html>
-```
-You have the choice of using an [CDN](http://en.wikipedia.org/wiki/Content_delivery_network) for JQuery instead:
+* **Attribution** — You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of work).
 
-**Google CDN**
-```html
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-```
+Your rights:
 
-**CloudFlare CDN**
-```html
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-```
+* **to Share** — to copy, distribute and transmit the work
+* **to Remix** — to adapt the work
+* **to use** - commercial use of the work
 
-(2) Place your *xtyle.js* **AFTER** your JQuery declaration:
-```html
-...
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/xtyle.min.js"></script>
-</body>
-</html>
-```
-
-##You are awesome!##
-###Thank you for using **xtyle**, visit our [wiki page](https://github.com/xchema/xtyle/wiki) for more information.###
+Full license at:
+[Creative Commons](http://creativecommons.org/licenses/by/3.0/)
