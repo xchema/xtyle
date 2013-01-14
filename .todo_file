@@ -1,5 +1,7 @@
++ Create wiki pages on github
++ Create wiki on github
++ Improve README.md
 + convert javascript to coffescript, add on bin program to compile
-+ check if values on radio/checkbox are send on form
 + improve grid system
 + Grid - better documentation
 + fontello warning icon not workign in opera
@@ -72,3 +74,4 @@
 - JS - checkbox
 - xtyle.js not working in ajax content
 - checkbox with js
+- check if values on radio/checkbox are send on form
