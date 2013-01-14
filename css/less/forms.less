@@ -36,15 +36,12 @@ span.radio, span.checkbox{
   zoom: 1;
   vertical-align: middle;
   margin: @margin/4.5 @margin/2;
-  border: 1px solid @border;
+  border: 1px solid darken(@border, 8%);
   .transition(border-color, .1s, linear);
   span{
     .transition(background, .1s, linear);
     display: block;
     padding: @padding/3;
-  }
-  &:hover{
-    border-color: darken(@border, 8%);
   }
   &:focus{
     border-color: lighten(@links, 15%);
