@@ -1534,10 +1534,11 @@ button,
 a.btn,
 select {
   padding: 5px 10px;
+  margin-top: 7px;
   margin-right: 10px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
-  vertical-align: bottom;
-  cursor: pointer;
+  vertical-align: middle;
+  cursor: auto;
   background: #f2f2f2;
   border: 1px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
