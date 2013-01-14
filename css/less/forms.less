@@ -60,7 +60,7 @@ a.upload {
     height: 100%;
     left: 0px;
     top: 0px;
-    .opacity();
+    .opacity(0);
   }
 }
 input[type=text],
@@ -232,7 +232,7 @@ button, a.btn, select{
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled'], select[disabled='disabled']{
-  opacity: 1; //normalize ios opacity for disabled elements
+  .opacity(1); //normalize ios opacity for disabled elements
   background: lighten(@border, 7%);
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
@@ -248,7 +248,8 @@ textarea{
 }
 .icon-down-dir.select{
   pointer-events: none;
-  position: absolute; margin: 4px 0 0 -30px; .opacity();
+  position: absolute; margin: 4px 0 0 -30px; 
+  .opacity(50);
 }
 fieldset{
   border: 1px solid @border;
