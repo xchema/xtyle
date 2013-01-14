@@ -1395,7 +1395,7 @@ span.checkbox {
   margin: 2.2222222222222223px 5px;
   vertical-align: middle;
   background: white;
-  border: 1px solid #e8e8e8;
+  border: 1px solid #d4d4d4;
   zoom: 1;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
@@ -1413,11 +1413,6 @@ span.checkbox span {
       -ms-transition: background 0.1s linear;
        -o-transition: background 0.1s linear;
           transition: background 0.1s linear;
-}
-
-span.radio:hover,
-span.checkbox:hover {
-  border-color: #d4d4d4;
 }
 
 span.radio:focus,
