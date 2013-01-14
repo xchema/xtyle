@@ -32,6 +32,7 @@ $(function(){
                $('span[name='+$(elem).attr('name')+']').removeClass("active");
                 if(!$('span'+elem).hasClass('active')){
                     $('span'+elem).addClass('active');
+                    $('input'+elem).attr('checked', true);
                 }//if
             }
         },
@@ -46,7 +47,13 @@ $(function(){
                 });
             },
             checkBox : function(elem){
-                $('span'+elem).hasClass('active') ? $('span'+elem).removeClass('active') : $('span'+elem).addClass('active');
+                if($('span'+elem).hasClass('active')){
+                    $('span'+elem).removeClass('active');
+                    $('input'+elem).attr('checked', false);
+                }else{
+                    $('span'+elem).addClass('active');
+                    $('input'+elem).attr('checked', true);
+                }//if_else
             }
         }
     }//x.controller
