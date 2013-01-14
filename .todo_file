@@ -1,4 +1,4 @@
-+ checkbox with js
++ check if values on radio/checkbox are send on form
 + improve grid system
 + Grid - better documentation
 + fontello warning icon not workign in opera
@@ -70,3 +70,4 @@
 - check and radio button javascript replace
 - JS - checkbox
 - xtyle.js not working in ajax content
+- checkbox with js

@@ -32,6 +32,7 @@ $(function(){
                $('span[name='+$(elem).attr('name')+']').removeClass("active");
                 if(!$('span'+elem).hasClass('active')){
                     $('span'+elem).addClass('active');
+                    $('input'+elem).prop('checked', true);
                 }//if
             }
         },
@@ -39,7 +40,7 @@ $(function(){
             init : function(){
                 // wrap input type checkbox with spans and hide it
                 $('input[type=checkbox]').each(function(){
-                    $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<i class="icon-check" />');
+                    $(this).css({'position':'absolute','opacity': .5}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<i class="icon-check" />');
                 });//each()
                 $('span.checkbox').on('click', function(){
                     x.controller._checkbox.checkBox("#"+$(this).attr("id"));
