@@ -118,12 +118,13 @@ input, a.btn, button{
 input[type=submit],
 button, a.btn, select{
   font: @fontSize @fontFamily;
-  vertical-align: bottom;
+  margin-top: 7px;
   margin-right: @margin;
   background: darken(@background, 2%);
   border: 1px solid @border;
   border-bottom: 2px solid @border;
-  cursor: pointer;
+  cursor: auto;
+  vertical-align: middle;
   padding: @padding/2 @padding;
   .transition(border-color, .1s, linear);
   .transition(background, .1s, linear);
