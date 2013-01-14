@@ -1787,7 +1787,7 @@ textarea {
 
 .icon-down-dir.select {
   position: absolute;
-  margin: 4px 0 0 -30px;
+  margin: 10px 0 0 -30px;
   pointer-events: none;
   -webkit-opacity: 0.5;
      -moz-opacity: 0.5;
