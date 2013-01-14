@@ -1435,11 +1435,11 @@ a.upload input[type="file"] {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-opacity: 0.5;
-     -moz-opacity: 0.5;
-       -o-opacity: 0.5;
-          opacity: 0.5;
-  filter: alpha(opacity=50);
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
+       -o-opacity: 0;
+          opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 input[type=text].small,
@@ -1765,7 +1765,11 @@ select[disabled='disabled'] {
   background: #fafafa;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-  opacity: 1;
+  -webkit-opacity: 0.01;
+     -moz-opacity: 0.01;
+       -o-opacity: 0.01;
+          opacity: 0.01;
+  filter: alpha(opacity=1);
 }
 
 select {
@@ -2381,11 +2385,11 @@ nav ul li {
 }
 
 .transparent {
-  -webkit-opacity: 0.5;
-     -moz-opacity: 0.5;
-       -o-opacity: 0.5;
-          opacity: 0.5;
-  filter: alpha(opacity=50);
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
+       -o-opacity: 0;
+          opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .normal {
