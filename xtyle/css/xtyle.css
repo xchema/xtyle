@@ -1534,10 +1534,11 @@ button,
 a.btn,
 select {
   padding: 5px 10px;
+  margin-top: 7px;
   margin-right: 10px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
-  vertical-align: bottom;
-  cursor: pointer;
+  vertical-align: middle;
+  cursor: auto;
   background: #f2f2f2;
   border: 1px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
@@ -1765,11 +1766,11 @@ select[disabled='disabled'] {
   background: #fafafa;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-  -webkit-opacity: 0.01;
-     -moz-opacity: 0.01;
-       -o-opacity: 0.01;
-          opacity: 0.01;
-  filter: alpha(opacity=1);
+  -webkit-opacity: 1;
+     -moz-opacity: 1;
+       -o-opacity: 1;
+          opacity: 1;
+  filter: alpha(opacity=100);
 }
 
 select {
