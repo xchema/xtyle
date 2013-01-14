@@ -2392,6 +2392,22 @@ nav ul li {
   filter: alpha(opacity=0);
 }
 
+.transparent_50 {
+  -webkit-opacity: 0.5;
+     -moz-opacity: 0.5;
+       -o-opacity: 0.5;
+          opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.transparent_80 {
+  -webkit-opacity: 0.8;
+     -moz-opacity: 0.8;
+       -o-opacity: 0.8;
+          opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
 .normal {
   font-weight: normal;
 }
