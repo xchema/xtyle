@@ -194,3 +194,26 @@
     background: @selection;
   }
 }
+
+//max-(width/height)
+.maxWidth (@max) {
+  max-width: @max;
+  width: auto !important;
+  width: @max;
+}
+.maxHeight (@max) {
+  max-height: @max;
+  height: auto !important;
+  height: @max;
+}
+//min-(width/height)
+.minWidth (@min) {
+  min-width: @min;
+  width: auto !important;
+  width: @min;
+}
+.minHeight (@min) {
+  min-height: @min;
+  height: auto !important;
+  height: @min;
+}
