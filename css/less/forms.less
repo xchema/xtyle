@@ -66,20 +66,6 @@ a.upload {
 input[type=text],
 input[type=email],
 input[type=password],
-input[type=number]{
-  &.small{
-    width: @inputSmall;
-  }
-  &.medium{
-    width: @inputMedium;
-  }
-  &.large{
-    width: @inputLarge;
-  }
-}
-input[type=text],
-input[type=email],
-input[type=password],
 input[type=number],
 select,
 textarea{
@@ -220,6 +206,14 @@ button, a.btn, select{
       border-color: darken(@success, 15%);
     }
   }
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea,
+input[type=submit],
+button, a.btn, select{
   &.small{
     font-size: @fontSmall;
   }
