@@ -44,8 +44,16 @@ nav{
     .logo{
         font-size: 180%;
         font-weight: lighter;
-        padding: @padding/5 @padding*2;
+        padding: 0 @padding*1.5;
         float: left;
+    }
+    &.large{
+        a, li{
+            padding: @padding*2;
+        }
+        .logo{
+            padding: @padding;
+        }
     }
     ul{
         list-style: none;
