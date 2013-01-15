@@ -1163,16 +1163,11 @@ input[type=text],
 input[type=email],
 input[type=number],
 input[type=button],
-input[type=submit],
-select {
+input[type=submit] {
   border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-select {
-  cursor: pointer;
 }
 
 :-moz-placeholder {
@@ -1252,6 +1247,7 @@ div.grid .unit9,
 div.grid .unit10,
 div.grid .unit11,
 div.grid .unit12 {
+  float: left;
   padding: 10px;
   margin: 10px;
 }
@@ -1284,62 +1280,50 @@ div.grid .show .unit12 {
 }
 
 .unit1 {
-  float: left;
   width: 40px;
 }
 
 .unit2 {
-  float: left;
   width: 120px;
 }
 
 .unit3 {
-  float: left;
   width: 200px;
 }
 
 .unit4 {
-  float: left;
   width: 280px;
 }
 
 .unit5 {
-  float: left;
   width: 360px;
 }
 
 .unit6 {
-  float: left;
   width: 440px;
 }
 
 .unit7 {
-  float: left;
   width: 520px;
 }
 
 .unit8 {
-  float: left;
   width: 600px;
 }
 
 .unit9 {
-  float: left;
   width: 680px;
 }
 
 .unit10 {
-  float: left;
   width: 760px;
 }
 
 .unit11 {
-  float: left;
   width: 840px;
 }
 
 .unit12 {
-  float: left;
   width: 920px;
 }
 
@@ -1386,6 +1370,7 @@ span.checkbox.active {
 
 span.checkbox.active .icon-check {
   display: inline;
+  cursor: default;
 }
 
 span.radio,
@@ -1442,35 +1427,11 @@ a.upload input[type="file"] {
   filter: alpha(opacity=0);
 }
 
-input[type=text].small,
-input[type=email].small,
-input[type=password].small,
-input[type=number].small {
-  width: 150px;
-}
-
-input[type=text].medium,
-input[type=email].medium,
-input[type=password].medium,
-input[type=number].medium {
-  width: 335px;
-}
-
-input[type=text].large,
-input[type=email].large,
-input[type=password].large,
-input[type=number].large {
-  width: 705px;
-}
-
 input[type=text],
 input[type=email],
 input[type=password],
 input[type=number],
-select,
 textarea {
-  padding: 5px 10px;
-  border: 1px solid #e8e8e8;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
       -ms-transition: border-color 0.1s linear;
@@ -1482,7 +1443,6 @@ input[type=text]:hover,
 input[type=email]:hover,
 input[type=password]:hover,
 input[type=number]:hover,
-select:hover,
 textarea:hover {
   border-color: #d4d4d4;
 }
@@ -1491,9 +1451,59 @@ input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
-select:focus,
 textarea:focus {
   border-color: #1ab2ff;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea,
+select,
+input[type=submit],
+button,
+a.btn {
+  padding: 5px 10px;
+  border: 1px solid #e8e8e8;
+}
+
+input[type=text].small,
+input[type=email].small,
+input[type=password].small,
+input[type=number].small,
+textarea.small,
+select.small,
+input[type=submit].small,
+button.small,
+a.btn.small {
+  font-size: 80%;
+}
+
+input[type=text].medium,
+input[type=email].medium,
+input[type=password].medium,
+input[type=number].medium,
+textarea.medium,
+select.medium,
+input[type=submit].medium,
+button.medium,
+a.btn.medium {
+  padding: 10px 15px;
+  font-size: 120%;
+}
+
+input[type=text].large,
+input[type=email].large,
+input[type=password].large,
+input[type=number].large,
+textarea.large,
+select.large,
+input[type=submit].large,
+button.large,
+a.btn.large {
+  padding: 15px 20px;
+  font-size: 150%;
 }
 
 input[type=text],
@@ -1509,9 +1519,9 @@ input[type=email].search,
 input[type=password].search,
 input[type=number].search,
 textarea.search {
-  -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 textarea.noresize {
@@ -1525,17 +1535,16 @@ input[type=checkbox] {
 
 input,
 a.btn,
-button {
-  margin: 5px 10px 10px 0;
+button,
+select {
+  margin: 5px 17px 10px 0;
 }
 
 input[type=submit],
 button,
-a.btn,
-select {
+a.btn {
   padding: 5px 10px;
   margin-top: 7px;
-  margin-right: 10px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
   vertical-align: middle;
   cursor: auto;
@@ -1556,15 +1565,13 @@ select {
 
 input[type=submit]:hover,
 button:hover,
-a.btn:hover,
-select:hover {
+a.btn:hover {
   background: #f7f7f7;
 }
 
 input[type=submit]:active,
 button:active,
-a.btn:active,
-select:active {
+a.btn:active {
   background: #f7f7f7;
   border-top: 2px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
@@ -1572,15 +1579,13 @@ select:active {
 
 input[type=submit]:focus,
 button:focus,
-a.btn:focus,
-select:focus {
+a.btn:focus {
   border-color: #cfcfcf;
 }
 
 input[type=submit].inverse,
 button.inverse,
-a.btn.inverse,
-select.inverse {
+a.btn.inverse {
   color: white;
   background: #353535;
   border-color: #2b2b2b;
@@ -1588,31 +1593,27 @@ select.inverse {
 
 input[type=submit].inverse:hover,
 button.inverse:hover,
-a.btn.inverse:hover,
-select.inverse:hover {
+a.btn.inverse:hover {
   color: white;
   background: #444444;
 }
 
 input[type=submit].inverse:active,
 button.inverse:active,
-a.btn.inverse:active,
-select.inverse:active {
+a.btn.inverse:active {
   color: white;
   background: #444444;
 }
 
 input[type=submit].inverse:focus,
 button.inverse:focus,
-a.btn.inverse:focus,
-select.inverse:focus {
+a.btn.inverse:focus {
   border-color: #000000;
 }
 
 input[type=submit].warning,
 button.warning,
-a.btn.warning,
-select.warning {
+a.btn.warning {
   color: white;
   background: #c8a62c;
   border-color: #bb9c29;
@@ -1620,31 +1621,27 @@ select.warning {
 
 input[type=submit].warning:hover,
 button.warning:hover,
-a.btn.warning:hover,
-select.warning:hover {
+a.btn.warning:hover {
   color: white;
   background: #d4b339;
 }
 
 input[type=submit].warning:active,
 button.warning:active,
-a.btn.warning:active,
-select.warning:active {
+a.btn.warning:active {
   color: white;
   background: #d4b339;
 }
 
 input[type=submit].warning:focus,
 button.warning:focus,
-a.btn.warning:focus,
-select.warning:focus {
+a.btn.warning:focus {
   border-color: #917920;
 }
 
 input[type=submit].error,
 button.error,
-a.btn.error,
-select.error {
+a.btn.error {
   color: white;
   background: #b74b4e;
   border-color: #a64245;
@@ -1652,31 +1649,27 @@ select.error {
 
 input[type=submit].error:hover,
 button.error:hover,
-a.btn.error:hover,
-select.error:hover {
+a.btn.error:hover {
   color: white;
   background: #be5d60;
 }
 
 input[type=submit].error:active,
 button.error:active,
-a.btn.error:active,
-select.error:active {
+a.btn.error:active {
   color: white;
   background: #be5d60;
 }
 
 input[type=submit].error:focus,
 button.error:focus,
-a.btn.error:focus,
-select.error:focus {
+a.btn.error:focus {
   border-color: #813436;
 }
 
 input[type=submit].info,
 button.info,
-a.btn.info,
-select.info {
+a.btn.info {
   color: white;
   background: #4888b3;
   border-color: #417aa1;
@@ -1684,31 +1677,27 @@ select.info {
 
 input[type=submit].info:hover,
 button.info:hover,
-a.btn.info:hover,
-select.info:hover {
+a.btn.info:hover {
   color: white;
   background: #5994bc;
 }
 
 input[type=submit].info:active,
 button.info:active,
-a.btn.info:active,
-select.info:active {
+a.btn.info:active {
   color: white;
   background: #5994bc;
 }
 
 input[type=submit].info:focus,
 button.info:focus,
-a.btn.info:focus,
-select.info:focus {
+a.btn.info:focus {
   border-color: #325f7d;
 }
 
 input[type=submit].success,
 button.success,
-a.btn.success,
-select.success {
+a.btn.success {
   color: white;
   background: #558e45;
   border-color: #4f8440;
@@ -1716,53 +1705,26 @@ select.success {
 
 input[type=submit].success:hover,
 button.success:hover,
-a.btn.success:hover,
-select.success:hover {
+a.btn.success:hover {
   color: white;
   background: #5f9f4d;
 }
 
 input[type=submit].success:active,
 button.success:active,
-a.btn.success:active,
-select.success:active {
+a.btn.success:active {
   color: white;
   background: #5f9f4d;
 }
 
 input[type=submit].success:focus,
 button.success:focus,
-a.btn.success:focus,
-select.success:focus {
+a.btn.success:focus {
   border-color: #406b34;
 }
 
-input[type=submit].small,
-button.small,
-a.btn.small,
-select.small {
-  font-size: 80%;
-}
-
-input[type=submit].medium,
-button.medium,
-a.btn.medium,
-select.medium {
-  padding: 10px 15px;
-  font-size: 120%;
-}
-
-input[type=submit].large,
-button.large,
-a.btn.large,
-select.large {
-  padding: 15px 20px;
-  font-size: 150%;
-}
-
 input[disabled='disabled'],
-textarea[disabled='disabled'],
-select[disabled='disabled'] {
+textarea[disabled='disabled'] {
   background: #fafafa;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
@@ -1773,27 +1735,12 @@ select[disabled='disabled'] {
   filter: alpha(opacity=100);
 }
 
-select {
-  padding-right: 25px;
-}
-
 label {
   padding-right: 5px;
 }
 
 textarea {
   margin: 0 10px 8.333333333333334px 0;
-}
-
-.icon-down-dir.select {
-  position: absolute;
-  margin: 10px 0 0 -30px;
-  pointer-events: none;
-  -webkit-opacity: 0.5;
-     -moz-opacity: 0.5;
-       -o-opacity: 0.5;
-          opacity: 0.5;
-  filter: alpha(opacity=50);
 }
 
 fieldset {
@@ -2309,9 +2256,19 @@ nav.bottom {
 
 nav .logo {
   float: left;
-  padding: 2px 20px;
+  padding: 0 15px;
   font-size: 180%;
   font-weight: lighter;
+}
+
+nav.large a,
+nav.large li {
+  padding: 20px 28px;
+}
+
+nav.large .logo {
+  padding: 6.666666666666667px 20px;
+  font-size: 200%;
 }
 
 nav ul {
