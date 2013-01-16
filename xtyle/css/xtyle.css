@@ -1235,47 +1235,47 @@ input:-moz-placeholder {
   clear: both;
 }
 
-div.grid .unit1,
-div.grid .unit2,
-div.grid .unit3,
-div.grid .unit4,
-div.grid .unit5,
-div.grid .unit6,
-div.grid .unit7,
-div.grid .unit8,
-div.grid .unit9,
-div.grid .unit10,
-div.grid .unit11,
-div.grid .unit12 {
+div.grid div.unit1,
+div.grid div.unit2,
+div.grid div.unit3,
+div.grid div.unit4,
+div.grid div.unit5,
+div.grid div.unit6,
+div.grid div.unit7,
+div.grid div.unit8,
+div.grid div.unit9,
+div.grid div.unit10,
+div.grid div.unit11,
+div.grid div.unit12 {
   float: left;
   padding: 10px;
   margin: 10px;
 }
 
-div.grid.show .unit1,
-div.grid .show .unit1,
-div.grid.show .unit2,
-div.grid .show .unit2,
-div.grid.show .unit3,
-div.grid .show .unit3,
-div.grid.show .unit4,
-div.grid .show .unit4,
-div.grid.show .unit5,
-div.grid .show .unit5,
-div.grid.show .unit6,
-div.grid .show .unit6,
-div.grid.show .unit7,
-div.grid .show .unit7,
-div.grid.show .unit8,
-div.grid .show .unit8,
-div.grid.show .unit9,
-div.grid .show .unit9,
-div.grid.show .unit10,
-div.grid .show .unit10,
-div.grid.show .unit11,
-div.grid .show .unit11,
-div.grid.show .unit12,
-div.grid .show .unit12 {
+div.grid.show div.unit1,
+div.grid .show div.unit1,
+div.grid.show div.unit2,
+div.grid .show div.unit2,
+div.grid.show div.unit3,
+div.grid .show div.unit3,
+div.grid.show div.unit4,
+div.grid .show div.unit4,
+div.grid.show div.unit5,
+div.grid .show div.unit5,
+div.grid.show div.unit6,
+div.grid .show div.unit6,
+div.grid.show div.unit7,
+div.grid .show div.unit7,
+div.grid.show div.unit8,
+div.grid .show div.unit8,
+div.grid.show div.unit9,
+div.grid .show div.unit9,
+div.grid.show div.unit10,
+div.grid .show div.unit10,
+div.grid.show div.unit11,
+div.grid .show div.unit11,
+div.grid.show div.unit12,
+div.grid .show div.unit12 {
   background: #f7f7f7;
 }
 
@@ -1453,75 +1453,6 @@ input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
   border-color: #1ab2ff;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea,
-select,
-input[type=submit],
-button,
-a.btn {
-  padding: 5px 10px;
-  border: 1px solid #e8e8e8;
-}
-
-input[type=text].small,
-input[type=email].small,
-input[type=password].small,
-input[type=number].small,
-textarea.small,
-select.small,
-input[type=submit].small,
-button.small,
-a.btn.small {
-  font-size: 80%;
-}
-
-input[type=text].medium,
-input[type=email].medium,
-input[type=password].medium,
-input[type=number].medium,
-textarea.medium,
-select.medium,
-input[type=submit].medium,
-button.medium,
-a.btn.medium {
-  padding: 10px 15px;
-  font-size: 120%;
-}
-
-input[type=text].large,
-input[type=email].large,
-input[type=password].large,
-input[type=number].large,
-textarea.large,
-select.large,
-input[type=submit].large,
-button.large,
-a.btn.large {
-  padding: 15px 20px;
-  font-size: 150%;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea {
-  border-top: 2px solid #e8e8e8;
-}
-
-input[type=text].search,
-input[type=email].search,
-input[type=password].search,
-input[type=number].search,
-textarea.search {
-  -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-          border-radius: 50px;
 }
 
 textarea.noresize {
@@ -1739,6 +1670,75 @@ input[type=submit].large,
 button.large,
 a.btn.large {
   margin-top: 2px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea,
+select,
+input[type=submit],
+button,
+a.btn {
+  padding: 5px 10px;
+  border: 1px solid #e8e8e8;
+}
+
+input[type=text].small,
+input[type=email].small,
+input[type=password].small,
+input[type=number].small,
+textarea.small,
+select.small,
+input[type=submit].small,
+button.small,
+a.btn.small {
+  font-size: 80%;
+}
+
+input[type=text].medium,
+input[type=email].medium,
+input[type=password].medium,
+input[type=number].medium,
+textarea.medium,
+select.medium,
+input[type=submit].medium,
+button.medium,
+a.btn.medium {
+  padding: 10px 11px;
+  font-size: 120%;
+}
+
+input[type=text].large,
+input[type=email].large,
+input[type=password].large,
+input[type=number].large,
+textarea.large,
+select.large,
+input[type=submit].large,
+button.large,
+a.btn.large {
+  padding: 15px 10px;
+  font-size: 150%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea {
+  border-top: 2px solid #e8e8e8;
+}
+
+input[type=text].search,
+input[type=email].search,
+input[type=password].search,
+input[type=number].search,
+textarea.search {
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
 }
 
 input[disabled='disabled'],
