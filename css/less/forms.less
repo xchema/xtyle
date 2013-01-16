@@ -129,7 +129,7 @@ button, a.btn{
   border-bottom: 2px solid @border;
   cursor: auto;
   vertical-align: middle;
-  padding: @padding/2 @padding;
+  padding: @padding/2 @padding*1.5;
   .transition(border-color, .1s, linear);
   .transition(background, .1s, linear);
   &:hover{
@@ -223,6 +223,15 @@ button, a.btn{
     &:focus{
       border-color: darken(@success, 15%);
     }
+  }
+  &.small{
+    margin-top: 8.5px;
+  }
+  &.medium{
+    margin-top: 4.5px;
+  }
+  &.large{
+    margin-top: 2px;
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
