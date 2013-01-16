@@ -1171,18 +1171,18 @@ input[type=submit] {
 }
 
 :-moz-placeholder {
+  font-style: normal;
   color: #cbcbcb;
-  text-style: normal;
 }
 
 ::-webkit-input-placeholder {
+  font-style: normal;
   color: #cbcbcb;
-  text-style: normal;
 }
 
 input:-moz-placeholder {
+  font-style: normal;
   color: #cbcbcb;
-  text-style: normal;
 }
 
 .color {
@@ -1543,7 +1543,7 @@ select {
 input[type=submit],
 button,
 a.btn {
-  padding: 5px 10px;
+  padding: 5px 15px;
   margin-top: 7px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
   vertical-align: middle;
@@ -1723,6 +1723,24 @@ a.btn.success:focus {
   border-color: #406b34;
 }
 
+input[type=submit].small,
+button.small,
+a.btn.small {
+  margin-top: 8.5px;
+}
+
+input[type=submit].medium,
+button.medium,
+a.btn.medium {
+  margin-top: 4.5px;
+}
+
+input[type=submit].large,
+button.large,
+a.btn.large {
+  margin-top: 2px;
+}
+
 input[disabled='disabled'],
 textarea[disabled='disabled'] {
   background: #fafafa;
@@ -1736,7 +1754,7 @@ textarea[disabled='disabled'] {
 }
 
 label {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 textarea {
