@@ -77,37 +77,6 @@ textarea{
     border-color: lighten(@links, 15%);
   }
 }
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea, select,
-input[type=submit],
-button, a.btn{
-  border: 1px solid @border;
-  padding: @padding/2 @padding;
-  &.small{
-    font-size: @fontSmall;
-  }
-  &.medium{
-    font-size: @fontMedium;
-    padding: @padding @padding*1.5;
-  }
-  &.large{
-    font-size: @fontLarge;
-    padding: @padding*1.5 @padding*2;
-  }
-}
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea{
-  border-top: 2px solid @border;
-  &.search{
-    .borderRadius(50px);
-  }
-}
 textarea{
   &.noresize{
     resize: none;
@@ -232,6 +201,37 @@ button, a.btn{
   }
   &.large{
     margin-top: 2px;
+  }
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea, select,
+input[type=submit],
+button, a.btn{
+  border: 1px solid @border;
+  padding: @padding/2 @padding;
+  &.small{
+    font-size: @fontSmall;
+  }
+  &.medium{
+    font-size: @fontMedium;
+    padding: @padding @padding*1.1;
+  }
+  &.large{
+    font-size: @fontLarge;
+    padding: @padding*1.5 @padding;
+  }
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea{
+  border-top: 2px solid @border;
+  &.search{
+    .borderRadius(50px);
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
