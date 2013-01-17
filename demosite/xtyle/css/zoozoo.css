@@ -1,0 +1,10 @@
+/*@import "xtyle.min.css";*/
+
+#home_banner{
+    background: url('../img/zoohome.jpg') left top; height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
+}
+
+#boxes i{
+    font-size: 800%;
+    color: #ccc;
+}
