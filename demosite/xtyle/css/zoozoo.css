@@ -6,12 +6,18 @@ body{
 
 .logo{
     color: black;
+    background: #efefef;
 }
 
 a{
     color: black;
 }
-
+a:hover{
+    color: black;
+}
+a:active{
+    color: black;
+}
 #home_banner{
     background: url('../img/zoozoo.jpg') left top; height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
 }
