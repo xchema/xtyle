@@ -1,10 +1,22 @@
 /*@import "xtyle.min.css";*/
 
+body{
+    color: gray;
+}
+
+.logo{
+    color: black;
+}
+
+a{
+    color: black;
+}
+
 #home_banner{
-    background: url('../img/zoohome.jpg') left top; height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
+    background: url('../img/zoozoo.jpg') left top; height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
 }
 
 #boxes i{
     font-size: 800%;
-    color: #ccc;
+    color: black;
 }
