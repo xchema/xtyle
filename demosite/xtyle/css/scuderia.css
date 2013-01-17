@@ -17,8 +17,14 @@ a:active{
     color: black;
 }
 #home_banner{
-    background: url('../img/scuderia.jpg') left top; height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
+    background-image: url('../img/scuderia1.jpg'); 
+    background-color: #f7f7f7;
+    background-position: left center;
+    height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
 }
 #boxes h1{
     color: white;
+}
+#pictures{
+    background-color: #f7f7f7;
 }
