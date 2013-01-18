@@ -19,8 +19,9 @@ a:active{
 #home_banner{
     background-image: url('../img/scuderia1.jpg'); 
     background-color: #f7f7f7;
-    background-position: left center;
-    height:400px; width: 100%; min-width: 960px; background-size: 100% auto;
+    background-position: center;
+    height:400px; 
+    width: 100%;
 }
 #boxes h1{
     color: white;
