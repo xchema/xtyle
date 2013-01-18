@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.fixed{
+.container{
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -28,6 +28,9 @@
   .borderRadiusBottom();
 }
 
+.background{ 
+  background-color: @background;
+}
 .background-cover,.background-cover-fixed{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -79,10 +82,10 @@
 }
 
 //floats
-.floatleft{
+.float-left{
   float: left; 
 }
-.floatright{
+.float-right{
   float: right;
 }
 
@@ -90,12 +93,17 @@
 .block{
   display: block; 
 }
+.inline-block{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
 
 //wrap for float elements
 .wrap{
   overflow: auto; 
   width: 100%;
-  &.fixed{
+  &.container{
     width: @mediaFixed;
     margin: 0;
   }

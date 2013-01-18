@@ -1,3 +1,4 @@
++ make classes more like css properties, remove .show from grids, verify how big are actual classes and make them smaller
 + PAGES - example websites
 + Create wiki pages on github
 + convert javascript to coffescript, add on bin program to compile
