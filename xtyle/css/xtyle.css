@@ -1461,6 +1461,57 @@ select {
   margin: 5px 17px 10px 0;
 }
 
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea,
+select,
+input[type=submit],
+button,
+a.btn {
+  padding: 5px 10px;
+  border: 1px solid #e8e8e8;
+}
+
+input[type=text].small,
+input[type=email].small,
+input[type=password].small,
+input[type=number].small,
+textarea.small,
+select.small,
+input[type=submit].small,
+button.small,
+a.btn.small {
+  font-size: 80%;
+}
+
+input[type=text].medium,
+input[type=email].medium,
+input[type=password].medium,
+input[type=number].medium,
+textarea.medium,
+select.medium,
+input[type=submit].medium,
+button.medium,
+a.btn.medium {
+  padding: 10px 11px;
+  font-size: 120%;
+}
+
+input[type=text].large,
+input[type=email].large,
+input[type=password].large,
+input[type=number].large,
+textarea.large,
+select.large,
+input[type=submit].large,
+button.large,
+a.btn.large {
+  padding: 12px 15px;
+  font-size: 150%;
+}
+
 input[type=submit],
 button,
 a.btn {
@@ -1660,57 +1711,6 @@ input[type=submit].large,
 button.large,
 a.btn.large {
   margin-top: 2px;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea,
-select,
-input[type=submit],
-button,
-a.btn {
-  padding: 5px 10px;
-  border: 1px solid #e8e8e8;
-}
-
-input[type=text].small,
-input[type=email].small,
-input[type=password].small,
-input[type=number].small,
-textarea.small,
-select.small,
-input[type=submit].small,
-button.small,
-a.btn.small {
-  font-size: 80%;
-}
-
-input[type=text].medium,
-input[type=email].medium,
-input[type=password].medium,
-input[type=number].medium,
-textarea.medium,
-select.medium,
-input[type=submit].medium,
-button.medium,
-a.btn.medium {
-  padding: 10px 11px;
-  font-size: 120%;
-}
-
-input[type=text].large,
-input[type=email].large,
-input[type=password].large,
-input[type=number].large,
-textarea.large,
-select.large,
-input[type=submit].large,
-button.large,
-a.btn.large {
-  padding: 15px 10px;
-  font-size: 150%;
 }
 
 input[type=text],
