@@ -91,6 +91,27 @@ input[type=checkbox]{
 input, a.btn, button, select{
   margin: @margin/2 @margin*1.7 @margin 0;
 }
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea, select,
+input[type=submit],
+button, a.btn{
+  border: 1px solid @border;
+  padding: @padding/2 @padding;
+  &.small{
+    font-size: @fontSmall;
+  }
+  &.medium{
+    font-size: @fontMedium;
+    padding: @padding @padding*1.1;
+  }
+  &.large{
+    font-size: @fontLarge;
+    padding: @padding*1.2 @padding*1.5;
+  }
+}
 input[type=submit],
 button, a.btn{
   font: @fontSize @fontFamily;
@@ -205,27 +226,7 @@ button, a.btn{
     margin-top: 2px;
   }
 }
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea, select,
-input[type=submit],
-button, a.btn{
-  border: 1px solid @border;
-  padding: @padding/2 @padding;
-  &.small{
-    font-size: @fontSmall;
-  }
-  &.medium{
-    font-size: @fontMedium;
-    padding: @padding @padding*1.1;
-  }
-  &.large{
-    font-size: @fontLarge;
-    padding: @padding*1.2 @padding*1.5;
-  }
-}
+
 input[type=text],
 input[type=email],
 input[type=password],
