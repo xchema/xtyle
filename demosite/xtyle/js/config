@@ -1,0 +1,9 @@
+{
+    "modules" : [
+        "radio", "checkbox", "select"
+    ],
+    "widgets" : {
+        "name" : "fancybox",
+        "dependencies" : ["jquery"]
+    }
+}
