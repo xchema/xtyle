@@ -23,16 +23,16 @@
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
 </head>
-<body class="menu">
-  
+<body class="menu" id="link_home">
+
 <!-- NAVIGATION TOP MENU -->
 <nav class="top menu large">
   <div class="container">
     <span class="logo"><strong>Scuderia</strong></span>
     <div class="float-right">
-      <a href="#"><strong>Home</strong></a>
-      <a href="#"><strong>Pictures</strong></a>
-      <a href="#"><strong>Directions</strong></a>
+      <a rel="link_home" href="#"><strong>Home</strong></a>
+      <a rel="boxes" href="#"><strong>Pictures</strong></a>
+      <a rel="directions" href="#"><strong>Directions</strong></a>
     </div>
   </div>
 </nav>
@@ -89,16 +89,15 @@
   <br>
 </div>
 
-<div class="inline-block" style="width: 100%">
-  <!-- <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=San+Jose,+CA&amp;aq=&amp;sll=37.312115,-121.965826&amp;sspn=0.047922,0.090895&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=San+Jose,+Santa+Clara,+California&amp;z=10&amp;ll=37.339386,-121.894956&amp;iwloc=A&amp;output=embed"></iframe> -->
-</div>
+<div id="directions" style="width: 100%; height: 400px;"></div>
 
 <!-- SCRIPTS -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="xtyle/widgets/fancybox/fancybox.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
 $(function () {
-  // $('html, body').animate({'scrollTop': $("#pictures").offset().top}, 'slow', 'swing');
+
     $("a[xtyle=fancybox]").fancybox();
     $("#loadcontent").load("pages/home.html");
     
@@ -108,9 +107,36 @@ $(function () {
         var url = $(this).attr('href');
         $('nav.menu a').removeClass("active");
         $(this).addClass("active");
-        $("#loadcontent").load(url);
-        $('html, body').animate({ scrollTop: 0 }, 0);
+        $('html, body').animate({'scrollTop': $("#"+$(this).attr("rel")).offset().top}, 'slow', 'swing');
     });
+
+    // Google Maps
+    function initialize() {
+      var mapOptions = {
+      zoom: 15,
+      center: new google.maps.LatLng(37.387617, -122.063234),
+      disableDefaultUI: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('directions'), mapOptions);
+    marker = new google.maps.Marker({
+      map:map,
+      draggable:true,
+      animation: google.maps.Animation.DROP,
+      position: mapOptions.center
+    });
+    google.maps.event.addListener(marker, 'click', toggleBounce);
+    }
+
+    function toggleBounce() {
+      if (marker.getAnimation() != null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
 });
 </script>
 </body>
