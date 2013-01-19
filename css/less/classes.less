@@ -1,4 +1,19 @@
 //CLASSES
+
+.clear{
+  zoom: 1;
+  &:before, &:after {
+      display: table;
+      content: "";
+  }&:after {
+      clear: both;
+  }
+}
+
+img.filter-grayscale{
+  .filterGrayscale(1);
+}
+
 .position-relative{
     position: relative;
 }
@@ -26,6 +41,10 @@
 }
 .rounded-bottom{
   .borderRadiusBottom();
+}
+
+.circle{
+  .borderRadius(100%);
 }
 
 .background{ 
@@ -178,4 +197,8 @@ div.resize{
 
 .responsive-background{
   background-size: 100% auto;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }

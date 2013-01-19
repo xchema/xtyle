@@ -17,7 +17,7 @@ a:active{
     color: black;
 }
 #home_banner{
-    background-image: url('../img/scuderia1.jpg'); 
+    background-image: url('../img/scuderia2.jpg'); 
     background-color: #f7f7f7;
     background-position: center;
     height:400px; 
@@ -29,8 +29,8 @@ a:active{
 #pictures{
     background-color: #f7f7f7;
 }
-#pictures li{
-    padding: 40px;
-    margin: 15px;
-    background: red;
+#pictures a{
+    width: 150px;
+    height: 150px;
+    margin: 20px 40px;
 }
