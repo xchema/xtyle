@@ -1220,18 +1220,18 @@ input:-moz-placeholder {
   color: #111111;
 }
 
-div.grid .unit1,
-div.grid .unit2,
-div.grid .unit3,
-div.grid .unit4,
-div.grid .unit5,
-div.grid .unit6,
-div.grid .unit7,
-div.grid .unit8,
-div.grid .unit9,
-div.grid .unit10,
-div.grid .unit11,
-div.grid .unit12 {
+div.grid div.unit1,
+div.grid div.unit2,
+div.grid div.unit3,
+div.grid div.unit4,
+div.grid div.unit5,
+div.grid div.unit6,
+div.grid div.unit7,
+div.grid div.unit8,
+div.grid div.unit9,
+div.grid div.unit10,
+div.grid div.unit11,
+div.grid div.unit12 {
   float: left;
   padding: 10px;
   margin: 10px;
