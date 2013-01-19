@@ -3,7 +3,8 @@ $(function(){
     var xtyle = function(){}; //namespace
     var x = xtyle.prototype;
     x.model = {
-        modules : ['radio','checkbox','select']
+        modules : ['radio','checkbox','select'],
+        widgets : ['fancybox']
     };//x.model
     x.controller = {
         _input : {
@@ -59,6 +60,11 @@ $(function(){
     }//x.controller
     x.view = {
         events : function(){
+            //INITIALIZE WIDGETS
+            if($.inArray('fancybox', x.model.widgets) >= 0){
+                $("a[xtyle=fancybox]").fancybox();
+            }
+
             //INITIALIZE MODULES
             if($.inArray('radio', x.model.modules) >= 0){
                 x.controller._radio.init();
