@@ -22,7 +22,6 @@
 [class*=" icon-"]:before {
   display: inline-block;
   width: 1em;
-  margin-right: 0.2em;
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
@@ -1221,61 +1220,47 @@ input:-moz-placeholder {
   color: #111111;
 }
 
-.clear {
-  zoom: 1;
-}
-
-.clear:before,
-.clear:after {
-  display: table;
-  content: "";
-}
-
-.clear:after {
-  clear: both;
-}
-
-div.grid div.unit1,
-div.grid div.unit2,
-div.grid div.unit3,
-div.grid div.unit4,
-div.grid div.unit5,
-div.grid div.unit6,
-div.grid div.unit7,
-div.grid div.unit8,
-div.grid div.unit9,
-div.grid div.unit10,
-div.grid div.unit11,
-div.grid div.unit12 {
+div.grid .unit1,
+div.grid .unit2,
+div.grid .unit3,
+div.grid .unit4,
+div.grid .unit5,
+div.grid .unit6,
+div.grid .unit7,
+div.grid .unit8,
+div.grid .unit9,
+div.grid .unit10,
+div.grid .unit11,
+div.grid .unit12 {
   float: left;
   padding: 10px;
   margin: 10px;
 }
 
-div.grid.show div.unit1,
-div.grid .show div.unit1,
-div.grid.show div.unit2,
-div.grid .show div.unit2,
-div.grid.show div.unit3,
-div.grid .show div.unit3,
-div.grid.show div.unit4,
-div.grid .show div.unit4,
-div.grid.show div.unit5,
-div.grid .show div.unit5,
-div.grid.show div.unit6,
-div.grid .show div.unit6,
-div.grid.show div.unit7,
-div.grid .show div.unit7,
-div.grid.show div.unit8,
-div.grid .show div.unit8,
-div.grid.show div.unit9,
-div.grid .show div.unit9,
-div.grid.show div.unit10,
-div.grid .show div.unit10,
-div.grid.show div.unit11,
-div.grid .show div.unit11,
-div.grid.show div.unit12,
-div.grid .show div.unit12 {
+div.grid.show .unit1,
+div.grid .show .unit1,
+div.grid.show .unit2,
+div.grid .show .unit2,
+div.grid.show .unit3,
+div.grid .show .unit3,
+div.grid.show .unit4,
+div.grid .show .unit4,
+div.grid.show .unit5,
+div.grid .show .unit5,
+div.grid.show .unit6,
+div.grid .show .unit6,
+div.grid.show .unit7,
+div.grid .show .unit7,
+div.grid.show .unit8,
+div.grid .show .unit8,
+div.grid.show .unit9,
+div.grid .show .unit9,
+div.grid.show .unit10,
+div.grid .show .unit10,
+div.grid.show .unit11,
+div.grid .show .unit11,
+div.grid.show .unit12,
+div.grid .show .unit12 {
   background: #f7f7f7;
 }
 
@@ -1289,6 +1274,11 @@ div.grid .show div.unit12 {
 
 .unit3 {
   width: 200px;
+  -webkit-transition: width 0.1s linear;
+     -moz-transition: width 0.1s linear;
+      -ms-transition: width 0.1s linear;
+       -o-transition: width 0.1s linear;
+          transition: width 0.1s linear;
 }
 
 .unit4 {
@@ -2207,7 +2197,7 @@ ul.inline li {
 }
 
 nav {
-  z-index: 10000;
+  z-index: 100;
   display: block;
 }
 
@@ -2285,8 +2275,8 @@ nav.large li {
 }
 
 nav.large .logo {
-  padding: 6.666666666666667px 20px;
-  font-size: 200%;
+  padding: 9.09090909090909px 20px;
+  font-size: 210%;
 }
 
 nav ul {
@@ -2297,11 +2287,33 @@ nav ul li {
   float: left;
 }
 
+.clear {
+  zoom: 1;
+}
+
+.clear:before,
+.clear:after {
+  display: table;
+  content: "";
+}
+
+.clear:after {
+  clear: both;
+}
+
+img.filter-grayscale {
+  -webkit-filter: grayscale(1);
+     -moz-filter: grayscale(1);
+      -ms-filter: grayscale(1);
+       -o-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 .position-relative {
   position: relative;
 }
 
-.fixed {
+.container {
   position: relative;
   width: 960px;
   margin-right: auto;
@@ -2327,13 +2339,27 @@ nav ul li {
 .rounded-top {
   -webkit-border-radius: 5px 5px 0 0px;
      -moz-border-radius: 5px 5px 0 0px;
+      -ms-border-radius: 5px 5px 0 0px;
+       -o-border-radius: 5px 5px 0 0px;
           border-radius: 5px 5px 0 0px;
 }
 
 .rounded-bottom {
   -webkit-border-radius: 0 0px 5px 5px;
      -moz-border-radius: 0 0px 5px 5px;
+      -ms-border-radius: 0 0px 5px 5px;
+       -o-border-radius: 0 0px 5px 5px;
           border-radius: 0 0px 5px 5px;
+}
+
+.circle {
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.background {
+  background-color: #f7f7f7;
 }
 
 .background-cover,
@@ -2408,11 +2434,11 @@ nav ul li {
   text-align: right;
 }
 
-.floatleft {
+.float-left {
   float: left;
 }
 
-.floatright {
+.float-right {
   float: right;
 }
 
@@ -2420,12 +2446,18 @@ nav ul li {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
 .wrap {
   width: 100%;
   overflow: auto;
 }
 
-.wrap.fixed {
+.wrap.container {
   width: 960px;
   margin: 0;
 }
@@ -2488,44 +2520,85 @@ div.resize {
 }
 
 .nopadding {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .nomargin {
-  margin: 0;
+  margin: 0 !important;
+}
+
+.nomargin-top {
+  margin-top: 0 !important;
+}
+
+.nomargin-right {
+  margin-right: 0 !important;
 }
 
 .nomargin-bottom {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+
+.nomargin-left {
+  margin-left: 0 !important;
 }
 
 .border {
   border: 1px solid #e8e8e8;
 }
 
-@media screen and (max-width: 1000px) {
-  div.grid .unit1,
-  div.grid .unit2,
-  div.grid .unit3,
-  div.grid .unit4,
-  div.grid .unit5,
-  div.grid .unit6,
-  div.grid .unit7,
-  div.grid .unit8,
-  div.grid .unit9,
-  div.grid .unit10,
-  div.grid .unit11,
-  div.grid .unit12 {
-    float: none;
-    width: auto;
-    margin: 10px 0;
+.border-top {
+  border-top: 1px solid #e8e8e8;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.noborder {
+  border: 0;
+}
+
+.responsive-background {
+  background-size: 100% auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+  .unit1,
+  .unit2,
+  .unit3,
+  .unit4,
+  .unit5,
+  .unit6,
+  .unit7,
+  .unit8,
+  .unit9,
+  .unit10,
+  .unit11,
+  .unit12 {
+    display: inline-block;
+    *display: inline;
+    float: none !important;
+    zoom: 1;
   }
-  .wrap.fixed {
-    width: 100%;
+  .unit7,
+  .unit8,
+  .unit9,
+  .unit10,
+  .unit11,
+  .unit12 {
+    width: auto;
+  }
+  .container {
+    width: auto;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   body {
     font-size: 80%;
   }
@@ -2545,5 +2618,23 @@ div.resize {
   input.medium,
   input.large {
     width: auto;
+  }
+  .unit1,
+  .unit2,
+  .unit3,
+  .unit4,
+  .unit5,
+  .unit6,
+  .unit7,
+  .unit8,
+  .unit9,
+  .unit10,
+  .unit11,
+  .unit12 {
+    float: none;
+    width: auto;
+  }
+  .responsive-background {
+    background-size: auto 100% !important;
   }
 }
