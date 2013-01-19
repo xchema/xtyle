@@ -62,7 +62,9 @@ $(function(){
         events : function(){
             //INITIALIZE WIDGETS
             if($.inArray('fancybox', x.model.widgets) >= 0){
-                $("a[xtyle=fancybox]").fancybox();
+                if($("a[xtyle=fancybox]").length){
+                    $("a[xtyle=fancybox]").fancybox();
+                }
             }
 
             //INITIALIZE MODULES
