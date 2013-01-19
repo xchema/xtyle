@@ -1,3 +1,5 @@
++ implement http://nikorablin.com/slideControl/
++ make checklists and radio selected on focus of the original element
 + filter classes (blackwhite, sepia etc)
 + make classes more like css properties, remove .show from grids, verify how big are actual classes and make them smaller
 + PAGES - example websites
