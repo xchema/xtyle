@@ -1,8 +1,8 @@
 .unit(@unit){
   width: @unit;
 }
-
 div.grid{
+  overflow: auto;
   div.unit1, div.unit2, div.unit3, div.unit4, div.unit5, div.unit6, div.unit7, div.unit8, div.unit9, div.unit10, div.unit11, div.unit12{
     float: left;
     margin: @margin;
@@ -14,7 +14,6 @@ div.grid{
     }
   }
 }
-
 .unit1{
     .unit(@unit);
 }
