@@ -2313,17 +2313,17 @@ img.filter-grayscale {
   position: relative;
 }
 
-.container {
+.layout-fluid {
+  width: auto !important;
+  text-align: left;
+}
+
+.layout-fixed {
   position: relative;
   width: 960px;
   margin-right: auto;
   margin-left: auto;
   overflow: auto;
-  text-align: left !important;
-}
-
-.fluid {
-  width: 100%;
   text-align: left;
 }
 

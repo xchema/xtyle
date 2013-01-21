@@ -18,18 +18,19 @@ img.filter-grayscale{
     position: relative;
 }
 
-.container{
+.layout-fluid{
+  width: auto !important;
+  text-align: left;
+}
+.layout-fixed{
   overflow: auto;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  text-align:   left !important;
+  text-align:   left;
   width: @mediaFixed;
 }
-.fluid{
-  width: @mediaFluid;
-  text-align: left;
-}
+
 .text-shadow{
   .textShadow();
 }
