@@ -1,3 +1,5 @@
++ implement http://ivaynberg.github.com/select2/
++ add raindowjs for syntax highlight on gh-pages website
 + implement http://nikorablin.com/slideControl/
 + make checklists and radio selected on focus of the original element
 + filter classes (blackwhite, sepia etc)
