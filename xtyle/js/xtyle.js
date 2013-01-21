@@ -24,6 +24,7 @@ $(function(){
                 // wrap input type radio with spans and hide it
                 $('input[type=radio]').each(function(){
                     $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="radio" />').wrap('<span />');
+                    if( $(this).is(':checked') ) $(this).parent().parent().addClass('active');
                 });//each()
                 $('span.radio').on('click', function(){
                     x.controller._radio.radioButton("#"+$(this).attr("id"));
@@ -42,6 +43,7 @@ $(function(){
                 // wrap input type checkbox with spans and hide it
                 $('input[type=checkbox]').each(function(){
                     $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="checkbox" />').wrap('<i class="icon-check" />');
+                    if( $(this).is(':checked') ) $(this).parent().parent().addClass('active');
                 });//each()
                 $('span.checkbox').on('click', function(){
                     x.controller._checkbox.checkBox("#"+$(this).attr("id"));
