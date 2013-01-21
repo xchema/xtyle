@@ -2625,6 +2625,7 @@ div.resize {
   .unit10,
   .unit11,
   .unit12 {
+    display: block;
     width: auto !important;
   }
   .responsive-background {
