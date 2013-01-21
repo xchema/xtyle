@@ -22,7 +22,7 @@ img.filter-grayscale{
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  text-align:   left;
+  text-align:   left !important;
   width: @mediaFixed;
 }
 .fluid{
@@ -116,16 +116,6 @@ img.filter-grayscale{
   display: inline-block;
   zoom: 1;
   *display: inline;
-}
-
-//wrap for float elements
-.wrap{
-  overflow: auto; 
-  width: 100%;
-  &.container{
-    width: @mediaFixed;
-    margin: 0;
-  }
 }
 
 //resize for elements
