@@ -2565,7 +2565,6 @@ div.resize {
   .unit10,
   .unit11,
   .unit12 {
-    float: none !important;
     width: auto;
   }
   .container {
