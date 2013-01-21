@@ -2577,6 +2577,9 @@ div.resize {
   .container {
     width: auto;
   }
+  .desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 540px) {
