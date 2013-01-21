@@ -4,6 +4,7 @@
     ],
     "widgets" : {
         "name" : "fancybox",
+        "conectto" : ["a"],
         "dependencies" : ["jquery"]
     }
 }
