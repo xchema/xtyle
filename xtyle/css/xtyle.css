@@ -1220,6 +1220,10 @@ input:-moz-placeholder {
   color: #111111;
 }
 
+div.grid {
+  overflow: auto;
+}
+
 div.grid div.unit1,
 div.grid div.unit2,
 div.grid div.unit3,
@@ -2319,11 +2323,12 @@ img.filter-grayscale {
 }
 
 .layout-fixed {
-  position: relative;
-  width: 960px;
+  width: 970px;
+}
+
+.layout-center {
   margin-right: auto;
   margin-left: auto;
-  overflow: auto;
   text-align: left;
 }
 
@@ -2574,7 +2579,7 @@ div.resize {
     float: none !important;
     width: auto;
   }
-  .container {
+  .layout-fixed {
     width: auto;
   }
   .desktop {
