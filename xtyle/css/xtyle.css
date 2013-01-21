@@ -1265,7 +1265,7 @@ div.grid.show .unit11,
 div.grid .show .unit11,
 div.grid.show .unit12,
 div.grid .show .unit12 {
-  background: #f7f7f7;
+  background: #f7f7f7 !important;
 }
 
 .unit1 {
@@ -2563,12 +2563,17 @@ div.resize {
   overflow: hidden;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .unit1,
   .unit2,
   .unit3,
   .unit4,
-  .unit5,
+  .unit5 {
+    display: inline-block;
+    *display: inline;
+    float: none !important;
+    zoom: 1;
+  }
   .unit6,
   .unit7,
   .unit8,
@@ -2620,8 +2625,7 @@ div.resize {
   .unit10,
   .unit11,
   .unit12 {
-    float: none !important;
-    width: auto;
+    width: auto !important;
   }
   .responsive-background {
     background-size: auto 100% !important;
