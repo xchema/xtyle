@@ -2571,10 +2571,7 @@ div.resize {
   .unit10,
   .unit11,
   .unit12 {
-    display: inline-block;
-    *display: inline;
     float: none !important;
-    zoom: 1;
   }
   .unit7,
   .unit8,
@@ -2622,7 +2619,7 @@ div.resize {
   .unit10,
   .unit11,
   .unit12 {
-    float: none;
+    float: none !important;
     width: auto;
   }
   .responsive-background {
