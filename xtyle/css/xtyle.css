@@ -2572,17 +2572,13 @@ div.resize {
   .unit11,
   .unit12 {
     float: none !important;
-  }
-  .unit7,
-  .unit8,
-  .unit9,
-  .unit10,
-  .unit11,
-  .unit12 {
     width: auto;
   }
   .container {
     width: auto;
+  }
+  .desktop {
+    display: none;
   }
 }
 
