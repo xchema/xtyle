@@ -2318,7 +2318,7 @@ img.filter-grayscale {
   width: 960px;
   margin-right: auto;
   margin-left: auto;
-  text-align: left;
+  text-align: left !important;
 }
 
 .fluid {
@@ -2450,16 +2450,6 @@ img.filter-grayscale {
   display: inline-block;
   *display: inline;
   zoom: 1;
-}
-
-.wrap {
-  width: 100%;
-  overflow: auto;
-}
-
-.wrap.container {
-  width: 960px;
-  margin: 0;
 }
 
 div.resize {
