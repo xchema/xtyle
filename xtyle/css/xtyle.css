@@ -2603,10 +2603,13 @@ div.resize {
     display: block;
   }
   .mobile {
-    display: inline;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
   }
-  .desktop {
-    display: none;
+  .desktop,
+  .tablet {
+    display: none !important;
   }
   input.small,
   input.medium,
@@ -2626,7 +2629,7 @@ div.resize {
   .unit11,
   .unit12 {
     display: block;
-    width: auto !important;
+    width: auto;
   }
   .responsive-background {
     background-size: auto 100% !important;

@@ -8,10 +8,12 @@ nav a.logo{
     display: block;
 }
 .mobile{
-    display: inline;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
 }
-.desktop{
-    display: none;
+.desktop, .tablet{
+    display: none !important;
 }
 input{
   &.small,&.medium,&.large{
@@ -19,7 +21,7 @@ input{
   }
 }
 .unit1,.unit2,.unit3,.unit4,.unit5,.unit6,.unit7,.unit8,.unit9,.unit10,.unit11,.unit12{
-    width: auto !important;
+    width: auto;
     display: block;
 }
 
