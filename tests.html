@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>xtyle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="raw html page, without styles">
+    <!-- <link rel="stylesheet" type="text/css" href="css/xtyle.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="css/xtyle.less" media="screen">
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+</head>
+<body class="menu" style="background: url(http://emoriz.com/github/bgnoise.png); padding: 50px;">
+
+<input type="text" xtyle="full" style="margin-right: 0">    
+
+
+<!-- try with box-shadow too -->
+<!-- inside span for border -->
+<section>
+<div class="grid">
+<form>
+<input id="male" type="radio" name="gender" value="male" checked="checked"><label for="male">Male</label>
+<input id="female" type="radio" name="gender" value="female"><label for="female">Female</label>
+<br>
+<input id="facebook" type="checkbox" name="techs" value="facebook" checked="checked"><label for="facebook">Facebook</label>
+<input id="google" type="checkbox" name="techs" value="google"><label for="google">Google</label>
+<input id="apple" type="checkbox" name="techs" value="apple"><label for="apple">Apple</label><input type="submit">
+<br>
+<input type="text"><input type="submit">
+<br>
+<input type="text" disabled="disabled" placeholder="disabled field">
+<br>
+<select>
+<option value="apples" selected="selected">Apples</option>
+<option value="oranges">Oranges</option>
+</select>
+<br>
+<input type="submit" class="">
+<br>
+<div class="wrap">
+<input type="text" class="medium unit2"><input type="text" class="medium unit2">
+<br>
+<input type="text" class="unit4 medium"><input type="text" class="medium unit4">
+<br>
+<input type="text" class="unit8">
+</div>
+<br>
+<input type="text" class="small"><input type="submit" class="small">
+<br>
+<input type="text" class=""><input type="submit" class="">
+<br>
+<input type="text" class="medium"><input type="submit" class="medium">
+<br>
+<input type="text" class="large"><input type="submit" class="large">
+</div>
+</form>
+</div>
+
+<div class="grid show">
+    <div class="unit12"></div>
+</div>
+
+<div class="layout-fixed layout-center grid show center">
+    <div class="unit12">here</div>
+    <div class="unit11"></div><div class="unit1" style="left:0">ddd</div>
+    <div class="unit12">here</div>
+    <div class="unit4">here</div><div class="unit4">here</div><div class="unit4">here</div>
+</div>
+</section>
+
+
+
+<!-- SCRIPTS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/xtyle.js"></script>
+</body>
+</html>
