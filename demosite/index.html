@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <title>Scuderia</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="all">
+  <meta name="citation_author" content="xchema">
+  <meta name="description" content="Scuderia is a demo site for xtyle web framework">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <!-- <link rel="apple-touch-icon" href="touch-icon-iphone-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4-precomposed.png"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="" href=""> -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  
+  <link rel="stylesheet/less" type="text/css" href="../css/xtyle.less" media="screen">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/scuderia.css">
+  <link rel="stylesheet" type="text/css" href="xtyle/widgets/gallery/fancybox/fancybox.css">
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+  <script data-main="xtyle/js/config" src="xtyle/js/require.min.js"></script>
+</head>
+<body class="menu" id="link_home">
+
+<!-- NAVIGATION TOP MENU -->
+<nav class="top menu large">
+  <div class="layout-fixed layout-center">
+    <span class="logo"><strong>Scuderia</strong></span>
+    <div class="float-right">
+      <a rel="link_home" href="#"><strong>Home</strong></a>
+      <a rel="boxes" href="#"><strong>Pictures</strong></a>
+      <a rel="directions" href="#"><strong>Directions</strong></a>
+    </div>
+  </div>
+</nav>
+
+<div id="home_banner" class="responsive-background"></div>
+
+<div style="background: black;">
+<div id="boxes" class="layout-fixed layout-center grid center">
+  <div class="unit4 ">
+    <br>
+    <h1 class="lighter">Free pass</h1>
+    <p>
+      You don't need to pay this time. Come and enjoy the show.
+    </p>
+  </div>
+  <div class="unit4">
+    <br>
+    <h1 class="lighter">Amazing cars</h1>
+    <p>
+      Manufactors from around the world will are here. Come see your favorite.
+    </p>
+  </div>
+  <div class="unit4">
+    <br>
+    <h1 class="lighter">Enjoy the show!</h1>
+    <p>
+      Our showroom is open the entire week. Convenience for you. 
+    </p>
+  </div>
+</div>
+</div>
+
+<div id="pictures" class="center border-bottom">
+  <br>
+  <div class="margin padding">
+  <h2>A sneak pick of what you are going to see!</h2>
+  <p class="nomargin">Amazing machines from all around the world in one place.</p>
+  </div>
+  <div class="container center">
+    <a href="xtyle/img/preview1.jpg" class="inline-block circle overflow-hidden" xtyle="fancybox" rel="gallery">
+      <img src="xtyle/img/preview1.jpg" width="200">
+    </a>
+    <a href="xtyle/img/preview2.jpg" class="inline-block circle overflow-hidden" xtyle="fancybox" rel="gallery">
+      <img src="xtyle/img/preview2.jpg" width="200">
+    </a>
+    <a href="xtyle/img/preview3.jpg" class="inline-block circle overflow-hidden" xtyle="fancybox" rel="gallery">
+      <img src="xtyle/img/preview3.jpg" width="200">
+    </a>
+    <a href="xtyle/img/preview4.jpg" class="inline-block circle overflow-hidden" xtyle="fancybox" rel="gallery">
+      <img src="xtyle/img/preview4.jpg" width="200">
+    </a>
+  </div>
+  <br>
+  <br>
+</div>
+
+<div id="directions" style="width: 100%; height: 400px;"></div>
+
+<!-- SCRIPTS -->
+<script src="xtyle/js/jquery.min.js"></script>
+<script src="xtyle/widgets/gallery/fancybox/fancybox.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="../js/xtyle.js"></script>
+<script>
+$(function () {
+
+    $("#loadcontent").load("pages/home.html");
+    
+    // navigation link handler
+    $('nav.menu').on('click', 'a', function(e) {
+        e.preventDefault();
+        var url = $(this).attr('href');
+        $('nav.menu a').removeClass("active");
+        $(this).addClass("active");
+        $('html, body').animate({'scrollTop': $("#"+$(this).attr("rel")).offset().top}, 'slow', 'swing');
+    });
+
+    // Google Maps
+    function initialize() {
+      var mapOptions = {
+      zoom: 15,
+      center: new google.maps.LatLng(37.387617, -122.063234),
+      disableDefaultUI: true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById('directions'), mapOptions);
+    marker = new google.maps.Marker({
+      map:map,
+      draggable:true,
+      animation: google.maps.Animation.DROP,
+      position: mapOptions.center
+    });
+    google.maps.event.addListener(marker, 'click', toggleBounce);
+    }
+
+    function toggleBounce() {
+      if (marker.getAnimation() != null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
+</body>
+</html>
