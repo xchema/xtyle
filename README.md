@@ -9,7 +9,7 @@ Wiki: [https://github.com/xchema/xtyle/wiki](https://github.com/xchema/xtyle/wik
 
 Installation
 ------------
-Download **xtyle** [clicking here](http://xchema.github.com/xtyle/xtyle.zip).
+Download **xtyle** [clicking here](https://github.com/xchema/xtyle/archive/v0.1.zip).
 
 [Installation](https://github.com/xchema/xtyle/wiki/Installation)
 
