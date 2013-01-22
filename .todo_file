@@ -22,7 +22,6 @@
 + bash - minify scripts/css
 + bash - compile less files (with @import)
 + make compatible with xmaker
-+ JS - photo/video gallery
 + JS - form validation
 + JS - number input
 + JS - selectbox
@@ -83,3 +82,4 @@
 - check if values on radio/checkbox are send on form
 - Create wiki on github
 - Improve README.md
+- JS - photo/video gallery
