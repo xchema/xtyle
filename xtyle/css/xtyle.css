@@ -2295,17 +2295,17 @@ nav ul li {
   float: left;
 }
 
-.clear {
+.clearfix {
   zoom: 1;
 }
 
-.clear:before,
-.clear:after {
+.clearfix:before,
+.clearfix:after {
   display: table;
   content: "";
 }
 
-.clear:after {
+.clearfix:after {
   clear: both;
 }
 
@@ -2327,7 +2327,7 @@ img.filter-grayscale {
 }
 
 .layout-fixed {
-  width: 970px;
+  width: 960px;
 }
 
 .layout-center {
