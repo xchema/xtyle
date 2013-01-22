@@ -10,15 +10,6 @@ Font license info
    Homepage:  http://www.entypo.com
 
 
-## Typicons
-
-   (c) Stephen Hutchings 2012
-
-   Author:    Stephen Hutchings
-   License:   CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
-   Homepage:  http://typicons.com/
-
-
 ## Font Awesome
 
    Copyright (C) 2012 by Dave Gandy
@@ -53,14 +44,5 @@ Font license info
    Author:    Just Be Nice studio
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  http://www.justbenicestudio.com/studio/websymbols/
-
-
-## Brandico
-
-   (C) 2012 by Vitaly Puzrin
-
-   Author:    Crowdsourced, for Fontello project
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  
 
 
