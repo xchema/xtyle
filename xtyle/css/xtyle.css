@@ -2004,6 +2004,10 @@ alert {
           border-radius: 3px;
 }
 
+alert i {
+  margin-right: 2.5px;
+}
+
 alert a {
   color: #b39527;
   text-decoration: underline;
