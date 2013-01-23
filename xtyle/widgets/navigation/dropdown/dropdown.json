@@ -1,0 +1,4 @@
+widget-navigation-dropdown.selectors = {
+  "min-width" : "300px",
+  ""
+}
