@@ -94,7 +94,12 @@ input[type=checkbox]{
 
 
 input, a.btn, button, select{
-  margin: @margin/2 @margin*1.5 @margin 0;
+  margin: @margin/2 @margin @margin 0;
+}
+input{
+  &.medium, &.large{
+    margin-right: @margin*1.5;
+  }
 }
 input[type=text],
 input[type=email],
