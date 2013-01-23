@@ -1325,12 +1325,16 @@ span.radio {
   padding: 3.3333333333333335px;
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+       -o-border-radius: 10px;
           border-radius: 10px;
 }
 
 span.radio span {
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+       -o-border-radius: 10px;
           border-radius: 10px;
 }
 
@@ -1347,6 +1351,8 @@ span.checkbox {
   padding: 6.666666666666667px;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+       -o-border-radius: 4px;
           border-radius: 4px;
 }
 
@@ -1426,6 +1432,11 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
       -ms-transition: border-color 0.1s linear;
@@ -1732,6 +1743,8 @@ input[type=number].search,
 textarea.search {
   -webkit-border-radius: 50px;
      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+       -o-border-radius: 50px;
           border-radius: 50px;
 }
 
@@ -2001,6 +2014,8 @@ alert {
   border: 1px solid #ede0ae;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+       -o-border-radius: 3px;
           border-radius: 3px;
 }
 
@@ -2082,6 +2097,8 @@ code {
   border: 1px solid #e8e8e8;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+       -o-border-radius: 3px;
           border-radius: 3px;
 }
 
@@ -2106,6 +2123,8 @@ pre code {
 pre.rounded {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+       -o-border-radius: 3px;
           border-radius: 3px;
 }
 
@@ -2295,17 +2314,17 @@ nav ul li {
   float: left;
 }
 
-.clear {
+.clearfix {
   zoom: 1;
 }
 
-.clear:before,
-.clear:after {
+.clearfix:before,
+.clearfix:after {
   display: table;
   content: "";
 }
 
-.clear:after {
+.clearfix:after {
   clear: both;
 }
 
@@ -2327,10 +2346,10 @@ img.filter-grayscale {
 }
 
 .layout-fixed {
-  width: 970px;
+  width: 960px;
 }
 
-.layout-center {
+.layout-fixed.layout-center {
   margin-right: auto;
   margin-left: auto;
   text-align: left;
@@ -2343,6 +2362,8 @@ img.filter-grayscale {
 .rounded {
   -webkit-border-radius: 5px !important;
      -moz-border-radius: 5px !important;
+      -ms-border-radius: 5px !important;
+       -o-border-radius: 5px !important;
           border-radius: 5px !important;
 }
 
@@ -2365,6 +2386,8 @@ img.filter-grayscale {
 .circle {
   -webkit-border-radius: 100%;
      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+       -o-border-radius: 100%;
           border-radius: 100%;
 }
 
@@ -2456,9 +2479,14 @@ img.filter-grayscale {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .inline-block {
   display: inline-block;
   *display: inline;
+  vertical-align: top;
   zoom: 1;
 }
 
