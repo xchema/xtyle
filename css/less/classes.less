@@ -18,6 +18,7 @@ img.filter-grayscale{
     position: relative;
 }
 
+//if want to force a fluid layout
 .layout-fluid{
   width: auto !important;
   text-align: left;
@@ -25,7 +26,8 @@ img.filter-grayscale{
 .layout-fixed{
   width: @mediaFixed;
 }
-.layout-center{
+// just for fixed layouts
+.layout-fixed.layout-center{
   margin-left: auto;
   margin-right: auto;
   text-align:   left;
@@ -114,10 +116,14 @@ img.filter-grayscale{
 .block{
   display: block; 
 }
+.inline{
+  display: inline;
+}
 .inline-block{
   display: inline-block;
   zoom: 1;
   *display: inline;
+  vertical-align: top;
 }
 
 //resize for elements
