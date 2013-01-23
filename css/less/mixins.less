@@ -1,14 +1,22 @@
+.box-sizing () {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 //color schema
-.color {color: @color;}
+.color { color: @color; }
 //complimentary colors
-@complement1: spin(@color, 180);
-@complement2: darken(spin(@color, 180), 5%);
-@lighten1: lighten(@color, 15%);
-@lighten2: lighten(@color, 30%);
-.colorComp1 {color: @complement1;}
-.colorComp2 {color: @complement2;}
-.colorComp3 {color: @lighten1;}
-.colorComp4 {color: @lighten2;}
+@complement1: spin( @color, 180 );
+@complement2: darken( spin(@color, 180), 5% );
+@lighten1: lighten( @color, 15% );
+@lighten2: lighten( @color, 30% );
+.colorComp1 { color: @complement1; }
+.colorComp2 { color: @complement2; }
+.colorComp3 { color: @lighten1; }
+.colorComp4 { color: @lighten2; }
 //subtle colors
 @lighter1: lighten(spin(@color, 5), 10%);
 @lighter2: lighten(spin(@color, 10), 20%);
@@ -20,12 +28,14 @@
 .colorSubtle4 {color: @darker2;}
 
 //border radius
-.borderRadius (@radius: 5px){
+.borderRadius ( @radius: 5px ) {
   -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
+     -moz-border-radius: @radius;
+      -ms-border-radius: @radius;
+       -o-border-radius: @radius;
+          border-radius: @radius;
 }
-.borderRadiusTop (@radius: 5px){
+.borderRadiusTop ( @radius: 5px ) {
   -webkit-border-radius: @radius @radius 0px 0px;
      -moz-border-radius: @radius @radius 0px 0px;
       -ms-border-radius: @radius @radius 0px 0px;

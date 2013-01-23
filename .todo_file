@@ -1,3 +1,4 @@
++ responsive only when putting class on 'html' or 'body' tag
 + implement http://www.w3schools.com/tags/tag_figcaption.asp
 + implement http://ivaynberg.github.com/select2/
 + add raindowjs for syntax highlight on gh-pages website
