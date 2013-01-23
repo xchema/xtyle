@@ -1477,7 +1477,12 @@ input,
 a.btn,
 button,
 select {
-  margin: 5px 15px 10px 0;
+  margin: 5px 10px 10px 0;
+}
+
+input.medium,
+input.large {
+  margin-right: 15px;
 }
 
 input[type=text],
