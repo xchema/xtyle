@@ -1321,6 +1321,10 @@ div.grid .show .unit12 {
   width: 920px;
 }
 
+select[multiple=multiple] {
+  padding: 0;
+}
+
 span.radio {
   padding: 3.3333333333333335px;
   -webkit-border-radius: 10px;
