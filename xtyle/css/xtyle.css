@@ -2607,74 +2607,74 @@ div.resize {
 }
 
 @media screen and (max-width: 900px) {
-  .unit1,
-  .unit2,
-  .unit3,
-  .unit4,
-  .unit5 {
+  html.responsive .unit1,
+  html.responsive .unit2,
+  html.responsive .unit3,
+  html.responsive .unit4,
+  html.responsive .unit5 {
     display: inline-block;
     *display: inline;
     float: none !important;
     zoom: 1;
   }
-  .unit6,
-  .unit7,
-  .unit8,
-  .unit9,
-  .unit10,
-  .unit11,
-  .unit12 {
+  html.responsive .unit6,
+  html.responsive .unit7,
+  html.responsive .unit8,
+  html.responsive .unit9,
+  html.responsive .unit10,
+  html.responsive .unit11,
+  html.responsive .unit12 {
     float: none !important;
     width: auto;
   }
-  .layout-fixed {
+  html.responsive .layout-fixed {
     width: auto;
   }
-  .desktop {
+  html.responsive .desktop {
     display: none;
   }
 }
 
 @media screen and (max-width: 540px) {
-  body {
+  html.responsive body {
     font-size: 80%;
   }
-  nav a {
+  html.responsive nav a {
     display: none;
   }
-  nav a.logo {
+  html.responsive nav a.logo {
     display: block;
   }
-  .mobile {
+  html.responsive .mobile {
     display: inline-block;
     *display: inline;
     zoom: 1;
   }
-  .desktop,
-  .tablet {
+  html.responsive .desktop,
+  html.responsive .tablet {
     display: none !important;
   }
-  input.small,
-  input.medium,
-  input.large {
+  html.responsive input.small,
+  html.responsive input.medium,
+  html.responsive input.large {
     width: auto;
   }
-  .unit1,
-  .unit2,
-  .unit3,
-  .unit4,
-  .unit5,
-  .unit6,
-  .unit7,
-  .unit8,
-  .unit9,
-  .unit10,
-  .unit11,
-  .unit12 {
+  html.responsive .unit1,
+  html.responsive .unit2,
+  html.responsive .unit3,
+  html.responsive .unit4,
+  html.responsive .unit5,
+  html.responsive .unit6,
+  html.responsive .unit7,
+  html.responsive .unit8,
+  html.responsive .unit9,
+  html.responsive .unit10,
+  html.responsive .unit11,
+  html.responsive .unit12 {
     display: block;
     width: auto;
   }
-  .responsive-background {
+  html.responsive .responsive-background {
     background-size: auto 100% !important;
   }
 }
