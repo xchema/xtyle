@@ -2348,6 +2348,10 @@ img.filter-grayscale {
           filter: grayscale(1);
 }
 
+.position-absolute {
+  position: absolute;
+}
+
 .position-fixed {
   position: fixed;
 }
@@ -2595,8 +2599,16 @@ div.resize {
   border-top: 1px solid #e8e8e8;
 }
 
+.border-right {
+  border-right: 1px solid #e8e8e8;
+}
+
 .border-bottom {
   border-bottom: 1px solid #e8e8e8;
+}
+
+.border-left {
+  border-left: 1px solid #e8e8e8;
 }
 
 .noborder {
