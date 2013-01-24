@@ -1471,6 +1471,7 @@ textarea.noresize {
 input[type=radio],
 input[type=checkbox] {
   margin: 5px;
+  visibility: hidden;
 }
 
 input,
@@ -2345,6 +2346,10 @@ img.filter-grayscale {
       -ms-filter: grayscale(1);
        -o-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+.position-fixed {
+  position: fixed;
 }
 
 .position-relative {
