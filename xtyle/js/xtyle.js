@@ -1,4 +1,4 @@
-$(function(){
+define(["jquery"], function($){
 
     var xtyle = function(){}; //namespace
     var x = xtyle.prototype;
@@ -61,7 +61,7 @@ $(function(){
         }
     }//x.controller
     x.view = {
-        events : function(){
+        events : function () {
             //INITIALIZE WIDGETS
             if($.inArray('fancybox', x.model.widgets) >= 0){
                 if($("a[xtyle=fancybox]").length){
@@ -85,7 +85,7 @@ $(function(){
                     case 'radio':
                       x.controller._radio.radioButton('#'+$(this).attr('for'));
                       break;
-                    case 'checkbox':
+                      case 'checkbox':
                       x.controller._checkbox.checkBox('#'+$(this).attr('for'));
                       break;  
                 }//switch
@@ -98,4 +98,5 @@ $(function(){
             });
         }()
     };//x.view    
-});
+
+});// requirejs
