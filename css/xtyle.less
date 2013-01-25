@@ -33,11 +33,17 @@
 
 // TABLETS
 @media screen and (max-width: @mediaTablet){
-    @import "less/tablet.less";
+  @import "less/tablet.less";
 }
 // MOBILE PHONES
 @media screen and (max-width: @mediaMobile){
-    @import "less/mobile.less";
+  @import "less/mobile.less";
+}
+
+@media screen and (max-height: @mediaMobile){
+  .position-fixed{
+    position: absolute;
+  }
 }
 
 // WIDGETS 
