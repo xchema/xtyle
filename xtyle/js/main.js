@@ -14,6 +14,6 @@ function loadCss(url) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-require(["jquery", "xtyle", "marizmelo"], function($) {
+require(["jquery", "xtyle"], function($) {
 
 });
