@@ -1,7 +1,6 @@
 requirejs.config({
   paths: {
-    'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min',
-    'widgets' : '../widgets'
+    'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min'
   }
 });
 
@@ -14,6 +13,4 @@ function loadCss(url) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-require(["jquery", "xtyle", "site"], function($) {
-
-});
+require(["jquery", "xtyle", "site"], function($) {});

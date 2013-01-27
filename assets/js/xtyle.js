@@ -96,6 +96,8 @@ define(["jquery"], function($){
             $(window).resize(function() {
                 x.controller._input.resizeInput();
             });
-        }()
-    };//x.view    
+        }
+    };//x.view 
+
+    return x;
 });
