@@ -1,56 +1,70 @@
-.unit(@unit){
-  width: @unit;
-}
 div.grid{
   overflow: auto;
-  div.unit1, div.unit2, div.unit3, div.unit4, div.unit5, div.unit6, div.unit7, div.unit8, div.unit9, div.unit10, div.unit11, div.unit12{
-    float: left;
+
+  .grid1 div,.grid2 div, .grid4 div, .grid5 div, .grid3 div, .grid6 div, .grid7 div, .grid8 div, .grid9 div, .grid10 div, .grid11 div, .grid12 div, .grid13 div, .grid14 div, .grid15 div, .grid16 div{ 
     margin: @margin;
-    padding: @padding;
     &.show{
-      background: @background !important;
+      background: @background;
     }
   }
-  &.show{
-    .unit1, .unit2, .unit3, .unit4, .unit5, .unit6, .unit7, .unit8, .unit9, .unit10, .unit11, .unit12{
-      background: @background !important;
-    }
+  .grid2, .grid4, .grid3, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12, .grid13, .grid14, .grid15, .grid16{
+    overflow: hidden;
+    float: left;
   }
-}
-.unit1{
-    .unit(@unit);
-}
-.unit2{
-    .unit(4*@margin+2*@unit);
-}
-.unit3{
-    .transition(width, .1s, linear);
-    .unit(8*@margin+3*@unit);
-}
-.unit4{
-    .unit(12*@margin+4*@unit);
-}
-.unit5{
-    .unit(16*@margin+5*@unit);
-}
-.unit6{
-    .unit(20*@margin+6*@unit);
-}
-.unit7{
-    .unit(24*@margin+7*@unit);
-}
-.unit8{
-    .unit(28*@margin+8*@unit);
-}
-.unit9{
-    .unit(32*@margin+9*@unit);
-}
-.unit10{
-    .unit(36*@margin+10*@unit);
-}
-.unit11{
-    .unit(40*@margin+11*@unit);
-}
-.unit12{
-    .unit(44*@margin+12*@unit);
+
+  .skip{
+    float: left;
+    height: 1px;
+    overflow: hidden;
+    background: none;
+  }
+
+  .grid1{
+    width: auto;
+  }
+  .grid2{
+    width: 50%;
+  }
+  .grid3{
+    width: 33.314%;
+  }
+  .grid4{
+    width: 25%;
+  }
+  .grid5{
+    width: 20%;
+  }
+  .grid6{
+    width: 16.66%;
+  }
+  .grid7{
+    width: 14.28%;
+  }
+  .grid8{
+    width: 12.5%;
+  }
+  .grid9{
+    width: 11.11%;
+  }
+  .grid10{
+    width: 10%;
+  }
+  .grid11{
+    width: 9.087%;
+  }
+  .grid12{
+    width: 8.33%;
+  }
+  .grid13{
+    width: 7.69%;
+  }
+  .grid14{
+    width: 7.14%;
+  }
+  .grid15{
+    width: 6.663%;
+  }
+  .grid16{
+    width: 6.25%;
+  }
 }

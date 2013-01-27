@@ -1,4 +1,4 @@
-$(function(){
+define(["jquery"], function($){
 
     var xtyle = function(){}; //namespace
     var x = xtyle.prototype;
@@ -8,10 +8,10 @@ $(function(){
     };//x.model
     x.controller = {
         _input : {
-            resizeInput : function(){
+            resizeInput : function() {
                 var elem = 'input[xtyle=full]';
-                if($(elem).length){
-                    $(elem).width($(elem).parent().width() - ( $(elem).outerWidth() - $(elem).width() ) );
+                if( $( elem ).length ) {
+                    $( elem ).width( $( elem ).parent().width() - ( $( elem ).outerWidth() - $( elem ).width() ) );
                 }
             },
             text : {},
