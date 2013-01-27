@@ -8,10 +8,10 @@ define(["jquery"], function($){
     };//x.model
     x.controller = {
         _input : {
-            resizeInput : function(){
+            resizeInput : function() {
                 var elem = 'input[xtyle=full]';
-                if($(elem).length){
-                    $(elem).width($(elem).parent().width() - ( $(elem).outerWidth() - $(elem).width() ) );
+                if( $( elem ).length ) {
+                    $( elem ).width( $( elem ).parent().width() - ( $( elem ).outerWidth() - $( elem ).width() ) );
                 }
             },
             text : {},
@@ -61,7 +61,7 @@ define(["jquery"], function($){
         }
     }//x.controller
     x.view = {
-        events : function () {
+        events : function(){
             //INITIALIZE WIDGETS
             if($.inArray('fancybox', x.model.widgets) >= 0){
                 if($("a[xtyle=fancybox]").length){
@@ -85,7 +85,7 @@ define(["jquery"], function($){
                     case 'radio':
                       x.controller._radio.radioButton('#'+$(this).attr('for'));
                       break;
-                      case 'checkbox':
+                    case 'checkbox':
                       x.controller._checkbox.checkBox('#'+$(this).attr('for'));
                       break;  
                 }//switch
@@ -98,5 +98,4 @@ define(["jquery"], function($){
             });
         }()
     };//x.view    
-
-});// requirejs
+});
