@@ -1224,6 +1224,25 @@ div.grid {
   overflow: auto;
 }
 
+div.grid.show .grid1 div,
+div.grid.show .grid2 div,
+div.grid.show .grid4 div,
+div.grid.show .grid5 div,
+div.grid.show .grid3 div,
+div.grid.show .grid6 div,
+div.grid.show .grid7 div,
+div.grid.show .grid8 div,
+div.grid.show .grid9 div,
+div.grid.show .grid10 div,
+div.grid.show .grid11 div,
+div.grid.show .grid12 div,
+div.grid.show .grid13 div,
+div.grid.show .grid14 div,
+div.grid.show .grid15 div,
+div.grid.show .grid16 div {
+  background: #f7f7f7;
+}
+
 div.grid .grid1 div,
 div.grid .grid2 div,
 div.grid .grid4 div,
@@ -1241,25 +1260,6 @@ div.grid .grid14 div,
 div.grid .grid15 div,
 div.grid .grid16 div {
   margin: 10px;
-}
-
-div.grid .grid1 div.show,
-div.grid .grid2 div.show,
-div.grid .grid4 div.show,
-div.grid .grid5 div.show,
-div.grid .grid3 div.show,
-div.grid .grid6 div.show,
-div.grid .grid7 div.show,
-div.grid .grid8 div.show,
-div.grid .grid9 div.show,
-div.grid .grid10 div.show,
-div.grid .grid11 div.show,
-div.grid .grid12 div.show,
-div.grid .grid13 div.show,
-div.grid .grid14 div.show,
-div.grid .grid15 div.show,
-div.grid .grid16 div.show {
-  background: #f7f7f7;
 }
 
 div.grid .grid1,
@@ -2411,7 +2411,6 @@ img.filter-grayscale {
 .layout-fixed.layout-center {
   margin-right: auto;
   margin-left: auto;
-  text-align: left;
 }
 
 .text-shadow {
