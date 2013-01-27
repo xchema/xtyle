@@ -2,15 +2,11 @@ xtyle
 ======
 Simple HTML, CSS, and JavaScript framework for creating amazing web applications.
 
-Links
------
 Website: [http://xtyle.xchema.com](http://xtyle.xchema.com)<br>
 Wiki: [https://github.com/xchema/xtyle/wiki](https://github.com/xchema/xtyle/wiki)
 
-Installation
-------------
-Download **xtyle** [clicking here](https://github.com/xchema/xtyle/archive/v0.1.zip).
-
+Wiki
+----
 [Installation](https://github.com/xchema/xtyle/wiki/Installation)
 
 Copyright and license
