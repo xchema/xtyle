@@ -1235,11 +1235,7 @@ div.grid.show .grid8 div,
 div.grid.show .grid9 div,
 div.grid.show .grid10 div,
 div.grid.show .grid11 div,
-div.grid.show .grid12 div,
-div.grid.show .grid13 div,
-div.grid.show .grid14 div,
-div.grid.show .grid15 div,
-div.grid.show .grid16 div {
+div.grid.show .grid12 div {
   background: #f7f7f7;
 }
 
@@ -1254,11 +1250,7 @@ div.grid .grid8 div,
 div.grid .grid9 div,
 div.grid .grid10 div,
 div.grid .grid11 div,
-div.grid .grid12 div,
-div.grid .grid13 div,
-div.grid .grid14 div,
-div.grid .grid15 div,
-div.grid .grid16 div {
+div.grid .grid12 div {
   padding: 10px;
   margin: 10px;
 }
@@ -1274,11 +1266,7 @@ div.grid .grid8,
 div.grid .grid9,
 div.grid .grid10,
 div.grid .grid11,
-div.grid .grid12,
-div.grid .grid13,
-div.grid .grid14,
-div.grid .grid15,
-div.grid .grid16 {
+div.grid .grid12 {
   float: left;
   overflow: hidden;
 }
@@ -1336,22 +1324,6 @@ div.grid .grid11 {
 
 div.grid .grid12 {
   width: 8.33%;
-}
-
-div.grid .grid13 {
-  width: 7.69%;
-}
-
-div.grid .grid14 {
-  width: 7.14%;
-}
-
-div.grid .grid15 {
-  width: 6.663%;
-}
-
-div.grid .grid16 {
-  width: 6.25%;
 }
 
 select[multiple=multiple] {
