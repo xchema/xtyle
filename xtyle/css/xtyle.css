@@ -1259,6 +1259,7 @@ div.grid .grid13 div,
 div.grid .grid14 div,
 div.grid .grid15 div,
 div.grid .grid16 div {
+  padding: 10px;
   margin: 10px;
 }
 
