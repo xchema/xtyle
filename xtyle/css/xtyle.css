@@ -2659,20 +2659,14 @@ div.resize {
 }
 
 @media screen and (max-width: 900px) {
-  html.responsive .unit1,
-  html.responsive .unit2,
-  html.responsive .unit3,
-  html.responsive .unit4,
-  html.responsive .unit5,
-  html.responsive .unit6,
-  html.responsive .unit7,
-  html.responsive .unit8,
-  html.responsive .unit9,
-  html.responsive .unit10,
-  html.responsive .unit11,
-  html.responsive .unit12 {
-    float: none !important;
-    width: auto;
+  html.responsive .grid6,
+  html.responsive .grid7,
+  html.responsive .grid8,
+  html.responsive .grid9,
+  html.responsive .grid10,
+  html.responsive .grid11,
+  html.responsive .grid12 {
+    width: 100%;
   }
   html.responsive .layout-fixed {
     width: auto;
@@ -2706,20 +2700,12 @@ div.resize {
   html.responsive input.large {
     width: auto;
   }
-  html.responsive .unit1,
-  html.responsive .unit2,
-  html.responsive .unit3,
-  html.responsive .unit4,
-  html.responsive .unit5,
-  html.responsive .unit6,
-  html.responsive .unit7,
-  html.responsive .unit8,
-  html.responsive .unit9,
-  html.responsive .unit10,
-  html.responsive .unit11,
-  html.responsive .unit12 {
-    display: block;
-    width: auto;
+  html.responsive .grid1,
+  html.responsive .grid2,
+  html.responsive .grid3,
+  html.responsive .grid4,
+  html.responsive .grid5 {
+    width: 100%;
   }
   html.responsive .responsive-background {
     background-size: auto 100% !important;
