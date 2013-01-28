@@ -1,3 +1,4 @@
++ aside element stylesheet
 + fix gap on form buttons on mobile devices
 + normalize class names to CSS like names
 + tags, with optional 'x' to close, use rounded and color design
