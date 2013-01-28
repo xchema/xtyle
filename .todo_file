@@ -92,3 +92,4 @@
 - create tag v0.1 for built branch
 - responsive only when putting class on 'html' or 'body' tag
 - put all code snipets on GIST
+- change name for alert warning -> attention
