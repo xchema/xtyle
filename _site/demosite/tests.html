@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+    <style>
+        .swipe{
+            width: 200px;
+        }
+        .swipe ul{
+            list-style: none;
+            padding: 0;
+        }
+        .swipe li{
+            background: blue;
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+<div id='slider3' class='swipe'>
+  <ul>
+    <li style='display:block'><div>1</div></li>
+    <li style='display:none'><div>2</div></li>
+    <li style='display:none'><div>3</div></li>
+    <li style='display:none'><div>4</div></li>
+    <li style='display:none'><div>5</div></li>
+  </ul>
+</div>
+
+<a href='#' onclick='slider3.prev();return false;'>prev</a> 
+<a href='#' onclick='slider3.next();return false;'>next</a>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="xtyle/widgets/slideshow/swipejs/swipejs.js"></script>
+    <script>
+//var slider3 = new Swipe(document.getElementById('slider3'));
+$("#slider3").swipejs();
+</script>
+</body>
+</html>
