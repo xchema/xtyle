@@ -14,8 +14,8 @@
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/fontello/fontello.eot");
-  src: url("fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("fonts/fontello/fontello.woff") format('woff'), url("fonts/fontello/fontello.ttf") format('truetype'), url("fonts/fontello/fontello.svg#fontello") format('svg');
+  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot");
+  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.woff") format('font-woff'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.svg#fontello") format('svg');
 }
 
 [class^="icon-"]:before,
@@ -1252,7 +1252,7 @@ div.grid .grid10 div,
 div.grid .grid11 div,
 div.grid .grid12 div {
   padding: 10px;
-  margin: 5px;
+  margin: 10px;
 }
 
 div.grid .grid1,
@@ -1839,7 +1839,7 @@ p {
   word-wrap: break-word;
 }
 
-p .first-letter {
+p .drop-caps {
   display: block;
   float: left;
   padding: 5px 5px 0 0;
@@ -1932,7 +1932,6 @@ thin {
 }
 
 table {
-  margin: 20px 0;
   border-collapse: collapse;
 }
 
@@ -2022,7 +2021,8 @@ address .org {
   font-weight: bold;
 }
 
-alert {
+alert,
+tag {
   display: block;
   padding: 6px 10px;
   font-style: normal;
@@ -2036,75 +2036,96 @@ alert {
           border-radius: 3px;
 }
 
-alert i {
+alert i,
+tag i {
   margin-right: 2.5px;
 }
 
-alert a {
+alert a,
+tag a {
   color: #b39527;
   text-decoration: underline;
 }
 
-alert a:hover {
+alert a:hover,
+tag a:hover {
   color: #746119;
 }
 
-alert a:active {
+alert a:active,
+tag a:active {
   color: #b39527;
 }
 
-alert.error {
+alert.error,
+tag.error {
   color: #be5d60;
   background: #f7ebeb;
   border-color: #f0d9d9;
 }
 
-alert.error a {
+alert.error a,
+tag.error a {
   color: #be5d60;
 }
 
-alert.error a:hover {
+alert.error a:hover,
+tag.error a:hover {
   color: #933b3e;
 }
 
-alert.error a:active {
+alert.error a:active,
+tag.error a:active {
   color: #be5d60;
 }
 
-alert.info {
+alert.info,
+tag.info {
   color: #5994bc;
   background: #e7eff5;
   border-color: #d5e4ee;
 }
 
-alert.info a {
+alert.info a,
+tag.info a {
   color: #5994bc;
 }
 
-alert.info a:hover {
+alert.info a:hover,
+tag.info a:hover {
   color: #3a6c8f;
 }
 
-alert.info a:active {
+alert.info a:active,
+tag.info a:active {
   color: #5994bc;
 }
 
-alert.success {
+alert.success,
+tag.success {
   color: #5f9f4d;
   background: #e4f0e1;
   border-color: #c6e0bf;
 }
 
-alert.success a {
+alert.success a,
+tag.success a {
   color: #5f9f4d;
 }
 
-alert.success a:hover {
+alert.success a:hover,
+tag.success a:hover {
   color: #406b34;
 }
 
-alert.success a:active {
+alert.success a:active,
+tag.success a:active {
   color: #5f9f4d;
+}
+
+tag {
+  display: inline;
+  font-size: 80%;
 }
 
 code {
@@ -2237,7 +2258,7 @@ ul.inline {
 
 ul.inline li {
   display: inline;
-  padding: 5px 10px;
+  padding: 5px;
 }
 
 nav {
@@ -2407,11 +2428,11 @@ img.filter-grayscale {
 }
 
 .border-radius-bottom {
-  -webkit-border-radius: 5px 5px 0 0px;
-     -moz-border-radius: 5px 5px 0 0px;
-      -ms-border-radius: 5px 5px 0 0px;
-       -o-border-radius: 5px 5px 0 0px;
-          border-radius: 5px 5px 0 0px;
+  -webkit-border-radius: 0 0px 5px 5px;
+     -moz-border-radius: 0 0px 5px 5px;
+      -ms-border-radius: 0 0px 5px 5px;
+       -o-border-radius: 0 0px 5px 5px;
+          border-radius: 0 0px 5px 5px;
 }
 
 .border-radius2x {
@@ -2677,6 +2698,9 @@ div.resize {
 }
 
 @media screen and (max-width: 540px) {
+  html.responsive aside {
+    display: none;
+  }
   html.responsive body {
     font-size: 80%;
   }
@@ -2709,6 +2733,20 @@ div.resize {
   }
   html.responsive .responsive-background {
     background-size: auto 100% !important;
+  }
+  html.responsive div.grid .grid1 div,
+  html.responsive div.grid .grid2 div,
+  html.responsive div.grid .grid4 div,
+  html.responsive div.grid .grid5 div,
+  html.responsive div.grid .grid3 div,
+  html.responsive div.grid .grid6 div,
+  html.responsive div.grid .grid7 div,
+  html.responsive div.grid .grid8 div,
+  html.responsive div.grid .grid9 div,
+  html.responsive div.grid .grid10 div,
+  html.responsive div.grid .grid11 div,
+  html.responsive div.grid .grid12 div {
+    margin: 5px;
   }
 }
 
