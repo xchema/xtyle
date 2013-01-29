@@ -1,14 +1,30 @@
-define(["jquery"], function($){
+requirejs.config({
+  paths: {
+    'text' : '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.3/text.js',
+    'modernizr' : '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min',
+    'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min',
+    'widgets' : '../widgets'
+  }
+});
 
-    var xtyle = function(){}; //namespace
+require ( [ 'modernizr', 'jquery' ], function ( modernizr, $ ) {
+
+    var xtyle = function () {}; //namespace
     var x = xtyle.prototype;
     x.model = {
-        modules : ['radio','checkbox','select'],
-        widgets : ['fancybox']
+        modules : [ 'radio', 'checkbox', 'select' ],
+        widgets : [ 'fancybox' ]
     };//x.model
     x.controller = {
+        _loadCss : function ( url ) {
+            var link = document.createElement( 'link' );
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            link.href = url;
+            document.getElementsByTagName("head")[0].appendChild(link);
+        },    
         _input : {
-            resizeInput : function() {
+            resizeInput : function () {
                 var elem = 'input[xtyle=full]';
                 if( $( elem ).length ) {
                     $( elem ).width( $( elem ).parent().width() - ( $( elem ).outerWidth() - $( elem ).width() ) );
@@ -97,5 +113,8 @@ define(["jquery"], function($){
                 x.controller._input.resizeInput();
             });
         }()
-    };//x.view    
+    };//x.view 
+
+    return x; // RETURN GLOBAL OBJECT   
+
 });
