@@ -12,8 +12,7 @@ require ( [ 'modernizr', 'jquery' ], function ( modernizr, $ ) {
     var xtyle = function () {}; //namespace
     var x = xtyle.prototype;
     x.model = {
-        modules : [ 'radio', 'checkbox', 'select' ],
-        widgets : [ 'fancybox' ]
+        modules : [ 'radio', 'checkbox', 'select' ]
     };//x.model
     x.controller = {
         _loadCss : function ( url ) {
@@ -78,13 +77,6 @@ require ( [ 'modernizr', 'jquery' ], function ( modernizr, $ ) {
     }//x.controller
     x.view = {
         events : function(){
-            //INITIALIZE WIDGETS
-            if($.inArray('fancybox', x.model.widgets) >= 0){
-                if($("a[xtyle=fancybox]").length){
-                    $("a[xtyle=fancybox]").fancybox();
-                }
-            }
-
             //INITIALIZE MODULES
             if($.inArray('radio', x.model.modules) >= 0){
                 x.controller._radio.init();
