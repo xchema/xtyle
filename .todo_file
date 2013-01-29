@@ -1,3 +1,6 @@
++ check bottom space for lists
++ make alert/tag without class to be gray
++ make tag elements based on alert, but with font-size 80% and display:inline
 + aside element stylesheet
 + fix gap on form buttons on mobile devices
 + normalize class names to CSS like names
