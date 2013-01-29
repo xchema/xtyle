@@ -1839,7 +1839,7 @@ p {
   word-wrap: break-word;
 }
 
-p .first-letter {
+p .drop-caps {
   display: block;
   float: left;
   padding: 5px 5px 0 0;
