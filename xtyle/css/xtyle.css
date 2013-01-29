@@ -2734,6 +2734,20 @@ div.resize {
   html.responsive .responsive-background {
     background-size: auto 100% !important;
   }
+  html.responsive div.grid .grid1 div,
+  html.responsive div.grid .grid2 div,
+  html.responsive div.grid .grid4 div,
+  html.responsive div.grid .grid5 div,
+  html.responsive div.grid .grid3 div,
+  html.responsive div.grid .grid6 div,
+  html.responsive div.grid .grid7 div,
+  html.responsive div.grid .grid8 div,
+  html.responsive div.grid .grid9 div,
+  html.responsive div.grid .grid10 div,
+  html.responsive div.grid .grid11 div,
+  html.responsive div.grid .grid12 div {
+    margin: 5px;
+  }
 }
 
 @media screen and (max-height: 540px) {
