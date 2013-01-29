@@ -1,16 +1,9 @@
 requirejs.config({
+  baseUrl: "assets/js",
   paths: {
-    'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min'
+    'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min',
+    'xtyle' : 'https://s3-us-west-1.amazonaws.com/xtyle/xtyle'
   }
 });
 
-// CSS load method
-function loadCss(url) {
-    var link = document.createElement("link");
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.href = url;
-    document.getElementsByTagName("head")[0].appendChild(link);
-}
-
-require(["jquery", "xtyle", "site"], function($) {});
+require(["jquery", "xtyle"], function($) {});

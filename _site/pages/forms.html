@@ -1,11 +1,41 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="xtyle/js/xtyle.js"></script>
+<!DOCTYPE HTML>
+<html class="responsive">
+<head>
+    <title>xtyle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Simple HTML, CSS, and JavaScript framework for creating amazing web applications.">
+    <!-- <link rel="stylesheet" type="text/css" href="css/xtyle.css"> -->
+    <link href="/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/xtyle/css/xtyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/css/browsers.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/site.css">
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</head>
+<body class="menu" style="background: url(http://emoriz.com/github/bgnoise.png)">
+
+<nav class="menu top inverse dropbox">
+    <span class="logo">xtyle</span>
+    <a href="/">Home</a>
+    <a href="/pages/typography.html">Typography</a>
+    <a href="/pages/forms.html">Forms</a>
+    <a href="/pages/layout.html">Layout</a>
+    <!-- <a href="pages/widgets.html">Widgets</a>
+    <a href="pages/widgets.html">Themes</a>
+    <a href="pages/examples.html">Examples</a> -->
+    <a href="https://github.com/xchema/xtyle/archive/v0.1.zip" rel="download">Download</a>
+</nav>
+
 <!-- FORMS -->
 <h1 id="forms" style="color: #CCC;">Forms</h1>
 
 
 <!-- STRUCTURE -->
-<section id="forms_structure" class="rounded">
+<section id="forms_structure" class="border-radius">
   <header><h4>Structure</h4></header>
   <p>
     All form elements should be used within a <code>&lt;form&gt;</code> tag.
@@ -19,30 +49,21 @@
     </p>
   </form>
 
-<pre class="rounded html nomargin">
-<code class="tag">&lt;form&gt;</code>
-  <code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
-  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
-  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code> <code class="attr">class=</code><code class="str">"inverse"</code>&gt;</code>
-<code class="tag">&lt;/form&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613768.js?file=gistfile1.html"></script>
 </section>
 
 
 <!-- INPUT FIELDS -->
-<section id="forms_input" class="rounded">
+<section id="forms_input" class="border-radius">
   <header><h4>Input fields</h4></header>
   <h6>Text</h6> 
   <p>
     <input type="text" placeholder="Text input">
     <br>
-    <input type="text" placeholder="Text input rounded" class="rounded">
+    <input type="text" placeholder="Text input border-radius" class="border-radius">
   </p>
 
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input rounded"</code> <code class="attr">class=</code><code class="str">"rounded"</code>&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613768.js?file=gistfile10.html"></script>
 
   <h6>Sizes</h6> 
   <p>
@@ -52,33 +73,22 @@
     <br>
     <input type="text" placeholder="Large" class="large">
   </p>
-
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Small"</code> <code class="attr">class=</code><code class="str">"small"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Medium"</code> <code class="attr">class=</code><code class="str">"medium"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Large"</code> <code class="attr">class=</code><code class="str">"large"</code>&gt;</code>
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile11.html"></script>
 
   <h6>Password</h6> 
   <p>
   <input type="password" placeholder="Password">
   </p>
-
   <p>
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"password"</code> <code class="attr">placecholder=</code><code class="str">"Password"</code>&gt;</code>
-</pre>
+    <script src="https://gist.github.com/4613768.js?file=gistfile12.html"></script>
   </p>
 
   <h6>Disabled</h6>
   <p>
   <input type="text" placeholder="Disabled input" disabled="disabled">
   </p>
-
   <p>
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Disabled input"</code> <code class="attr">disabled=</code><code class="str">"disabled"</code>&gt;</code>
-</pre>
+    <script src="https://gist.github.com/4613768.js?file=gistfile13.html"></script>
   </p>
 
   <h6>Textarea</h6>
@@ -88,10 +98,7 @@
     <textarea placeholder="Textarea no resize..." class="noresize"></textarea>
   </p>
 
-<pre class="rounded html">
-<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
-<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea no resize..."</code> <code class="attr">class=</code><code class="str">"noresize"</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code>
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile14.html"></script>
 
   <h6>Radio buttons</h6>
   <p>
@@ -102,11 +109,7 @@
   </p>
 
   <p>
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_male"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"male"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_male"</code>&gt;</code>Male<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"radio_female"</code> <code class="attr">type=</code><code class="str">"radio"</code> <code class="attr">name=</code><code class="str">"gender"</code> <code class="attr">value=</code><code class="str">"female"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"radio_female"</code>&gt;</code>Female<code class="tag">&lt;/label&gt;</code>
+    <script src="https://gist.github.com/4613768.js?file=gistfile15.html"></script>
 </pre>
   </p>
 
@@ -118,12 +121,7 @@
   </form>
   </p>
   <p>
-<pre class="rounded html">
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_apples"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">checked=</code><code class="str">"checked"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_apples"</code>&gt;</code>Apples<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;input <code class="attr">id=</code><code class="str">"check_oranges"</code> <code class="attr">type=</code><code class="str">"checkbox"</code> <code class="attr">name=</code><code class="str">"grocery"</code> <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>
-<code class="tag">&lt;label <code class="attr">for=</code><code class="str">"check_oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/label&gt;</code>
-</pre>
+    <script src="https://gist.github.com/4613768.js?file=gistfile16.html"></script>
   </p>
 
   <h6>Select*</h6>
@@ -133,19 +131,13 @@
       <option value="oranges">Oranges</option>
     </select>
   </p>
-<pre class="rounded html">
-<code class="tag">&lt;select&gt;</code>
-<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"apples"</code> <code class="attr">selected=</code><code class="str">"selected"</code>&gt;</code>Apples<code class="tag">&lt;/option&gt;</code>
-<code class="tag">&lt;option <code class="attr">value=</code><code class="str">"oranges"</code>&gt;</code>Oranges<code class="tag">&lt;/option&gt;</code>
-<code class="tag">&lt;/select&gt;</code>
-<code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-down-dir select"</code>&gt;</code><code class="tag">&lt;/i&gt;</code>
-</pre>
-<p class="nomargin">*Include <code>&lt;i&gt;</code> after the <code>&lt;select&gt;</code> tag. That is how you differentiate a select box from other buttons.</p>
+  <script src="https://gist.github.com/4613768.js?file=gistfile17.html"></script>
+
 </section>
 
 
 <!-- FIELDSET -->
-<section id="forms_fieldset" class="rounded">
+<section id="forms_fieldset" class="border-radius">
   <header><h4>Fieldset</h4></header>
   <p>You can group form elments using the <code>&lt;fieldset&gt;</code> tag element.</p>
   <p>
@@ -159,21 +151,13 @@
     </form>
   </p>
 
-<pre class="html rounded nomargin">
-<code class="tag">&lt;form&gt;</code>
-  <code class="tag">&lt;fieldset&gt;</code>
-    <code class="tag">&lt;legend&gt;</code>Group<code class="tag">&lt;/legend&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"First name"</code>&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placeholder=</code><code class="str">"Last name"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
-  <code class="tag">&lt;/fieldset&gt;</code>
-<code class="tag">&lt;/form&gt;</code> 
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile2.html"></script>
+
 </section>
 
 
 <!-- LABELS -->
-<section id="forms_lables" class="rounded">
+<section id="forms_lables" class="border-radius">
   <header><h4>Labels</h4></header>
   <p>Labels are the perfect way to give an idea for your users how to fill the input fields.</p>
   <p>
@@ -181,10 +165,7 @@
     <input type="text" placeholder="Text input">
   </p>
 
-<pre class="html rounded">
-<code class="tag">&lt;label&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>  
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile3.html"></script>
 
   <p>
     <label class="block">Label</label>
@@ -194,53 +175,37 @@
     <textarea placeholder="Textarea content..."></textarea>
   </p>
 
-<pre class="html rounded">
-<code class="tag">&lt;label <code class="attr">class=</code><code class="str">"block"</code>&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">placecholder=</code><code class="str">"Text input"</code>&gt;</code>  
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile4.html"></script>
 
   <p>
     <label class="vertical-top">Label</label>
     <textarea placeholder="Textarea content..."></textarea>
   </p>
 
-<pre class="html rounded nomargin">
-<code class="tag">&lt;label <code class="attr">class=</code><code class="str">"vertical-top"</code>&gt;</code>Label<code class="tag">&lt;/label&gt;</code>
-<code class="tag">&lt;textarea <code class="attr">placecholder=</code><code class="str">"Textarea content..."</code>&gt;</code><code class="tag">&lt;/textarea&gt;</code> 
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile5.html"></script>
+
 </section>
 
 
 <!-- BUTTONS -->
-<section id="forms_buttons" class="rounded">
+<section id="forms_buttons" class="border-radius">
   <header><h4>Buttons</h4></header>
   <p>You can create buttons using the <code>&lt;button&gt;</code> tag, using an input <code>type="submit"</code>, or creating a link with class <code>.btn</code>.</p>
   <button>Button</button>     
   <input type="submit">
-  <button class="rounded">Rounded</button>
+  <button class="border-radius">border-radius</button>
   <a href="#" class="btn">Link</a>
 
-<pre class="html rounded">
-<code class="tag">&lt;button&gt;</code>button<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code>&gt;</code>
-<code class="tag">&lt;button <code class="attr">class=</code><code clas="str">"rounded"</code>&gt;</code>Rounded<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code> <code class="attr">class=</code><code class="str">"btn"</code>&gt;</code>Link<code class="tag">&lt;/a&gt;</code>
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile6.html"></script>
 
   <h6>Colors</h6>
-  <button class="inverse rounded">Inverse</button>
-  <button class="warning rounded">Warning</button>
-  <button class="error rounded">Error</button>
-  <button class="info rounded">Info</button>
-  <button class="success rounded">Success</button>
+  <button class="inverse border-radius">Inverse</button>
+  <button class="warning border-radius">Warning</button>
+  <button class="error border-radius">Error</button>
+  <button class="info border-radius">Info</button>
+  <button class="success border-radius">Success</button>
 
-<pre class="html rounded">
-<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"inverse rounded"</code>&gt;</code>Inverse<code class="tag">&lt;/button&gt;</code> 
-<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"warning rounded"</code>&gt;</code>Warning<code class="tag">&lt;/button&gt;</code> 
-<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"error rounded"</code>&gt;</code>Error<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"info rounded"</code>&gt;</code>Info<code class="tag">&lt;/button&gt;</code>
-<code class="tag">&lt;button <code class="attr">class=</code><code class="str">"success rounded"</code>&gt;</code>Success<code class="tag">&lt;/button&gt;</code> 
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile7.html"></script>
 
   <h6>File upload</h6>
   <a href="#" class="upload btn">
@@ -249,17 +214,13 @@
     <input type="file">
   </a>
 
-<pre class="html rounded nomargin">
-<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code> <code class="attr">class=</code><code class="str">"upload btn"</code>&gt;</code>
-  <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-upload"</code>&gt;</code><code class="tag">&lt;/i&gt;</code> 
-  <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"file"</code>&gt;</code> 
-<code class="tag">&lt;/a&gt;</code> 
-</pre>
+  <script src="https://gist.github.com/4613768.js?file=gistfile8.html"></script>
+
 </section>
 
 
 <!-- EXAMPLE -->
-<section id="forms_example" class="rounded">
+<section id="forms_example" class="border-radius">
   <header><h4>Example</h4></header>
   <p>An example of how you can create forms using <strong>xtyle</strong> elements.</p>
 
@@ -280,17 +241,10 @@
       <input type="submit" value="Submit Form">
     </div>
   </form>
-<pre class="html rounded nomargin">
-<code class="tag">&lt;form <code class="attr">class=</code><code class="str">wrap</code>&gt;</code>
-  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"unit2 margin-right padding border"</code>&gt;</code>
-    <code class="tag">&lt;img <code class="attr">src=</code><code class="str">"http://placehold.it/120x145&text=Photo"</code> <code class="attr">label=</code><code class="str">"Photo"</code>&gt;</code>
-  <code class="tag">&lt;/div&gt;</code>
-  <code class="tag">&lt;div <code class="attr">class=</code><code class="str">"floatleft"</code>&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_first_name"</code> <code class="attr">name=</code><code class="str">"f_first_name"</code> <code class="attr">placeholder=</code><code class="str">"First Name"</code> <code class="attr">class=</code><code class="str">"small"</code>&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_last_name"</code> <code class="attr">name=</code><code class="str">"f_last_name"</code> <code class="attr">placeholder=</code><code class="str">"Last Name"</code> <code class="attr">class=</code><code class="str">"small"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"text"</code> <code class="attr">id=</code><code class="str">"f_email"</code> <code class="attr">name=</code><code class="str">"f_email"</code> <code class="attr">placeholder=</code><code class="str">"E-mail"</code> <code class="attr">class=</code><code class="str">"medium"</code>&gt;</code><code class="tag">&lt;br&gt;</code>
-    <code class="tag">&lt;input <code class="attr">type=</code><code class="str">"submit"</code> <code class="attr">value=</code><code class="str">"Submit Form"</code>&gt;</code>
-  <code class="tag">&lt;/div&gt;</code>
-<code class="tag">&lt;/form&gt;</code>
-</pre>
+  
+  <script src="https://gist.github.com/4613768.js?file=gistfile9.html"></script>
+
 </section>
+
+</body>
+</html>

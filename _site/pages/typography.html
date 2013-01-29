@@ -1,10 +1,40 @@
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="xtyle/js/xtyle.js"></script>
+<!DOCTYPE HTML>
+<html class="responsive">
+<head>
+    <title>xtyle</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Simple HTML, CSS, and JavaScript framework for creating amazing web applications.">
+    <!-- <link rel="stylesheet" type="text/css" href="css/xtyle.css"> -->
+    <link href="/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/xtyle/css/xtyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/assets/css/browsers.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/site.css">
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</head>
+<body class="menu" style="background: url(http://emoriz.com/github/bgnoise.png)">
+
+<nav class="menu top inverse dropbox">
+    <span class="logo">xtyle</span>
+    <a href="/">Home</a>
+    <a href="/pages/typography.html">Typography</a>
+    <a href="/pages/forms.html">Forms</a>
+    <a href="/pages/layout.html">Layout</a>
+    <!-- <a href="pages/widgets.html">Widgets</a>
+    <a href="pages/widgets.html">Themes</a>
+    <a href="pages/examples.html">Examples</a> -->
+    <a href="https://github.com/xchema/xtyle/archive/v0.1.zip" rel="download">Download</a>
+</nav>
+
 <!-- TYPOGRAPHY -->
 <h1 id="typography" style="color: #CCC;">Typography</h1>
 
 <!-- FONT -->
-<section id="typography_font" class="rounded">
+<section id="typography_font" class="border-radius">
     <header><h4>Font</h4></header>
     <p>
         <strong>Xtyle</strong> uses the excellent <a href="http://developer.android.com/design/style/typography.html">Roboto</a> font from <a href="http://www.google.com">Google</a> as its default body font. You can change this option at any time on top of the <i>xtyle.css</i> file.
@@ -20,18 +50,8 @@
       <small>small</small><br>
       <caps>Small Caps</caps>
     </p>
-<pre class="rounded html nomargin">
-regular
-<code class="tag">&lt;thin&gt;</code>thin<code class="tag">&lt;/thin&gt;</code>
-<code class="tag">&lt;strong&gt;</code>STRONG<code class="tag">&lt;/strong&gt;</code>
-<code class="tag">&lt;em&gt;</code>italic<code class="tag">&lt;/em&gt;</code>
-<code class="tag">&lt;a <code class="attr">href=</code><code class="str">"#"</code>&gt;</code>links<code class="tag">&lt;/a&gt;</code>
-<code class="tag">&lt;mark&gt;</code>marked<code class="tag">&lt;/mark&gt;</code>
-<code class="tag">&lt;del&gt;</code>deleted<code class="tag">&lt;/del&gt;</code>
-<code class="tag">&lt;small&gt;</code>small<code class="tag">&lt;/small&gt;</code>
-<code class="tag">&lt;caps&gt;</code>Small Caps<code class="tag">&lt;/caps&gt;</code>
-</pre>
-    <br>
+    <script src="https://gist.github.com/4613715.js?file=gistfile1.html"></script>
+
     <alert>
         <i class="icon-attention"></i>
         Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags are used for design elements.
@@ -42,7 +62,7 @@ regular
 
 
 <!-- HEADINGS -->
-<section id="typography_headings" class="rounded">
+<section id="typography_headings" class="border-radius">
   <header><h4>Headings</h4></header>
     <p>
         Use HTML heading tags between <code>&lt;h1&gt;</code> and <code>&lt;h6&gt;</code>.
@@ -54,16 +74,12 @@ regular
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
     <br>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;h1&gt;</code>Heading 1<code class="tag">&lt;/h1&gt;</code>
-...
-<code class="tag">&lt;h6&gt;</code>Heading 6<code class="tag">&lt;/h6&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile10.html"></script>
 </section>
 
 
 <!-- PARAGRAPHS -->
-<section id="typography_paragraphs" class="rounded">
+<section id="typography_paragraphs" class="border-radius">
     <header><h4>Paragraphs</h4></header>
     <p>Paragraphs are defined using the <code>&lt;p&gt;</code> tag. Use paragraphs to separate your texts:</p>
     <p>
@@ -72,33 +88,25 @@ regular
     <p>
         Vivamus elementum tempus scelerisque. Maecenas id lectus orci, ut condimentum dui. Suspendisse eget dui eu nunc dignissim tincidunt at a massa. Phasellus feugiat fermentum adipiscing. Praesent pharetra ultrices sodales. Pellentesque sed diam nunc, sit amet auctor magna.
     </p>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;p&gt;</code>Proin tristique nunc ...<code class="tag">&lt;/p&gt;</code>
-<code class="tag">&lt;p&gt;</code>Vivamus elementum tempus ...<code class="tag">&lt;/p&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile11.html"></script>
 </section>
 
 
 <!-- DROP CAPS -->
-<section id="typography_dropcaps" class="rounded">
+<section id="typography_dropcaps" class="border-radius">
     <header><h4>Drop Caps</h4></header>
     <p>
-        To capitalize the first word of your paragraph you can use <a href="http://www.htmldog.com/articles/dropcaps/">drop caps</a>. You can define a drop caps using the <code>&lt;span class="first-letter"&gt;</code> tag inside a paragraph:
+        To capitalize the first word of your paragraph you can use <a href="http://www.htmldog.com/articles/dropcaps/">drop caps</a>. You can define a drop caps using the <code>&lt;span class="drop-caps"&gt;</code> tag inside a paragraph:
     </p>
     <p>
-        <span class="first-letter">P</span>roin eu erat nunc, id viverra urna. Donec id quam ac lacus ultrices commodo quis id elit. Sed vitae diam nulla, ac convallis lacus. Nunc eu sapien quis tortor tempor ornare non eget massa. Nulla in eros odio, sed congue mi. Curabitur suscipit pulvinar hendrerit. Maecenas vestibulum nibh non erat auctor accumsan porta erat commodo. In dapibus volutpat nisl, ut egestas sem pellentesque ut. Nam tincidunt dapibus nunc non dapibus. Quisque a risus eros, tincidunt vulputate ante. Quisque pharetra aliquet eros a hendrerit. In non gravida nisl. Pellentesque nulla nisl, lobortis a euismod non, dapibus eu tellus. Nunc pellentesque metus et nisl euismod tincidunt. Vestibulum viverra rutrum massa in porta.
+        <span class="drop-caps">P</span>roin eu erat nunc, id viverra urna. Donec id quam ac lacus ultrices commodo quis id elit. Sed vitae diam nulla, ac convallis lacus. Nunc eu sapien quis tortor tempor ornare non eget massa. Nulla in eros odio, sed congue mi. Curabitur suscipit pulvinar hendrerit. Maecenas vestibulum nibh non erat auctor accumsan porta erat commodo. In dapibus volutpat nisl, ut egestas sem pellentesque ut. Nam tincidunt dapibus nunc non dapibus. Quisque a risus eros, tincidunt vulputate ante. Quisque pharetra aliquet eros a hendrerit. In non gravida nisl. Pellentesque nulla nisl, lobortis a euismod non, dapibus eu tellus. Nunc pellentesque metus et nisl euismod tincidunt. Vestibulum viverra rutrum massa in porta.
     </p>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;p&gt;</code>
-&lt;span <code class="attr">class=</code><code class="str">"first-letter"</code>&gt;P&lt;/span&gt;
-roin eu erat nunc, id viverra urna. Donec id ... 
-<code class="tag">&lt;p&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile12.html"></script>
 </section>
 
 
 <!-- BLOCKQUOTES -->
-<section id="typography_blockquotes" class="rounded">
+<section id="typography_blockquotes" class="border-radius">
     <header><h4>Blockquotes</h4></header>
     <p>
         Write quotes using the <code>&lt;blockquote&gt;</code> tag. Use paragraphs <code>&lt;p&gt;</code> inside blockquotes to write content on it. You can also include the source of your quote using the <strong>optional</strong> <code>&lt;cite&gt;</code> tag:
@@ -110,12 +118,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <p>"With citation."</p>
         <cite>&#8211; by xchema</cite>
     </blockquote>
-<pre class="rounded html">
-<code class="tag">&lt;blockquote&gt;</code>
-<code class="tag">&lt;p&gt;</code>"A blockquote."<code class="tag">&lt;/p&gt;</code>
-<code class="tag">&lt;cite&gt;</code>"by xchema"<code class="tag">&lt;/cite&gt;</code>
-<code class="tag">&lt;/blockquote&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile13.html"></script>
     <h6>Colors:</h6>
     <blockquote class="inverse">
         <p>"Inverse"</p>
@@ -132,23 +135,12 @@ roin eu erat nunc, id viverra urna. Donec id ...
     <blockquote class="success">
         <p>"Success"</p>
     </blockquote>
-<pre class="rounded html">
-<code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"inverse"</code>&gt;</code>
-    ...
-<code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"warning"</code>&gt;</code>
-    ...
-<code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"error"</code>&gt;</code>
-    ...
-<code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"info"</code>&gt;</code>
-    ...
-<code class="tag">&lt;blockquote <code class="attr">class=</code><code class="str">"success"</code>&gt;</code>
-    ...                
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile14.html"></script>
 </section>
 
 
 <!-- LIST STYLES -->
-<section id="typography_liststyles" class="rounded">
+<section id="typography_liststyles" class="border-radius">
     <header><h4>List styles</h4></header>
     <p>
         You can make your lists using the <code>&lt;ul&gt;</code> for unordered lists, <code>&lt;ol&gt;</code> for ordered lists, and <code>&lt;dt&gt;</code> for definition lists. Use <code>&lt;ul class="reset"&gt;</code> to remove styles from lists.
@@ -165,14 +157,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <li>Oranges</li>
     </ul>   
     <br>
-<pre class="rounded html">
-<code class="tag">&lt;ul&gt;</code>
-<code class="tag">&lt;li&gt;</code>Apples
-<code class="tag">&lt;ul&gt;</code><code class="tag">&lt;li&gt;</code>...<code class="tag">&lt;/li&gt;</code><code class="tag">&lt;/ul&gt;</code>
-<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;/ul&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile15.html"></script>
     <h6>Unordered list (reset):</h6>
     <ul class="reset">
         <li>
@@ -185,14 +170,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <li>Oranges</li>
     </ul>
     <br>
-<pre class="rounded html">
-<code class="tag">&lt;ul <code class="attr">class=</code><code class="str">"reset"</code>&gt;</code>
-<code class="tag">&lt;li&gt;</code>Apples
-  <code class="tag">&lt;ul&gt;</code><code class="tag">&lt;li&gt;</code>...<code class="tag">&lt;/li&gt;</code><code class="tag">&lt;/ul&gt;</code>
-<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;/ul&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile16.html"></script>
     <h6>Ordered list:</h6>
     <ol>
         <li>
@@ -205,14 +183,7 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <li>Orange</li>
     </ol>
     <br>
-<pre class="rounded html">
-<code class="tag">&lt;ol&gt;</code>
-<code class="tag">&lt;li&gt;</code>Apples
-  <code class="tag">&lt;ul&gt;</code><code class="tag">&lt;li&gt;</code>...<code class="tag">&lt;/li&gt;</code><code class="tag">&lt;/ul&gt;</code>
-<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;/ol&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile17.html"></script>
     <h6>Definition list:</h6>
     <dl>
         <dt>
@@ -225,34 +196,20 @@ roin eu erat nunc, id viverra urna. Donec id ...
         <dt>Oranges</dt>
     </dl>
     <br>
-<pre class="rounded html">
-<code class="tag">&lt;dl&gt;</code>
-<code class="tag">&lt;dt&gt;</code>Apples
-  <code class="tag">&lt;dl&gt;</code>
-    <code class="tag">&lt;dd&gt;</code>Aceymac<code class="tag">&lt;/dd&gt;</code>
-    <code class="tag">&lt;dd&gt;</code>Adanac<code class="tag">&lt;/dd&gt;</code>
-  <code class="tag">&lt;/dl&gt;</code>
-<code class="tag">&lt;/dt&gt;</code>
-<code class="tag">&lt;dt&gt;</code>Oranges<code class="tag">&lt;/dt&gt;</code>
-<code class="tag">&lt;/dl&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile2.html"></script>
+
     <h6>Inline list:</h6>
     <ul class="inline">
         <li>Apples</li>
         <li>Oranges</li>
     </ul>
-    <br>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;ul <code class="attr">class=</code><code class="str">"inline"</code>&gt;</code>
-  <code class="tag">&lt;li&gt;</code>Apples<code class="tag">&lt;/li&gt;</code>
-  <code class="tag">&lt;li&gt;</code>Oranges<code class="tag">&lt;/li&gt;</code>
-<code class="tag">&lt;/ul&gt;</code>
-</pre>
+    <br><br>
+<script src="https://gist.github.com/4613715.js?file=gistfile3.html"></script>
 </section>
 
 
 <!-- ADDRESSES -->
-<section id="typography_addresses" class="rounded">
+<section id="typography_addresses" class="border-radius">
     <header><h4>Addresses</h4></header>
     <p>
         The <code>&lt;address&gt;</code> element is used to provide contact information. Use <code>&lt;abbr&gt;</code> to write abbreviations:
@@ -268,18 +225,12 @@ roin eu erat nunc, id viverra urna. Donec id ...
             <span class="tel">+1 (123) 456-7890</span>
         </p>
     </address>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;address&gt;</code>
-  ...
-  <code class="tag">&lt;abbr <code class="attr">title=</code><code class="str">"California"</code>&gt;</code>CA<code class="tag">&lt;/abbr&gt;</code>
-  ...
-<code class="tag">&lt;/address&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile4.html"></script>
 </section>
 
 
 <!-- ALERTS -->
-<section id="typography_alerts" class="rounded">
+<section id="typography_alerts" class="border-radius">
     <header><h4>Alerts</h4></header>
     <p>
         Alerts are the easiest way to drive attention to important content. Use the tag <code>&lt;alert&gt;</code> with the classes <code>.warning</code> (default), <code>.error</code>, <code>.info</code>, and <code>.success</code>:
@@ -289,46 +240,24 @@ roin eu erat nunc, id viverra urna. Donec id ...
     <p>
         <alert><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
     </p>
-<pre class="rounded html">
-<code class="tag">&lt;alert&gt;</code>
-  <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-attention"</code>&gt;</code><code class="tag">&lt;/i&gt;</code> Warning! ...
-<code class="tag">&lt;/alert&gt;</code>
-</pre>
-
     <!-- ERROR -->
     <p>
         <alert class="error"><i class="icon-block"></i><strong>Error!</strong> Use this tag when something goes wrong.</alert>
     </p>
-<pre class="rounded html">
-<code class="tag">&lt;alert <code class="attr">class=</code><code class="str">"error"</code>&gt;</code>
-  <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-block"</code>&gt;</code><code class="tag">&lt;/i&gt;</code> Error! ...
-<code class="tag">&lt;/alert&gt;</code>
-</pre>    
-    
     <!-- INFO -->
     <p>
         <alert class="info"><i class="icon-info"></i><strong>Information!</strong> Use this tag to provide important information.</alert>
     </p>
-<pre class="rounded html">
-<code class="tag">&lt;alert <code class="attr">class=</code><code class="str">"info"</code>&gt;</code>
-  <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-info"</code>&gt;</code><code class="tag">&lt;/i&gt;</code> Info! ...
-<code class="tag">&lt;/alert&gt;</code>  
-</pre>    
-    
     <!-- SUCCESS -->
     <p>
         <alert class="success"><i class="icon-check"></i><strong>Success!</strong> Use this tag when some task or action end successfuly.</alert>   
     </p>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;alert <code class="attr">class=</code><code class="str">"success"</code>&gt;</code>
-  <code class="tag">&lt;i <code class="attr">class=</code><code class="str">"icon-check"</code>&gt;</code><code class="tag">&lt;/i&gt;</code> Success! ...
-<code class="tag">&lt;/alert&gt;</code>
-</pre>
+<script src="https://gist.github.com/4613715.js?file=gistfile5.html"></script>
 </section>
 
 
 <!-- TABLES -->
-<section id="typography_tables" class="rounded">
+<section id="typography_tables" class="border-radius">
     <header><h4>Tables</h4></header>
     <p>
         Use tables to organize data information as such financial reports for example. Use <code>&lt;table&gt;</code> tag to declare a table, <code>&lt;tr&gt;</code> for <strong>rows</strong>, and <code>&lt;td&gt;</code> for <strong>columns</strong>.
@@ -348,19 +277,8 @@ roin eu erat nunc, id viverra urna. Donec id ...
             </tr>
         </tbody>
     </table>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;table&gt;</code>
-    <code class="tag">&lt;tr&gt;</code>
-        <code class="tag">&lt;th&gt;</code>Grocery<code class="tag">&lt;/th&gt;</code>
-    <code class="tag">&lt;/tr&gt;</code>
-    <code class="tag">&lt;tr&gt;</code>
-        <code class="tag">&lt;td&gt;</code>Apples<code class="tag">&lt;/td&gt;</code>
-    <code class="tag">&lt;/tr&gt;</code>
-    <code class="tag">&lt;tr&gt;</code>
-        <code class="tag">&lt;td&gt;</code>Oranges<code class="tag">&lt;/td&gt;</code>
-    <code class="tag">&lt;/tr&gt;</code>
-<code class="tag">&lt;/table&gt;</code>
-</pre>
+    <br>
+<script src="https://gist.github.com/4613715.js?file=gistfile6.html"></script>
     <br>
     <h6>Hover rows</h6>
     <p>
@@ -387,11 +305,10 @@ roin eu erat nunc, id viverra urna. Donec id ...
             </tr>
         </tbody>
     </table>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;table <code class="attr">class=</code><code class="str">"hover pointer"</code>&gt;</code>
-    ...
-</pre>
     <br>
+<script src="https://gist.github.com/4613715.js?file=gistfile7.html"></script> 
+    <br>
+
     <h6>Striped rows</h6>
     <p>
         You can create <strong>stripe rows</strong> adding the class <code>.stripes</code> to your <code>&lt;table&gt;</code> tag.
@@ -417,11 +334,10 @@ roin eu erat nunc, id viverra urna. Donec id ...
             </tr>
         </tbody>
     </table>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;table <code class="attr">class=</code><code class="str">"stripes"</code>&gt;</code>
-    ...
-</pre>
     <br>
+<script src="https://gist.github.com/4613715.js?file=gistfile8.html"></script> 
+    <br>
+
     <h6>Color rows</h6>
     <p>
         You can highlight rows using the same classes available for <strong>alerts</strong> <code>.warning</code>, <code>.error</code>, <code>.info</code>, and <code>.success</code>:
@@ -447,14 +363,9 @@ roin eu erat nunc, id viverra urna. Donec id ...
             </tr>
         </tbody>
     </table>
-<pre class="rounded html nomargin">
-<code class="tag">&lt;tr <code class="attr">class=</code><code class="str">"warning"</code>&gt;</code>
-    ...
-<code class="tag">&lt;tr <code class="attr">class=</code><code class="str">"error"</code>&gt;</code>
-    ...
-<code class="tag">&lt;tr <code class="attr">class=</code><code class="str">"info"</code>&gt;</code>
-    ...
-<code class="tag">&lt;tr <code class="attr">class=</code><code class="str">"success"</code>&gt;</code>
-    ...
-</pre>
+    <br>
+<script src="https://gist.github.com/4613715.js?file=gistfile9.html"></script> 
 </section>
+
+</body>
+</html>

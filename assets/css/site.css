@@ -1,3 +1,7 @@
+.gist-syntax td{
+  border: none;
+}
+
 body {
   padding: 20px 30px;
 }
