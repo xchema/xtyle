@@ -1802,6 +1802,17 @@ fieldset legend {
   font-weight: bold;
 }
 
+.radio i,
+.checkbox i,
+input i,
+select i,
+.select i,
+.btn i,
+alert i,
+tag i {
+  font-size: 14px !important;
+}
+
 a {
   color: #0088cc;
   text-decoration: none;
@@ -2726,13 +2737,19 @@ div.resize {
   html.responsive aside {
     display: none;
   }
-  html.responsive .btn i, html.responsive button i, html.responsive input i {
-    font-size: 100% !important;
-  }
   html.responsive body {
     font-size: 80%;
   }
-  
+  html.responsive .radio i,
+  html.responsive .checkbox i,
+  html.responsive input i,
+  html.responsive select i,
+  html.responsive .select i,
+  html.responsive .btn i,
+  html.responsive alert i,
+  html.responsive tag i {
+    font-size: 14px !important;
+  }
   html.responsive nav a {
     display: none;
   }
