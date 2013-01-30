@@ -1220,109 +1220,109 @@ input:-moz-placeholder {
   color: #111111;
 }
 
-div.grid {
+.grid {
   overflow: auto;
 }
 
-div.grid.show .grid1 div,
-div.grid.show .grid2 div,
-div.grid.show .grid4 div,
-div.grid.show .grid5 div,
-div.grid.show .grid3 div,
-div.grid.show .grid6 div,
-div.grid.show .grid7 div,
-div.grid.show .grid8 div,
-div.grid.show .grid9 div,
-div.grid.show .grid10 div,
-div.grid.show .grid11 div,
-div.grid.show .grid12 div {
+.grid.show .grid1 div,
+.grid.show .grid2 div,
+.grid.show .grid4 div,
+.grid.show .grid5 div,
+.grid.show .grid3 div,
+.grid.show .grid6 div,
+.grid.show .grid7 div,
+.grid.show .grid8 div,
+.grid.show .grid9 div,
+.grid.show .grid10 div,
+.grid.show .grid11 div,
+.grid.show .grid12 div {
   background: #f7f7f7;
 }
 
-div.grid .grid1 div,
-div.grid .grid2 div,
-div.grid .grid4 div,
-div.grid .grid5 div,
-div.grid .grid3 div,
-div.grid .grid6 div,
-div.grid .grid7 div,
-div.grid .grid8 div,
-div.grid .grid9 div,
-div.grid .grid10 div,
-div.grid .grid11 div,
-div.grid .grid12 div {
+.grid .grid1 div,
+.grid .grid2 div,
+.grid .grid4 div,
+.grid .grid5 div,
+.grid .grid3 div,
+.grid .grid6 div,
+.grid .grid7 div,
+.grid .grid8 div,
+.grid .grid9 div,
+.grid .grid10 div,
+.grid .grid11 div,
+.grid .grid12 div {
   padding: 10px;
   margin: 10px;
 }
 
-div.grid .grid1,
-div.grid .grid2,
-div.grid .grid4,
-div.grid .grid3,
-div.grid .grid5,
-div.grid .grid6,
-div.grid .grid7,
-div.grid .grid8,
-div.grid .grid9,
-div.grid .grid10,
-div.grid .grid11,
-div.grid .grid12 {
+.grid .grid1,
+.grid .grid2,
+.grid .grid4,
+.grid .grid3,
+.grid .grid5,
+.grid .grid6,
+.grid .grid7,
+.grid .grid8,
+.grid .grid9,
+.grid .grid10,
+.grid .grid11,
+.grid .grid12 {
   float: left;
   overflow: hidden;
 }
 
-div.grid .skip {
+.grid .skip {
   float: left;
   height: 1px;
   overflow: hidden;
   background: none;
 }
 
-div.grid .grid1 {
+.grid .grid1 {
   width: 100%;
 }
 
-div.grid .grid2 {
+.grid .grid2 {
   width: 50%;
 }
 
-div.grid .grid3 {
+.grid .grid3 {
   width: 33.314%;
 }
 
-div.grid .grid4 {
+.grid .grid4 {
   width: 25%;
 }
 
-div.grid .grid5 {
+.grid .grid5 {
   width: 20%;
 }
 
-div.grid .grid6 {
+.grid .grid6 {
   width: 16.66%;
 }
 
-div.grid .grid7 {
+.grid .grid7 {
   width: 14.28%;
 }
 
-div.grid .grid8 {
+.grid .grid8 {
   width: 12.5%;
 }
 
-div.grid .grid9 {
+.grid .grid9 {
   width: 11.11%;
 }
 
-div.grid .grid10 {
+.grid .grid10 {
   width: 10%;
 }
 
-div.grid .grid11 {
+.grid .grid11 {
   width: 9.087%;
 }
 
-div.grid .grid12 {
+.grid .grid12 {
   width: 8.33%;
 }
 
