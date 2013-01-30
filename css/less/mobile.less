@@ -19,10 +19,17 @@ html.responsive{
     .desktop, .tablet{
         display: none !important;
     }
-    input{
-      &.small,&.medium,&.large{
-        width: auto;
-      }
+    table{ margin: @margin 0; }
+    table, 
+    select, 
+    input[type=text], 
+    input[type=email], 
+    input[type=password], 
+    input[type=number], 
+    input[type=submit], 
+    textarea, .btn, button {
+        width: 100%;
+        margin-right: 0;
     }
     .grid1, .grid2, .grid3, .grid4, .grid5{
         width: 100%;

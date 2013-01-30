@@ -1,3 +1,4 @@
++ make inputs 100% while in mobile
 + check bottom space for lists
 + make alert/tag without class to be gray
 + make tag elements based on alert, but with font-size 80% and display:inline
