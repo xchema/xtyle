@@ -2729,7 +2729,7 @@ div.resize {
   html.responsive body {
     font-size: 80%;
   }
-  html.responsive body i {
+  html.responsive i {
     font-size: 14px;
   }
   html.responsive nav a {
