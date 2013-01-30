@@ -2740,10 +2740,21 @@ div.resize {
   html.responsive .tablet {
     display: none !important;
   }
-  html.responsive input.small,
-  html.responsive input.medium,
-  html.responsive input.large {
-    width: auto;
+  html.responsive table {
+    margin: 10px 0;
+  }
+  html.responsive table,
+  html.responsive select,
+  html.responsive input[type=text],
+  html.responsive input[type=email],
+  html.responsive input[type=password],
+  html.responsive input[type=number],
+  html.responsive input[type=submit],
+  html.responsive textarea,
+  html.responsive .btn,
+  html.responsive button {
+    width: 100%;
+    margin-right: 0;
   }
   html.responsive .grid1,
   html.responsive .grid2,
