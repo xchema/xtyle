@@ -2766,7 +2766,7 @@ div.resize {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
   html.responsive aside {
     display: none;
   }
@@ -2870,7 +2870,7 @@ div.resize {
   }
 }
 
-@media screen and (max-height: 540px) {
+@media screen and (max-height: 600px) {
   .position-fixed {
     position: absolute;
   }
