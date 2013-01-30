@@ -1370,6 +1370,7 @@ span.checkbox .icon-check {
   top: -5px;
   left: 0;
   display: none;
+  font-size: 14px !important;
   color: #0088cc;
 }
 
