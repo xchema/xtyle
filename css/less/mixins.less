@@ -1,4 +1,11 @@
-.box-sizing () {
+.iconSizes () {
+  i{ font-size: @fontSize; }
+  .small{ i{ font-size: @fontSmall; } }
+  .medium{ i{ font-size: @fontMedium; } }
+  .large{ i{ font-size: @fontLarge; } }
+}
+
+.boxSizing () {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
