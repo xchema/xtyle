@@ -1370,6 +1370,7 @@ span.checkbox .icon-check {
   top: -5px;
   left: 0;
   display: none;
+  font-size: 14px !important;
   color: #0088cc;
 }
 
@@ -2124,8 +2125,12 @@ tag.success a:active {
 }
 
 tag {
-  display: inline;
+  display: inline-block;
+  *display: inline;
+  margin-right: 10px;
   font-size: 80%;
+  vertical-align: top;
+  zoom: 1;
 }
 
 code {
@@ -2603,6 +2608,14 @@ div.resize {
   margin-left: 10px;
 }
 
+.margin-top-bottom {
+  margin: 10px 0;
+}
+
+.margin-left-right {
+  margin: 0 10px;
+}
+
 .padding {
   padding: 10px;
 }
@@ -2621,6 +2634,14 @@ div.resize {
 
 .padding-left {
   padding-left: 10px;
+}
+
+.padding-top-bottom {
+  padding: 10px 0;
+}
+
+.padding-left-right {
+  padding: 0 10px;
 }
 
 .padding-none {
