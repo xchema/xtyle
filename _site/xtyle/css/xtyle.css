@@ -2726,12 +2726,13 @@ div.resize {
   html.responsive aside {
     display: none;
   }
+  html.responsive .btn i, html.responsive button i, html.responsive input i {
+    font-size: 100% !important;
+  }
   html.responsive body {
     font-size: 80%;
   }
-  html.responsive body i {
-    font-size: 14px;
-  }
+  
   html.responsive nav a {
     display: none;
   }
