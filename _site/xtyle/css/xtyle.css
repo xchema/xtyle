@@ -2372,6 +2372,50 @@ nav ul li {
   float: left;
 }
 
+.radio i,
+.checkbox i,
+input i,
+select i,
+.select i,
+.btn i,
+alert i,
+tag i {
+  font-size: 14px;
+}
+
+.radio .small i,
+.checkbox .small i,
+input .small i,
+select .small i,
+.select .small i,
+.btn .small i,
+alert .small i,
+tag .small i {
+  font-size: 80%;
+}
+
+.radio .medium i,
+.checkbox .medium i,
+input .medium i,
+select .medium i,
+.select .medium i,
+.btn .medium i,
+alert .medium i,
+tag .medium i {
+  font-size: 120%;
+}
+
+.radio .large i,
+.checkbox .large i,
+input .large i,
+select .large i,
+.select .large i,
+.btn .large i,
+alert .large i,
+tag .large i {
+  font-size: 150%;
+}
+
 .user-select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2748,7 +2792,37 @@ div.resize {
   html.responsive .btn i,
   html.responsive alert i,
   html.responsive tag i {
-    font-size: 14px !important;
+    font-size: 14px;
+  }
+  html.responsive .radio .small i,
+  html.responsive .checkbox .small i,
+  html.responsive input .small i,
+  html.responsive select .small i,
+  html.responsive .select .small i,
+  html.responsive .btn .small i,
+  html.responsive alert .small i,
+  html.responsive tag .small i {
+    font-size: 80%;
+  }
+  html.responsive .radio .medium i,
+  html.responsive .checkbox .medium i,
+  html.responsive input .medium i,
+  html.responsive select .medium i,
+  html.responsive .select .medium i,
+  html.responsive .btn .medium i,
+  html.responsive alert .medium i,
+  html.responsive tag .medium i {
+    font-size: 120%;
+  }
+  html.responsive .radio .large i,
+  html.responsive .checkbox .large i,
+  html.responsive input .large i,
+  html.responsive select .large i,
+  html.responsive .select .large i,
+  html.responsive .btn .large i,
+  html.responsive alert .large i,
+  html.responsive tag .large i {
+    font-size: 150%;
   }
   html.responsive nav a {
     display: none;
