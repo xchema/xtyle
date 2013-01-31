@@ -68,17 +68,10 @@ body {
   background: white;
 }
 
-.browser-content i {
+.browser-logos i {
   font-size: 480%;
 }
 
-.browser-content a i {
-  font-size: 100%;
-}
-
-.browser-content a i.white {
-  color: white;
-}
 
 .example {
   padding-top: 20px;
@@ -100,20 +93,15 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .browser {
     margin: 0;
   }
   .browser-content {
     padding: 20px;
   }
-  .browser-content i {
+  .browser-logo i {
     font-size: 350%;
   }
-  .browser-content a i {
-    font-size: 80%;
-  }
-  .browser-content a i.white {
-    color: white;
-  }
+
 }
