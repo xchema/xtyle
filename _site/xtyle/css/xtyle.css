@@ -1598,6 +1598,12 @@ a.btn.inverse {
   border-color: #2b2b2b;
 }
 
+input[type=submit].inverse i,
+button.inverse i,
+a.btn.inverse i {
+  color: white;
+}
+
 input[type=submit].inverse:hover,
 button.inverse:hover,
 a.btn.inverse:hover {
@@ -1624,6 +1630,12 @@ a.btn.warning {
   color: white;
   background: #c8a62c;
   border-color: #bb9c29;
+}
+
+input[type=submit].warning i,
+button.warning i,
+a.btn.warning i {
+  color: white;
 }
 
 input[type=submit].warning:hover,
@@ -1654,6 +1666,12 @@ a.btn.error {
   border-color: #a64245;
 }
 
+input[type=submit].error i,
+button.error i,
+a.btn.error i {
+  color: white;
+}
+
 input[type=submit].error:hover,
 button.error:hover,
 a.btn.error:hover {
@@ -1682,6 +1700,12 @@ a.btn.info {
   border-color: #417aa1;
 }
 
+input[type=submit].info i,
+button.info i,
+a.btn.info i {
+  color: white;
+}
+
 input[type=submit].info:hover,
 button.info:hover,
 a.btn.info:hover {
@@ -1708,6 +1732,12 @@ a.btn.success {
   color: white;
   background: #558e45;
   border-color: #4f8440;
+}
+
+input[type=submit].success i,
+button.success i,
+a.btn.success i {
+  color: white;
 }
 
 input[type=submit].success:hover,

@@ -69,7 +69,7 @@ body {
 }
 
 .browser-logos i {
-  font-size: 480%;
+  font-size: 500%;
 }
 
 
@@ -100,8 +100,8 @@ body {
   .browser-content {
     padding: 20px;
   }
-  .browser-logo i {
-    font-size: 350%;
+  .browser-logos i{
+    font-size: 400%;
   }
 
 }
