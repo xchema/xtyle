@@ -6,4 +6,4 @@ requirejs.config({
   }
 });
 
-require(["jquery", "xtyle"], function($) {});
+require(["jquery", "xtyle"], function($) { });
