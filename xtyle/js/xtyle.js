@@ -120,19 +120,18 @@
       });
 
       // Click on labels with attribute "for"
-      $('label').on('click', function(){
-        var type = $('input#'+$(this).attr('for')).attr('type');
-        switch(type){
+      $('label').on('click', function () {
+        var type = $( 'input#' + $( this ).attr( 'for' ) ).attr( 'type' );
+        switch( type ){
           case 'radio':
-          x.controller._radio.radioButton('#'+$(this).attr('for'));
+            x.controller._radio.radioButton( '#' + $( this ).attr( 'for' ) );
           break;
           case 'checkbox':
-          x.controller._checkbox.checkBox('#'+$(this).attr('for'));
+            x.controller._checkbox.checkBox( '#' + $( this ).attr( 'for' ) );
           break;  
-        }//switch
+        } // switch
       });
-
-  }();
+  }(); // auto execute
 
   window.xtyle = x; // Return global object
 
