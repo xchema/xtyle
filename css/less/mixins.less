@@ -1,4 +1,9 @@
-
+.userSelect ( @select : none ) { // auto | none | text
+    -webkit-user-select: @select;
+       -moz-user-select: @select;
+        -ms-user-select: @select;
+            user-select: @select;
+}
 
 .boxSizing () {
   -webkit-box-sizing: border-box;
