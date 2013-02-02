@@ -25,7 +25,7 @@
   x.model = {
     debug : true,
     modules : [ 'radio', 'checkbox' ],
-    widgets : {}
+    widgets : { "slidejs" : "widgets/slideshow/slidejs/slide" }
   };//x.model
 
   // CONTROLLER
@@ -36,6 +36,7 @@
       }
     },
     _loadWidget : function ( widget, location ) {
+      x.controller._loadCss(location+".css"); // request CSS before load widget
       require( [ location ], function () {
         $("."+widget) [ widget ] ();
       });
@@ -107,6 +108,7 @@
 
   // INIT
   x.init = function(){
+      x.controller._debug("XTYLE LOADED");
 
       // VISUAL MODULES
       // modules is an array

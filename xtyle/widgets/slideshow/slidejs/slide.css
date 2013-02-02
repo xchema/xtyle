@@ -1,0 +1,30 @@
+/* SLIDES JS */
+        .slidejs{
+            position: relative;
+        }
+    .slidejs .viewport{
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+    }
+    .slidejs .images{
+      height: 200px;
+    }
+    .slidejs .images dd, #slideshow .navigation dd{
+      float: left;
+    }
+    .slidejs .navigation{
+      display: none;
+    }
+    .slidejs .navigation dd{
+      padding: 10px;   
+      background: black;
+      margin-right: 1px; 
+      display: block;
+    }
+    .slidejs .navigation .active{ 
+      background: gray;
+    }
+    .slidejs .clean{
+      clear: both;
+    }

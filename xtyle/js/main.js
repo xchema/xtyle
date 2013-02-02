@@ -10,7 +10,7 @@ requirejs.config({
     'modernizr' : '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min',
     'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min',
     'xtyle' : 'js/xtyle',
-    'widgets' : 'xtyle/widgets'
+    'widgets' : 'widgets'
   },
   urlArgs: ""+(new Date()).getTime()  // REMOVE WHEN IN PRODUCTION - AVOID CACHE FOR DEVELOPMENT
 });
