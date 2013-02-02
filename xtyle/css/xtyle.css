@@ -2476,27 +2476,27 @@ img.filter-grayscale {
 }
 
 .border-radius2x {
-  -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-       -o-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .border-radius2x-top {
-  -webkit-border-radius: 20px 20px 0 0px;
-     -moz-border-radius: 20px 20px 0 0px;
-      -ms-border-radius: 20px 20px 0 0px;
-       -o-border-radius: 20px 20px 0 0px;
-          border-radius: 20px 20px 0 0px;
+  -webkit-border-radius: 10px 10px 0 0px;
+     -moz-border-radius: 10px 10px 0 0px;
+      -ms-border-radius: 10px 10px 0 0px;
+       -o-border-radius: 10px 10px 0 0px;
+          border-radius: 10px 10px 0 0px;
 }
 
 .border-radius2x-bottom {
-  -webkit-border-radius: 0 0px 20px 20px;
-     -moz-border-radius: 0 0px 20px 20px;
-      -ms-border-radius: 0 0px 20px 20px;
-       -o-border-radius: 0 0px 20px 20px;
-          border-radius: 0 0px 20px 20px;
+  -webkit-border-radius: 0 0px 10px 10px;
+     -moz-border-radius: 0 0px 10px 10px;
+      -ms-border-radius: 0 0px 10px 10px;
+       -o-border-radius: 0 0px 10px 10px;
+          border-radius: 0 0px 10px 10px;
 }
 
 .border-radius-circle {
@@ -2651,6 +2651,34 @@ div.resize {
   margin: 0 10px;
 }
 
+.margin2x {
+  margin: 20px;
+}
+
+.margin-top2x {
+  margin-top: 20px;
+}
+
+.margin-right2x {
+  margin-right: 20px;
+}
+
+.margin-bottom2x {
+  margin-bottom: 20px;
+}
+
+.margin-left2x {
+  margin-left: 20px;
+}
+
+.margin-top-bottom2x {
+  margin: 20px 0;
+}
+
+.margin-left-right2x {
+  margin: 0 20px;
+}
+
 .padding {
   padding: 10px;
 }
@@ -2677,6 +2705,34 @@ div.resize {
 
 .padding-left-right {
   padding: 0 10px;
+}
+
+.padding2x {
+  padding: 20px;
+}
+
+.padding-top2x {
+  padding-top: 20px;
+}
+
+.padding-right2x {
+  padding-right: 20px;
+}
+
+.padding-bottom2x {
+  padding-bottom: 20px;
+}
+
+.padding-left2x {
+  padding-left: 20px;
+}
+
+.padding-top-bottom2x {
+  padding: 20px 0;
+}
+
+.padding-left-right2x {
+  padding: 0 20px;
 }
 
 .padding-none {
