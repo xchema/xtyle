@@ -2570,15 +2570,15 @@ nav ul li {
   font-weight: bold;
 }
 
-.text-left {
+.left {
   text-align: left;
 }
 
-.text-center {
+.center {
   text-align: center;
 }
 
-.text-right {
+.right {
   text-align: right;
 }
 
