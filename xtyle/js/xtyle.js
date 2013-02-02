@@ -6,7 +6,6 @@
  *  website: http://xtyle.xchema.com
  *  repository: http://github.com/xchema/xtyle
  */
-define( [ 'jquery' ], function ( $ ) {
 ( function ( $ ){
   "use strict";
   // VARIABLES
@@ -142,4 +141,3 @@ define( [ 'jquery' ], function ( $ ) {
     define( "xtyle", [], function () { return window.xtyle; } );
   }
 })(jQuery);
-});// define
