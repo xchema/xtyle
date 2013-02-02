@@ -8,7 +8,7 @@ define(['jquery', 'text!widgets/slideshow/slidejs/slide.html'], function ($, htm
 	
 	$.fn.slidejs = function(){
 
-		var $element = $(this).attr("id") !== undefined ? "#"+$(this).attr("id") : ".slidejs"; //cache id for the slide div wrapper
+		var $element = $(this).attr("id") !== undefined && $(this).attr("id") !== false ? "#"+$(this).attr("id") : ".slidejs"; //cache id for the slide div wrapper
 		// console.log($element);
 		var play;	//will hold the set-interval event
 
