@@ -2399,21 +2399,21 @@ nav ul li {
           user-select: none;
 }
 
-.clear-both {
+.clear {
   zoom: 1;
 }
 
-.clear-both:before,
-.clear-both:after {
+.clear:before,
+.clear:after {
   display: table;
   content: "";
 }
 
-.clear-both:after {
+.clear:after {
   clear: both;
 }
 
-img.filter-grayscale {
+.filter-grayscale {
   -webkit-filter: grayscale(1);
      -moz-filter: grayscale(1);
       -ms-filter: grayscale(1);
@@ -2507,12 +2507,11 @@ img.filter-grayscale {
           border-radius: 100%;
 }
 
-.background {
+.background-color {
   background-color: #f7f7f7;
 }
 
-.background-cover,
-.background-cover-fixed {
+.background-size-cover {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -2535,7 +2534,7 @@ img.filter-grayscale {
   vertical-align: bottom;
 }
 
-.transparent {
+.opacity {
   -webkit-opacity: 0;
      -moz-opacity: 0;
        -o-opacity: 0;
@@ -2543,7 +2542,7 @@ img.filter-grayscale {
   filter: alpha(opacity=0);
 }
 
-.transparent_50 {
+.opacity-50 {
   -webkit-opacity: 0.5;
      -moz-opacity: 0.5;
        -o-opacity: 0.5;
@@ -2551,7 +2550,7 @@ img.filter-grayscale {
   filter: alpha(opacity=50);
 }
 
-.transparent_80 {
+.opacity-80 {
   -webkit-opacity: 0.8;
      -moz-opacity: 0.8;
        -o-opacity: 0.8;
@@ -2559,27 +2558,27 @@ img.filter-grayscale {
   filter: alpha(opacity=80);
 }
 
-.normal {
+.font-normal {
   font-weight: normal;
 }
 
-.lighter {
+.font-lighter {
   font-weight: lighter;
 }
 
-.bold {
+.font-bold {
   font-weight: bold;
 }
 
-.left {
+.text-left {
   text-align: left;
 }
 
-.center {
+.text-center {
   text-align: center;
 }
 
-.right {
+.text-right {
   text-align: right;
 }
 
@@ -2591,15 +2590,15 @@ img.filter-grayscale {
   float: right;
 }
 
-.block {
+.display-block {
   display: block;
 }
 
-.inline {
+.display-inline {
   display: inline;
 }
 
-.inline-block {
+.display-inline-block {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -2611,7 +2610,7 @@ div.resize {
   resize: both;
 }
 
-.hide {
+.display-none {
   display: none;
 }
 
@@ -2619,7 +2618,7 @@ div.resize {
   display: none;
 }
 
-.pointer {
+.cursor-pointer {
   cursor: pointer;
 }
 
