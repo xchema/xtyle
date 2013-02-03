@@ -25,7 +25,7 @@
   x.model = {
     debug : true,
     modules : [ 'radio', 'checkbox' ],
-    widgets : { "slidejs" : "widgets/slideshow/slidejs/slide" }
+    widgets : {}
   };//x.model
 
   // CONTROLLER

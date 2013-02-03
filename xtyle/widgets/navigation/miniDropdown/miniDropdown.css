@@ -1,0 +1,51 @@
+.miniDropdown {
+ font:13px normal helvetica,arial,sans-serif; 
+ margin:0 auto; 
+ height:40px; 
+}
+
+.miniDropdown ul { 
+  margin: 0;
+  padding: 0;
+}
+
+.miniDropdown li { 
+  float:left; 
+  list-style-type:none; 
+  margin: 0;
+  padding: 0;
+}
+
+.miniDropdown a { 
+  display:block; 
+  padding:12px 20px 0; 
+  height:28px; 
+  color:#ddd; 
+  text-decoration:none; 
+  text-shadow:1px 1px 0 #000; 
+  background:#333; 
+}
+
+.miniDropdown a:hover, .miniDropdown a.active { 
+  background:#666; 
+}
+
+.miniDropdown ul { 
+  position:absolute; 
+  display:none; 
+}
+
+.miniDropdown ul li { 
+  float:none; 
+}
+
+.miniDropdown ul li a {
+  width:150px; 
+  background:#666; 
+}
+
+.miniDropdown ul li a:hover { 
+  background:#999; 
+  text-shadow:none; 
+  color:#000; 
+}
