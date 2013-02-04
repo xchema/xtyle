@@ -4,7 +4,7 @@ SlideJ
 author: 	Mariz Melo (MM) 2012
 website:	http://www.emoriz.com
 */
-define(['jquery'], function ($) {
+(function($){
 	
 	$.fn.slidejs = function(){
 
@@ -88,4 +88,4 @@ define(['jquery'], function ($) {
 
 	}//fn.slidesjs
 	
-});
+})(jQuery);

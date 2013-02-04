@@ -26,7 +26,8 @@
     debug : true,
     modules : [ 'radio', 'checkbox' ],
     widgets : {
-      "slidejs" : "widgets/slideshow/slidejs/slidejs"
+      "slidejs" : "widgets/slideshow/slidejs/slidejs",
+      "addthis" : "widgets/social/addthis/addthis"
     }
   };//x.model
 
