@@ -44,7 +44,7 @@
     _loadWidget : function ( widget, location ) {
       x.controller._loadCSS(location+".css"); 
       require( [ 'text!'+location+'.html', location ], function ( html ) {
-        $("xtyle[type=widget][name="+widget+"]").each(function(){
+        $("widget[name="+widget+"]").each(function(){
           var id = "#"+$(this).attr("id");
           $(id).html(html)[ widget ]();
         });
