@@ -1,11 +1,8 @@
-+ implement widgets
 + add button sizes (small, regular, medium, large) to gh-pages
-+ correct form example on gh-pages
 + grid system skip columns .grid4-3 (ex)
 + check bottom space for lists
 + aside element stylesheet
 + fix gap on form buttons on mobile devices
-+ normalize class names to CSS like names
 + tags, with optional 'x' to close, use rounded and color design
 + implement http://www.w3schools.com/tags/tag_figcaption.asp
 + implement http://ivaynberg.github.com/select2/
@@ -101,3 +98,6 @@
 - change name for alert warning -> attention
 - make inputs 100% while in mobile
 - make tag elements based on alert, but with font-size 80% and display:inline
+- implement widgets
+- correct form example on gh-pages
+- normalize class names to CSS like names
