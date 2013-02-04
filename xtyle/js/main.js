@@ -16,6 +16,4 @@ requirejs.config({
 });
 
 // CALL XTYLE
-define( [ 'jquery' ], function ( $ ) {
-    require( [ 'xtyle' ], function ( xtyle ) {} );
-});
+require( [ 'xtyle' ], function ( xtyle ) {} );
