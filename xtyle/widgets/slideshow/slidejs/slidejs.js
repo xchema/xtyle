@@ -1,18 +1,16 @@
 /*!
-SlideJS
+SlideJ
 ---------
 author: 	Mariz Melo (MM) 2012
 website:	http://www.emoriz.com
 */
-define(['jquery', 'text!widgets/slideshow/slidejs/slide.html'], function ($, html) {
+define(['jquery'], function ($) {
 	
 	$.fn.slidejs = function(){
 
 		var $element = $(this).attr("id") !== undefined && $(this).attr("id") !== false ? "#"+$(this).attr("id") : ".slidejs"; //cache id for the slide div wrapper
 		// console.log($element);
 		var play;	//will hold the set-interval event
-
-		$($element).html(html); // append HTML to target element
 		
 		//configuration variable
 		var $config = {
