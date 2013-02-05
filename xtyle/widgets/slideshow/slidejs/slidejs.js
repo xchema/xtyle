@@ -21,7 +21,7 @@
 			pauseoverimage : 1,	//pause when mouse is over slide images
 			pauseovernavigation : 1,	//pause when mouse is over navigation buttons (after click on them)
 			size : $($element+" .images").children("dd").length-1,
-			width : $($element+" .viewport").width()
+			width : 300
 		};
 		
 		//show menu
@@ -31,6 +31,7 @@
 		
 		//increases size of image wrapper
 		$($element+" .images").css({"width": (($config.size+1)*$config.width+"px")});
+		$($element+" .viewport").css({"width" : $config.width+"px"});
 		$($element+" .images dd").css({"width" : $config.width+"px"});
 		
 		//GO TO SPECIFIC SLIDE
