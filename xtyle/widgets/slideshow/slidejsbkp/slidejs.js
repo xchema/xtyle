@@ -1,14 +1,14 @@
 /*!
- *	SlideJS
- * 	-------
- *	author: 	Mariz Melo (MM) 2013
- *	website:	http://www.xchema.com
- */
+SlideJS
+---------
+author: 	Mariz Melo (MM) 2012
+website:	http://www.emoriz.com
+*/
 (function($){
 	
 	$.fn.slidejs = function(){
 
-		var $element = "#" + $(this).attr("id")+" .widgets-slideshow-slidejs"; //cache id for the slide div wrapper
+		var $element = $(this).attr("id") !== undefined && $(this).attr("id") !== false ? "#"+$(this).attr("id") : ".slidejs"; //cache id for the slide div wrapper
 		// console.log($element);
 		var play;	//will hold the set-interval event
 		
@@ -25,13 +25,11 @@
 		};
 		
 		//show menu
-		if($config.controls){
+		if($config.controls)
 			$($element+" .navigation").css({"display":"block"});
-		}
 		
 		//increases size of image wrapper
-		$($element+" .images").css({"width": (($config.size+1)*$config.width+"px")});
-		$($element+" .images dd").css({"width" : $config.width+"px"});
+		$($element+" .images").css({"width": (($config.size+1)*$config.width)+"px"});
 		
 		//GO TO SPECIFIC SLIDE
 		var gotoSlide = function($goto){

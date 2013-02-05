@@ -43,7 +43,7 @@
       return '#' + d.getFullYear() + d.getMonth() + d.getDate() + d.getHours() + d.getMinutes() + d.getSeconds() + d.getMilliseconds();
     },
     _loadWidget : function ( widget, location ) {
-      x.controller._loadCSS(location+".css"); 
+      x.controller._loadCSS(location+".css");
       require( [ 'text!'+location+'.html', location ], function ( html ) {
         $("widget[name="+widget+"]").each(function(){
           var id = "#"+$(this).attr("id");

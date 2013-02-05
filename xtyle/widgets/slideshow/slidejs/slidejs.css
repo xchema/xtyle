@@ -1,35 +1,32 @@
 /* SLIDES JS */
-.slidejs{
+.widgets-slideshow-slidejs{
     position: relative;
 }
-.slidejs .viewport{
-  width: 300px;
-  height: 200px;
+.widgets-slideshow-slidejs .viewport{
   overflow: hidden;
-  background: red;
 }
-.slidejs .images{
+.widgets-slideshow-slidejs .images{
   height: 200px;
 }
-.slidejs dd{
+.widgets-slideshow-slidejs dd{
   margin: 0;
   padding: 0;
 }
-.slidejs .images dd, #slideshow .navigation dd{
+.widgets-slideshow-slidejs .images dd, #slideshow .navigation dd{
   float: left;
 }
-.slidejs .navigation{
+.widgets-slideshow-slidejs .navigation{
   display: none;
 }
-.slidejs .navigation dd{
+.widgets-slideshow-slidejs .navigation dd{
   padding: 10px;   
   background: black;
   margin-right: 1px; 
   display: block;
 }
-.slidejs .navigation .active{ 
+.widgets-slideshow-slidejs .navigation .active{ 
   background: gray;
 }
-.slidejs .clean{
+.widgets-slideshow-slidejs .clean{
   clear: both;
 }

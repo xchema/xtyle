@@ -1,6 +1,11 @@
+// panel of configuration for xmaker (maybe separate stylesheet and config options)
 {
-  "name" : "slidejs",
-  "version" : "1.0",
-  "git" : "xtyle/slidejs",
-  "require" : ["jquery"]
+  "width" : 300,
+  "height" : 300,
+  "controls" : true, //show or hide controls
+  "interval" : 3, //number of seconds before go to next slide
+  "speed" : 400,  //speed of transitions
+  "start" : 1,  //start from this slide
+  "pauseoverimage" : true, //pause when mouse is over slide images
+  "pauseovernavigation" : true,  //pause when mouse is over navigation buttons (after click on them)
 }
