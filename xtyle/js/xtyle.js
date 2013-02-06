@@ -123,7 +123,7 @@
 
   // INIT
   x.init = function(){
-      x.controller._debug("XTYLE LOADED");
+      x.controller._debug("XTYLE JS LOADED");
 
       // VISUAL MODULES
       // modules is an array
