@@ -1,3 +1,5 @@
++ detect if support css3 before use jquery animations
++ some way to attach documentation to widgets
 + mix themes, you can use buttons form one theme while using colors form another etc...
 + add button sizes (small, regular, medium, large) to gh-pages
 + grid system skip columns .grid4-3 (ex)
@@ -32,7 +34,6 @@
 + JS - form validation
 + JS - number input
 + JS - selectbox
-+ JS - slideshow
 + JS - tabs
 + JS - accordion
 + JS - dropdown
@@ -102,3 +103,4 @@
 - implement widgets
 - correct form example on gh-pages
 - normalize class names to CSS like names
+- JS - slideshow

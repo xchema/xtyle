@@ -132,9 +132,13 @@
       });
       // CALL WIDGETS
       // widgets is an object
-      $.each( x.model.widgets, function ( widget, location ) {
-        x.controller._loadWidget ( widget, location );
-      });
+      if($("widget").length){
+        $.each( x.model.widgets, function ( widget, location ) {
+          if($("widget[name="+widget+"]").length){
+            x.controller._loadWidget ( widget, location );
+          }// if
+        });// each
+      }// if
 
       // Click on labels with attribute "for"
       $('label').on('click', function () {
