@@ -1,3 +1,4 @@
++ mix themes, you can use buttons form one theme while using colors form another etc...
 + add button sizes (small, regular, medium, large) to gh-pages
 + grid system skip columns .grid4-3 (ex)
 + check bottom space for lists
