@@ -3,3 +3,4 @@ _site/
 bin/
 .todo_tmp
 node_*
+tests.html
