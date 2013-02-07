@@ -1441,16 +1441,12 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
+  border-color: #e8e8e8;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: border-color 0.1s linear;
-     -moz-transition: border-color 0.1s linear;
-      -ms-transition: border-color 0.1s linear;
-       -o-transition: border-color 0.1s linear;
-          transition: border-color 0.1s linear;
 }
 
 input[type=text]:hover,
@@ -1459,6 +1455,11 @@ input[type=password]:hover,
 input[type=number]:hover,
 textarea:hover {
   border-color: #d4d4d4;
+  -webkit-transition: border-color 0.1s linear;
+     -moz-transition: border-color 0.1s linear;
+      -ms-transition: border-color 0.1s linear;
+       -o-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
 }
 
 input[type=text]:focus,
@@ -1467,6 +1468,11 @@ input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
   border-color: #1ab2ff;
+  -webkit-transition: border-color 0.1s linear;
+     -moz-transition: border-color 0.1s linear;
+      -ms-transition: border-color 0.1s linear;
+       -o-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
 }
 
 textarea.noresize {

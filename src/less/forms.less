@@ -73,11 +73,13 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea{
-  .transition(border-color, .1s, linear);
+  border-color: @border;
   &:hover{
+    .transition(border-color, .1s, linear);
     border-color: darken(@border, 8%);
   }
   &:focus{
+    .transition(border-color, .1s, linear);
     border-color: lighten(@links, 15%);
   }
   .boxSizing ();
