@@ -11,8 +11,8 @@ requirejs.config({
     'jquery' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min',
     'xtyle' : 'js/xtyle',
     'widgets' : 'widgets'
-  },
-  urlArgs: ""+(new Date()).getTime()  // REMOVE WHEN IN PRODUCTION - AVOID CACHE FOR DEVELOPMENT
+  }
+  , urlArgs: ""+(new Date()).getTime()  // REMOVE WHEN IN PRODUCTION - AVOID CACHE FOR DEVELOPMENT
 });
 
 // CALL XTYLE
