@@ -1511,6 +1511,7 @@ input[type=submit],
 button,
 a.btn {
   padding: 5px 10px;
+  color: #444444;
   border: 1px solid #e8e8e8;
 }
 
@@ -1559,7 +1560,7 @@ a.btn {
   margin-top: 7px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
   vertical-align: middle;
-  cursor: auto;
+  cursor: pointer;
   background: #f2f2f2;
   border: 1px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;

@@ -111,6 +111,7 @@ input[type=number],
 textarea, select,
 input[type=submit],
 button, a.btn{
+  color: @color;
   border: 1px solid @border;
   padding: @padding/2 @padding;
   &.small{
@@ -132,7 +133,7 @@ button, a.btn{
   background: darken(@background, 2%);
   border: 1px solid @border;
   border-bottom: 2px solid @border;
-  cursor: auto;
+  cursor: pointer;
   vertical-align: middle;
   padding: @padding/2 @padding*1.2;
   .transition(border-color, .1s, linear);
