@@ -20,8 +20,8 @@
 			slide : 1,	//start from this slide
 			pauseoverimage : 1,	//pause when mouse is over slide images
 			pauseovernavigation : 1,	//pause when mouse is over navigation buttons (after click on them)
-			size : $($element+" .images").children("dd").length-1,
-			width : 300
+			size : $($element+" .images").children("dd").length-1,	//number of item on the SlideShow
+			width : $($element+" .images").css("width").replace("px","")
 		};
 		
 		//show menu
