@@ -1482,7 +1482,6 @@ textarea.noresize {
 input[type=radio],
 input[type=checkbox] {
   margin: 5px;
-  visibility: hidden;
 }
 
 input,
