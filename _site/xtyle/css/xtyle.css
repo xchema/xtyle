@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.woff") format('application/font-woff'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.ttf") format('font/truetype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.svg#fontello") format('image/svg+xml');
+  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.woff") format('font-woff'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.svg#fontello") format('svg');
 }
 
 [class^="icon-"]:before,
