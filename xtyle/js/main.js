@@ -1,5 +1,5 @@
 requirejs.config({
-  baseUrl : '/xtyle',
+  baseUrl : 'http://xchema.github.com/xtyle/xtyle',
   shim: {
     'xtyle' : {
       deps : ['jquery']
