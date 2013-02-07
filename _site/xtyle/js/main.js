@@ -1,5 +1,5 @@
 requirejs.config({
-  baseUrl : '{{ site.host }}/xtyle',
+  baseUrl : '/xtyle',
   shim: {
     'xtyle' : {
       deps : ['jquery']
