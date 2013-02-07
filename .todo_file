@@ -1,4 +1,4 @@
-+ fix path on gh-pages for js files
++ documentation on README inside widgets, markdown format
 + detect if support css3 before use jquery animations
 + some way to attach documentation to widgets
 + mix themes, you can use buttons form one theme while using colors form another etc...
@@ -105,3 +105,4 @@
 - correct form example on gh-pages
 - normalize class names to CSS like names
 - JS - slideshow
+- fix path on gh-pages for js files
