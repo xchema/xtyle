@@ -1441,16 +1441,12 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
+  border-color: #e8e8e8;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: border-color 0.1s linear;
-     -moz-transition: border-color 0.1s linear;
-      -ms-transition: border-color 0.1s linear;
-       -o-transition: border-color 0.1s linear;
-          transition: border-color 0.1s linear;
 }
 
 input[type=text]:hover,
@@ -1459,6 +1455,11 @@ input[type=password]:hover,
 input[type=number]:hover,
 textarea:hover {
   border-color: #d4d4d4;
+  -webkit-transition: border-color 0.1s linear;
+     -moz-transition: border-color 0.1s linear;
+      -ms-transition: border-color 0.1s linear;
+       -o-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
 }
 
 input[type=text]:focus,
@@ -1467,6 +1468,11 @@ input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
   border-color: #1ab2ff;
+  -webkit-transition: border-color 0.1s linear;
+     -moz-transition: border-color 0.1s linear;
+      -ms-transition: border-color 0.1s linear;
+       -o-transition: border-color 0.1s linear;
+          transition: border-color 0.1s linear;
 }
 
 textarea.noresize {
@@ -1476,7 +1482,6 @@ textarea.noresize {
 input[type=radio],
 input[type=checkbox] {
   margin: 5px;
-  visibility: hidden;
 }
 
 input,
@@ -1506,6 +1511,7 @@ input[type=submit],
 button,
 a.btn {
   padding: 5px 10px;
+  color: #444444;
   border: 1px solid #e8e8e8;
 }
 
@@ -1554,7 +1560,7 @@ a.btn {
   margin-top: 7px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
   vertical-align: middle;
-  cursor: auto;
+  cursor: pointer;
   background: #f2f2f2;
   border: 1px solid #e8e8e8;
   border-bottom: 2px solid #e8e8e8;
@@ -2399,21 +2405,21 @@ nav ul li {
           user-select: none;
 }
 
-.clear-both {
+.clear {
   zoom: 1;
 }
 
-.clear-both:before,
-.clear-both:after {
+.clear:before,
+.clear:after {
   display: table;
   content: "";
 }
 
-.clear-both:after {
+.clear:after {
   clear: both;
 }
 
-img.filter-grayscale {
+.filter-grayscale {
   -webkit-filter: grayscale(1);
      -moz-filter: grayscale(1);
       -ms-filter: grayscale(1);
@@ -2476,27 +2482,27 @@ img.filter-grayscale {
 }
 
 .border-radius2x {
-  -webkit-border-radius: 20px;
-     -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-       -o-border-radius: 20px;
-          border-radius: 20px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .border-radius2x-top {
-  -webkit-border-radius: 20px 20px 0 0px;
-     -moz-border-radius: 20px 20px 0 0px;
-      -ms-border-radius: 20px 20px 0 0px;
-       -o-border-radius: 20px 20px 0 0px;
-          border-radius: 20px 20px 0 0px;
+  -webkit-border-radius: 10px 10px 0 0px;
+     -moz-border-radius: 10px 10px 0 0px;
+      -ms-border-radius: 10px 10px 0 0px;
+       -o-border-radius: 10px 10px 0 0px;
+          border-radius: 10px 10px 0 0px;
 }
 
 .border-radius2x-bottom {
-  -webkit-border-radius: 0 0px 20px 20px;
-     -moz-border-radius: 0 0px 20px 20px;
-      -ms-border-radius: 0 0px 20px 20px;
-       -o-border-radius: 0 0px 20px 20px;
-          border-radius: 0 0px 20px 20px;
+  -webkit-border-radius: 0 0px 10px 10px;
+     -moz-border-radius: 0 0px 10px 10px;
+      -ms-border-radius: 0 0px 10px 10px;
+       -o-border-radius: 0 0px 10px 10px;
+          border-radius: 0 0px 10px 10px;
 }
 
 .border-radius-circle {
@@ -2507,12 +2513,11 @@ img.filter-grayscale {
           border-radius: 100%;
 }
 
-.background {
+.background-color {
   background-color: #f7f7f7;
 }
 
-.background-cover,
-.background-cover-fixed {
+.background-size-cover {
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
@@ -2535,7 +2540,7 @@ img.filter-grayscale {
   vertical-align: bottom;
 }
 
-.transparent {
+.opacity {
   -webkit-opacity: 0;
      -moz-opacity: 0;
        -o-opacity: 0;
@@ -2543,7 +2548,7 @@ img.filter-grayscale {
   filter: alpha(opacity=0);
 }
 
-.transparent_50 {
+.opacity-50 {
   -webkit-opacity: 0.5;
      -moz-opacity: 0.5;
        -o-opacity: 0.5;
@@ -2551,7 +2556,7 @@ img.filter-grayscale {
   filter: alpha(opacity=50);
 }
 
-.transparent_80 {
+.opacity-80 {
   -webkit-opacity: 0.8;
      -moz-opacity: 0.8;
        -o-opacity: 0.8;
@@ -2559,15 +2564,15 @@ img.filter-grayscale {
   filter: alpha(opacity=80);
 }
 
-.normal {
+.font-normal {
   font-weight: normal;
 }
 
-.lighter {
+.font-lighter {
   font-weight: lighter;
 }
 
-.bold {
+.font-bold {
   font-weight: bold;
 }
 
@@ -2591,15 +2596,15 @@ img.filter-grayscale {
   float: right;
 }
 
-.block {
+.display-block {
   display: block;
 }
 
-.inline {
+.display-inline {
   display: inline;
 }
 
-.inline-block {
+.display-inline-block {
   display: inline-block;
   *display: inline;
   vertical-align: top;
@@ -2611,7 +2616,7 @@ div.resize {
   resize: both;
 }
 
-.hide {
+.display-none {
   display: none;
 }
 
@@ -2619,7 +2624,7 @@ div.resize {
   display: none;
 }
 
-.pointer {
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -2651,6 +2656,34 @@ div.resize {
   margin: 0 10px;
 }
 
+.margin2x {
+  margin: 20px;
+}
+
+.margin-top2x {
+  margin-top: 20px;
+}
+
+.margin-right2x {
+  margin-right: 20px;
+}
+
+.margin-bottom2x {
+  margin-bottom: 20px;
+}
+
+.margin-left2x {
+  margin-left: 20px;
+}
+
+.margin-top-bottom2x {
+  margin: 20px 0;
+}
+
+.margin-left-right2x {
+  margin: 0 20px;
+}
+
 .padding {
   padding: 10px;
 }
@@ -2677,6 +2710,34 @@ div.resize {
 
 .padding-left-right {
   padding: 0 10px;
+}
+
+.padding2x {
+  padding: 20px;
+}
+
+.padding-top2x {
+  padding-top: 20px;
+}
+
+.padding-right2x {
+  padding-right: 20px;
+}
+
+.padding-bottom2x {
+  padding-bottom: 20px;
+}
+
+.padding-left2x {
+  padding-left: 20px;
+}
+
+.padding-top-bottom2x {
+  padding: 20px 0;
+}
+
+.padding-left-right2x {
+  padding: 0 20px;
 }
 
 .padding-none {
