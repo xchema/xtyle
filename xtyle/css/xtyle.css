@@ -1496,6 +1496,13 @@ select {
           box-sizing: border-box;
 }
 
+input i,
+a.btn i,
+button i,
+select i {
+  line-height: 0.8;
+}
+
 input.medium,
 input.large {
   margin-right: 15px;
