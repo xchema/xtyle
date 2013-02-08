@@ -14,8 +14,8 @@
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
-  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot");
-  src: url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.woff") format('font-woff'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.ttf") format('truetype'), url("https://s3-us-west-1.amazonaws.com/xtyle/fonts/fontello/fontello.svg#fontello") format('svg');
+  src: url("css/fontello.eot");
+  src: url("css/fontello.eot?#iefix") format('embedded-opentype'), url("css/fontello.woff") format('font-woff'), url("css/fontello.ttf") format('truetype'), url("css/fontello.svg#fontello") format('svg');
 }
 
 [class^="icon-"]:before,
