@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:regular,medium,light,thin,italic,bold);
+@import url(http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold);
 
 /*!	xchema | xtyle 2013
  *	license: MIT
@@ -1290,40 +1290,176 @@ input:-moz-placeholder {
   width: 33.314%;
 }
 
+.grid .grid3.skip2 {
+  width: 66.628%;
+}
+
 .grid .grid4 {
   width: 25%;
+}
+
+.grid .grid4.skip2 {
+  width: 50%;
+}
+
+.grid .grid4.skip3 {
+  width: 75%;
 }
 
 .grid .grid5 {
   width: 20%;
 }
 
+.grid .grid5.skip2 {
+  width: 40%;
+}
+
+.grid .grid5.skip3 {
+  width: 60%;
+}
+
+.grid .grid5.skip4 {
+  width: 80%;
+}
+
 .grid .grid6 {
   width: 16.66%;
+}
+
+.grid .grid6.skip2 {
+  width: 33.32%;
+}
+
+.grid .grid6.skip3 {
+  width: 49.98%;
+}
+
+.grid .grid6.skip4 {
+  width: 66.64%;
+}
+
+.grid .grid6.skip5 {
+  width: 83.3%;
 }
 
 .grid .grid7 {
   width: 14.28%;
 }
 
+.grid .grid7.skip2 {
+  width: 28.56%;
+}
+
+.grid .grid7.skip3 {
+  width: 42.84%;
+}
+
+.grid .grid7.skip4 {
+  width: 57.12%;
+}
+
+.grid .grid7.skip5 {
+  width: 71.4%;
+}
+
+.grid .grid7.skip6 {
+  width: 85.68%;
+}
+
 .grid .grid8 {
   width: 12.5%;
+}
+
+.grid .grid8.skip2 {
+  width: 25%;
+}
+
+.grid .grid8.skip3 {
+  width: 37.5%;
+}
+
+.grid .grid8.skip4 {
+  width: 50%;
+}
+
+.grid .grid8.skip5 {
+  width: 62.5%;
+}
+
+.grid .grid8.skip6 {
+  width: 75%;
+}
+
+.grid .grid8.skip7 {
+  width: 87.5%;
 }
 
 .grid .grid9 {
   width: 11.11%;
 }
 
+.grid .grid9.skip2 {
+  width: 22.22%;
+}
+
+.grid .grid9.skip3 {
+  width: 33.33%;
+}
+
+.grid .grid9.skip4 {
+  width: 44.44%;
+}
+
+.grid .grid9.skip5 {
+  width: 55.55%;
+}
+
+.grid .grid9.skip6 {
+  width: 66.66%;
+}
+
+.grid .grid9.skip7 {
+  width: 77.77%;
+}
+
+.grid .grid9.skip8 {
+  width: 88.88%;
+}
+
 .grid .grid10 {
   width: 10%;
 }
 
-.grid .grid11 {
-  width: 9.087%;
+.grid .grid10.skip2 {
+  width: 20%;
 }
 
-.grid .grid12 {
-  width: 8.33%;
+.grid .grid10.skip3 {
+  width: 30%;
+}
+
+.grid .grid10.skip4 {
+  width: 40%;
+}
+
+.grid .grid10.skip5 {
+  width: 50%;
+}
+
+.grid .grid10.skip6 {
+  width: 60%;
+}
+
+.grid .grid10.skip7 {
+  width: 70%;
+}
+
+.grid .grid10.skip8 {
+  width: 80%;
+}
+
+.grid .grid10.skip9 {
+  width: 90%;
 }
 
 select[multiple=multiple] {
@@ -1494,6 +1630,13 @@ select {
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+input i,
+a.btn i,
+button i,
+select i {
+  line-height: 0.8;
 }
 
 input.medium,
