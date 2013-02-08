@@ -1,0 +1,108 @@
++ documentation on README inside widgets, markdown format
++ detect if support css3 before use jquery animations
++ some way to attach documentation to widgets
++ mix themes, you can use buttons form one theme while using colors form another etc...
++ add button sizes (small, regular, medium, large) to gh-pages
++ grid system skip columns .grid4-3 (ex)
++ check bottom space for lists
++ aside element stylesheet
++ fix gap on form buttons on mobile devices
++ tags, with optional 'x' to close, use rounded and color design
++ implement http://www.w3schools.com/tags/tag_figcaption.asp
++ implement http://ivaynberg.github.com/select2/
++ add raindowjs for syntax highlight on gh-pages website
++ implement http://nikorablin.com/slideControl/
++ make checklists and radio selected on focus of the original element
++ filter classes (blackwhite, sepia etc)
++ make classes more like css properties, remove .show from grids, verify how big are actual classes and make them smaller
++ PAGES - example websites
++ Create wiki pages on github
++ convert javascript to coffescript, add on bin program to compile
++ improve grid system
++ Grid - better documentation
++ fontello warning icon not workign in opera
++ tdd with testem
++ load pages add history on url bar
++ tdd with travis
++ create npm module
++ add sufix --docs to remove documentation when downloading
++ http://progrium.com/localtunnel/
++ JS - coffescript
++ remove recess, replace by xchema version
++ bash - minify scripts/css
++ bash - compile less files (with @import)
++ make compatible with xmaker
++ JS - form validation
++ JS - number input
++ JS - selectbox
++ JS - tabs
++ JS - accordion
++ JS - dropdown
++ layouts - aside element for side menus
++ verify mechanism - if support html5 use it, it not, use javascript
++ JavaScript for form elements
++ Modernizr - http://modernizr.com/
++ style for radio/checkbox
++ other input types - reset, number, etc
++ hcard - http://microformats.org/wiki/hcard
++ PAGES - make the minibrowser a slideshow
++ print css style
++ npm module for nodejs
++ define themes
++ ios icons
++ bin/ create compressor/minifier
+- fontello
+- create pages branch
+- favicon
+- SITE - add browser fontello icons
+- SITE - always visible menu
+- SITE - download buttons
+- create syntax highlight
+- separate blockquote from paragraph
+- abbreviations
+- address
+- alert warning
+- code (pre/code)
+- alerts inside links
+- alerts close links for other alerts
+- forms
+- forms - select boxes
+- use Color functions LESS
+- button style
+- lists
+- button inverse (black)
+- demos
+- fieldset, legend tags
+- grid system
+- recess - temporary script
+- HTML - jade
+- history.js redeclare script problem
+- tables
+- SITE - code and preview together
+- white margins on fontello icons on black background - fix
+- no obstrutive js for form fields, use attr xtyle='number' etc
+- make github address redirect to domain address
+- big download button on the homepage (with success class)
+- make input small/medium/large responsive
+- check and radio button javascript replace
+- JS - checkbox
+- xtyle.js not working in ajax content
+- checkbox with js
+- check if values on radio/checkbox are send on form
+- Create wiki on github
+- Improve README.md
+- JS - photo/video gallery
+- vertical-align top for inline-block class
+- link color for headings
+- layout-fixed showing 970px instead of 960
+- create tag v0.1 for built branch
+- responsive only when putting class on 'html' or 'body' tag
+- put all code snipets on GIST
+- change name for alert warning -> attention
+- make inputs 100% while in mobile
+- make tag elements based on alert, but with font-size 80% and display:inline
+- implement widgets
+- correct form example on gh-pages
+- normalize class names to CSS like names
+- JS - slideshow
+- fix path on gh-pages for js files
