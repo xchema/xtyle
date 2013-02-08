@@ -134,7 +134,7 @@
       // widgets is an object
       if($("widget").length){
         $.each( x.model.widgets, function ( widget, location ) {
-          if($("widget[name="+widget+"]").length){
+          if( $("widget[name="+widget+"]").length && $("widget").attr("id") ){
             x.controller._loadWidget ( widget, location );
           }// if
         });// each
