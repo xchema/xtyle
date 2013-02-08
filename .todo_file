@@ -1,6 +1,5 @@
-+ documentation on README inside widgets, markdown format
++ select field like input, and dropdown design
 + detect if support css3 before use jquery animations
-+ some way to attach documentation to widgets
 + mix themes, you can use buttons form one theme while using colors form another etc...
 + add button sizes (small, regular, medium, large) to gh-pages
 + grid system skip columns .grid4-3 (ex)
@@ -106,3 +105,5 @@
 - normalize class names to CSS like names
 - JS - slideshow
 - fix path on gh-pages for js files
+- documentation on README inside widgets, markdown format
+- some way to attach documentation to widgets
