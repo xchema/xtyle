@@ -1236,7 +1236,7 @@ input:-moz-placeholder {
 .grid.show .grid10 div,
 .grid.show .grid11 div,
 .grid.show .grid12 div {
-  background: #eeeff0;
+  background: #f7f7f7;
 }
 
 .grid .grid1 div,
@@ -2066,11 +2066,11 @@ table {
 }
 
 table.stripes tr:nth-child(even) {
-  background: #abb2b3;
+  background: #f7f7f7;
 }
 
 table.hover tr:hover {
-  background: #abb2b3;
+  background: #f7f7f7;
 }
 
 tr {
@@ -2266,7 +2266,7 @@ tag {
 code {
   padding: 2px 4px;
   color: #d50e14;
-  background: #abb2b3;
+  background: #f7f7f7;
   border: 1px solid #d9dcde;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -2281,7 +2281,7 @@ pre {
   font-family: "Courier New", Courier, monospace, "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 90%;
   color: #3F639E;
-  background: #abb2b3;
+  background: #f7f7f7;
   border: 1px solid #d9dcde;
 }
 
@@ -2407,7 +2407,7 @@ nav a {
 }
 
 nav a.active {
-  background: #a3abac;
+  background: #efefef;
 }
 
 nav h1,
@@ -2429,7 +2429,7 @@ nav.menu {
 
 nav.inverse {
   color: white;
-  background: #000000;
+  background: #232323;
   border-bottom: 1px solid black;
 }
 
@@ -2603,7 +2603,7 @@ nav ul li {
 }
 
 .background-color {
-  background-color: #abb2b3;
+  background-color: #f7f7f7;
 }
 
 .background-size-cover {
