@@ -140,26 +140,28 @@ select{
 
 input[type=submit],
 button, a.btn{
-  i{
-    color: white;
-  }
+  
   text-align: center;
-  color: white;
   font: @fontSize @fontFamily;
-  background: @button;
-  border: 1px solid @button;
+  background: darken(@background, 3%);
+  border: 1px solid darken(@background, 3%);
   cursor: pointer;
   padding: @padding @padding*2;
   .transition(background, .1s, linear);
   &:hover, &:focus{
-    color: white;
-    background: darken(@button, 10%);
-    border-color: darken(@button, 10%);
+    background: darken(@background, 7%);
+    border-color: darken(@background, 7%);
   }
   &:active{
+    background: darken(@background, 3%);
+    border-color: darken(@background, 3%);
+  }
+
+  &.inverse, &.warning, &.info, &.error, &.success{
+    i{
+      color: white;
+    }
     color: white;
-    background: @button;
-    border-color: @button;
   }
 
   &.inverse{
@@ -252,7 +254,7 @@ textarea{
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
   .opacity(100); //normalize ios opacity for disabled elements
-  background: lighten(@border, 10%);
+  background: @background;
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
