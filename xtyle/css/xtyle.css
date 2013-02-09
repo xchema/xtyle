@@ -2969,6 +2969,7 @@ div.resize {
   html.responsive button {
     width: 100%;
     margin-right: 0;
+    margin-left: 0;
   }
   html.responsive .grid1,
   html.responsive .grid2,

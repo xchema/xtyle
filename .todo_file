@@ -1,11 +1,8 @@
-+ remove margin left from table on mobile devices
 + icons not working on firefox
-+ center buttons, a.btn, etc
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
 + mix themes, you can use buttons form one theme while using colors form another etc...
 + add button sizes (small, regular, medium, large) to gh-pages
-+ grid system skip columns .grid4-3 (ex)
 + check bottom space for lists
 + aside element stylesheet
 + fix gap on form buttons on mobile devices
@@ -110,3 +107,6 @@
 - fix path on gh-pages for js files
 - documentation on README inside widgets, markdown format
 - some way to attach documentation to widgets
+- remove margin left from table on mobile devices
+- center buttons, a.btn, etc
+- grid system skip columns .grid4-3 (ex)
