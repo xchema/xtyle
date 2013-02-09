@@ -1705,22 +1705,15 @@ button,
 a.btn {
   padding: 10px 20px;
   font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
-  color: white;
   text-align: center;
   cursor: pointer;
-  background: #abb2b3;
-  border: 1px solid #abb2b3;
+  background: #efefef;
+  border: 1px solid #efefef;
   -webkit-transition: background 0.1s linear;
      -moz-transition: background 0.1s linear;
       -ms-transition: background 0.1s linear;
        -o-transition: background 0.1s linear;
           transition: background 0.1s linear;
-}
-
-input[type=submit] i,
-button i,
-a.btn i {
-  color: white;
 }
 
 input[type=submit]:hover,
@@ -1729,17 +1722,51 @@ a.btn:hover,
 input[type=submit]:focus,
 button:focus,
 a.btn:focus {
-  color: white;
-  background: #90999b;
-  border-color: #90999b;
+  background: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 input[type=submit]:active,
 button:active,
 a.btn:active {
+  background: #efefef;
+  border-color: #efefef;
+}
+
+input[type=submit].inverse,
+button.inverse,
+a.btn.inverse,
+input[type=submit].warning,
+button.warning,
+a.btn.warning,
+input[type=submit].info,
+button.info,
+a.btn.info,
+input[type=submit].error,
+button.error,
+a.btn.error,
+input[type=submit].success,
+button.success,
+a.btn.success {
   color: white;
-  background: #abb2b3;
-  border-color: #abb2b3;
+}
+
+input[type=submit].inverse i,
+button.inverse i,
+a.btn.inverse i,
+input[type=submit].warning i,
+button.warning i,
+a.btn.warning i,
+input[type=submit].info i,
+button.info i,
+a.btn.info i,
+input[type=submit].error i,
+button.error i,
+a.btn.error i,
+input[type=submit].success i,
+button.success i,
+a.btn.success i {
+  color: white;
 }
 
 input[type=submit].inverse,
@@ -1897,7 +1924,7 @@ textarea.search {
 
 input[disabled='disabled'],
 textarea[disabled='disabled'] {
-  background: #f4f5f6;
+  background: #f7f7f7;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   -webkit-opacity: 1;
@@ -2158,7 +2185,7 @@ tag {
   font-size: 14px;
   font-style: normal;
   color: #c29400;
-  background: #fffaeb;
+  background: #fff9e6;
   border: 1px solid #f4e9c3;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -2942,6 +2969,7 @@ div.resize {
   html.responsive button {
     width: 100%;
     margin-right: 0;
+    margin-left: 0;
   }
   html.responsive .grid1,
   html.responsive .grid2,
