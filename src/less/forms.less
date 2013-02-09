@@ -146,20 +146,20 @@ button, a.btn{
   text-align: center;
   color: white;
   font: @fontSize @fontFamily;
-  background: @background;
-  border: 1px solid @background;
+  background: @button;
+  border: 1px solid @button;
   cursor: pointer;
   padding: @padding @padding*2;
   .transition(background, .1s, linear);
   &:hover, &:focus{
     color: white;
-    background: darken(@background, 10%);
-    border-color: darken(@background, 10%);
+    background: darken(@button, 10%);
+    border-color: darken(@button, 10%);
   }
   &:active{
     color: white;
-    background: @background;
-    border-color: @background;
+    background: @button;
+    border-color: @button;
   }
 
   &.inverse{
