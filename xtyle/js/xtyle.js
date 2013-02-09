@@ -136,7 +136,9 @@
         $.each( x.model.widgets, function ( widget, location ) {
           if( $("widget[name="+widget+"]").length && $("widget").attr("id") ){
             x.controller._loadWidget ( widget, location );
-          }// if
+          } else if ( $("widget[name="+widget+"]").length && !$("widget").attr("id") ){
+            x.controller._debug( "Missing \"id\" for widget \""+ widget + "\"" );
+          }
         });// each
       }// if
 

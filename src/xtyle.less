@@ -11,13 +11,62 @@
 
 // GOOGLE WEBFONTS
 @import url(http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold);
-//@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 
 // FONTELLO
 @import "fontello.less";
 
+
+// VARIABLES 
+
+//layouts
+@mediaFixed: 960px;
+@mediaMobile: 600px;
+@mediaTablet: 900px;
+@zIndex: 100;
+
+//colors
+@placeholder: #cbcbcb;
+//@background: #f7f7f7;
+@background: #abb2b3;
+@warning: #ffca1f;
+@error: #ff322d;
+@info: #2593DD;
+@success: #0ab33b;
+
+//typography
+@fontFamily: "Roboto", "Helvetica", "Arial", sans-serif; 
+@fontSize: 14px;
+@fontSmall: 80%;
+@fontMedium: 120%;
+@fontLarge: 150%;
+@iconSize: 100%;
+@paragraph: 20px;
+@color: #444;
+@links: @info;
+@blockquote: #ddd;
+@lists: 20px;
+@code: #d50e14;
+@dfn: #968145;
+
+//margin/padding
+@margin:  10px;
+@padding: 10px;
+
+//border
+@border: #D9DCDE;
+@borderRadius: @margin/2;
+
+//grids
+@unit: 40px;
+
+//forms
+@inputSmall: 150px;
+@inputMedium: @inputSmall*2+35px;
+@inputLarge: @inputMedium*2+35px;
+
+
+
 // XTYLE
-@import "less/vars.less";
 @import "less/reset.less";
 @import "less/mixins.less";
 @import "less/grid.less";
@@ -39,11 +88,3 @@
 @media screen and (max-width: @mediaMobile){
   @import "less/mobile.less";
 }
-
-@media screen and (max-height: @mediaMobile){
-  .position-fixed{
-    position: absolute;
-  }
-}
-
-// WIDGETS 

@@ -73,6 +73,8 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea{
+  border: 1px solid @border;
+  border-top: 2px solid @border;
   border-color: @border;
   &:hover{
     .transition(border-color, .1s, linear);
@@ -96,184 +98,161 @@ input[type=checkbox]{
 
 
 input, a.btn, button, select{
+  vertical-align: middle;
   i{
     line-height: 0.8;
   }
   margin: @margin/2 @margin @margin 0;
   .boxSizing ();
 }
-input{
-  &.medium, &.large{
+// fix margin-right for bigger sizes
+input, a.btn, button, select{
+  &.medium{
     margin-right: @margin*1.5;
+  }
+  &.large{
+    margin-right: @margin*1.8;
   }
 }
 input[type=text],
 input[type=email],
 input[type=password],
 input[type=number],
-textarea, select,
-input[type=submit],
-button, a.btn{
+textarea, select{
   color: @color;
-  border: 1px solid @border;
-  padding: @padding/2 @padding;
+  padding: @padding;
   &.small{
     font-size: @fontSmall;
+    padding: @padding/1.5 @padding/1.2;
   }
   &.medium{
     font-size: @fontMedium;
-    padding: @padding @padding*1.1;
+    padding: @padding*1.5 @padding*1.2;
   }
   &.large{
     font-size: @fontLarge;
-    padding: @padding*1.2 @padding*1.5;
+    padding: @padding*2 @padding*1.5;
   }
 }
+select{
+  border: 1px solid @border;
+}
+
 input[type=submit],
 button, a.btn{
+  i{
+    color: white;
+  }
+  text-align: center;
+  color: white;
   font: @fontSize @fontFamily;
-  margin-top: 7px;
-  background: darken(@background, 2%);
-  border: 1px solid @border;
-  border-bottom: 2px solid @border;
+  background: @background;
+  border: 1px solid @background;
   cursor: pointer;
-  vertical-align: middle;
-  padding: @padding/2 @padding*1.2;
-  .transition(border-color, .1s, linear);
+  padding: @padding @padding*2;
   .transition(background, .1s, linear);
-  &:hover{
-    background: @background;
+  &:hover, &:focus{
+    color: white;
+    background: darken(@background, 10%);
+    border-color: darken(@background, 10%);
   }
   &:active{
-    border-top: 2px solid @border;
-    border-bottom: 1px solid @border;
+    color: white;
     background: @background;
-  }
-  &:focus{
-    border-color: darken(@border, 10%);
+    border-color: @background;
   }
 
   &.inverse{
-    i{
-      color: white;
-    }
-    color: white;
-    background: darken(@color, 6%);
-    border-color: darken(@color, 10%);
-    &:hover{
-      color: white;
-      background: @color;
+    background: @color;
+    border-color: @color;
+    &:hover, &:focus{
+      background: darken(@color, 100%);
+      border-color: darken(@color, 100%);
     }
     &:active{
-      color: white;
       background: @color;
-    }
-    &:focus{
-      border-color: darken(@border, 100%);
+      border-color: @color;
     }
   }
   &.warning{
-    i{
-      color: white;
-    }
-    color: white;
-    background: lighten(@warning, 5%);
-    border-color: lighten(@warning, 2%);
-    &:hover{
-      color: white;
-      background: lighten(@warning, 10%);
+    background: @warning;
+    border-color: @warning;
+    &:hover, &:focus{
+      background: darken(@warning, 10%);
+      border-color: darken(@warning, 10%);
     }
     &:active{
-      color: white;
-      background: lighten(@warning, 10%);
-    }
-    &:focus{
-      border-color: darken(@warning, 8%);
+      background: @warning;
+      border-color: @warning;
     }
   }
   &.error{
-    i{
-      color: white;
-    }
-    color: white;
-    background: darken(@error, 5%);
-    border-color: darken(@error, 10%);
-    &:hover{
-      color: white;
-      background: @error;
+    background: @error;
+    border-color: @error;
+    &:hover, &:focus{
+      background: darken(@error, 13%);
+      border-color: darken(@error, 13%);
     }
     &:active{
-      color: white;
       background: @error;
-    }
-    &:focus{
-      border-color: darken(@error, 20%);
+      border-color: @error;
     }
   }
   &.info{
-    i{
-      color: white;
-    }
-    color: white;
-    background: darken(@info, 5%);
-    border-color: darken(@info, 10%);
-    &:hover{
-      color: white;
-      background: @info;
+    background: @info;
+    border-color: @info;
+    &:hover, &:focus{
+      background: darken(@info, 10%);
+      border-color: darken(@info, 10%);
     }
     &:active{
-      color: white;
       background: @info;
-    }
-    &:focus{
-      border-color: darken(@info, 20%);
-    }
+      border-color: @info;
+    }     
   }
   &.success{
-    i{
-      color: white;
-    }
-    color: white;
-    background: darken(@success, 5%);
-    border-color: darken(@success, 8%);
-    &:hover{
-      color: white;
-      background: @success;
+    background: @success;
+    border-color: @success;
+    &:hover, &:focus{
+      background: darken(@success, 6%);
+      border-color: darken(@success, 6%);
     }
     &:active{
-      color: white;
       background: @success;
-    }
-    &:focus{
-      border-color: darken(@success, 15%);
+      border-color: @success;
     }
   }
   &.small{
-    margin-top: 8.5px;
+    font-size: @fontSmall;
+    //margin-top: 10.5px;
+    padding: @padding/1.48 @padding*1.4;
   }
   &.medium{
-    margin-top: 4.5px;
-    padding: @padding @padding*1.8;
+    font-size: @fontMedium;
+    //margin-top: 4.5px;
+    padding: @padding*1.5 @padding*2.5;
   }
   &.large{
-    margin-top: 2px;
-    padding: @padding*1.2 @padding*2.2;
+    font-size: @fontLarge;
+    //margin-top: 2px;
+    padding: @padding*2 @padding*3;
   }
 }
+
 
 input[type=text],
 input[type=email],
 input[type=password],
 input[type=number],
 textarea{
-  border-top: 2px solid @border;
+  //border-top: 2px solid @border;
   &.search{
     .borderRadius(50px);
   }
 }
 input[disabled='disabled'], textarea[disabled='disabled']{
   .opacity(100); //normalize ios opacity for disabled elements
-  background: lighten(@border, 7%);
+  background: lighten(@border, 10%);
   background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
   background-image:-webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
 }
