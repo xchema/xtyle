@@ -14,21 +14,21 @@
 }
 
 //color schema
-.color { color: @color; }
+.color { color: @fontColor; }
 //complimentary colors
-@complement1: spin( @color, 180 );
-@complement2: darken( spin(@color, 180), 5% );
-@lighten1: lighten( @color, 15% );
-@lighten2: lighten( @color, 30% );
+@complement1: spin( @fontColor, 180 );
+@complement2: darken( spin(@fontColor, 180), 5% );
+@lighten1: lighten( @fontColor, 15% );
+@lighten2: lighten( @fontColor, 30% );
 .colorComp1 { color: @complement1; }
 .colorComp2 { color: @complement2; }
 .colorComp3 { color: @lighten1; }
 .colorComp4 { color: @lighten2; }
 //subtle colors
-@lighter1: lighten(spin(@color, 5), 10%);
-@lighter2: lighten(spin(@color, 10), 20%);
-@darker1: darken(spin(@color, -5), 10%);
-@darker2: darken(spin(@color, -10), 20%);
+@lighter1: lighten(spin(@fontColor, 5), 10%);
+@lighter2: lighten(spin(@fontColor, 10), 20%);
+@darker1: darken(spin(@fontColor, -5), 10%);
+@darker2: darken(spin(@fontColor, -10), 20%);
 .colorSubtle1 {color: @lighter1;}
 .colorSubtle2 {color: @lighter2;}
 .colorSubtle3 {color: @darker1;}
@@ -174,15 +174,15 @@
   opacity: @opacity / 100;
 }
 //shadows
-.boxShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
-  -moz-box-shadow: @horizontal @vertical @blur @color;
-  -webkit-box-shadow: @horizontal @vertical @blur @color;
-  box-shadow: @horizontal @vertical @blur @color;
+.boxShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @fontColor: #000){
+  -moz-box-shadow: @horizontal @vertical @blur @fontColor;
+  -webkit-box-shadow: @horizontal @vertical @blur @fontColor;
+  box-shadow: @horizontal @vertical @blur @fontColor;
 }
-.innerShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @color: #000){
-  -moz-box-shadow: @horizontal @vertical @blur @color inset;
-  -webkit-box-shadow: @horizontal @vertical @blur @color inset;
-  box-shadow: @horizontal @vertical @blur @color inset;
+.innerShadow (@horizontal: 1px, @vertical: 1px, @blur: 3px, @fontColor: #000){
+  -moz-box-shadow: @horizontal @vertical @blur @fontColor inset;
+  -webkit-box-shadow: @horizontal @vertical @blur @fontColor inset;
+  box-shadow: @horizontal @vertical @blur @fontColor inset;
 }
 .textShadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)){
   text-shadow: @string;
