@@ -1,4 +1,3 @@
-+ icons not working on firefox
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
 + mix themes, you can use buttons form one theme while using colors form another etc...
@@ -109,4 +108,4 @@
 - some way to attach documentation to widgets
 - remove margin left from table on mobile devices
 - center buttons, a.btn, etc
-- grid system skip columns .grid4-3 (ex)
+- grid system skip columns .grid4-3 (ex)- icons not working on firefox
