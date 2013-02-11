@@ -1484,11 +1484,11 @@ span.radio span {
 }
 
 span.radio.active {
-  border-color: #2593dd;
+  border-color: #0088cc;
 }
 
 span.radio.active span {
-  background: #2593dd;
+  background: #0088cc;
 }
 
 span.checkbox {
@@ -1506,11 +1506,11 @@ span.checkbox .icon-check {
   top: -5px;
   left: 0;
   display: none;
-  color: #2593dd;
+  color: #0088cc;
 }
 
 span.checkbox.active {
-  border-color: #2593dd;
+  border-color: #0088cc;
 }
 
 span.checkbox.active .icon-check {
@@ -1547,7 +1547,7 @@ span.checkbox span {
 
 span.radio:focus,
 span.checkbox:focus {
-  border-color: #67b4e7;
+  border-color: #1ab2ff;
 }
 
 a.upload {
@@ -1605,7 +1605,7 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
-  border-color: #67b4e7;
+  border-color: #1ab2ff;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
       -ms-transition: border-color 0.1s linear;
@@ -1955,7 +1955,7 @@ fieldset legend {
 }
 
 a {
-  color: #2593dd;
+  color: #0088cc;
   text-decoration: none;
   -webkit-transition: color 0.1s linear;
      -moz-transition: color 0.1s linear;
@@ -1965,11 +1965,11 @@ a {
 }
 
 a:hover {
-  color: #1c76b3;
+  color: #1ab2ff;
 }
 
 a:active {
-  color: #2593dd;
+  color: #0088cc;
 }
 
 a:visited {

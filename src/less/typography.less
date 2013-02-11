@@ -3,11 +3,11 @@ a{
     text-decoration: none;
     .transition(color, .1s, linear);
     &:hover{
-        color: darken(@links, 10%);
+        color: lighten(@links, 15%);
        // text-decoration: underline;
     }
     &:active{
-        color: @links;
+        color: saturate(@links, 15%);
     }
     &:visited{ /* not implemented */}
 }
