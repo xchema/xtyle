@@ -1,3 +1,4 @@
++ make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
 + mix themes, you can use buttons form one theme while using colors form another etc...
