@@ -21,7 +21,7 @@ Your rights:
 
 * **to Share** — to copy, distribute and transmit the work
 * **to Remix** — to adapt the work
-* **to use** - commercial use of the work
+* **to use** - commercial use of the work is allowed
 
 Full license at:
 [Creative Commons](http://creativecommons.org/licenses/by/3.0/)
