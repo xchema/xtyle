@@ -1,3 +1,4 @@
++ make style for printing, media print
 + make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
