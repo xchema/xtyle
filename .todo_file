@@ -1,3 +1,4 @@
++ permit change font for headings (like using google web fonts)
 + make style for printing, media print
 + make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
