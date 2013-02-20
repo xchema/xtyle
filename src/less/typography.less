@@ -40,32 +40,35 @@ p{
 }
 blockquote{
     font-weight: lighter;
-    padding-left: @paragraph;
-    border-left: 2px solid @blockquote;
+    padding-left: @margin*2;
+    border-left: 3px solid @blockquote;
     p{
         font-size: 120%;
     }
     cite{
+        font-size: 80%;
         font-weight: normal;
-        margin-top: -(3+@paragraph);
+        font-style: normal;
+        margin-top: -(@paragraph);
         margin-bottom: @paragraph;
         padding: 0;
         display: block;
+        color: lighten(@fontColor, 20%);
     }
     &.right{
         padding-left: 0;
         padding-right: @paragraph;
         border-left: none;
-        border-right: 2px solid @blockquote;
+        border-right: 3px solid @blockquote;
     }
     &.dark{
         border-color: @dark;
     }
     &.attention{
-        border-color: @attention;
+        border-color: lighten(@attention, 10%);
     }
     &.alert{
-        border-color: @alert;
+        border-color: lighten(@alert, 10%);
     }
     &.info{
         border-color: @info;

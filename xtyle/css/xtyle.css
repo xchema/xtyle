@@ -2020,7 +2020,7 @@ p.idented {
 blockquote {
   padding-left: 20px;
   font-weight: lighter;
-  border-left: 2px solid #dddddd;
+  border-left: 3px solid #dddddd;
 }
 
 blockquote p {
@@ -2030,15 +2030,18 @@ blockquote p {
 blockquote cite {
   display: block;
   padding: 0;
-  margin-top: -23px;
+  margin-top: -20px;
   margin-bottom: 20px;
+  font-size: 80%;
+  font-style: normal;
   font-weight: normal;
+  color: #777777;
 }
 
 blockquote.right {
   padding-right: 20px;
   padding-left: 0;
-  border-right: 2px solid #dddddd;
+  border-right: 3px solid #dddddd;
   border-left: none;
 }
 
@@ -2047,11 +2050,11 @@ blockquote.dark {
 }
 
 blockquote.attention {
-  border-color: #f2c233;
+  border-color: #f5d063;
 }
 
 blockquote.alert {
-  border-color: #e32a22;
+  border-color: #e9564f;
 }
 
 blockquote.info {
@@ -2191,9 +2194,9 @@ tag {
   padding: 6px 10px;
   font-size: 14px;
   font-style: normal;
-  color: #aa820b;
-  background: #fefaee;
-  border: 1px solid #f2e8cc;
+  color: #777777;
+  background: #f7f7f7;
+  border: 1px solid #e7e9ea;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2219,6 +2222,29 @@ tag a:hover {
 
 alert a:active,
 tag a:active {
+  color: #f2c233;
+}
+
+alert.attention,
+tag.attention {
+  color: #aa820b;
+  background: #fefaee;
+  border-color: #f2e8cc;
+}
+
+alert.attention a,
+tag.attention a {
+  color: #f2c233;
+  text-decoration: underline;
+}
+
+alert.attention a:hover,
+tag.attention a:hover {
+  color: #cc9c0d;
+}
+
+alert.attention a:active,
+tag.attention a:active {
   color: #f2c233;
 }
 

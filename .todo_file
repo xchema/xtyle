@@ -4,7 +4,6 @@
 + include image 100% example on layout pages on gh-pages
 + hover for tables rows with colors styles
 + make input focus have the different colors
-+ make style for printing, media print
 + make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
@@ -13,7 +12,6 @@
 + check bottom space for lists
 + aside element stylesheet
 + fix gap on form buttons on mobile devices
-+ tags, with optional 'x' to close, use rounded and color design
 + implement http://www.w3schools.com/tags/tag_figcaption.asp
 + implement http://ivaynberg.github.com/select2/
 + add raindowjs for syntax highlight on gh-pages website
@@ -22,13 +20,9 @@
 + filter classes (blackwhite, sepia etc)
 + make classes more like css properties, remove .show from grids, verify how big are actual classes and make them smaller
 + PAGES - example websites
-+ Create wiki pages on github
 + convert javascript to coffescript, add on bin program to compile
-+ improve grid system
 + Grid - better documentation
-+ fontello warning icon not workign in opera
 + tdd with testem
-+ load pages add history on url bar
 + tdd with travis
 + create npm module
 + add sufix --docs to remove documentation when downloading
@@ -37,7 +31,6 @@
 + remove recess, replace by xchema version
 + bash - minify scripts/css
 + bash - compile less files (with @import)
-+ make compatible with xmaker
 + JS - form validation
 + JS - number input
 + JS - selectbox
@@ -48,7 +41,6 @@
 + verify mechanism - if support html5 use it, it not, use javascript
 + JavaScript for form elements
 + Modernizr - http://modernizr.com/
-+ style for radio/checkbox
 + other input types - reset, number, etc
 + hcard - http://microformats.org/wiki/hcard
 + PAGES - make the minibrowser a slideshow
@@ -119,3 +111,9 @@
 - grid system skip columns .grid4-3 (ex)- icons not working on firefox
 - change color schema, (light, dark, alert, success, attention, info)
 - permit change font for headings (like using google web fonts)
+- style for radio/checkbox
+- make compatible with xmaker
+- fontello warning icon not workign in opera
+- Create wiki pages on github
+- improve grid system
+- tags, with optional 'x' to close, use rounded and color design
