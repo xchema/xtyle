@@ -1700,6 +1700,13 @@ select {
 }
 
 input[type=submit],
+input[type=file],
+button,
+a.btn {
+  cursor: pointer;
+}
+
+input[type=submit],
 button,
 a.btn {
   padding: 10px 20px;
@@ -1707,7 +1714,6 @@ a.btn {
   font-size: 14px;
   font-weight: normal;
   text-align: center;
-  cursor: pointer;
   background-color: #e0e3e4;
   border: 1px solid #e0e3e4;
   -webkit-transition: background 0.1s linear;

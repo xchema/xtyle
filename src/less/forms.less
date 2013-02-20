@@ -139,10 +139,16 @@ select{
 }
 
 input[type=submit],
+input[type=file],
+button, a.btn
+{
+  cursor: pointer;
+}
+
+input[type=submit],
 button, a.btn{
   background-color: @button;
   border: 1px solid @button;
-  cursor: pointer;
   font-size: @fontSize;
   font-family: @fontFamily;
   font-weight: normal;
