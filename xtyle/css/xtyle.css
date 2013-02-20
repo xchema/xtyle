@@ -2436,7 +2436,7 @@ nav a {
 }
 
 nav a.active {
-  background: #efefef;
+  background: #ffffff;
 }
 
 nav h1,
@@ -2458,7 +2458,7 @@ nav.menu {
 
 nav.dark {
   color: white;
-  background: #232323;
+  background: #000000;
   border-bottom: 1px solid black;
 }
 
@@ -2480,7 +2480,7 @@ nav.dark a:hover {
 }
 
 nav.dark a.active {
-  background: #000000;
+  background: #232323;
 }
 
 nav.top {
@@ -2493,8 +2493,8 @@ nav.bottom {
 
 nav .logo {
   float: left;
-  padding: 0 15px;
-  font-size: 180%;
+  padding: 6.25px 15px;
+  font-size: 150%;
   font-weight: lighter;
 }
 
@@ -2505,7 +2505,7 @@ nav.large li {
 
 nav.large .logo {
   padding: 9.09090909090909px 20px;
-  font-size: 210%;
+  font-size: 225%;
 }
 
 nav ul {

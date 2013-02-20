@@ -4,7 +4,7 @@ nav{
         float: left;
         padding: @padding;
         &.active{
-            background: darken(@background, 3%);           
+             background: lighten(@background, 3%);        
         }
     }
     display: block;
@@ -15,12 +15,14 @@ nav{
         position: fixed;
         left: 0;
         width: 100%;
-        background: #f7f7f7;
+        
+        background: @background;
         border-bottom: 1px solid @border;
     }
     &.dark{
         border-bottom: 1px solid black;
-        background: darken(@background, 83%);
+        background: darken(@background, 100%);
+        
         color: white;
         h1,h2,h3,h4,h5,h6{
             color: inherit;
@@ -31,7 +33,7 @@ nav{
                 color: white;
             }
             &.active{
-                background: darken(@background, 100%);
+                background: darken(@background, 83%);  
             }
         }
     }
@@ -42,9 +44,9 @@ nav{
         bottom: 0;
     }
     .logo{
-        font-size: 180%;
+        font-size: @fontLarge;
         font-weight: lighter;
-        padding: 0 @padding*1.5;
+        padding: @padding/1.6 @padding*1.5;
         float: left;
     }
     &.large{
@@ -52,7 +54,7 @@ nav{
             padding: @padding*2 @padding*2.8;
         }
         .logo{
-            font-size: 210%;
+            font-size: @fontLarge*1.5;
             padding: @padding/1.1 @padding*2;
         }
     }
