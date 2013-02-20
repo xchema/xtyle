@@ -1123,7 +1123,6 @@ html {
 body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 1.5;
   color: #444444;
   background-color: white;
 }
@@ -1484,11 +1483,11 @@ span.radio span {
 }
 
 span.radio.active {
-  border-color: #2593dd;
+  border-color: #0088cc;
 }
 
 span.radio.active span {
-  background: #2593dd;
+  background: #0088cc;
 }
 
 span.checkbox {
@@ -1503,14 +1502,14 @@ span.checkbox {
 
 span.checkbox .icon-check {
   position: absolute;
-  top: -5px;
+  top: -3px;
   left: 0;
   display: none;
-  color: #2593dd;
+  color: #0088cc;
 }
 
 span.checkbox.active {
-  border-color: #2593dd;
+  border-color: #0088cc;
 }
 
 span.checkbox.active .icon-check {
@@ -1547,7 +1546,7 @@ span.checkbox span {
 
 span.radio:focus,
 span.checkbox:focus {
-  border-color: #67b4e7;
+  border-color: #1ab2ff;
 }
 
 a.upload {
@@ -1559,7 +1558,7 @@ a.upload i {
   line-height: 0.8;
 }
 
-a.upload input[type="file"] {
+a.upload input[type=file] {
   position: absolute;
   top: 0;
   left: 0;
@@ -1605,12 +1604,52 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
-  border-color: #67b4e7;
+  border-color: #1ab2ff;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
       -ms-transition: border-color 0.1s linear;
        -o-transition: border-color 0.1s linear;
           transition: border-color 0.1s linear;
+}
+
+input[type=text]:focus.dark,
+input[type=email]:focus.dark,
+input[type=password]:focus.dark,
+input[type=number]:focus.dark,
+textarea:focus.dark {
+  border-color: #333333;
+}
+
+input[type=text]:focus.attention,
+input[type=email]:focus.attention,
+input[type=password]:focus.attention,
+input[type=number]:focus.attention,
+textarea:focus.attention {
+  border-color: #ffc826;
+}
+
+input[type=text]:focus.info,
+input[type=email]:focus.info,
+input[type=password]:focus.info,
+input[type=number]:focus.info,
+textarea:focus.info {
+  border-color: #07a3f3;
+}
+
+input[type=text]:focus.success,
+input[type=email]:focus.success,
+input[type=password]:focus.success,
+input[type=number]:focus.success,
+textarea:focus.success {
+  border-color: #00c233;
+}
+
+input[type=text]:focus.alert,
+input[type=email]:focus.alert,
+input[type=password]:focus.alert,
+input[type=number]:focus.alert,
+textarea:focus.alert {
+  border-color: #ff1006;
 }
 
 textarea.noresize {
@@ -1701,14 +1740,22 @@ select {
 }
 
 input[type=submit],
+input[type=file],
+button,
+a.btn {
+  cursor: pointer;
+}
+
+input[type=submit],
 button,
 a.btn {
   padding: 10px 20px;
-  font: 14px "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
   text-align: center;
-  cursor: pointer;
-  background: #efefef;
-  border: 1px solid #efefef;
+  background-color: #e0e3e4;
+  border: 1px solid #e0e3e4;
   -webkit-transition: background 0.1s linear;
      -moz-transition: background 0.1s linear;
       -ms-transition: background 0.1s linear;
@@ -1722,130 +1769,130 @@ a.btn:hover,
 input[type=submit]:focus,
 button:focus,
 a.btn:focus {
-  background: #e5e5e5;
-  border-color: #e5e5e5;
+  background: #e8eaeb;
+  border-color: #e8eaeb;
 }
 
 input[type=submit]:active,
 button:active,
 a.btn:active {
-  background: #efefef;
-  border-color: #efefef;
+  background-color: #e0e3e4;
+  border-color: #e0e3e4;
 }
 
-input[type=submit].inverse,
-button.inverse,
-a.btn.inverse,
-input[type=submit].warning,
-button.warning,
-a.btn.warning,
+input[type=submit].dark,
+button.dark,
+a.btn.dark,
+input[type=submit].attention,
+button.attention,
+a.btn.attention,
 input[type=submit].info,
 button.info,
 a.btn.info,
-input[type=submit].error,
-button.error,
-a.btn.error,
+input[type=submit].alert,
+button.alert,
+a.btn.alert,
 input[type=submit].success,
 button.success,
 a.btn.success {
   color: white;
 }
 
-input[type=submit].inverse i,
-button.inverse i,
-a.btn.inverse i,
-input[type=submit].warning i,
-button.warning i,
-a.btn.warning i,
+input[type=submit].dark i,
+button.dark i,
+a.btn.dark i,
+input[type=submit].attention i,
+button.attention i,
+a.btn.attention i,
 input[type=submit].info i,
 button.info i,
 a.btn.info i,
-input[type=submit].error i,
-button.error i,
-a.btn.error i,
+input[type=submit].alert i,
+button.alert i,
+a.btn.alert i,
 input[type=submit].success i,
 button.success i,
 a.btn.success i {
   color: white;
 }
 
-input[type=submit].inverse,
-button.inverse,
-a.btn.inverse {
-  background: #444444;
-  border-color: #444444;
-}
-
-input[type=submit].inverse:hover,
-button.inverse:hover,
-a.btn.inverse:hover,
-input[type=submit].inverse:focus,
-button.inverse:focus,
-a.btn.inverse:focus {
+input[type=submit].dark,
+button.dark,
+a.btn.dark {
   background: #000000;
   border-color: #000000;
 }
 
-input[type=submit].inverse:active,
-button.inverse:active,
-a.btn.inverse:active {
-  background: #444444;
-  border-color: #444444;
+input[type=submit].dark:hover,
+button.dark:hover,
+a.btn.dark:hover,
+input[type=submit].dark:focus,
+button.dark:focus,
+a.btn.dark:focus {
+  background: #333333;
+  border-color: #333333;
 }
 
-input[type=submit].warning,
-button.warning,
-a.btn.warning {
-  background: #ffca1f;
-  border-color: #ffca1f;
+input[type=submit].dark:active,
+button.dark:active,
+a.btn.dark:active {
+  background: #000000;
+  border-color: #000000;
 }
 
-input[type=submit].warning:hover,
-button.warning:hover,
-a.btn.warning:hover,
-input[type=submit].warning:focus,
-button.warning:focus,
-a.btn.warning:focus {
-  background: #ebb300;
-  border-color: #ebb300;
+input[type=submit].attention,
+button.attention,
+a.btn.attention {
+  background: #f2c233;
+  border-color: #f2c233;
 }
 
-input[type=submit].warning:active,
-button.warning:active,
-a.btn.warning:active {
-  background: #ffca1f;
-  border-color: #ffca1f;
+input[type=submit].attention:hover,
+button.attention:hover,
+a.btn.attention:hover,
+input[type=submit].attention:focus,
+button.attention:focus,
+a.btn.attention:focus {
+  background: #ffc826;
+  border-color: #ffc826;
 }
 
-input[type=submit].error,
-button.error,
-a.btn.error {
-  background: #ff322d;
-  border-color: #ff322d;
+input[type=submit].attention:active,
+button.attention:active,
+a.btn.attention:active {
+  background: #f2c233;
+  border-color: #f2c233;
 }
 
-input[type=submit].error:hover,
-button.error:hover,
-a.btn.error:hover,
-input[type=submit].error:focus,
-button.error:focus,
-a.btn.error:focus {
-  background: #ea0600;
-  border-color: #ea0600;
+input[type=submit].alert,
+button.alert,
+a.btn.alert {
+  background: #e32a22;
+  border-color: #e32a22;
 }
 
-input[type=submit].error:active,
-button.error:active,
-a.btn.error:active {
-  background: #ff322d;
-  border-color: #ff322d;
+input[type=submit].alert:hover,
+button.alert:hover,
+a.btn.alert:hover,
+input[type=submit].alert:focus,
+button.alert:focus,
+a.btn.alert:focus {
+  background: #ff1006;
+  border-color: #ff1006;
+}
+
+input[type=submit].alert:active,
+button.alert:active,
+a.btn.alert:active {
+  background: #e32a22;
+  border-color: #e32a22;
 }
 
 input[type=submit].info,
 button.info,
 a.btn.info {
-  background: #2593dd;
-  border-color: #2593dd;
+  background: #1d8bc4;
+  border-color: #1d8bc4;
 }
 
 input[type=submit].info:hover,
@@ -1854,22 +1901,22 @@ a.btn.info:hover,
 input[type=submit].info:focus,
 button.info:focus,
 a.btn.info:focus {
-  background: #1c76b3;
-  border-color: #1c76b3;
+  background: #07a3f3;
+  border-color: #07a3f3;
 }
 
 input[type=submit].info:active,
 button.info:active,
 a.btn.info:active {
-  background: #2593dd;
-  border-color: #2593dd;
+  background: #1d8bc4;
+  border-color: #1d8bc4;
 }
 
 input[type=submit].success,
 button.success,
 a.btn.success {
-  background: #0ab33b;
-  border-color: #0ab33b;
+  background: #09aa33;
+  border-color: #09aa33;
 }
 
 input[type=submit].success:hover,
@@ -1878,15 +1925,15 @@ a.btn.success:hover,
 input[type=submit].success:focus,
 button.success:focus,
 a.btn.success:focus {
-  background: #089631;
-  border-color: #089631;
+  background: #00c233;
+  border-color: #00c233;
 }
 
 input[type=submit].success:active,
 button.success:active,
 a.btn.success:active {
-  background: #0ab33b;
-  border-color: #0ab33b;
+  background: #09aa33;
+  border-color: #09aa33;
 }
 
 input[type=submit].small,
@@ -1906,7 +1953,7 @@ a.btn.medium {
 input[type=submit].large,
 button.large,
 a.btn.large {
-  padding: 20px 30px;
+  padding: 20px 35px;
   font-size: 150%;
 }
 
@@ -1955,7 +2002,7 @@ fieldset legend {
 }
 
 a {
-  color: #2593dd;
+  color: #0088cc;
   text-decoration: none;
   -webkit-transition: color 0.1s linear;
      -moz-transition: color 0.1s linear;
@@ -1965,11 +2012,11 @@ a {
 }
 
 a:hover {
-  color: #1c76b3;
+  color: #1ab2ff;
 }
 
 a:active {
-  color: #2593dd;
+  color: #0088cc;
 }
 
 a:visited {
@@ -2013,7 +2060,7 @@ p.idented {
 blockquote {
   padding-left: 20px;
   font-weight: lighter;
-  border-left: 2px solid #dddddd;
+  border-left: 3px solid #dddddd;
 }
 
 blockquote p {
@@ -2023,36 +2070,39 @@ blockquote p {
 blockquote cite {
   display: block;
   padding: 0;
-  margin-top: -23px;
+  margin-top: -20px;
   margin-bottom: 20px;
+  font-size: 80%;
+  font-style: normal;
   font-weight: normal;
+  color: #777777;
 }
 
 blockquote.right {
   padding-right: 20px;
   padding-left: 0;
-  border-right: 2px solid #dddddd;
+  border-right: 3px solid #dddddd;
   border-left: none;
 }
 
-blockquote.inverse {
+blockquote.dark {
   border-color: #000000;
 }
 
-blockquote.warning {
-  border-color: #ffd652;
+blockquote.attention {
+  border-color: #f5d063;
 }
 
-blockquote.error {
-  border-color: #ff6460;
+blockquote.alert {
+  border-color: #e9564f;
 }
 
 blockquote.info {
-  border-color: #51a9e4;
+  border-color: #1d8bc4;
 }
 
 blockquote.success {
-  border-color: #0de34b;
+  border-color: #09aa33;
 }
 
 section {
@@ -2108,24 +2158,24 @@ tr {
           transition: background 0.1s linear;
 }
 
-tr.warning {
-  background: #ffffff;
+tr.attention {
+  background: #fefaee;
 }
 
-tr.error {
-  background: #ffc7c6;
+tr.alert {
+  background: #fbe1e0;
 }
 
 tr.info {
-  background: #a9d5f2;
+  background: #e5f4fb;
 }
 
 tr.success {
-  background: #60f68b;
+  background: #e3f8e8;
 }
 
 th {
-  padding: 5px 10px;
+  padding: 10px 15px;
   font-weight: bold;
   text-align: left;
   background: #d9dcde;
@@ -2138,7 +2188,7 @@ th.clean {
 }
 
 td {
-  padding: 5px 10px;
+  padding: 10px 15px;
   border: 1px solid #d9dcde;
 }
 
@@ -2184,9 +2234,9 @@ tag {
   padding: 6px 10px;
   font-size: 14px;
   font-style: normal;
-  color: #c29400;
-  background: #fff9e6;
-  border: 1px solid #f4e9c3;
+  color: #777777;
+  background: #f7f7f7;
+  border: 1px solid #e7e9ea;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2201,84 +2251,107 @@ tag i {
 
 alert a,
 tag a {
-  color: #ffca1f;
+  color: #f2c233;
   text-decoration: underline;
 }
 
 alert a:hover,
 tag a:hover {
-  color: #d2a000;
+  color: #cc9c0d;
 }
 
 alert a:active,
 tag a:active {
-  color: #ffca1f;
+  color: #f2c233;
 }
 
-alert.error,
-tag.error {
+alert.attention,
+tag.attention {
+  color: #aa820b;
+  background: #fefaee;
+  border-color: #f2e8cc;
+}
+
+alert.attention a,
+tag.attention a {
+  color: #f2c233;
+  text-decoration: underline;
+}
+
+alert.attention a:hover,
+tag.attention a:hover {
+  color: #cc9c0d;
+}
+
+alert.attention a:active,
+tag.attention a:active {
+  color: #f2c233;
+}
+
+alert.alert,
+tag.alert {
   color: #be5d60;
-  background: #fff4f4;
-  border-color: #ffdbda;
+  background: #fbe1e0;
+  border-color: #f9d0ce;
 }
 
-alert.error a,
-tag.error a {
-  color: #ff322d;
+alert.alert a,
+tag.alert a {
+  color: #e32a22;
 }
 
-alert.error a:hover,
-tag.error a:hover {
-  color: #e00500;
+alert.alert a:hover,
+tag.alert a:hover {
+  color: #a41b15;
 }
 
-alert.error a:active,
-tag.error a:active {
-  color: #ff322d;
+alert.alert a:active,
+tag.alert a:active {
+  color: #e32a22;
 }
 
 alert.info,
 tag.info {
-  color: #1f85c9;
-  background: #f0f8fd;
-  border-color: #cde6f7;
+  color: #1a7bae;
+  background: #e5f4fb;
+  border-color: #c1e4f6;
 }
 
 alert.info a,
 tag.info a {
-  color: #1f85c9;
+  color: #1a7bae;
 }
 
 alert.info a:hover,
 tag.info a:hover {
-  color: #18689d;
+  color: #135c81;
 }
 
 alert.info a:active,
 tag.info a:active {
-  color: #2593dd;
+  color: #1d8bc4;
 }
 
 alert.success,
 tag.success {
-  color: #099b33;
-  background: #ebfaef;
-  border-color: #ceeed7;
+  color: #08922c;
+  background: #e3f8e8;
+  border-color: #c6ecd0;
 }
 
 alert.success a,
 tag.success a {
-  color: #0ab33b;
+  color: #09aa33;
 }
 
 alert.success a:hover,
 tag.success a:hover {
-  color: #099b33;
+  color: #08922c;
 }
 
 alert.success a:active,
 tag.success a:active {
-  color: #0ab33b;
+  color: #09aa33;
 }
 
 tag {
@@ -2347,6 +2420,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 10px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   line-height: 1.1;
   color: #1e1e1e;
@@ -2434,7 +2508,7 @@ nav a {
 }
 
 nav a.active {
-  background: #efefef;
+  background: #ffffff;
 }
 
 nav h1,
@@ -2454,31 +2528,31 @@ nav.menu {
   border-bottom: 1px solid #d9dcde;
 }
 
-nav.inverse {
+nav.dark {
   color: white;
-  background: #232323;
+  background: #000000;
   border-bottom: 1px solid black;
 }
 
-nav.inverse h1,
-nav.inverse h2,
-nav.inverse h3,
-nav.inverse h4,
-nav.inverse h5,
-nav.inverse h6 {
+nav.dark h1,
+nav.dark h2,
+nav.dark h3,
+nav.dark h4,
+nav.dark h5,
+nav.dark h6 {
   color: inherit;
 }
 
-nav.inverse a {
+nav.dark a {
   color: #b3b3b3;
 }
 
-nav.inverse a:hover {
+nav.dark a:hover {
   color: white;
 }
 
-nav.inverse a.active {
-  background: #000000;
+nav.dark a.active {
+  background: #232323;
 }
 
 nav.top {
@@ -2491,8 +2565,8 @@ nav.bottom {
 
 nav .logo {
   float: left;
-  padding: 0 15px;
-  font-size: 180%;
+  padding: 6.25px 15px;
+  font-size: 150%;
   font-weight: lighter;
 }
 
@@ -2503,7 +2577,7 @@ nav.large li {
 
 nav.large .logo {
   padding: 9.09090909090909px 20px;
-  font-size: 210%;
+  font-size: 225%;
 }
 
 nav ul {

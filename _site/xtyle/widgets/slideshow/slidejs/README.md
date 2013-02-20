@@ -10,4 +10,6 @@
 Just replace images and numbers (on navigation) and 
 you are ready to go.
 
+check **slidejs.js** for configuration options.
+
 Enjoy...

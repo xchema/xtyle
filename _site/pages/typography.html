@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Simple HTML, CSS, and JavaScript framework for creating amazing web applications.">
     <!-- <link rel="stylesheet" type="text/css" href="css/xtyle.css"> -->
-    <link href="//xchema.github.com/xtyle/assets/img/favicon.ico" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//xchema.github.com/xtyle/xtyle/css/xtyle.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="//xchema.github.com/xtyle/assets/css/browsers.css">
-    <link rel="stylesheet" type="text/css" href="//xchema.github.com/xtyle/assets/css/site.css">
+    <link href="//0.0.0.0:4000/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0:4000/xtyle/css/xtyle.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0:4000/assets/css/browsers.css">
+    <link rel="stylesheet" type="text/css" href="//0.0.0.0:4000/assets/css/site.css">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <script data-main="//xchema.github.com/xtyle/xtyle/js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
+    <script data-main="//0.0.0.0:4000/xtyle/js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
 </head>
 <body class="menu" style="background: url(http://emoriz.com/github/bgnoise.png)">
 
-<nav class="menu top inverse dropbox">
+<nav class="menu top dark dropbox">
     <span class="logo">xtyle</span>
-    <a href="//xchema.github.com/xtyle/">Home</a>
-    <a href="//xchema.github.com/xtyle/pages/typography.html">Typography</a>
-    <a href="//xchema.github.com/xtyle/pages/forms.html">Forms</a>
-    <a href="//xchema.github.com/xtyle/pages/layout.html">Layout</a>
+    <a href="//0.0.0.0:4000/">Home</a>
+    <a href="//0.0.0.0:4000/pages/typography.html">Typography</a>
+    <a href="//0.0.0.0:4000/pages/forms.html">Forms</a>
+    <a href="//0.0.0.0:4000/pages/layout.html">Layout</a>
     <!-- <a href="pages/widgets.html">Widgets</a>
     <a href="pages/widgets.html">Themes</a>
     <a href="pages/examples.html">Examples</a> -->
@@ -50,7 +50,7 @@
     </p>
     <script src="https://gist.github.com/marizmelo/4613715.js?file=font.html"></script>
 
-    <alert>
+    <alert class="attention">
         <i class="icon-attention"></i>
         Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags are used for design elements.
         <!-- include with javascript the icon-cancel when alert has class "close" -->
@@ -119,13 +119,13 @@
 <script src="https://gist.github.com/marizmelo/4613715.js?file=blockquote.html"></script>
 
     <h6>Colors:</h6>
-    <blockquote class="inverse">
+    <blockquote class="dark">
         <p>"Inverse"</p>
     </blockquote>
-    <blockquote class="warning">
+    <blockquote class="attention">
         <p>"Warning"</p>
     </blockquote>
-    <blockquote class="error">
+    <blockquote class="alert">
         <p>"Error"</p>
     </blockquote>
     <blockquote class="info">
@@ -235,13 +235,13 @@
         Alerts are the easiest way to drive attention to important content. Use the tag <code>&lt;alert&gt;</code> with the classes <code>.warning</code> (default), <code>.error</code>, <code>.info</code>, and <code>.success</code>:
     </p>
 
-    <!-- WARNNING -->
+    <!-- ATTENTION -->
     <p>
-        <alert><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
+        <alert class="attention"><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
     </p>
-    <!-- ERROR -->
+    <!-- ALERT -->
     <p>
-        <alert class="error"><i class="icon-block"></i><strong>Error!</strong> Use this tag when something goes wrong.</alert>
+        <alert class="alert"><i class="icon-block"></i><strong>Alert!</strong> Use this tag when something goes wrong.</alert>
     </p>
     <!-- INFO -->
     <p>
@@ -263,9 +263,10 @@
     </p>
 
     <!-- WARNNING -->
-    <tag><i class="icon-tag"></i>Warning tag</tag>
+    <tag><i class="icon-tag"></i>Regular tag</tag>
+    <tag class="attention"><i class="attention icon-tag"></i>Attention tag</tag>
     <!-- ERROR -->
-    <tag class="error"><i class="icon-tag"></i>Error</tag>
+    <tag class="alert"><i class="icon-tag"></i>Alert</tag>
     <!-- INFO -->
     <tag class="info"><i class="icon-tag"></i>Information</tag>
     <!-- SUCCESS -->
@@ -368,11 +369,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="warning">
-                <td>Warning</td>
+            <tr>
+                <td>Regular</td>
             </tr>
-            <tr class="error">
-                <td>Error</td>
+            <tr class="attention">
+                <td>Attention</td>
+            </tr>
+            <tr class="alert">
+                <td>Alert</td>
             </tr>
             <tr class="info">
                 <td>Info</td>

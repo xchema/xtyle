@@ -1,5 +1,5 @@
 requirejs.config({
-  baseUrl : 'http://xchema.github.com/xtyle/xtyle',
+  baseUrl : '/xtyle',
   shim: {
     'xtyle' : {
       deps : ['jquery']
@@ -12,6 +12,7 @@ requirejs.config({
     'xtyle' : 'js/xtyle',
     'widgets' : 'widgets'
   }
+  , urlArgs: ""+(new Date()).getTime()  // REMOVE WHEN IN PRODUCTION - AVOID CACHE FOR DEVELOPMENT
 });
 
 // CALL XTYLE

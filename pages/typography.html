@@ -23,7 +23,7 @@ layout: default
     </p>
     <script src="https://gist.github.com/marizmelo/4613715.js?file=font.html"></script>
 
-    <alert>
+    <alert class="attention">
         <i class="icon-attention"></i>
         Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags are used for design elements.
         <!-- include with javascript the icon-cancel when alert has class "close" -->
@@ -92,13 +92,13 @@ layout: default
 <script src="https://gist.github.com/marizmelo/4613715.js?file=blockquote.html"></script>
 
     <h6>Colors:</h6>
-    <blockquote class="inverse">
+    <blockquote class="dark">
         <p>"Inverse"</p>
     </blockquote>
-    <blockquote class="warning">
+    <blockquote class="attention">
         <p>"Warning"</p>
     </blockquote>
-    <blockquote class="error">
+    <blockquote class="alert">
         <p>"Error"</p>
     </blockquote>
     <blockquote class="info">
@@ -208,13 +208,13 @@ layout: default
         Alerts are the easiest way to drive attention to important content. Use the tag <code>&lt;alert&gt;</code> with the classes <code>.warning</code> (default), <code>.error</code>, <code>.info</code>, and <code>.success</code>:
     </p>
 
-    <!-- WARNNING -->
+    <!-- ATTENTION -->
     <p>
-        <alert><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
+        <alert class="attention"><i class="icon-attention"></i><strong>Warning!</strong> Use this tag for items that require attention.</alert>
     </p>
-    <!-- ERROR -->
+    <!-- ALERT -->
     <p>
-        <alert class="error"><i class="icon-block"></i><strong>Error!</strong> Use this tag when something goes wrong.</alert>
+        <alert class="alert"><i class="icon-block"></i><strong>Alert!</strong> Use this tag when something goes wrong.</alert>
     </p>
     <!-- INFO -->
     <p>
@@ -236,9 +236,10 @@ layout: default
     </p>
 
     <!-- WARNNING -->
-    <tag><i class="icon-tag"></i>Warning tag</tag>
+    <tag><i class="icon-tag"></i>Regular tag</tag>
+    <tag class="attention"><i class="attention icon-tag"></i>Attention tag</tag>
     <!-- ERROR -->
-    <tag class="error"><i class="icon-tag"></i>Error</tag>
+    <tag class="alert"><i class="icon-tag"></i>Alert</tag>
     <!-- INFO -->
     <tag class="info"><i class="icon-tag"></i>Information</tag>
     <!-- SUCCESS -->
@@ -341,11 +342,14 @@ layout: default
             </tr>
         </thead>
         <tbody>
-            <tr class="warning">
-                <td>Warning</td>
+            <tr>
+                <td>Regular</td>
             </tr>
-            <tr class="error">
-                <td>Error</td>
+            <tr class="attention">
+                <td>Attention</td>
+            </tr>
+            <tr class="alert">
+                <td>Alert</td>
             </tr>
             <tr class="info">
                 <td>Info</td>

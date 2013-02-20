@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 .widgets-slideshow-slidejs .images{
+  width: 300px;
   height: 200px;
 }
 .widgets-slideshow-slidejs dd{
