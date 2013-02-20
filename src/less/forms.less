@@ -83,6 +83,21 @@ textarea{
   &:focus{
     .transition(border-color, .1s, linear);
     border-color: lighten(@links, 15%);
+    &.dark{
+      border-color: lighten(@dark, 20%);
+    }
+    &.attention{
+      border-color: saturate(@attention, 300%);
+    }
+    &.info{
+      border-color: lighten(saturate(@info, 20%), 5%);
+    }
+    &.success{
+      border-color: lighten(saturate(@success, 50%), 3%);
+    }
+    &.alert{
+      border-color: saturate(@alert, 300%);
+    }
   }
   .boxSizing ();
 }
@@ -189,7 +204,7 @@ button, a.btn{
     border-color: @attention;
     &:hover, &:focus{
       background: saturate(@attention, 300%);
-      border-color: lighten(saturate(@attention, 80%), 5%);
+      border-color: saturate(@attention, 300%);
     }
     &:active{
       background: @attention;
@@ -202,7 +217,7 @@ button, a.btn{
     &:hover, &:focus{
       //background: lighten(saturate(@alert, 15%), 5%);
       background: saturate(@alert, 300%);
-      border-color: lighten(saturate(@alert, 15%), 5%);
+      border-color: saturate(@alert, 300%);
     }
     &:active{
       background: @alert;

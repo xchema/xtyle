@@ -1612,6 +1612,46 @@ textarea:focus {
           transition: border-color 0.1s linear;
 }
 
+input[type=text]:focus.dark,
+input[type=email]:focus.dark,
+input[type=password]:focus.dark,
+input[type=number]:focus.dark,
+textarea:focus.dark {
+  border-color: #333333;
+}
+
+input[type=text]:focus.attention,
+input[type=email]:focus.attention,
+input[type=password]:focus.attention,
+input[type=number]:focus.attention,
+textarea:focus.attention {
+  border-color: #ffc826;
+}
+
+input[type=text]:focus.info,
+input[type=email]:focus.info,
+input[type=password]:focus.info,
+input[type=number]:focus.info,
+textarea:focus.info {
+  border-color: #07a3f3;
+}
+
+input[type=text]:focus.success,
+input[type=email]:focus.success,
+input[type=password]:focus.success,
+input[type=number]:focus.success,
+textarea:focus.success {
+  border-color: #00c233;
+}
+
+input[type=text]:focus.alert,
+input[type=email]:focus.alert,
+input[type=password]:focus.alert,
+input[type=number]:focus.alert,
+textarea:focus.alert {
+  border-color: #ff1006;
+}
+
 textarea.noresize {
   resize: none;
 }
@@ -1814,7 +1854,7 @@ input[type=submit].attention:focus,
 button.attention:focus,
 a.btn.attention:focus {
   background: #ffc826;
-  border-color: #ffcf40;
+  border-color: #ffc826;
 }
 
 input[type=submit].attention:active,
@@ -1838,7 +1878,7 @@ input[type=submit].alert:focus,
 button.alert:focus,
 a.btn.alert:focus {
   background: #ff1006;
-  border-color: #f73028;
+  border-color: #ff1006;
 }
 
 input[type=submit].alert:active,
