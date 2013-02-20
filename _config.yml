@@ -1,3 +1,4 @@
 auto : true
-host: //0.0.0.0:4000
-#host: //xchema.github.com/xtyle
+host: //xchema.github.com/xtyle
+#host: //0.0.0.0:4000
+
