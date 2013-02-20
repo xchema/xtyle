@@ -1783,8 +1783,8 @@ a.btn.dark:hover,
 input[type=submit].dark:focus,
 button.dark:focus,
 a.btn.dark:focus {
-  background: #000000;
-  border-color: #000000;
+  background: #333333;
+  border-color: #333333;
 }
 
 input[type=submit].dark:active,
@@ -1807,8 +1807,8 @@ a.btn.attention:hover,
 input[type=submit].attention:focus,
 button.attention:focus,
 a.btn.attention:focus {
-  background: #ffc81e;
-  border-color: #ffc81e;
+  background: #ffce38;
+  border-color: #ffce38;
 }
 
 input[type=submit].attention:active,
@@ -1831,8 +1831,8 @@ a.btn.alert:hover,
 input[type=submit].alert:focus,
 button.alert:focus,
 a.btn.alert:focus {
-  background: #ff1e11;
-  border-color: #ff1e11;
+  background: #ff362b;
+  border-color: #ff362b;
 }
 
 input[type=submit].alert:active,
@@ -1855,8 +1855,8 @@ a.btn.info:hover,
 input[type=submit].info:focus,
 button.info:focus,
 a.btn.info:focus {
-  background: #0792db;
-  border-color: #0792db;
+  background: #07a3f3;
+  border-color: #07a3f3;
 }
 
 input[type=submit].info:active,
@@ -1879,8 +1879,8 @@ a.btn.success:hover,
 input[type=submit].success:focus,
 button.success:focus,
 a.btn.success:focus {
-  background: #00b32f;
-  border-color: #00b32f;
+  background: #00c233;
+  border-color: #00c233;
 }
 
 input[type=submit].success:active,
@@ -2114,11 +2114,11 @@ tr.attention {
 }
 
 tr.alert {
-  background: #fcdcdb;
+  background: #fdeae9;
 }
 
 tr.info {
-  background: #d3ecf9;
+  background: #e5f4fb;
 }
 
 tr.success {

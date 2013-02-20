@@ -170,8 +170,8 @@ button, a.btn{
       border-color: @dark;
     
     &:hover, &:focus{
-      background: desaturate(@dark, 10%);
-      border-color: desaturate(@dark, 10%);
+      background: lighten(@dark, 20%);
+      border-color: lighten(@dark, 20%);
     }
     &:active{
       background: @dark;
@@ -182,8 +182,8 @@ button, a.btn{
     background: @attention;
     border-color: @attention;
     &:hover, &:focus{
-      background: saturate(@attention, 30%);
-      border-color: saturate(@attention, 30%);
+      background: lighten(saturate(@attention, 80%), 5%);
+      border-color: lighten(saturate(@attention, 80%), 5%);
     }
     &:active{
       background: @attention;
@@ -194,8 +194,8 @@ button, a.btn{
       background: @alert;
       border-color: @alert;
     &:hover, &:focus{
-      background: saturate(@alert, 15%);
-      border-color: saturate(@alert, 15%);
+      background: lighten(saturate(@alert, 15%), 5%);
+      border-color: lighten(saturate(@alert, 15%), 5%);
     }
     &:active{
       background: @alert;
@@ -206,8 +206,8 @@ button, a.btn{
       background: @info;
       border-color: @info;
     &:hover, &:focus{
-      background: saturate(@info, 20%);
-      border-color: saturate(@info, 20%);
+      background: lighten(saturate(@info, 20%), 5%);
+      border-color: lighten(saturate(@info, 20%), 5%);
     }
     &:active{
       background: @info;
@@ -219,8 +219,8 @@ button, a.btn{
     border-color: @success;
     
     &:hover, &:focus{
-      background: saturate(@success, 30%);
-      border-color: saturate(@success, 30%);
+      background: lighten(saturate(@success, 50%), 3%);
+      border-color: lighten(saturate(@success, 50%), 3%);
     }
     &:active{
       background: @success;
