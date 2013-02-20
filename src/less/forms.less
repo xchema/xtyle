@@ -188,7 +188,7 @@ button, a.btn{
     background: @attention;
     border-color: @attention;
     &:hover, &:focus{
-      background: lighten(saturate(@attention, 80%), 5%);
+      background: saturate(@attention, 300%);
       border-color: lighten(saturate(@attention, 80%), 5%);
     }
     &:active{
@@ -200,7 +200,8 @@ button, a.btn{
       background: @alert;
       border-color: @alert;
     &:hover, &:focus{
-      background: lighten(saturate(@alert, 15%), 5%);
+      //background: lighten(saturate(@alert, 15%), 5%);
+      background: saturate(@alert, 300%);
       border-color: lighten(saturate(@alert, 15%), 5%);
     }
     &:active{
