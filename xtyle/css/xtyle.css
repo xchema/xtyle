@@ -1127,14 +1127,6 @@ body {
   background-color: white;
 }
 
-body.menu {
-  padding-top: 60px;
-}
-
-body.bottom {
-  padding-bottom: 60px;
-}
-
 a.btn {
   display: inline-block;
   color: #444444;
@@ -2588,6 +2580,11 @@ nav ul li {
   float: left;
 }
 
+.display-nav {
+  display: block !important;
+  width: 100% !important;
+}
+
 .user-select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3016,11 +3013,19 @@ div.resize {
   html.responsive aside {
     display: none;
   }
+  html.responsive nav {
+    position: static;
+    display: block;
+  }
   html.responsive nav a {
     display: none;
+    float: none;
+    border-top: #d9dcde;
   }
-  html.responsive nav a.logo {
+  html.responsive nav .logo {
     display: block;
+    float: none;
+    width: 100%;
   }
   html.responsive .mobile {
     display: inline-block;

@@ -125,6 +125,16 @@
   x.init = function(){
       x.controller._debug("XTYLE JS LOADED");
 
+      // verify if is in MOBILE view
+      
+      if($( "nav.menu a").css("display") === "none" ){
+        $("nav .logo").on("click", function(){
+          console.log("here");
+          $("nav.menu a").toggleClass("display-nav");
+        });
+      }
+      
+
       // VISUAL MODULES
       // modules is an array
       $.each( x.model.modules, function(i, module){ //i - index on array

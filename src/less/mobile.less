@@ -10,11 +10,19 @@ html.responsive{
         display: none;
     }
 
-    nav a{
-        display: none;
-    }
-    nav a.logo{
+    nav {
+        position: static;
         display: block;
+    }
+    nav a{
+        float: none;
+        display: none;
+        border-top: @border;
+    }
+    nav .logo{
+        float: none;
+        display: block;
+        width: 100%;
     }
     .mobile{
         display: inline-block;
@@ -50,4 +58,5 @@ html.responsive{
             margin: @margin/2;
         }
     }
+
 }
