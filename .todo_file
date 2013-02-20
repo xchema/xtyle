@@ -3,7 +3,6 @@
 + JS - scroller
 + include image 100% example on layout pages on gh-pages
 + hover for tables rows with colors styles
-+ make input focus have the different colors
 + make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
 + detect if support css3 before use jquery animations
@@ -117,3 +116,4 @@
 - Create wiki pages on github
 - improve grid system
 - tags, with optional 'x' to close, use rounded and color design
+- make input focus have the different colors
