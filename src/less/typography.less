@@ -116,22 +116,22 @@ table{
 tr{
     .transition(background, .1s, linear);
     &.attention{
-        background: lighten(@attention, 50%);
+        background: lighten(@attention, 39%);
     }
     &.alert{
-        background: lighten(@alert,30%);
+        background: lighten(@alert, 39%);
     }
     &.info{
-        background: lighten(@info, 30%);
+        background: lighten(@info, 46%);
     }
     &.success{
-        background: lighten(@success, 30%);
+        background: desaturate(lighten(@success, 58%), 30%);
     }
 }
 th{
     background: @border;
     font-weight: bold;
-    padding: @padding/2 @padding;
+    padding: @padding @padding*1.5;
     border: 1px solid @border;
     text-align: left;
     &.clean{
@@ -141,7 +141,7 @@ th{
 }
 td{
     border: 1px solid @border;
-    padding: @padding/2 @padding;
+    padding: @padding @padding*1.5;
     &.clean{
         border-left: none;
         border-right: none;

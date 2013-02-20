@@ -1,5 +1,5 @@
++ hover for tables rows with colors styles
 + make input focus have the different colors
-+ permit change font for headings (like using google web fonts)
 + make style for printing, media print
 + make widgets coming from their respective repos, remove from production deployment
 + select field like input, and dropdown design
@@ -114,3 +114,4 @@
 - center buttons, a.btn, etc
 - grid system skip columns .grid4-3 (ex)- icons not working on firefox
 - change color schema, (light, dark, alert, success, attention, info)
+- permit change font for headings (like using google web fonts)

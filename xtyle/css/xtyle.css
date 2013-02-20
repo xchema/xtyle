@@ -2041,19 +2041,19 @@ blockquote.dark {
 }
 
 blockquote.attention {
-  border-color: #f9d157;
+  border-color: #f7c426;
 }
 
 blockquote.alert {
-  border-color: #f25951;
+  border-color: #ef2c21;
 }
 
 blockquote.info {
-  border-color: #33a6e1;
+  border-color: #1d8bc4;
 }
 
 blockquote.success {
-  border-color: #0cda42;
+  border-color: #09aa33;
 }
 
 section {
@@ -2110,23 +2110,23 @@ tr {
 }
 
 tr.attention {
-  background: #ffffff;
+  background: #fef8e6;
 }
 
 tr.alert {
-  background: #f9b4b0;
+  background: #fcdcdb;
 }
 
 tr.info {
-  background: #8ccdee;
+  background: #d3ecf9;
 }
 
 tr.success {
-  background: #56f680;
+  background: #e3f8e8;
 }
 
 th {
-  padding: 5px 10px;
+  padding: 10px 15px;
   font-weight: bold;
   text-align: left;
   background: #d9dcde;
@@ -2139,7 +2139,7 @@ th.clean {
 }
 
 td {
-  padding: 5px 10px;
+  padding: 10px 15px;
   border: 1px solid #d9dcde;
 }
 
@@ -2185,7 +2185,7 @@ tag {
   padding: 6px 10px;
   font-size: 14px;
   font-style: normal;
-  color: #ba8f07;
+  color: #a77f06;
   background: #fef8e6;
   border: 1px solid #f2e7c4;
   -webkit-border-radius: 3px;
@@ -2219,8 +2219,8 @@ tag a:active {
 alert.alert,
 tag.alert {
   color: #be5d60;
-  background: #fcdcdb;
-  border-color: #fbc6c3;
+  background: #fdeae9;
+  border-color: #fcd8d6;
 }
 
 alert.alert a,
@@ -2241,8 +2241,8 @@ tag.alert a:active {
 alert.info,
 tag.info {
   color: #1a7bae;
-  background: #d3ecf9;
-  border-color: #b0dcf3;
+  background: #e5f4fb;
+  border-color: #c1e4f6;
 }
 
 alert.info a,
