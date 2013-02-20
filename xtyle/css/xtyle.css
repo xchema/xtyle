@@ -1558,7 +1558,7 @@ a.upload i {
   line-height: 0.8;
 }
 
-a.upload input[type="file"] {
+a.upload input[type=file] {
   position: absolute;
   top: 0;
   left: 0;
