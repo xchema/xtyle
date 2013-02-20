@@ -10,7 +10,7 @@
 @charset "UTF-8";
 
 // GOOGLE WEBFONTS
-@import url(http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold);
+ @import url(http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold);
 
 // FONTELLO
 @import "fontello.less";
@@ -27,26 +27,29 @@
 //colors
 @placeholder: #cbcbcb;
 @background: #f7f7f7;
-@button: #abb2b3;
-@warning: #ffca1f;
-@error: #ff322d;
-@info: #2593DD;
-@success: #0ab33b;
+@button: #e0e3e4;
+@dark: #000;
+@attention: #f7c426;
+@alert: #ef2c21;
+@info: #1d8bc4;
+@success: #09aa33;
 
 //typography
-@fontFamily: "Roboto", "Helvetica", "Arial", sans-serif; 
+@fontFamily: "Roboto", "Helvetica", "Arial", sans-serif;
+@fontHeadings: @fontFamily;
+@fontColor: #444;
 @fontSize: 14px;
 @fontSmall: 80%;
 @fontMedium: 120%;
 @fontLarge: 150%;
 @iconSize: 100%;
 @paragraph: 20px;
-@fontColor: #444;
 @links: #0088cc;
 @blockquote: #ddd;
 @lists: 20px;
 @code: #d50e14;
 @dfn: #968145;
+@headingFamily: @fontFamily;  // change headings for a different font-family
 
 //margin/padding
 @margin:  10px;
@@ -63,7 +66,6 @@
 @inputSmall: 150px;
 @inputMedium: @inputSmall*2+35px;
 @inputLarge: @inputMedium*2+35px;
-
 
 
 // XTYLE

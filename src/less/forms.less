@@ -23,7 +23,7 @@ span.checkbox{
     display: none;
     color: @links;
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 0;
   }
   &.active{
@@ -140,92 +140,91 @@ select{
 
 input[type=submit],
 button, a.btn{
-  
-  text-align: center;
-  font: @fontSize @fontFamily;
-  background: darken(@background, 5%);
-    border: 1px solid darken(@background, 5%);
-  
+  background-color: @button;
+  border: 1px solid @button;
   cursor: pointer;
+  font-size: @fontSize;
+  font-family: @fontFamily;
+  font-weight: normal;
   padding: @padding @padding*2;
+  text-align: center;
   .transition(background, .1s, linear);
   &:hover, &:focus{
-    background: @background;
-   border-color: @background;
+    background: lighten(@button, 3%);
+    border-color: lighten(@button, 3%);
   }
   &:active{
-    background: darken(@background, 5%);
-    border-color: darken(@background, 5%);
+    background-color: @button;
+    border-color: @button;
   }
 
-  &.inverse, &.warning, &.info, &.error, &.success{
+  &.dark, &.attention, &.info, &.alert, &.success{
     i{
       color: white;
     }
     color: white;
   }
 
-  &.inverse{
-      background: darken(@fontColor, 100%);
-      border-color: darken(@fontColor, 100%);
+  &.dark{
+      background: @dark;
+      border-color: @dark;
     
     &:hover, &:focus{
-      background: darken(@fontColor, 10%);
-      border-color: darken(@fontColor, 10%);
+      background: desaturate(@dark, 10%);
+      border-color: desaturate(@dark, 10%);
     }
     &:active{
-      background: darken(@fontColor, 100%);
-      border-color: darken(@fontColor, 100%);
+      background: @dark;
+      border-color: @dark;
     }
   }
-  &.warning{
-    background: darken(@warning, 10%);
-    border-color: darken(@warning, 10%);
+  &.attention{
+    background: @attention;
+    border-color: @attention;
     &:hover, &:focus{
-      background: @warning;
-      border-color: @warning;
+      background: saturate(@attention, 30%);
+      border-color: saturate(@attention, 30%);
     }
     &:active{
-      background: darken(@warning, 10%);
-      border-color: darken(@warning, 10%);
+      background: @attention;
+      border-color: @attention;
     }
   }
-  &.error{
-      background: darken(@error, 13%);
-      border-color: darken(@error, 13%);
+  &.alert{
+      background: @alert;
+      border-color: @alert;
     &:hover, &:focus{
-      background: @error;
-      border-color: @error;
+      background: saturate(@alert, 15%);
+      border-color: saturate(@alert, 15%);
     }
     &:active{
-      background: darken(@error, 13%);
-      border-color: darken(@error, 13%);
+      background: @alert;
+      border-color: @alert;
     }
   }
   &.info{
-      background: darken(@info, 10%);
-      border-color: darken(@info, 10%);
-    &:hover, &:focus{
-      
       background: @info;
       border-color: @info;
+    &:hover, &:focus{
+      background: saturate(@info, 20%);
+      border-color: saturate(@info, 20%);
     }
     &:active{
-      background: darken(@info, 10%);
-      border-color: darken(@info, 10%);
+      background: @info;
+      border-color: @info;
     }     
   }
   &.success{
-    background: darken(@success, 5%);
-    border-color: darken(@success, 5%);
+    background: @success;
+    border-color: @success;
     
     &:hover, &:focus{
-      background: @success;
-      border-color: @success;
+      background: saturate(@success, 30%);
+      border-color: saturate(@success, 30%);
     }
     &:active{
-      background: darken(@success, 5%);
-      border-color: darken(@success, 5%);
+      background: @success;
+      border-color: @success;
     }
   }
   &.small{
@@ -241,7 +240,7 @@ button, a.btn{
   &.large{
     font-size: @fontLarge;
     //margin-top: 2px;
-    padding: @padding*2 @padding*3;
+    padding: @padding*2 @padding*3.5;
   }
 }
 

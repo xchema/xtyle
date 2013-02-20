@@ -58,20 +58,20 @@ blockquote{
         border-left: none;
         border-right: 2px solid @blockquote;
     }
-    &.inverse{
-        border-color: darken(@blockquote, 100%);
+    &.dark{
+        border-color: @dark;
     }
-    &.warning{
-        border-color: lighten(@warning, 10%);
+    &.attention{
+        border-color: @attention;
     }
-    &.error{
-        border-color: lighten(@error, 10%);
+    &.alert{
+        border-color: @alert;
     }
     &.info{
-        border-color: lighten(@info, 10%);
+        border-color: @info;
     }
     &.success{
-        border-color: lighten(@success, 10%);
+        border-color: @success;
     }
 }
 section{
@@ -115,11 +115,11 @@ table{
 }
 tr{
     .transition(background, .1s, linear);
-    &.warning{
-        background: lighten(@warning, 50%);
+    &.attention{
+        background: lighten(@attention, 50%);
     }
-    &.error{
-        background: lighten(@error,30%);
+    &.alert{
+        background: lighten(@alert,30%);
     }
     &.info{
         background: lighten(@info, 30%);

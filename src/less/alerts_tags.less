@@ -1,9 +1,9 @@
 alert, tag{
   font-size: @fontSize;
   font-style: normal;
-  background: lighten(@warning, 39%);
-  border: 1px solid desaturate(lighten(@warning, 30%), 30%);
-  color: darken(@warning, 18%);
+  background: lighten(@attention, 39%);
+  border: 1px solid desaturate(lighten(@attention, 30%), 30%);
+  color: darken(@attention, 18%);
   display: block;
   padding: 6px 10px;
   .borderRadius(3px);
@@ -11,26 +11,26 @@ alert, tag{
     margin-right: @margin/4;
   }
   a{
-    color: @warning;
+    color: @attention;
     text-decoration: underline;
     &:hover{
-      color: darken(@warning, 15%);
+      color: darken(@attention, 15%);
     }
     &:active{
-      color: @warning;
+      color: @attention;
     }
   }
-  &.error{
-    background: lighten(@error, 39%);
+  &.alert{
+    background: lighten(@alert, 39%);
     color: #be5d60;
-    border-color: lighten(@error, 34%);
+    border-color: lighten(@alert, 34%);
     a{
-      color: @error;
+      color: @alert;
       &:hover{
-        color: darken(@error, 15%);
+        color: darken(@alert, 15%);
       }
       &:active{
-        color: @error;
+        color: @alert;
       }
     }
   }
