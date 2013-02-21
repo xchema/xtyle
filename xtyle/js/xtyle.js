@@ -128,7 +128,9 @@
       // verify if is in MOBILE view
       $("nav .logo").on("click", function(){
         if($( "nav.menu a").css("display") === "none" ){
-          $("nav.menu a").toggleClass("display-nav");
+          $("nav.menu a").addClass("display-nav");
+        }else{
+          $("nav.menu a").removeClass("display-nav");
         }
       });
 
