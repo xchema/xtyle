@@ -126,14 +126,11 @@
       x.controller._debug("XTYLE JS LOADED");
 
       // verify if is in MOBILE view
-      
-      if($( "nav.menu a").css("display") === "none" ){
-        $("nav .logo").on("click", function(){
-          console.log("here");
+      $("nav .logo").on("click", function(){
+        if($( "nav.menu a").css("display") === "none" ){
           $("nav.menu a").toggleClass("display-nav");
-        });
-      }
-      
+        }
+      });
 
       // VISUAL MODULES
       // modules is an array
