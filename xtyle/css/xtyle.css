@@ -1121,6 +1121,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
