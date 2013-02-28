@@ -1121,18 +1121,11 @@ html {
 }
 
 body {
+
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   color: #444444;
   background-color: white;
-}
-
-body.menu {
-  padding-top: 60px;
-}
-
-body.bottom {
-  padding-bottom: 60px;
 }
 
 a.btn {
@@ -1162,7 +1155,6 @@ input[type=email],
 input[type=number],
 input[type=button],
 input[type=submit] {
-  border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2588,6 +2580,11 @@ nav ul li {
   float: left;
 }
 
+.display-nav {
+  display: block !important;
+  width: 100% !important;
+}
+
 .user-select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2645,6 +2642,14 @@ nav ul li {
 
 .text-shadow {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.border-radius-none {
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+      -ms-border-radius: 0;
+       -o-border-radius: 0;
+          border-radius: 0;
 }
 
 .border-radius {
@@ -3016,11 +3021,19 @@ div.resize {
   html.responsive aside {
     display: none;
   }
+  html.responsive nav {
+    position: static;
+    display: block;
+  }
   html.responsive nav a {
     display: none;
+    float: none;
+    border-top: #d9dcde;
   }
-  html.responsive nav a.logo {
+  html.responsive nav .logo {
     display: block;
+    float: none;
+    width: 100%;
   }
   html.responsive .mobile {
     display: inline-block;

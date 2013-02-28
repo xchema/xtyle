@@ -43,7 +43,7 @@
       return '#' + d.getFullYear() + d.getMonth() + d.getDate() + d.getHours() + d.getMinutes() + d.getSeconds() + d.getMilliseconds();
     },
     _loadWidget : function ( widget, location ) {
-      x.controller._loadCSS(location+".css");
+      x.controller._loadCSS("xtyle/"+location+".css");
       require( [ 'text!'+location+'.html', location ], function ( html ) {
         $("widget[name="+widget+"]").each(function(){
           var id = "#"+$(this).attr("id");
@@ -124,6 +124,15 @@
   // INIT
   x.init = function(){
       x.controller._debug("XTYLE JS LOADED");
+
+      // verify if is in MOBILE view
+      $("nav .logo").on("click", function(){
+        if($( "nav.menu a").css("display") === "none" ){
+          $("nav.menu a").addClass("display-nav");
+        }else{
+          $("nav.menu a").removeClass("display-nav");
+        }
+      });
 
       // VISUAL MODULES
       // modules is an array
