@@ -2783,6 +2783,10 @@ nav ul li {
   text-align: right;
 }
 
+.float-none {
+  float: none !important;
+}
+
 .float-left {
   float: left;
 }
