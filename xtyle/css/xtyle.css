@@ -2644,6 +2644,18 @@ nav ul li {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
 
+.box-shadow {
+  -webkit-box-shadow: 1px 1px 3px #000000;
+     -moz-box-shadow: 1px 1px 3px #000000;
+          box-shadow: 1px 1px 3px #000000;
+}
+
+.box-inner-shadow {
+  -webkit-box-shadow: 1px 1px 3px #000000 inset;
+     -moz-box-shadow: 1px 1px 3px #000000 inset;
+          box-shadow: 1px 1px 3px #000000 inset;
+}
+
 .border-radius-none {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
