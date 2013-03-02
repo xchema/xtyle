@@ -165,7 +165,7 @@
       });
   }(); // auto execute
 
-  window.xtyle = x; // Return global object
+  window.xtyle = x.controller; // Return global object
 
   //Expose xtyle for AMD modules like RequireJS
   if ( typeof define === "function" && define.amd ) {
