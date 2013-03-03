@@ -1215,33 +1215,33 @@ input:-moz-placeholder {
   overflow: auto;
 }
 
-.grid.show .grid1 div,
-.grid.show .grid2 div,
-.grid.show .grid4 div,
-.grid.show .grid5 div,
-.grid.show .grid3 div,
-.grid.show .grid6 div,
-.grid.show .grid7 div,
-.grid.show .grid8 div,
-.grid.show .grid9 div,
-.grid.show .grid10 div,
-.grid.show .grid11 div,
-.grid.show .grid12 div {
+.grid.show .grid1 div:first-of-type,
+.grid.show .grid2 div:first-of-type,
+.grid.show .grid4 div:first-of-type,
+.grid.show .grid5 div:first-of-type,
+.grid.show .grid3 div:first-of-type,
+.grid.show .grid6 div:first-of-type,
+.grid.show .grid7 div:first-of-type,
+.grid.show .grid8 div:first-of-type,
+.grid.show .grid9 div:first-of-type,
+.grid.show .grid10 div:first-of-type,
+.grid.show .grid11 div:first-of-type,
+.grid.show .grid12 div:first-of-type {
   background: #f7f7f7;
 }
 
-.grid .grid1 div,
-.grid .grid2 div,
-.grid .grid4 div,
-.grid .grid5 div,
-.grid .grid3 div,
-.grid .grid6 div,
-.grid .grid7 div,
-.grid .grid8 div,
-.grid .grid9 div,
-.grid .grid10 div,
-.grid .grid11 div,
-.grid .grid12 div {
+.grid .grid1 div:first-of-type,
+.grid .grid2 div:first-of-type,
+.grid .grid4 div:first-of-type,
+.grid .grid5 div:first-of-type,
+.grid .grid3 div:first-of-type,
+.grid .grid6 div:first-of-type,
+.grid .grid7 div:first-of-type,
+.grid .grid8 div:first-of-type,
+.grid .grid9 div:first-of-type,
+.grid .grid10 div:first-of-type,
+.grid .grid11 div:first-of-type,
+.grid .grid12 div:first-of-type {
   padding: 10px;
   margin: 10px;
 }
