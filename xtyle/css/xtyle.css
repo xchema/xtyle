@@ -1569,6 +1569,9 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
+  padding: 10px;
+  margin: 10px 5px;
+  color: #444444;
   border: 2px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1638,6 +1641,33 @@ textarea:focus.alert {
   border-color: #ff1006;
 }
 
+input[type=text].small,
+input[type=email].small,
+input[type=password].small,
+input[type=number].small,
+textarea.small {
+  padding: 8.333333333333334px 8.333333333333334px;
+  font-size: 80%;
+}
+
+input[type=text].medium,
+input[type=email].medium,
+input[type=password].medium,
+input[type=number].medium,
+textarea.medium {
+  padding: 13px 12px;
+  font-size: 120%;
+}
+
+input[type=text].large,
+input[type=email].large,
+input[type=password].large,
+input[type=number].large,
+textarea.large {
+  padding: 16px 15px;
+  font-size: 150%;
+}
+
 textarea.noresize {
   resize: none;
 }
@@ -1666,46 +1696,6 @@ a.btn i,
 button i,
 select i {
   line-height: 0.8;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea,
-select {
-  padding: 10px;
-  color: #444444;
-}
-
-input[type=text].small,
-input[type=email].small,
-input[type=password].small,
-input[type=number].small,
-textarea.small,
-select.small {
-  padding: 8.333333333333334px 8.333333333333334px;
-  font-size: 80%;
-}
-
-input[type=text].medium,
-input[type=email].medium,
-input[type=password].medium,
-input[type=number].medium,
-textarea.medium,
-select.medium {
-  padding: 13px 12px;
-  font-size: 120%;
-}
-
-input[type=text].large,
-input[type=email].large,
-input[type=password].large,
-input[type=number].large,
-textarea.large,
-select.large {
-  padding: 16px 15px;
-  font-size: 150%;
 }
 
 select {
@@ -1967,6 +1957,10 @@ a:active {
 a:visited {
   /* not implemented */
 
+}
+
+a.selected {
+  color: #1ab2ff;
 }
 
 del {
@@ -2364,7 +2358,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 10px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   line-height: 1.1;
@@ -2462,10 +2455,6 @@ body > nav {
 body > nav a {
   float: left;
   padding: 10px;
-}
-
-body > nav a.active {
-  background: #f7f7f7;
 }
 
 body > nav h1,
