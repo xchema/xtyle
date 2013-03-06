@@ -35,7 +35,6 @@ span.checkbox{
   }
 }
 span.radio, span.checkbox{
-  
   display: inline-block;
   *display: block;
   zoom: 1;
@@ -53,6 +52,7 @@ span.radio, span.checkbox{
   }
 }
 
+// UPLOAD BUTTON
 a.upload {
   padding: @padding;
   position: relative;
@@ -68,6 +68,7 @@ a.upload {
     .opacity(0);
   }
 }
+
 input[type=text],
 input[type=email],
 input[type=password],
@@ -150,11 +151,11 @@ button, a.btn
 
 input[type=submit],
 button, a.btn{
-  margin: @margin/2;
+  margin: @margin @margin/2;
   background-color: @button;
   font-size: @fontSize;
   font-family: @fontFamily;
-  padding: @padding*.97 @padding*2.5;
+  padding: @padding @padding*2.5;
   text-align: center;
   .transition(background, .1s, linear);
   &:hover, &:focus{
@@ -183,12 +184,12 @@ button, a.btn{
     }
   }
   &.attention{
-    background: @attention;
+    background: @color-attention;
     &:hover, &:focus{
-      background: saturate(@attention, 300%);
+      background: saturate(spin(@color-attention, 5), 20%);
     }
     &:active{
-      background: @attention;
+      background: @color-attention;
     }
   }
   &.alert{
@@ -226,11 +227,10 @@ button, a.btn{
   }
   &.medium{
     font-size: @fontMedium;
-    padding: @padding*1.4 @padding*3;
+    padding: @padding*1.5 @padding*3;
   }
   &.large{
     font-size: @fontLarge;
-    margin: @padding;
     padding: @padding*2 @padding*6;
   }
 }
