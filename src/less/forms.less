@@ -171,11 +171,9 @@ button, a.btn{
   .transition(background, .1s, linear);
   &:hover, &:focus{
     background: lighten(@button, 3%);
-    border-color: lighten(@button, 3%);
   }
   &:active{
     background-color: @button;
-    border-color: @button;
   }
 
   &.dark, &.attention, &.info, &.alert, &.success{
@@ -187,11 +185,9 @@ button, a.btn{
 
   &.dark{
       background: @dark;
-      border-color: @dark;
     
     &:hover, &:focus{
       background: lighten(@dark, 20%);
-      border-color: lighten(@dark, 20%);
     }
     &:active{
       background: @dark;
@@ -200,52 +196,40 @@ button, a.btn{
   }
   &.attention{
     background: @attention;
-    border-color: @attention;
     &:hover, &:focus{
       background: saturate(@attention, 300%);
-      border-color: saturate(@attention, 300%);
     }
     &:active{
       background: @attention;
-      border-color: @attention;
     }
   }
   &.alert{
       background: @alert;
-      border-color: @alert;
     &:hover, &:focus{
       //background: lighten(saturate(@alert, 15%), 5%);
       background: saturate(@alert, 300%);
-      border-color: saturate(@alert, 300%);
     }
     &:active{
       background: @alert;
-      border-color: @alert;
     }
   }
   &.info{
       background: @info;
-      border-color: @info;
     &:hover, &:focus{
       background: lighten(saturate(@info, 20%), 5%);
-      border-color: lighten(saturate(@info, 20%), 5%);
     }
     &:active{
       background: @info;
-      border-color: @info;
     }     
   }
   &.success{
     background: @success;
-    border-color: @success;
     
     &:hover, &:focus{
       background: lighten(saturate(@success, 50%), 3%);
-      border-color: lighten(saturate(@success, 50%), 3%);
     }
     &:active{
       background: @success;
-      border-color: @success;
     }
   }
   &.small{
@@ -265,17 +249,6 @@ button, a.btn{
   }
 }
 
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea{
-  //border-top: 2px solid @border;
-  &.search{
-    .borderRadius(50px);
-  }
-}
 input[disabled='disabled'], textarea[disabled='disabled']{
   .opacity(100); //normalize ios opacity for disabled elements
   background: @background;
