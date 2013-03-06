@@ -1,23 +1,32 @@
-nav{
+.margin-nav{
+    margin-top: @padding*3.6 !important;
+}
+.margin-nav-large{
+    margin-top: @padding*5.6 !important;
+}
+
+body > nav{
+
+    background: white;
+    position: fixed;
+    left: 0;
+    width: 100%;
     z-index: @zIndex;
+    display: block;
+    top: 0;
+
     a{
         float: left;
         padding: @padding;
         &.active{
-             background: lighten(@background, 3%);        
+             background: @color-light;        
         }
     }
-    display: block;
+    
     h1,h2,h3,h4,h5,h6{
         margin: 0;
     }
-    &.menu{
-        position: fixed;
-        left: 0;
-        width: 100%;
-        background: @background;
-        border-bottom: 1px solid @border;
-    }
+
     &.dark{
         border-bottom: 1px solid black;
         background: darken(@background, 100%);
@@ -36,15 +45,15 @@ nav{
             }
         }
     }
-    &.top{
-        top: 0;
-    }
+
     &.bottom{
+        top: auto;
         bottom: 0;
     }
+
     .logo{
-        font-size: @fontLarge;
-        font-weight: lighter;
+        font-size: @font-large;
+        font-weight: bold;
         padding: @padding/1.6 @padding*1.5;
         float: left;
     }

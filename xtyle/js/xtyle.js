@@ -126,10 +126,10 @@
 
       // verify if is in MOBILE view
       $("nav .logo").on("click", function(){
-        if($( "nav.menu a").css("display") === "none" ){
-          $("nav.menu a").addClass("display-nav");
+        if($( "nav a").css("display") === "none" ){
+          $("nav a").addClass("display-nav");
         }else{
-          $("nav.menu a").removeClass("display-nav");
+          $("nav a").removeClass("display-nav");
         }
       });
 

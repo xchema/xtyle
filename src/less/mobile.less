@@ -1,5 +1,9 @@
 html.responsive{
 
+    .layout-fixed, .layout-fixed-center{
+        width: auto;
+    }
+
     .position-fixed{
         position: absolute;
     }
@@ -9,7 +13,9 @@ html.responsive{
     aside{
         display: none;
     }
-
+    body.nav{
+        padding-top: 0;
+    }
     nav {
         position: static;
         display: block;
@@ -22,7 +28,6 @@ html.responsive{
     nav .logo{
         float: none;
         display: block;
-        width: 100%;
     }
     .mobile{
         display: inline-block;

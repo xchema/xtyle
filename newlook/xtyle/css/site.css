@@ -1,0 +1,22 @@
+@import "browsers.css";
+
+.browser-logos i {
+  color: white;
+  font-size: 600%;
+  padding: 10px;
+}
+#banner a{
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .browser-logos i{
+    font-size: 500%;
+  }
+
+}

@@ -117,16 +117,16 @@ input, a.btn, button, select{
   i{
     line-height: 0.8;
   }
-  margin: @margin/2 @margin @margin 0;
+  //margin: @margin/2 @margin @margin 0;
   .boxSizing ();
 }
 // fix margin-right for bigger sizes
 input, a.btn, button, select{
   &.medium{
-    margin-right: @margin*1.5;
+    //margin-right: @margin*1.5;
   }
   &.large{
-    margin-right: @margin*1.8;
+    //margin-right: @margin*1.8;
   }
 }
 input[type=text],
@@ -166,8 +166,8 @@ button, a.btn{
   border: 1px solid @button;
   font-size: @fontSize;
   font-family: @fontFamily;
-  font-weight: normal;
-  padding: @padding @padding*2;
+  font-weight: 300;
+  padding: @padding @padding*2.5;
   text-align: center;
   .transition(background, .1s, linear);
   &:hover, &:focus{
@@ -252,17 +252,17 @@ button, a.btn{
   &.small{
     font-size: @fontSmall;
     //margin-top: 10.5px;
-    padding: @padding/1.48 @padding*1.4;
+    padding: @padding/1.48 @padding*2;
   }
   &.medium{
     font-size: @fontMedium;
     //margin-top: 4.5px;
-    padding: @padding*1.5 @padding*2.5;
+    padding: @padding*1.5 @padding*3;
   }
   &.large{
     font-size: @fontLarge;
     //margin-top: 2px;
-    padding: @padding*2 @padding*3.5;
+    padding: @padding*2 @padding*5;
   }
 }
 
