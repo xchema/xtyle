@@ -1517,7 +1517,7 @@ span.checkbox {
   *display: block;
   margin: 2.2222222222222223px 5px;
   vertical-align: middle;
-  border: 1px solid #c3c8cb;
+  border: 1px solid #cacfd1;
   zoom: 1;
   -webkit-transition: border-color 0.1s linear;
      -moz-transition: border-color 0.1s linear;
@@ -1569,13 +1569,17 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
-  border: 1px solid #d9dcde;
-  border-color: #d9dcde;
+  border: 2px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
        -o-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: border-color 0.2s ease-in-out;
+     -moz-transition: border-color 0.2s ease-in-out;
+      -ms-transition: border-color 0.2s ease-in-out;
+       -o-transition: border-color 0.2s ease-in-out;
+          transition: border-color 0.2s ease-in-out;
 }
 
 input[type=text]:hover,
@@ -1583,12 +1587,7 @@ input[type=email]:hover,
 input[type=password]:hover,
 input[type=number]:hover,
 textarea:hover {
-  border-color: #c3c8cb;
-  -webkit-transition: border-color 0.1s linear;
-     -moz-transition: border-color 0.1s linear;
-      -ms-transition: border-color 0.1s linear;
-       -o-transition: border-color 0.1s linear;
-          transition: border-color 0.1s linear;
+  border-color: #cacfd1;
 }
 
 input[type=text]:focus,
@@ -1597,11 +1596,6 @@ input[type=password]:focus,
 input[type=number]:focus,
 textarea:focus {
   border-color: #1ab2ff;
-  -webkit-transition: border-color 0.1s linear;
-     -moz-transition: border-color 0.1s linear;
-      -ms-transition: border-color 0.1s linear;
-       -o-transition: border-color 0.1s linear;
-          transition: border-color 0.1s linear;
 }
 
 input[type=text]:focus.dark,
@@ -1652,6 +1646,8 @@ input[type=radio],
 input[type=checkbox] {
   margin: 5px;
 }
+
+/* ICONS ON BUTTONS */
 
 input,
 a.btn,
@@ -1713,7 +1709,7 @@ select.large {
 }
 
 select {
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
 }
 
 input[type=submit],
@@ -1726,7 +1722,7 @@ a.btn {
 input[type=submit],
 button,
 a.btn {
-  padding: 10px 25px;
+  padding: 9.7px 25px;
   margin: 5px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
@@ -1918,18 +1914,6 @@ a.btn.large {
   font-size: 150%;
 }
 
-input[type=text].search,
-input[type=email].search,
-input[type=password].search,
-input[type=number].search,
-textarea.search {
-  -webkit-border-radius: 50px;
-     -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-       -o-border-radius: 50px;
-          border-radius: 50px;
-}
-
 input[disabled='disabled'],
 textarea[disabled='disabled'] {
   background: #f7f7f7;
@@ -1953,7 +1937,7 @@ textarea {
 fieldset {
   padding: 10px 20px 10px 20px;
   padding: 10px;
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
 }
 
 fieldset legend {
@@ -2072,7 +2056,7 @@ section {
   margin-bottom: 10px;
   overflow: hidden;
   background: white;
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
 }
 
 section.column {
@@ -2139,8 +2123,8 @@ th {
   padding: 10px 15px;
   font-weight: bold;
   text-align: left;
-  background: #d9dcde;
-  border: 1px solid #d9dcde;
+  background: #e0e3e4;
+  border: 2px solid #e0e3e4;
 }
 
 th.clean {
@@ -2150,7 +2134,7 @@ th.clean {
 
 td {
   padding: 10px 15px;
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
 }
 
 td.clean {
@@ -2160,7 +2144,7 @@ td.clean {
 
 hr {
   height: 1px;
-  background: #d9dcde;
+  background: #e0e3e4;
   border: 0;
 }
 
@@ -2197,7 +2181,7 @@ tag {
   font-style: normal;
   color: #777777;
   background: #f7f7f7;
-  border: 1px solid #e7e9ea;
+  border: 2px solid #eeeff0;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2328,7 +2312,7 @@ code {
   padding: 2px 4px;
   color: #d50e14;
   background: #f7f7f7;
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2343,7 +2327,7 @@ pre {
   font-size: 90%;
   color: #3F639E;
   background: #f7f7f7;
-  border: 1px solid #d9dcde;
+  border: 2px solid #e0e3e4;
 }
 
 pre code {
@@ -2496,7 +2480,7 @@ body > nav h6 {
 body > nav.dark {
   color: white;
   background: #000000;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #000000;
 }
 
 body > nav.dark h1,
@@ -2963,27 +2947,27 @@ div.resize {
 }
 
 .border {
-  border: 1px solid #e8e8e8;
+  border: 2px solid #e0e3e4;
 }
 
 .border-top {
-  border-top: 1px solid #e8e8e8;
+  border-top: 2px solid #e0e3e4;
 }
 
 .border-right {
-  border-right: 1px solid #e8e8e8;
+  border-right: 2px solid #e0e3e4;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 2px solid #e0e3e4;
 }
 
 .border-left {
-  border-left: 1px solid #e8e8e8;
+  border-left: 2px solid #e0e3e4;
 }
 
 .border-none {
-  border: 0;
+  border: 0 !important;
 }
 
 .responsive-background {
@@ -3038,7 +3022,7 @@ div.resize {
   html.responsive nav a {
     display: none;
     float: none;
-    border-top: #d9dcde;
+    border-top: 2px solid #e0e3e4;
   }
   html.responsive nav .logo {
     display: block;

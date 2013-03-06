@@ -41,7 +41,7 @@ span.radio, span.checkbox{
   zoom: 1;
   vertical-align: middle;
   margin: @margin/4.5 @margin/2;
-  border: 1px solid darken(@border, 8%);
+  border: 1px solid darken(@border-color, 8%);
   .transition(border-color, .1s, linear);
   span{
     .transition(background, .1s, linear);
@@ -73,14 +73,14 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea{
-  border: 1px solid @border;
-  border-color: @border;
+  border: @border;
+  .transition(border-color, .2s, ease-in-out);
   &:hover{
-    .transition(border-color, .1s, linear);
-    border-color: darken(@border, 8%);
+    
+    border-color: darken(@border-color, 8%);
   }
   &:focus{
-    .transition(border-color, .1s, linear);
+    
     border-color: lighten(@links, 15%);
     &.dark{
       border-color: lighten(@dark, 20%);
@@ -110,23 +110,13 @@ input[type=checkbox]{
   margin: @margin/2;
 }
 
-
+/* ICONS ON BUTTONS */
 input, a.btn, button, select{
   vertical-align: middle;
   i{
     line-height: 0.8;
   }
-  //margin: @margin/2 @margin @margin 0;
   .boxSizing ();
-}
-// fix margin-right for bigger sizes
-input, a.btn, button, select{
-  &.medium{
-    //margin-right: @margin*1.5;
-  }
-  &.large{
-    //margin-right: @margin*1.8;
-  }
 }
 
 input[type=text],
@@ -150,7 +140,7 @@ textarea, select{
   }
 }
 select{
-  border: 1px solid @border;
+  border: @border;
 }
 
 input[type=submit],
@@ -166,7 +156,7 @@ button, a.btn{
   background-color: @button;
   font-size: @fontSize;
   font-family: @fontFamily;
-  padding: @padding @padding*2.5;
+  padding: @padding*.97 @padding*2.5;
   text-align: center;
   .transition(background, .1s, linear);
   &:hover, &:focus{
@@ -262,7 +252,7 @@ textarea{
   margin: 0 @margin @margin/1.2 0;
 }
 fieldset{
-  border: 1px solid @border;
+  border: @border;
   .padding();
   legend{
     font-size: 120%;

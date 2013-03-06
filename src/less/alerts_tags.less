@@ -2,7 +2,7 @@ alert, tag{
   font-size: @fontSize;
   font-style: normal;
   background: @background;
-  border: 1px solid lighten(@border, 5%);
+  border: @border-size @border-style lighten(@border-color, 5%);
   color: lighten(@fontColor, 20%);
   display: block;
   padding: 6px 10px;
