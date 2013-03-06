@@ -1124,7 +1124,8 @@ body {
   height: 100%;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.4em;
   color: #444444;
   background-color: white;
 }
@@ -1516,7 +1517,6 @@ span.checkbox {
   *display: block;
   margin: 2.2222222222222223px 5px;
   vertical-align: middle;
-  background: white;
   border: 1px solid #c3c8cb;
   zoom: 1;
   -webkit-transition: border-color 0.1s linear;
@@ -1570,7 +1570,6 @@ input[type=password],
 input[type=number],
 textarea {
   border: 1px solid #d9dcde;
-  border-top: 2px solid #d9dcde;
   border-color: #d9dcde;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1689,7 +1688,7 @@ input[type=password].small,
 input[type=number].small,
 textarea.small,
 select.small {
-  padding: 6.666666666666667px 8.333333333333334px;
+  padding: 8.333333333333334px 8.333333333333334px;
   font-size: 80%;
 }
 
@@ -1699,7 +1698,7 @@ input[type=password].medium,
 input[type=number].medium,
 textarea.medium,
 select.medium {
-  padding: 15px 12px;
+  padding: 13px 12px;
   font-size: 120%;
 }
 
@@ -1709,7 +1708,7 @@ input[type=password].large,
 input[type=number].large,
 textarea.large,
 select.large {
-  padding: 20px 15px;
+  padding: 16px 15px;
   font-size: 150%;
 }
 
@@ -1728,12 +1727,11 @@ input[type=submit],
 button,
 a.btn {
   padding: 10px 25px;
+  margin: 5px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 300;
   text-align: center;
   background-color: #e0e3e4;
-  border: 1px solid #e0e3e4;
   -webkit-transition: background 0.1s linear;
      -moz-transition: background 0.1s linear;
       -ms-transition: background 0.1s linear;
@@ -1917,21 +1915,22 @@ a.btn.success:active {
 input[type=submit].small,
 button.small,
 a.btn.small {
-  padding: 6.756756756756757px 20px;
+  padding: 6.666666666666667px 20px;
   font-size: 80%;
 }
 
 input[type=submit].medium,
 button.medium,
 a.btn.medium {
-  padding: 15px 30px;
+  padding: 14px 30px;
   font-size: 120%;
 }
 
 input[type=submit].large,
 button.large,
 a.btn.large {
-  padding: 20px 50px;
+  padding: 20px 60px;
+  margin: 10px;
   font-size: 150%;
 }
 
@@ -2555,7 +2554,7 @@ body > nav.large li {
 }
 
 body > nav.large .logo {
-  padding: 9.09090909090909px 20px;
+  padding: 20px;
   font-size: 225%;
 }
 
@@ -2698,6 +2697,14 @@ body > nav ul li {
       -ms-border-radius: 0 0px 10px 10px;
        -o-border-radius: 0 0px 10px 10px;
           border-radius: 0 0px 10px 10px;
+}
+
+.border-radius-search {
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+       -o-border-radius: 50px;
+          border-radius: 50px;
 }
 
 .border-radius-circle {
