@@ -1217,33 +1217,33 @@ input:-moz-placeholder {
   overflow: auto;
 }
 
-.grid.show .grid1 div:first-child,
-.grid.show .grid2 div:first-child,
-.grid.show .grid4 div:first-child,
-.grid.show .grid5 div:first-child,
-.grid.show .grid3 div:first-child,
-.grid.show .grid6 div:first-child,
-.grid.show .grid7 div:first-child,
-.grid.show .grid8 div:first-child,
-.grid.show .grid9 div:first-child,
-.grid.show .grid10 div:first-child,
-.grid.show .grid11 div:first-child,
-.grid.show .grid12 div:first-child {
+.grid.show .grid1 > div,
+.grid.show .grid2 > div,
+.grid.show .grid3 > div,
+.grid.show .grid4 > div,
+.grid.show .grid5 > div,
+.grid.show .grid6 > div,
+.grid.show .grid7 > div,
+.grid.show .grid8 > div,
+.grid.show .grid9 > div,
+.grid.show .grid10 > div,
+.grid.show .grid11 > div,
+.grid.show .grid12 > div {
   background: #f7f7f7;
 }
 
-.grid .grid1 div:first-child,
-.grid .grid2 div:first-child,
-.grid .grid4 div:first-child,
-.grid .grid5 div:first-child,
-.grid .grid3 div:first-child,
-.grid .grid6 div:first-child,
-.grid .grid7 div:first-child,
-.grid .grid8 div:first-child,
-.grid .grid9 div:first-child,
-.grid .grid10 div:first-child,
-.grid .grid11 div:first-child,
-.grid .grid12 div:first-child {
+.grid .grid1 > div,
+.grid .grid2 > div,
+.grid .grid3 > div,
+.grid .grid4 > div,
+.grid .grid5 > div,
+.grid .grid6 > div,
+.grid .grid7 > div,
+.grid .grid8 > div,
+.grid .grid9 > div,
+.grid .grid10 > div,
+.grid .grid11 > div,
+.grid .grid12 > div {
   padding: 10px;
   margin: 10px;
 }
@@ -1924,15 +1924,16 @@ textarea {
 }
 
 fieldset {
-  padding: 10px 20px 10px 20px;
   padding: 10px;
   border: 2px solid #e0e3e4;
 }
 
 fieldset legend {
-  padding: 0 6.666666666666667px 0 6.666666666666667px;
-  font-size: 120%;
+  padding: 2px 10px;
+  font-size: 90%;
   font-weight: bold;
+  color: #c5cacc;
+  border: 2px solid #e0e3e4;
 }
 
 a {
@@ -2046,7 +2047,6 @@ blockquote.success {
 section {
   padding: 20px;
   margin: 20px 10px;
-  margin-bottom: 10px;
   overflow: hidden;
   background: white;
   border: 2px solid #e0e3e4;
@@ -2315,7 +2315,6 @@ code {
 
 pre {
   padding: 10px;
-  margin-bottom: 20px;
   font-family: "Courier New", Courier, monospace, "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 90%;
   color: #3F639E;

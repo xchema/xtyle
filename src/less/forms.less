@@ -247,12 +247,15 @@ label{
 textarea{
   margin: 0 @margin @margin/1.2 0;
 }
+
 fieldset{
   border: @border;
-  .padding();
+  padding: @padding;
   legend{
-    font-size: 120%;
+    border: @border;
+    color: darken(@border-color, 10%);
+    font-size: 90%;
     font-weight: bold;
-    .padding(0,@padding/3,0,@padding/3);
+    padding: @padding/5 @padding;
   }
 }
