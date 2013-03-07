@@ -1217,33 +1217,33 @@ input:-moz-placeholder {
   overflow: auto;
 }
 
-.grid.show .grid1 div:first-of-type,
-.grid.show .grid2 div:first-of-type,
-.grid.show .grid4 div:first-of-type,
-.grid.show .grid5 div:first-of-type,
-.grid.show .grid3 div:first-of-type,
-.grid.show .grid6 div:first-of-type,
-.grid.show .grid7 div:first-of-type,
-.grid.show .grid8 div:first-of-type,
-.grid.show .grid9 div:first-of-type,
-.grid.show .grid10 div:first-of-type,
-.grid.show .grid11 div:first-of-type,
-.grid.show .grid12 div:first-of-type {
+.grid.show .grid1 div:first-child,
+.grid.show .grid2 div:first-child,
+.grid.show .grid4 div:first-child,
+.grid.show .grid5 div:first-child,
+.grid.show .grid3 div:first-child,
+.grid.show .grid6 div:first-child,
+.grid.show .grid7 div:first-child,
+.grid.show .grid8 div:first-child,
+.grid.show .grid9 div:first-child,
+.grid.show .grid10 div:first-child,
+.grid.show .grid11 div:first-child,
+.grid.show .grid12 div:first-child {
   background: #f7f7f7;
 }
 
-.grid .grid1 div:first-of-type,
-.grid .grid2 div:first-of-type,
-.grid .grid4 div:first-of-type,
-.grid .grid5 div:first-of-type,
-.grid .grid3 div:first-of-type,
-.grid .grid6 div:first-of-type,
-.grid .grid7 div:first-of-type,
-.grid .grid8 div:first-of-type,
-.grid .grid9 div:first-of-type,
-.grid .grid10 div:first-of-type,
-.grid .grid11 div:first-of-type,
-.grid .grid12 div:first-of-type {
+.grid .grid1 div:first-child,
+.grid .grid2 div:first-child,
+.grid .grid4 div:first-child,
+.grid .grid5 div:first-child,
+.grid .grid3 div:first-child,
+.grid .grid6 div:first-child,
+.grid .grid7 div:first-child,
+.grid .grid8 div:first-child,
+.grid .grid9 div:first-child,
+.grid .grid10 div:first-child,
+.grid .grid11 div:first-child,
+.grid .grid12 div:first-child {
   padding: 10px;
   margin: 10px;
 }
@@ -2683,6 +2683,22 @@ body > nav ul li {
   background-color: #1d8bc4;
 }
 
+.bg-attention {
+  background-color: #fab613;
+}
+
+.bg-dark {
+  background-color: #000000;
+}
+
+.bg-success {
+  background-color: #09aa33;
+}
+
+.bg-error {
+  background-color: #e32a22;
+}
+
 .background-size-cover {
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -3001,8 +3017,9 @@ div.resize {
   html.responsive aside {
     display: none;
   }
-  html.responsive body.nav {
-    padding-top: 0;
+  html.responsive .margin-nav-large,
+  html.responsive .margin-nav {
+    margin-top: 0 !important;
   }
   html.responsive nav {
     position: static;
@@ -3012,6 +3029,9 @@ div.resize {
     display: none;
     float: none;
     border-top: 2px solid #e0e3e4;
+  }
+  html.responsive nav .float-right {
+    float: none;
   }
   html.responsive nav .logo {
     display: block;

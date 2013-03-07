@@ -13,8 +13,8 @@ html.responsive{
     aside{
         display: none;
     }
-    body.nav{
-        padding-top: 0;
+    .margin-nav-large, .margin-nav{
+        margin-top: 0 !important;
     }
     nav {
         position: static;
@@ -24,6 +24,9 @@ html.responsive{
         float: none;
         display: none;
         border-top: @border;
+    }
+    nav .float-right{
+        float: none;
     }
     nav .logo{
         float: none;
