@@ -1,5 +1,4 @@
-+ use sizzleJS instead of jquery, check duability
-+ remove requirejs, jquery from project - move them to xmaker
++ change layouts -> templates
 + fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
 + clode buttons and links inside alert/tag going to a lighter color
 + JS - select box
