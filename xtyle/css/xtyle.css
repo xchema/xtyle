@@ -1125,7 +1125,7 @@ body {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.4em;
+  line-height: 1.5em;
   color: #585858;
   background-color: white;
 }
@@ -1572,7 +1572,7 @@ textarea {
   padding: 10px;
   margin: 10px 5px;
   color: #585858;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -1699,7 +1699,7 @@ select i {
 }
 
 select {
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 input[type=submit],
@@ -1925,7 +1925,7 @@ textarea {
 
 fieldset {
   padding: 10px;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 fieldset legend {
@@ -1933,7 +1933,7 @@ fieldset legend {
   font-size: 90%;
   font-weight: bold;
   color: #c5cacc;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 a {
@@ -2049,7 +2049,7 @@ section {
   margin: 20px 10px;
   overflow: hidden;
   background: white;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 section.column {
@@ -2117,7 +2117,7 @@ th {
   font-weight: bold;
   text-align: left;
   background: #e0e3e4;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 th.clean {
@@ -2127,7 +2127,7 @@ th.clean {
 
 td {
   padding: 10px 15px;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 td.clean {
@@ -2174,7 +2174,7 @@ tag {
   font-style: normal;
   color: #8b8b8b;
   background: #f7f7f7;
-  border: 2px solid #eeeff0;
+  border: 1px solid #eeeff0;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2305,7 +2305,7 @@ code {
   padding: 2px 4px;
   color: #d50e14;
   background: #f7f7f7;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2319,7 +2319,7 @@ pre {
   font-size: 90%;
   color: #3F639E;
   background: #f7f7f7;
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 pre code {
@@ -2467,7 +2467,7 @@ body > nav h6 {
 body > nav.dark {
   color: white;
   background: #000000;
-  border-bottom: 2px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 body > nav.dark h1,
@@ -2500,7 +2500,6 @@ body > nav .logo {
   float: left;
   padding: 6.25px 15px;
   font-size: 150%;
-  font-weight: bold;
 }
 
 body > nav.large a,
@@ -2950,23 +2949,23 @@ div.resize {
 }
 
 .border {
-  border: 2px solid #e0e3e4;
+  border: 1px solid #e0e3e4;
 }
 
 .border-top {
-  border-top: 2px solid #e0e3e4;
+  border-top: 1px solid #e0e3e4;
 }
 
 .border-right {
-  border-right: 2px solid #e0e3e4;
+  border-right: 1px solid #e0e3e4;
 }
 
 .border-bottom {
-  border-bottom: 2px solid #e0e3e4;
+  border-bottom: 1px solid #e0e3e4;
 }
 
 .border-left {
-  border-left: 2px solid #e0e3e4;
+  border-left: 1px solid #e0e3e4;
 }
 
 .border-none {
@@ -3027,7 +3026,7 @@ div.resize {
   html.responsive nav a {
     display: none;
     float: none;
-    border-top: 2px solid #e0e3e4;
+    border-top: 1px solid #e0e3e4;
   }
   html.responsive nav .float-right {
     float: none;

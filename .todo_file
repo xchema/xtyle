@@ -1,4 +1,4 @@
-+ jekyll site
++ xtyle-android, xtyle-ios, xtyle-firefox ... .css
 + change layouts -> templates
 + fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
 + clode buttons and links inside alert/tag going to a lighter color
@@ -120,3 +120,4 @@
 - improve grid system
 - tags, with optional 'x' to close, use rounded and color design
 - make input focus have the different colors
+- jekyll site

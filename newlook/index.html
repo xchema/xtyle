@@ -9,25 +9,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="icon" type="image/x-icon" href="../xtyle/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../xtyle/css/xtyle.min.css">
+  <link rel="icon" type="image/x-icon" href="xtyle/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.css">
   <link rel="stylesheet" type="text/css" href="xtyle/css/site.css">
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script data-main="../xtyle/js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="xtyle/js/xtyle.js"></script>
 </head>
 <body>
 
   <!-- NAVIGATION MENU -->
   <nav class="large border-bottom">
     <div class="layout-fixed-center">
-    <span class="logo">xtyle</span>
+    <span class="logo"><strong>xtyle</strong></span>
     <div class="float-right">
     <a href="/" class="selected">home</a>
     <a href="/typography">typography</a>
     <a href="/forms">forms</a>
     <a href="/layout">layout</a>
-    <a href="/themes">themes</a>
-    <a href="#">download</a>
+    <a href="#" class="btn small info border-radius" style="margin-top: 13px;">download</a>
     </div>
     </div>
   </nav>
@@ -35,7 +35,7 @@
 
   <div id="banner" class="bg-info padding">
     <div class="margin-nav-large layout-fixed-center center" style="padding: 70px 0 50px; color: white;">
-      <nav class="browser-logos" style="line-height: 5em">
+      <nav class="browser-logos">
         <i class="browser-icon-chrome"></i>
         <i class="browser-icon-android"></i>
         <i class="browser-icon-firefox"></i>
@@ -87,54 +87,37 @@
     <br><br>
 
     <section class="border-radius2x">
-      <h4 class="">typography</h4>
+      <h4 class="">Get started</h4>
       <br>
-      <h5>Font</h5>
+      <p>
+        <a href="">Download xtyle</a> and place the files inside of your project folder. This is how a project with xtyle will look like:
+      </p>
+      <pre class="border-radius">
+<i class="icon-folder-open"></i> <strong>My Awesome Project</strong>
+  &#8230; index.html
+  <i class="icon-folder-open"></i> <strong>xtyle</strong>
+    <i class="icon-folder-open"></i> <strong>css</strong>
+    &#8230; xtyle.css
+    &#8230; xtyle.min.css
+    <i class="icon-folder-open"></i> <strong>img</strong>
+    &#8230; favicon.ico
+    <i class="icon-folder-open"></i> <strong>js</strong>
+    &#8230; xtyle.js
+    &#8230; xtyle.min.js</pre>
       <br>
-
-        Xtyle uses the excellent <a href="">Roboto</a> font from Google as its default body font. You can change this option at any time on top of the xtyle.css file.
-
-      <div class="grid">
-        <div class="grid2">
-          <div>
-            <div class="border border-radius padding">
-              <legend class="border-radius">Example</legend>
-                regular<br>
-                <thin>thin</thin><br>
-                <strong>Strong</strong><br>
-                <em>italic</em><br>
-                <a href="#">links</a><br>
-                <mark>marked</mark><br>
-                <del>deleted</del><br>
-                <small>small</small><br>
-                <caps>SmallCaps</caps>
-              
-            </div>
-          </div>
-        </div>
-        
-        <div class="grid2">
-          <div>
-            <pre style="height: 100%" class="border-radius">here</pre>
-          </div>
-        </div>
-
-      </div>
-      <alert class="attention">
-        <i class="icon-attention"></i>
-        Xtyle uses <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong> to give emphasis to words and sentences. The <strong>&lt;b&gt;</strong> and <strong>&lt;i&gt;</strong> tags are used for design elements.
-        <!-- include with javascript the icon-cancel when alert has class "close" -->
-        <!-- <a href="#"><i class="icon-cancel floatright"></i></a> -->
-      </alert>
+      <h4>Manual installation</h4>
+      <br>
+      <p>
+        You many prefer not to use the <code>index.html</code> provided with xtyle. In this case you can install xtyle manually simple placing this code on your <code>head</code> tag into <strong>your index.html</strong> file.
+      </p>
+      <pre>
+&lt;link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.min.css"&gt;
+&lt;script href="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;
+&lt;script href="xtyle/js/xtyle.min.js"&gt;</pre>
+      <br>
+      <alert class="attention">Xtyle uses <a href="http://jquery.com/">jQuery</a> to render some HTML elements. You can still put the JavaScript files on the bottom of your document, but that may cause issues rendering some elements.</alert>
     </section>
 
-    <section class="border-radius2x">
-      <h4 class="">forms</h4>
-    </section>
-
-    <section class="border-radius2x">
-      <h4 class="">templates</h4>
-    </section>
 
   </div><!-- .layout-fixed-center -->
 
