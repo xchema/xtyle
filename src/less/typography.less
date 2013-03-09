@@ -28,7 +28,7 @@ mark{
 }
 p{
     word-wrap:break-word;
-    margin: 0 0 @paragraph;
+    margin: @margin 0 @margin*2;
     .drop-caps{
         font-size: 300%;
         font-weight: bold;
@@ -85,7 +85,7 @@ section{
     background: white;
     overflow: hidden;
     border: @border;
-    padding: 20px;
+    padding: @padding @padding * 2;
     margin: @margin*2 @margin;
     &.column{
         float:left; .margin(); 

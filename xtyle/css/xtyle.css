@@ -1978,7 +1978,7 @@ mark {
 }
 
 p {
-  margin: 0 0 20px;
+  margin: 10px 0 20px;
   word-wrap: break-word;
 }
 
@@ -2045,7 +2045,7 @@ blockquote.success {
 }
 
 section {
-  padding: 20px;
+  padding: 10px 20px;
   margin: 20px 10px;
   overflow: hidden;
   background: white;
@@ -2170,6 +2170,7 @@ alert,
 tag {
   display: block;
   padding: 6px 10px;
+  margin: 10px 0;
   font-size: 14px;
   font-style: normal;
   color: #8a8a8a;
@@ -2180,11 +2181,6 @@ tag {
       -ms-border-radius: 3px;
        -o-border-radius: 3px;
           border-radius: 3px;
-}
-
-alert i,
-tag i {
-  margin-right: 2.5px;
 }
 
 alert a,
@@ -2269,6 +2265,7 @@ code {
 
 pre {
   padding: 10px;
+  margin: 10px 0 20px;
   font-size: 90%;
   color: #3F639E;
   background: #f7f7f7;
@@ -2309,6 +2306,7 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 10px 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   line-height: 1.1;
