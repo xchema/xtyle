@@ -7,7 +7,7 @@
  *  repository: http://github.com/xchema/xtyle
  */
  
-( function ( $ ){
+$( function (){
   "use strict";
 
   // VARIABLES
@@ -170,4 +170,4 @@
   if ( typeof define === "function" && define.amd ) {
     define( "xtyle", [], function () { return window.xtyle; } );
   }
-})(jQuery);
+});

@@ -1,9 +1,9 @@
 alert, tag{
   font-size: @fontSize;
   font-style: normal;
-  background: @background;
-  border: @border-size @border-style lighten(@border-color, 5%);
-  color: lighten(@fontColor, 20%);
+  background: lighten(@color-text, 70%);
+  border: @border-size @border-style @border-color;
+  color: lighten(@color-text, 28%);
   display: block;
   padding: 6px 10px;
   .borderRadius(3px);
@@ -11,70 +11,44 @@ alert, tag{
     margin-right: @margin/4;
   }
   a{
-    color: @attention;
+    color: lighten(@color-text, 28%);
     text-decoration: underline;
     &:hover{
-      color: darken(@attention, 15%);
-    }
-    &:active{
-      color: @attention;
+      color: lighten(@color-text, 20%);
     }
   }
   &.attention{
-    background: lighten(@attention, 39%);
-    border-color: desaturate(lighten(@attention, 30%), 30%);
-    color: darken(@attention, 22%);
+    @color_attention: darken(@color-attention, 20%);
+
+    background: lighten(@color-attention, 43%);
+    border-color: lighten(@color-attention, 32%);
+    color: @color_attention;
     a{
-      color: @attention;
-      text-decoration: underline;
-      &:hover{
-        color: darken(@attention, 15%);
-      }
-      &:active{
-        color: @attention;
-      }
+      color: @color_attention;
     }
   }
-  &.alert{
-    background: lighten(@alert, 42%);
-    color: #be5d60;
-    border-color: lighten(@alert, 38%);
+  &.error{
+    background: lighten(@color-error, 42%);
+    color: darken(@color-error, 10%);
+    border-color: lighten(@color-error, 38%);
     a{
-      color: @alert;
-      &:hover{
-        color: darken(@alert, 15%);
-      }
-      &:active{
-        color: @alert;
-      }
+      color: darken(@color-error, 10%);
     }
   }
   &.info{
-    background: lighten(@info, 50%);
-    color: darken(@info, 5%);
-    border-color: lighten(@info, 42%);
+    background: lighten(@color-info, 50%);
+    color: darken(@color-info, 5%);
+    border-color: lighten(@color-info, 42%);
     a{
-      color: darken(@info, 5%);
-      &:hover{
-        color: darken(@info, 15%);
-      }
-      &:active{
-        color: @info;
-      }
+      color: darken(@color-info, 5%);
     }
   }
   &.success{
-    background: desaturate(lighten(@success, 58%), 30%);
-    color: darken(@success, 5%);
-    border-color: desaturate(lighten(@success, 50%), 40%);
+    background: desaturate(lighten(@color-success, 58%), 30%);
+    color: darken(@color-success, 5%);
+    border-color: desaturate(lighten(@color-success, 50%), 40%);
     a{
-      color: @success;
-      &:hover{
-        color: darken(@success, 5%);
-      }
-      &:active{
-        color: @success;
-      }
+      color: darken(@color-success, 5%);
     }
   }
 }

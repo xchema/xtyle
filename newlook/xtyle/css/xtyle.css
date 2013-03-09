@@ -1126,22 +1126,22 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5em;
-  color: #585858;
+  color: #434343;
   background-color: white;
 }
 
 a.btn {
   display: inline-block;
-  color: #585858;
+  color: #434343;
   vertical-align: middle;
 }
 
 a.btn:hover {
-  color: #585858;
+  color: #434343;
 }
 
 a.btn:active {
-  color: #585858;
+  color: #434343;
 }
 
 input,
@@ -1178,39 +1178,39 @@ input:-moz-placeholder {
 }
 
 .color {
-  color: #585858;
+  color: #434343;
 }
 
 .colorComp1 {
-  color: #585858;
+  color: #434343;
 }
 
 .colorComp2 {
-  color: #4b4b4b;
+  color: #363636;
 }
 
 .colorComp3 {
-  color: #7e7e7e;
+  color: #696969;
 }
 
 .colorComp4 {
-  color: #a4a4a4;
+  color: #909090;
 }
 
 .colorSubtle1 {
-  color: #727272;
+  color: #5d5d5d;
 }
 
 .colorSubtle2 {
-  color: #8b8b8b;
+  color: #767676;
 }
 
 .colorSubtle3 {
-  color: #3f3f3f;
+  color: #2a2a2a;
 }
 
 .colorSubtle4 {
-  color: #252525;
+  color: #101010;
 }
 
 .grid {
@@ -1571,7 +1571,7 @@ input[type=number],
 textarea {
   padding: 10px;
   margin: 10px 5px;
-  color: #585858;
+  color: #434343;
   border: 1px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1973,7 +1973,7 @@ caps {
 
 mark {
   padding: 0 .25em;
-  color: #585858;
+  color: #434343;
   background: rgba(255, 255, 0, 0.4);
 }
 
@@ -2014,7 +2014,7 @@ blockquote cite {
   font-size: 80%;
   font-style: normal;
   font-weight: normal;
-  color: #8b8b8b;
+  color: #767676;
 }
 
 blockquote.right {
@@ -2155,7 +2155,7 @@ hr.large {
 
 abbr {
   cursor: help;
-  border-bottom: 1px dotted #f1f1f1;
+  border-bottom: 1px dotted #dcdcdc;
 }
 
 address {
@@ -2172,9 +2172,9 @@ tag {
   padding: 6px 10px;
   font-size: 14px;
   font-style: normal;
-  color: #8b8b8b;
-  background: #f7f7f7;
-  border: 1px solid #eeeff0;
+  color: #8a8a8a;
+  background: #f5f5f5;
+  border: 1px solid #e0e3e4;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
       -ms-border-radius: 3px;
@@ -2189,63 +2189,37 @@ tag i {
 
 alert a,
 tag a {
-  color: #f2c233;
+  color: #8a8a8a;
   text-decoration: underline;
 }
 
 alert a:hover,
 tag a:hover {
-  color: #cc9c0d;
-}
-
-alert a:active,
-tag a:active {
-  color: #f2c233;
+  color: #767676;
 }
 
 alert.attention,
 tag.attention {
-  color: #aa820b;
-  background: #fefaee;
-  border-color: #f2e8cc;
+  color: #a47403;
+  background: #fff8ea;
+  border-color: #fde7b3;
 }
 
 alert.attention a,
 tag.attention a {
-  color: #f2c233;
-  text-decoration: underline;
+  color: #a47403;
 }
 
-alert.attention a:hover,
-tag.attention a:hover {
-  color: #cc9c0d;
-}
-
-alert.attention a:active,
-tag.attention a:active {
-  color: #f2c233;
-}
-
-alert.alert,
-tag.alert {
-  color: #be5d60;
+alert.error,
+tag.error {
+  color: #ba1e18;
   background: #fbe1e0;
   border-color: #f9d0ce;
 }
 
-alert.alert a,
-tag.alert a {
-  color: #e32a22;
-}
-
-alert.alert a:hover,
-tag.alert a:hover {
-  color: #a41b15;
-}
-
-alert.alert a:active,
-tag.alert a:active {
-  color: #e32a22;
+alert.error a,
+tag.error a {
+  color: #ba1e18;
 }
 
 alert.info,
@@ -2260,16 +2234,6 @@ tag.info a {
   color: #1a7bae;
 }
 
-alert.info a:hover,
-tag.info a:hover {
-  color: #135c81;
-}
-
-alert.info a:active,
-tag.info a:active {
-  color: #1d8bc4;
-}
-
 alert.success,
 tag.success {
   color: #08922c;
@@ -2279,17 +2243,7 @@ tag.success {
 
 alert.success a,
 tag.success a {
-  color: #09aa33;
-}
-
-alert.success a:hover,
-tag.success a:hover {
   color: #08922c;
-}
-
-alert.success a:active,
-tag.success a:active {
-  color: #09aa33;
 }
 
 tag {
@@ -2315,7 +2269,6 @@ code {
 
 pre {
   padding: 10px;
-  font-family: "Courier New", Courier, monospace, "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 90%;
   color: #3F639E;
   background: #f7f7f7;
@@ -2637,7 +2590,7 @@ body > nav ul li {
           border-radius: 10px;
 }
 
-.border-radius2x-top {
+.border-radius-top2X {
   -webkit-border-radius: 10px 10px 0 0px;
      -moz-border-radius: 10px 10px 0 0px;
       -ms-border-radius: 10px 10px 0 0px;
@@ -2645,7 +2598,7 @@ body > nav ul li {
           border-radius: 10px 10px 0 0px;
 }
 
-.border-radius2x-bottom {
+.border-radius-bottom2X {
   -webkit-border-radius: 0 0px 10px 10px;
      -moz-border-radius: 0 0px 10px 10px;
       -ms-border-radius: 0 0px 10px 10px;
@@ -2844,27 +2797,27 @@ div.resize {
   margin: 20px;
 }
 
-.margin2x-top {
+.margin-top2x {
   margin-top: 20px;
 }
 
-.margin2x-right {
+.margin-right2x {
   margin-right: 20px;
 }
 
-.margin2x-bottom {
+.margin-bottom2X {
   margin-bottom: 20px;
 }
 
-.margin2x-left {
+.margin-left2x {
   margin-left: 20px;
 }
 
-.margin2x-top-bottom {
+.margin-top-bottom2x {
   margin: 20px 0;
 }
 
-.margin2x-left-right {
+.margin-left-right2x {
   margin: 0 20px;
 }
 
@@ -2900,27 +2853,27 @@ div.resize {
   padding: 20px;
 }
 
-.padding2x-top {
+.padding-top2x {
   padding-top: 20px;
 }
 
-.padding2x-right {
+.padding-right2x {
   padding-right: 20px;
 }
 
-.padding2x-bottom {
+.padding-bottom2x {
   padding-bottom: 20px;
 }
 
-.padding2x-left {
+.padding-left2x {
   padding-left: 20px;
 }
 
-.padding2x-top-bottom {
+.padding-top-bottom2x {
   padding: 20px 0;
 }
 
-.padding2x-left-right {
+.padding-left-right2x {
   padding: 0 20px;
 }
 
