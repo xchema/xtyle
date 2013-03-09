@@ -166,7 +166,7 @@ $( function (){
 
   window.xtyle = x.controller; // Return global object
 
-  //Expose xtyle for AMD modules like RequireJS
+  //xtyle for AMD frameworks like RequireJS
   if ( typeof define === "function" && define.amd ) {
     define( "xtyle", [], function () { return window.xtyle; } );
   }
