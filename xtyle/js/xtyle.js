@@ -6,41 +6,43 @@
  *  website: http://xtyle.xchema.com
  *  repository: http://github.com/xchema/xtyle
  */
+ 
 ( function ( $ ){
   "use strict";
+
   // VARIABLES
   var self = this, // Reference to current object
       xtyle = function () {}, // Name-space
       x = xtyle.prototype;
 
-  // CONFIGURATION
-  x.version = {
-    name : "xtyle",
-    version : 0.1,
-    stability : 1 // 1 - Stable, 2 - Unstable, 3 - Experimental
-  };// x.version
-
-
   // MODEL
   x.model = {
-    debug : true,
-    modules : [ 'radio', 'checkbox' ],
-    widgets : {}
+    version : 0.1
+  , stability : 1 // 1 - Stable, 2 - Unstable, 3 - Experimental
+  , debug : true
+  , modules : [ 'radio', 'checkbox' ]
+  , widgets : {
+      "slidejs" : "widgets/slideshow/slidejs/slidejs"
+    , "addthis" : "widgets/social/addthis/addthis"
+    }
   };//x.model
 
   // CONTROLLER
   x.controller = {
-    _debug : function ( msg ) {
+    _help : function() {
+      console.log ( "Version " + self.model.version.number );
+    }
+  , _debug : function ( msg ) {
       if ( x.model.debug ) {
         console.log ( msg );
       }
-    },
-    _idGEN : function () {
+    }
+  , _idGEN : function () {
       var d = new Date();
       return '#' + d.getFullYear() + d.getMonth() + d.getDate() + d.getHours() + d.getMinutes() + d.getSeconds() + d.getMilliseconds();
-    },
-    _loadWidget : function ( widget, location ) {
-      x.controller._loadCSS(location+".css");
+    }
+  , _loadWidget : function ( widget, location ) {
+      x.controller._loadCSS("xtyle/"+location+".css");
       require( [ 'text!'+location+'.html', location ], function ( html ) {
         $("widget[name="+widget+"]").each(function(){
           var id = "#"+$(this).attr("id");
@@ -48,23 +50,23 @@
         });
       });
       x.controller._debug( "Widget [ \"" + widget + "\" ] loaded!");
-    },
-    _loadModule : function ( module ) {
+    }
+  , _loadModule : function ( module ) {
       x.controller['_'+module].init();
-    },
-    _loadCSS : function ( url ) {
+    }
+  , _loadCSS : function ( url ) {
       var link = document.createElement( 'link' );
       link.type = 'text/css';
       link.rel = 'stylesheet';
       link.href = url;
       document.getElementsByTagName( "head" )[ 0 ].appendChild( link );
-    },
-    _loadHTML : function( location, id ){
+    }
+  , _loadHTML : function( location, id ){
       require( ['text!'+location+'.html'], function(html){
         return html;
       });
-    },
-    _input : {
+    }
+  , _input : {
       resizeInput : function () {
         var elem = 'input[ xtyle=full ]';
         if( $( elem ).length ) {
@@ -75,8 +77,8 @@
       email : {},
       number : {},
       password : {}
-    },
-    _radio : {
+    }
+  , _radio : {
       init : function(){
         // wrap input type radio with spans and hide it
         $('input[type=radio]').each(function(){
@@ -86,16 +88,16 @@
         $('span.radio').on('click', function(){
           x.controller._radio.radioButton("#"+$(this).attr("id"));
         });
-      },
-      radioButton : function(elem){
+      }
+    , radioButton : function(elem){
         $('span[name='+$(elem).attr('name')+']').removeClass("active");
         if(!$('span'+elem).hasClass('active')){
           $('span'+elem).addClass('active');
           $('input'+elem).attr('checked', true);
         }//if
       }
-    },
-    _checkbox : {
+    }
+  , _checkbox : {
       init : function(){
         // wrap input type checkbox with spans and hide it
         $('input[type=checkbox]').each(function(){
@@ -105,8 +107,8 @@
         $('span.checkbox').on('click', function(){
           x.controller._checkbox.checkBox("#"+$(this).attr("id"));
         });
-      },
-      checkBox : function(elem){
+      }
+    , checkBox : function(elem){
         if($('span'+elem).hasClass('active')){
           $('span'+elem).removeClass('active');
           $('input'+elem).attr('checked', false);
@@ -122,6 +124,15 @@
   x.init = function(){
       x.controller._debug("XTYLE JS LOADED");
 
+      // verify if is in MOBILE view
+      $("nav .logo").on("click", function(){
+        if($( "nav a").css("display") === "none" ){
+          $("nav a").addClass("display-nav");
+        }else{
+          $("nav a").removeClass("display-nav");
+        }
+      });
+
       // VISUAL MODULES
       // modules is an array
       $.each( x.model.modules, function(i, module){ //i - index on array
@@ -131,9 +142,11 @@
       // widgets is an object
       if($("widget").length){
         $.each( x.model.widgets, function ( widget, location ) {
-          if($("widget[name="+widget+"]").length){
+          if( $("widget[name="+widget+"]").length && $("widget").attr("id") ){
             x.controller._loadWidget ( widget, location );
-          }// if
+          } else if ( $("widget[name="+widget+"]").length && !$("widget").attr("id") ){
+            x.controller._debug( "Missing \"id\" for widget \""+ widget + "\"" );
+          }
         });// each
       }// if
 
@@ -151,7 +164,7 @@
       });
   }(); // auto execute
 
-  window.xtyle = x; // Return global object
+  window.xtyle = x.controller; // Return global object
 
   //Expose xtyle for AMD modules like RequireJS
   if ( typeof define === "function" && define.amd ) {
