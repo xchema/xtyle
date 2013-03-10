@@ -5,8 +5,12 @@
   font-size: 600%;
   padding: 10px;
 }
-#banner a{
+#home_banner a{
   color: white;
+}
+
+#home_banner{
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 900px) {
@@ -14,7 +18,9 @@
 }
 
 @media screen and (max-width: 600px) {
-
+  #home_banner{
+    margin-top: 20px;
+  }
   .browser-logos i{
     font-size: 500%;
   }
