@@ -203,13 +203,17 @@ button, a.btn{
     }
   }
   &.info{
-      background: @info;
+      background: @color-info;
     &:hover, &:focus{
-      background: lighten(saturate(@info, 20%), 5%);
+      background: lighten(saturate(@color-info, 20%), 5%);
     }
     &:active{
-      background: @info;
+      background: @color-info;
     }     
+  }
+  &.info-white{
+    background: #fff;
+    color: @color-info;
   }
   &.success{
     background: @success;

@@ -1861,6 +1861,13 @@ a.btn.info:active {
   background: #1d8bc4;
 }
 
+input[type=submit].info-white,
+button.info-white,
+a.btn.info-white {
+  color: #1d8bc4;
+  background: #fff;
+}
+
 input[type=submit].success,
 button.success,
 a.btn.success {
