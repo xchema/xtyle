@@ -2418,7 +2418,6 @@ body > nav h6 {
 body > nav.dark {
   color: white;
   background: #000000;
-  border-bottom: 1px solid #000000;
 }
 
 body > nav.dark h1,
