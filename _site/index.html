@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html class="responsive">
+<head>
+  <title>xchema | xtyle</title>
+  <meta charset="utf-8">
+  <meta name="robots" content="all">
+  <meta name="citation_author" content="xchema">
+  <meta name="description" content="Project Description">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/x-icon" href="xtyle/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.css">
+  <link rel="stylesheet" type="text/css" href="xtyle/css/site.css">
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="xtyle/js/xtyle.js"></script>
+</head>
+<body class="margin-nav-large bg-light">
+
+  <!-- NAVIGATION MENU -->
+  <nav class="large border-bottom">
+    <div class="layout-fixed-center border-bottom">
+
+      <span class="logo">
+        xtyle
+      </span>
+
+      <div class="float-right">
+        <a href="/">home</a>
+        <a href="typography.html">typography</a>
+        <a href="forms.html">forms</a>
+        <a href="layouts.html">layouts</a>
+        <a href="#" class="btn info small info border-radius" style="margin-top: 13px;">download</a>
+      </div><!-- .float-right -->
+    </div><!-- .layout-fixed-center -->
+  </nav>
+
+   <div class="margin-nav-large layout-fixed-center center">
+  <div class="home_banner bg-info border-radius2x margin">
+      <nav class="browser-logos">
+        <i class="browser-icon-chrome"></i>
+        <i class="browser-icon-android"></i>
+        <i class="browser-icon-firefox"></i>
+        <i class="browser-icon-safari"></i>
+        <i class="browser-icon-opera"></i>
+        <i class="browser-icon-ie"></i>
+      </nav>
+      <h1 class="lighter">Create stunning web applications, everywhere.</h1>
+      <a href="#" class="large btn success border-radius">Download now</a>
+      <br>
+      <a href="http://github.com/xchema/xtyle">Fork on GitHub</a>
+    </div>
+  </div>
+
+  <div class="layout-fixed-center">
+
+    <div id="information_buttons" class="grid">
+      
+      <div class="grid3">
+        <div class="center">
+          <div class="information_button_icon"><i class="icon-videocam"> </i></div>
+          <h2 class="lighter"><a href="#">Trainning videos coming soon</a></h2>
+          <p>Learn how to create a simple and completely functional website with xtyle. All source files will be included.</p>
+        </div>
+      </div>
+      
+      <div class="grid3">
+        <div class="center">
+          <div class="information_button_icon"><i class="icon-easel"></i></div>
+          <h2 class="lighter"><a href="layouts.html">Use the layouts to build your templates</a></h2>
+          <p>Xtyle uses a grid system to build <a href="layouts.html">layouts</a> and you can use in your templates.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="center">
+          <div class="information_button_icon"><i class="icon-globe"></i></div>
+          <h2 class="lighter"><a href="#install">HTML,CSS, and JavaScript</a></h2>
+          <p>If you are a web developer you will feel comfortable using xtyle. Check our starters guide <a href="#install">here</a>.</p>
+        </div>
+      </div>
+    </div><!-- .grid -->
+
+
+    <a name="install"></a>
+
+    <section class="border-radius2x display-none">
+      
+      <h4 class="">Getting started</h4>
+      <p>
+        <a href="">Download xtyle</a> and place the files inside of your project folder. This is how a project with xtyle will look like:
+      </p>
+     
+      <pre class="border-radius">
+<i class="icon-folder-open"></i> <strong>Your Awesome Project</strong>
+  &#8230; index.html
+  <i class="icon-folder-open"></i> <strong>xtyle</strong>
+    <i class="icon-folder-open"></i> <strong>css</strong>
+    &#8230; xtyle.css
+    &#8230; xtyle.min.css
+    <i class="icon-folder-open"></i> <strong>img</strong>
+    &#8230; favicon.ico
+    <i class="icon-folder-open"></i> <strong>js</strong>
+    &#8230; xtyle.js
+    &#8230; xtyle.min.js</pre>
+  
+
+      <h4>Manual installation</h4>
+      <p>
+        You many prefer not to use the <code>index.html</code> provided with xtyle. In this case you can install xtyle manually simple placing the following code on your <code>head</code> tag of <strong>your index.html</strong> file.
+      </p>
+     
+      <pre class="border-radius">
+&lt;link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.min.css"&gt;
+&lt;script href="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;
+&lt;script href="xtyle/js/xtyle.min.js"&gt;</pre>
+
+
+      <alert class="attention border-radius"><i class="icon-attention"></i> Xtyle uses <a href="http://jquery.com/">jQuery</a> to render some HTML elements. You can still put the JavaScript files on the bottom of your document, but that may cause issues rendering issues.</alert>
+    </section>
+
+
+  </div><!-- .layout-fixed-center -->
+
+<script>
+  $(function(){
+
+    function scrollToAnchor(aid){
+      var aTag = $("a[name='"+ aid +"']");
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+
+    $('a[href="#install"]').on("click", function(e){
+      e.preventDefault();
+      $("section").slideDown("fast", function(){
+        scrollToAnchor("install");
+      });
+    });
+  });
+</script>
+
+<footer class="border-top padding2x" style="margin-top: 30px; background: white;">
+  <div class="layout-fixed-center">
+    <div class="center">
+    made by <a href="http://xchema.com">xchema</a>
+  </div>
+  </div>
+</footer>
+</body>
+</html>

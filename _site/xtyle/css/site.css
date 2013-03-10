@@ -1,0 +1,51 @@
+@import "browsers.css";
+
+.browser-logos i {
+  color: white;
+  font-size: 600%;
+  padding: 10px;
+}
+.home_banner a{
+  color: white;
+}
+
+.home_banner{
+  padding: 60px 20px;
+}
+
+.page_banner{
+  margin-top: 80px;
+  padding:2px 20px;
+}
+
+.home_banner{
+  color: white;
+  margin-top: 80px;
+}
+
+.home_banner h1{
+  font-size: 300%;
+}
+
+.information_button_icon{
+  font-size: 400%;
+  padding: 10px 0;
+}
+
+.gist-syntax td{
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 600px) {
+  .home_banner, .page_banner{
+    margin-top: 20px;
+  }
+  .browser-logos i{
+    font-size: 500%;
+  }
+
+}
