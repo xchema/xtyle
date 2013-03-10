@@ -1,6 +1,0 @@
-{
-  "name" : "slidejs",
-  "version" : "1.0",
-  "git" : "xtyle/slidejs",
-  "require" : ["jquery"]
-}
