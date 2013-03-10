@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
- <div class="margin-nav-large layout-fixed-center center" style=" color: white;">
-  <div id="home_banner" class="bg-info border-radius2x margin" style="padding: 60px 20px;">
+ <div class="margin-nav-large layout-fixed-center center">
+  <div class="home_banner bg-info border-radius2x margin">
       <nav class="browser-logos">
         <i class="browser-icon-chrome"></i>
         <i class="browser-icon-android"></i>
@@ -11,48 +11,52 @@ layout: default
         <i class="browser-icon-opera"></i>
         <i class="browser-icon-ie"></i>
       </nav>
-      <h1 style="font-size: 300%;" class="lighter">Create stunning web applications, everywhere.</h1>
+      <h1 class="lighter">Create stunning web applications, everywhere.</h1>
       <a href="#" class="large btn success border-radius">Download now</a>
       <br>
-      <a href="#">Fork on GitHub</a>
+      <a href="http://github.com/xchema/xtyle">Fork on GitHub</a>
     </div>
   </div>
 
-  <div class="layout-fixed-center ">
+  <div class="layout-fixed-center">
 
     <div id="information_buttons" class="grid">
       
       <div class="grid3">
         <div class="center">
-          <div style="font-size: 400%; padding: 10px 0;"><i class="icon-globe"></i></div>
-          <h2 class="lighter"><a href="">HTML,CSS, and JavaScript</a></h2>
-          <p>If you are a web developer you will feel comfortable using xtyle. Check our starters guide <a href="">here</a>.</p>
+          <div class="information_button_icon"><i class="icon-videocam"> </i></div>
+          <h2 class="lighter"><a href="#">Trainning videos coming soon</a></h2>
+          <p>Learn how to create a simple and completely functional website with xtyle. All source files will be included.</p>
         </div>
       </div>
       
       <div class="grid3">
         <div class="center">
-          <div style="font-size: 400%;padding: 10px 0;"><i class="icon-easel"></i></div>
-          <h2 class="lighter"><a href="">Check our pre-built templates</a></h2>
-          <p>If you are not familiar with web technologies you can take advantages of our pre-built <a href="">templates</a>.</p>
+          <div class="information_button_icon"><i class="icon-easel"></i></div>
+          <h2 class="lighter"><a href="layouts.html">Use the layouts to build your templates</a></h2>
+          <p>Xtyle uses a grid system to build <a href="layouts.html">layouts</a> and you can use in your templates.</p>
         </div>
       </div>
 
       <div class="grid3">
         <div class="center">
-          <div style="font-size: 400%;padding: 10px 0;"><i class="icon-videocam"></i></div>
-          <h2 class="lighter"><a href="">Your first website with xtyle</a></h2>
-          <p>Learn how to create a simple and completely functional website with xtyle. Check the <a href="">source files</a>.</p>
+          <div class="information_button_icon"><i class="icon-globe"></i></div>
+          <h2 class="lighter"><a href="#install">HTML,CSS, and JavaScript</a></h2>
+          <p>If you are a web developer you will feel comfortable using xtyle. Check our starters guide <a href="#install">here</a>.</p>
         </div>
       </div>
     </div><!-- .grid -->
 
 
-    <section class="border-radius2x">
+    <a name="install"></a>
+
+    <section class="border-radius2x display-none">
+      
       <h4 class="">Getting started</h4>
       <p>
         <a href="">Download xtyle</a> and place the files inside of your project folder. This is how a project with xtyle will look like:
       </p>
+     
       <pre class="border-radius">
 <i class="icon-folder-open"></i> <strong>Your Awesome Project</strong>
   &#8230; index.html
@@ -66,16 +70,37 @@ layout: default
     &#8230; xtyle.js
     &#8230; xtyle.min.js</pre>
   
+
       <h4>Manual installation</h4>
       <p>
         You many prefer not to use the <code>index.html</code> provided with xtyle. In this case you can install xtyle manually simple placing the following code on your <code>head</code> tag of <strong>your index.html</strong> file.
       </p>
+     
       <pre class="border-radius">
 &lt;link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.min.css"&gt;
 &lt;script href="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;
 &lt;script href="xtyle/js/xtyle.min.js"&gt;</pre>
+
+
       <alert class="attention border-radius"><i class="icon-attention"></i> Xtyle uses <a href="http://jquery.com/">jQuery</a> to render some HTML elements. You can still put the JavaScript files on the bottom of your document, but that may cause issues rendering issues.</alert>
     </section>
 
 
   </div><!-- .layout-fixed-center -->
+
+<script>
+  $(function(){
+
+    function scrollToAnchor(aid){
+      var aTag = $("a[name='"+ aid +"']");
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
+
+    $('a[href="#install"]').on("click", function(e){
+      e.preventDefault();
+      $("section").slideDown("fast", function(){
+        scrollToAnchor("install");
+      });
+    });
+  });
+</script>

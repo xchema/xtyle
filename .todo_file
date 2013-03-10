@@ -1,3 +1,4 @@
++ word-wrap for <code> and <tag> elements
 + xtyle-android, xtyle-ios, xtyle-firefox ... .css
 + fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
 + clode buttons and links inside alert/tag going to a lighter color

@@ -1496,7 +1496,7 @@ span.checkbox {
 
 span.checkbox .icon-check {
   position: absolute;
-  top: -3px;
+  top: -4px;
   left: 0;
   display: none;
   color: #0088cc;
@@ -1937,6 +1937,7 @@ fieldset {
 
 fieldset legend {
   padding: 2px 10px;
+  margin-left: 5px;
   font-size: 90%;
   font-weight: bold;
   color: #c5cacc;
@@ -2176,8 +2177,8 @@ address .org {
 alert,
 tag {
   display: block;
-  padding: 6px 10px;
-  margin: 10px 0;
+  padding: 5px 10px;
+  margin: 5px;
   font-size: 14px;
   font-style: normal;
   color: #8a8a8a;
@@ -2188,6 +2189,11 @@ tag {
       -ms-border-radius: 3px;
        -o-border-radius: 3px;
           border-radius: 3px;
+}
+
+alert i,
+tag i {
+  padding-right: 5px;
 }
 
 alert a,
@@ -2252,7 +2258,7 @@ tag.success a {
 tag {
   display: inline-block;
   *display: inline;
-  margin-right: 10px;
+  padding: 2.5px 10px;
   font-size: 80%;
   vertical-align: top;
   zoom: 1;
@@ -3024,19 +3030,5 @@ div.resize {
   }
   html.responsive .responsive-background {
     background-size: auto 100% !important;
-  }
-  html.responsive div.grid .grid1 div,
-  html.responsive div.grid .grid2 div,
-  html.responsive div.grid .grid4 div,
-  html.responsive div.grid .grid5 div,
-  html.responsive div.grid .grid3 div,
-  html.responsive div.grid .grid6 div,
-  html.responsive div.grid .grid7 div,
-  html.responsive div.grid .grid8 div,
-  html.responsive div.grid .grid9 div,
-  html.responsive div.grid .grid10 div,
-  html.responsive div.grid .grid11 div,
-  html.responsive div.grid .grid12 div {
-    margin: 5px;
   }
 }

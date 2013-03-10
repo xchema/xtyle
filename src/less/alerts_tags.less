@@ -1,13 +1,16 @@
 alert, tag{
-  margin: @margin 0;
+  margin: @margin/2;
   font-size: @fontSize;
   font-style: normal;
   background: lighten(@color-text, 70%);
   border: @border-size @border-style @border-color;
   color: lighten(@color-text, 28%);
   display: block;
-  padding: 6px 10px;
+  padding: @padding/2 @padding;
   .borderRadius(3px);
+  i{
+    padding-right: @margin/2;
+  }
   a{
     color: lighten(@color-text, 28%);
     text-decoration: underline;
@@ -57,5 +60,5 @@ tag{
   zoom: 1;
   *display: inline;
   vertical-align: top;
-  margin-right: @margin;
+  padding: @padding/4 @padding;  
 }
