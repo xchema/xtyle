@@ -1,3 +1,4 @@
++ problem with font-size % on input fields, do not match with links size
 + word-wrap for <code> and <tag> elements
 + xtyle-android, xtyle-ios, xtyle-firefox ... .css
 + fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
