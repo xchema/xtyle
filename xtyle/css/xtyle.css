@@ -1148,6 +1148,7 @@ input,
 textarea,
 select {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5em;
   background-image: -webkit-gradient(linear, 0 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
@@ -1573,6 +1574,7 @@ textarea {
   margin: 10px 5px;
   color: #434343;
   border: 1px solid #e0e3e4;
+  border-top: 2px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
