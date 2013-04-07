@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
 }
-.widgets-slideshow-slidejs .images dd, #slideshow .navigation dd{
+.widgets-slideshow-slidejs .images dd, .widgets-slideshow-slidejs .navigation dd{
   float: left;
 }
 .widgets-slideshow-slidejs .navigation{
