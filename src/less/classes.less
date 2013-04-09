@@ -108,6 +108,54 @@
   background-color: @color-error;
 }
 
+
+/* COLORS */
+.yellow{
+  &.color, a&{
+    color: @yellow;
+  }
+  a&:hover{
+    color: @yellowdark;
+  }
+  &.btn, &.button{
+    font-weight: bold;
+  }
+  &.background, &.bg, &.btn, &.button{
+    color: @white;
+    background-color: @yellow;
+    &.active{
+      background-color: @yellowdark;
+    }
+  }
+  a&.btn:active, a&.button:active{
+    background-color: @yellow;
+  }
+  a&.btn:hover, a&.button:hover{
+    color: @white;
+    background-color: @yellowdark;
+  }
+}
+
+.white{
+  &.color, a&{
+    color: @silver;
+  }
+  a&:hover{
+    color: @silverdark;
+  }
+  &.btn, &.button{
+    font-weight: bold;
+  }
+  &.background, &.bg, &.btn, &.button{
+    background-color: @white;
+    &.active{
+      background-color: @whitedark;
+    }
+  }
+}
+
+
+
 .background-size-cover{
   -webkit-background-size: cover;
   -moz-background-size: cover;

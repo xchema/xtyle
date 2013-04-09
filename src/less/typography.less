@@ -1,18 +1,18 @@
 a{
-    color: @links; 
+    color: @blue; 
     text-decoration: none;
     .transition(color, .1s, linear);
     &:hover{
-        color: lighten(@links, 15%);
+        color: @bluedark
        // text-decoration: underline;
     }
     &:active{
-        color: saturate(@links, 15%);
+        color: @blue;
     }
     &:visited{ /* not implemented */}
 
     &.selected{
-        color: lighten(@links, 15%);   // same in typography.less     
+        color: @bluedark;   // same in typography.less     
     }
 }
 del { 

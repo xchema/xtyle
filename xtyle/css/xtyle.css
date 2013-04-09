@@ -1125,22 +1125,23 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5em;
-  color: #434343;
+  color: #53626f;
+  background: red;
   background-color: white;
 }
 
 a.btn {
   display: inline-block;
-  color: #434343;
+  color: #53626f;
   vertical-align: middle;
 }
 
 a.btn:hover {
-  color: #434343;
+  color: #53626f;
 }
 
 a.btn:active {
-  color: #434343;
+  color: #53626f;
 }
 
 input,
@@ -1177,41 +1178,26 @@ input:-moz-placeholder {
   color: #cbcbcb;
 }
 
-.color {
-  color: #434343;
-}
-
-.colorComp1 {
-  color: #434343;
-}
-
-.colorComp2 {
-  color: #363636;
-}
-
-.colorComp3 {
-  color: #696969;
-}
-
-.colorComp4 {
-  color: #909090;
-}
-
-.colorSubtle1 {
-  color: #5d5d5d;
-}
-
-.colorSubtle2 {
-  color: #767676;
-}
-
-.colorSubtle3 {
-  color: #2a2a2a;
-}
-
-.colorSubtle4 {
-  color: #101010;
-}
+/*//color schema
+.color { color: @fontColor; }
+//complimentary colors
+@complement1: spin( @fontColor, 180 );
+@complement2: darken( spin(@fontColor, 180), 5% );
+@lighten1: lighten( @fontColor, 15% );
+@lighten2: lighten( @fontColor, 30% );
+.colorComp1 { color: @complement1; }
+.colorComp2 { color: @complement2; }
+.colorComp3 { color: @lighten1; }
+.colorComp4 { color: @lighten2; }
+//subtle colors
+@lighter1: lighten(spin(@fontColor, 5), 10%);
+@lighter2: lighten(spin(@fontColor, 10), 20%);
+@darker1: darken(spin(@fontColor, -5), 10%);
+@darker2: darken(spin(@fontColor, -10), 20%);
+.colorSubtle1 {color: @lighter1;}
+.colorSubtle2 {color: @lighter2;}
+.colorSubtle3 {color: @darker1;}
+.colorSubtle4 {color: @darker2;}*/
 
 .grid {
   overflow: auto;
@@ -1569,11 +1555,10 @@ input[type=email],
 input[type=password],
 input[type=number],
 textarea {
-  padding: 10px;
+  padding: 9.09090909090909px 10px;
   margin: 10px 5px;
-  color: #434343;
+  color: #53626f;
   border: 1px solid #e0e3e4;
-  border-top: 2px solid #e0e3e4;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -1647,7 +1632,7 @@ input[type=email].small,
 input[type=password].small,
 input[type=number].small,
 textarea.small {
-  padding: 8.333333333333334px 8.333333333333334px;
+  padding: 7.692307692307692px 8.333333333333334px;
   font-size: 80%;
 }
 
@@ -1656,7 +1641,7 @@ input[type=email].medium,
 input[type=password].medium,
 input[type=number].medium,
 textarea.medium {
-  padding: 13px 12px;
+  padding: 12px 12px;
   font-size: 120%;
 }
 
@@ -1665,7 +1650,7 @@ input[type=email].large,
 input[type=password].large,
 input[type=number].large,
 textarea.large {
-  padding: 16px 15px;
+  padding: 14px 15px;
   font-size: 150%;
 }
 
@@ -1717,8 +1702,10 @@ a.btn {
   margin: 10px 5px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
   text-align: center;
-  background-color: #e0e3e4;
+  background-color: #53626f;
   -webkit-transition: background 0.1s linear;
      -moz-transition: background 0.1s linear;
       -ms-transition: background 0.1s linear;
@@ -1732,13 +1719,15 @@ a.btn:hover,
 input[type=submit]:focus,
 button:focus,
 a.btn:focus {
-  background: #e8eaeb;
+  color: #ffffff;
+  background-color: #43525d;
 }
 
 input[type=submit]:active,
 button:active,
 a.btn:active {
-  background-color: #e0e3e4;
+  color: #ffffff;
+  background-color: #53626f;
 }
 
 input[type=submit].dark,
@@ -1946,7 +1935,7 @@ fieldset legend {
 }
 
 a {
-  color: #0088cc;
+  color: #41b4e6;
   text-decoration: none;
   -webkit-transition: color 0.1s linear;
      -moz-transition: color 0.1s linear;
@@ -1956,11 +1945,11 @@ a {
 }
 
 a:hover {
-  color: #1ab2ff;
+  color: #37a4d1 // text-decoration: underline;;;
 }
 
 a:active {
-  color: #0088cc;
+  color: #41b4e6;
 }
 
 a:visited {
@@ -1969,7 +1958,7 @@ a:visited {
 }
 
 a.selected {
-  color: #1ab2ff;
+  color: #37a4d1;
 }
 
 del {
@@ -1982,7 +1971,7 @@ caps {
 
 mark {
   padding: 0 .25em;
-  color: #434343;
+  color: #53626f;
   background: rgba(255, 255, 0, 0.4);
 }
 
@@ -2023,7 +2012,7 @@ blockquote cite {
   font-size: 80%;
   font-style: normal;
   font-weight: normal;
-  color: #767676;
+  color: #8595a3;
 }
 
 blockquote.right {
@@ -2164,7 +2153,7 @@ hr.large {
 
 abbr {
   cursor: help;
-  border-bottom: 1px dotted #dcdcdc;
+  border-bottom: 1px dotted #f9fafb;
 }
 
 address {
@@ -2182,8 +2171,8 @@ tag {
   margin: 5px;
   font-size: 14px;
   font-style: normal;
-  color: #8a8a8a;
-  background: #f5f5f5;
+  color: #9ba9b6;
+  background: #ffffff;
   border: 1px solid #e0e3e4;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -2199,13 +2188,13 @@ tag i {
 
 alert a,
 tag a {
-  color: #8a8a8a;
+  color: #9ba9b6;
   text-decoration: underline;
 }
 
 alert a:hover,
 tag a:hover {
-  color: #767676;
+  color: #8395a5;
 }
 
 alert.attention,
@@ -2320,7 +2309,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 0;
+  padding: 10px 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   line-height: 1.1;
@@ -2659,6 +2648,76 @@ body > nav ul li {
 
 .bg-error {
   background-color: #e32a22;
+}
+
+/* COLORS */
+
+.yellow.color,
+a.yellow {
+  color: #ffd35b;
+}
+
+a.yellow:hover {
+  color: #f0c757;
+}
+
+.yellow.btn,
+.yellow.button {
+  font-weight: bold;
+}
+
+.yellow.background,
+.yellow.bg,
+.yellow.btn,
+.yellow.button {
+  color: #ffffff;
+  background-color: #ffd35b;
+}
+
+.yellow.background.active,
+.yellow.bg.active,
+.yellow.btn.active,
+.yellow.button.active {
+  background-color: #f0c757;
+}
+
+a.yellow.btn:active,
+a.yellow.button:active {
+  background-color: #ffd35b;
+}
+
+a.yellow.btn:hover,
+a.yellow.button:hover {
+  color: #ffffff;
+  background-color: #f0c757;
+}
+
+.white.color,
+a.white {
+  color: #cccccc;
+}
+
+a.white:hover {
+  color: #b5b6b6;
+}
+
+.white.btn,
+.white.button {
+  font-weight: bold;
+}
+
+.white.background,
+.white.bg,
+.white.btn,
+.white.button {
+  background-color: #ffffff;
+}
+
+.white.background.active,
+.white.bg.active,
+.white.btn.active,
+.white.button.active {
+  background-color: #f5f5f5;
 }
 
 .background-size-cover {

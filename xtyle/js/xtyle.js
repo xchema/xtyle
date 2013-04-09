@@ -17,7 +17,7 @@
 
   // MODEL
   x.model = {
-    version : 0.1
+    version : "0.0.5"
   , stability : 1 // 1 - Stable, 2 - Unstable, 3 - Experimental
   , debug : true
   , modules : [ 'radio', 'checkbox' ]
