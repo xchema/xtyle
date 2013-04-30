@@ -2670,7 +2670,7 @@ a.yellow:hover {
 .yellow.bg,
 .yellow.btn,
 .yellow.button {
-  color: #ffffff;
+  color: white;
   background-color: #ffd35b;
 }
 
@@ -2681,15 +2681,178 @@ a.yellow:hover {
   background-color: #f0c757;
 }
 
-a.yellow.btn:active,
-a.yellow.button:active {
-  background-color: #ffd35b;
+.red.color,
+a.red {
+  color: #ed6a5b;
 }
 
-a.yellow.btn:hover,
-a.yellow.button:hover {
-  color: #ffffff;
-  background-color: #f0c757;
+a.red:hover {
+  color: #dd6155;
+}
+
+.red.btn,
+.red.button {
+  font-weight: bold;
+}
+
+.red.background,
+.red.bg,
+.red.btn,
+.red.button {
+  color: white;
+  background-color: #ed6a5b;
+}
+
+.red.background.active,
+.red.bg.active,
+.red.btn.active,
+.red.button.active {
+  background-color: #dd6155;
+}
+
+.blue.color,
+a.blue {
+  color: #41b4e6;
+}
+
+a.blue:hover {
+  color: #37a4d1;
+}
+
+.blue.btn,
+.blue.button {
+  font-weight: bold;
+}
+
+.blue.background,
+.blue.bg,
+.blue.btn,
+.blue.button {
+  color: white;
+  background-color: #41b4e6;
+}
+
+.blue.background.active,
+.blue.bg.active,
+.blue.btn.active,
+.blue.button.active {
+  background-color: #37a4d1;
+}
+
+.green.color,
+a.green {
+  color: #2dbaa6;
+}
+
+a.green:hover {
+  color: #27a896;
+}
+
+.green.btn,
+.green.button {
+  font-weight: bold;
+}
+
+.green.background,
+.green.bg,
+.green.btn,
+.green.button {
+  color: white;
+  background-color: #2dbaa6;
+}
+
+.green.background.active,
+.green.bg.active,
+.green.btn.active,
+.green.button.active {
+  background-color: #27a896;
+}
+
+.carbon.color,
+a.carbon {
+  color: #53626f;
+}
+
+a.carbon:hover {
+  color: #43525d;
+}
+
+.carbon.btn,
+.carbon.button {
+  font-weight: bold;
+}
+
+.carbon.background,
+.carbon.bg,
+.carbon.btn,
+.carbon.button {
+  color: white;
+  background-color: #53626f;
+}
+
+.carbon.background.active,
+.carbon.bg.active,
+.carbon.btn.active,
+.carbon.button.active {
+  background-color: #43525d;
+}
+
+.silver.color,
+a.silver {
+  color: #cccccc;
+}
+
+a.silver:hover {
+  color: #b5b6b6;
+}
+
+.silver.btn,
+.silver.button {
+  font-weight: bold;
+}
+
+.silver.background,
+.silver.bg,
+.silver.btn,
+.silver.button {
+  color: white;
+  background-color: #cccccc;
+}
+
+.silver.background.active,
+.silver.bg.active,
+.silver.btn.active,
+.silver.button.active {
+  background-color: #b5b6b6;
+}
+
+.black.color,
+a.black {
+  color: #3d4248;
+}
+
+a.black:hover {
+  color: #000000;
+}
+
+.black.btn,
+.black.button {
+  font-weight: bold;
+}
+
+.black.background,
+.black.bg,
+.black.btn,
+.black.button {
+  color: white;
+  background-color: #3d4248;
+}
+
+.black.background.active,
+.black.bg.active,
+.black.btn.active,
+.black.button.active {
+  background-color: #000000;
 }
 
 .white.color,
