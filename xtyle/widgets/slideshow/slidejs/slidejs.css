@@ -1,33 +1,33 @@
 /* SLIDES JS */
-.widgets-slideshow-slidejs{
+widget .widgets-slideshow-slidejs{
     position: relative;
 }
-.widgets-slideshow-slidejs .viewport{
+widget .widgets-slideshow-slidejs .viewport{
   overflow: hidden;
 }
-.widgets-slideshow-slidejs .images{
+widget .widgets-slideshow-slidejs .images{
   width: 300px;
   height: 200px;
 }
-.widgets-slideshow-slidejs dd{
+widget .widgets-slideshow-slidejs dd{
   margin: 0;
   padding: 0;
 }
-.widgets-slideshow-slidejs .images dd, .widgets-slideshow-slidejs .navigation dd{
+widget .widgets-slideshow-slidejs .images dd, widget .widgets-slideshow-slidejs .navigation dd{
   float: left;
 }
-.widgets-slideshow-slidejs .navigation{
+widget .widgets-slideshow-slidejs .navigation{
   display: none;
 }
-.widgets-slideshow-slidejs .navigation dd{
+widget .widgets-slideshow-slidejs .navigation dd{
   padding: 10px;   
   background: black;
   margin-right: 1px; 
   display: block;
 }
-.widgets-slideshow-slidejs .navigation .active{ 
+widget .widgets-slideshow-slidejs .navigation .active{ 
   background: gray;
 }
-.widgets-slideshow-slidejs .clean{
+widget .widgets-slideshow-slidejs .clean{
   clear: both;
 }

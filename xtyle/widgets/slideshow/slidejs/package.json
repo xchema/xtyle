@@ -1,6 +1,9 @@
 {
   "name" : "slidejs",
-  "version" : "0.0.1",
+  "version" : "1.0",
   "git" : "xtyle/slidejs",
-  "require" : [{"jquery": ""}]
+  "require" : ["jquery"],
+  "properties" : {
+    "#"
+  }
 }
