@@ -3104,6 +3104,20 @@ div.resize {
   html.responsive .grid5 {
     width: 100%;
   }
+  html.responsive .grid1,
+  html.responsive .grid2,
+  html.responsive .grid4,
+  html.responsive .grid3,
+  html.responsive .grid5,
+  html.responsive .grid6,
+  html.responsive .grid7,
+  html.responsive .grid8,
+  html.responsive .grid9,
+  html.responsive .grid10,
+  html.responsive .grid11,
+  html.responsive .grid12 {
+    float: none;
+  }
   html.responsive .responsive-background {
     background-size: auto 100% !important;
   }
