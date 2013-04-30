@@ -2751,7 +2751,8 @@ a.white:hover {
   filter: alpha(opacity=0);
 }
 
-.opacity-50 {
+.opacity-50,
+.disabled {
   -webkit-opacity: 0.5;
      -moz-opacity: 0.5;
        -o-opacity: 0.5;
