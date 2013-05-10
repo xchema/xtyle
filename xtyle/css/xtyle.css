@@ -2364,7 +2364,8 @@ ul.reset ul {
 }
 
 ul.reset,
-ol.reset {
+ol.reset,
+dl.reset {
   margin-left: 0;
   list-style: none;
 }
