@@ -1,3 +1,4 @@
++ make possible to inject more than one theme in different containers
 + icons for ios
 + problem with font-size % on input fields, do not match with links size
 + word-wrap for <code> and <tag> elements
