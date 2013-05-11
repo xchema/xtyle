@@ -27,13 +27,10 @@ html{
 }
 body{
   background: red;
-  line-height: @line-height;
   height: 100%;
   color: @fontColor;
   background-color:  white;
-  font-family: @fontFamily;
-  font-size: @fontSize;
-  font-weight: 400;
+  font-family: @fontSize/@line-height @fontFamily;
 }
 a.btn{
   display: inline-block;
