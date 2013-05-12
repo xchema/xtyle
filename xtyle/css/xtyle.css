@@ -1073,7 +1073,7 @@ span.checkbox {
 span.checkbox .icon-check {
   position: absolute;
   top: -4px;
-  left: 0;
+  left: -3px;
   display: none;
   color: #0088cc;
 }

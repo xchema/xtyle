@@ -8,6 +8,7 @@
  */
 
 (function ($){
+
   "use strict";
 
   // VARIABLES
@@ -54,8 +55,9 @@
     } // _input
   , _radio : {
       init : function(){
-        // wrap input type radio with spans and hide it
+        // wrap input type radio with spans and hide it     
         $('input[type=radio]').each(function(){
+          console.log("here");
           $(this).css({'position':'absolute','opacity': 0}).wrap('<span id="'+$(this).attr('id')+'" name="'+$(this).attr('name')+'" class="radio" />').wrap('<span />');
           if( $(this).is(':checked') ) $(this).parent().parent().addClass('active');
         });
@@ -96,6 +98,9 @@
 
   // INIT
   x.init = function(){
+    // document ready
+    $(function () {
+
       x.controller._debug("XTYLE JS LOADED");
 
       // verify if is in MOBILE view
@@ -125,6 +130,8 @@
           break;  
         } // switch
       });
+      
+    });// document ready
   }(); // auto execute
 
   window.xtyle = x.controller; // Return global object
