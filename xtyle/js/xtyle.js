@@ -2,7 +2,7 @@
  *  xtyle.js MIT Source Code
  *  Copyright (c) 2013 xchema
  *  release: 2013-31-01
- *  dependencies: RequireJS, jQuery
+ *  dependencies: jQuery
  *  website: http://xtyle.xchema.com
  *  repository: http://github.com/xchema/xtyle
  */
@@ -17,14 +17,10 @@
 
   // MODEL
   x.model = {
-    version : "0.0.5"
+    version : "0.0.6"
   , stability : 1 // 1 - Stable, 2 - Unstable, 3 - Experimental
   , debug : true
-  , modules : [ 'radio', 'checkbox' ]
-  , widgets : {
-      "slidejs" : "widgets/slideshow/slidejs/slidejs"
-    , "addthis" : "widgets/social/addthis/addthis"
-    }
+  , modules : [ 'radio', 'checkbox' ] // HTML elements replaced by JavaScript
   };//x.model
 
   // CONTROLLER
@@ -41,30 +37,8 @@
       var d = new Date();
       return '#' + d.getFullYear() + d.getMonth() + d.getDate() + d.getHours() + d.getMinutes() + d.getSeconds() + d.getMilliseconds();
     }
-  , _loadWidget : function ( widget, location ) {
-      x.controller._loadCSS("xtyle/"+location+".css");
-      require( [ 'text!'+location+'.html', location ], function ( html ) {
-        $("widget[name="+widget+"]").each(function(){
-          var id = "#"+$(this).attr("id");
-          $(id).html(html)[ widget ]();
-        });
-      });
-      x.controller._debug( "Widget [ \"" + widget + "\" ] loaded!");
-    }
   , _loadModule : function ( module ) {
       x.controller['_'+module].init();
-    }
-  , _loadCSS : function ( url ) {
-      var link = document.createElement( 'link' );
-      link.type = 'text/css';
-      link.rel = 'stylesheet';
-      link.href = url;
-      document.getElementsByTagName( "head" )[ 0 ].appendChild( link );
-    }
-  , _loadHTML : function( location, id ){
-      require( ['text!'+location+'.html'], function(html){
-        return html;
-      });
     }
   , _input : {
       resizeInput : function () {
@@ -73,11 +47,11 @@
           $( elem ).width( $( elem ).parent().width() - ( $( elem ).outerWidth() - $( elem ).width() ) );
         }
       },
-      text : {},
-      email : {},
-      number : {},
-      password : {}
-    }
+      text : {}, // todo
+      email : {}, // todo
+      number : {}, // todo
+      password : {} // todo
+    } // _input
   , _radio : {
       init : function(){
         // wrap input type radio with spans and hide it
@@ -138,17 +112,6 @@
       $.each( x.model.modules, function(i, module){ //i - index on array
          x.controller._loadModule ( module );
       });
-      // CALL WIDGETS
-      // widgets is an object
-      if($("widget").length){
-        $.each( x.model.widgets, function ( widget, location ) {
-          if( $("widget[name="+widget+"]").length && $("widget").attr("id") ){
-            x.controller._loadWidget ( widget, location );
-          } else if ( $("widget[name="+widget+"]").length && !$("widget").attr("id") ){
-            x.controller._debug( "Missing \"id\" for widget \""+ widget + "\"" );
-          } // if
-        }); // each
-      } // if
 
       // Click on labels with attribute "for"
       $('label').on('click', function () {
