@@ -1985,7 +1985,7 @@ ul.inline li {
   margin-top: 56px !important;
 }
 
-body > nav {
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -1995,72 +1995,72 @@ body > nav {
   background: white;
 }
 
-body > nav a {
+nav a {
   float: left;
   padding: 10px;
 }
 
-body > nav h1,
-body > nav h2,
-body > nav h3,
-body > nav h4,
-body > nav h5,
-body > nav h6 {
+nav h1,
+nav h2,
+nav h3,
+nav h4,
+nav h5,
+nav h6 {
   margin: 0;
 }
 
-body > nav.dark {
+nav.dark {
   color: white;
   background: #000000;
 }
 
-body > nav.dark h1,
-body > nav.dark h2,
-body > nav.dark h3,
-body > nav.dark h4,
-body > nav.dark h5,
-body > nav.dark h6 {
+nav.dark h1,
+nav.dark h2,
+nav.dark h3,
+nav.dark h4,
+nav.dark h5,
+nav.dark h6 {
   color: inherit;
 }
 
-body > nav.dark a {
+nav.dark a {
   color: #b3b3b3;
 }
 
-body > nav.dark a:hover {
+nav.dark a:hover {
   color: white;
 }
 
-body > nav.dark a.active {
+nav.dark a.active {
   background: #232323;
 }
 
-body > nav.bottom {
+nav.bottom {
   top: auto;
   bottom: 0;
 }
 
-body > nav .logo {
+nav .logo {
   float: left;
   padding: 6.25px 15px;
   font-size: 150%;
 }
 
-body > nav.large a,
-body > nav.large li {
+nav.large a,
+nav.large li {
   padding: 20px 28px;
 }
 
-body > nav.large .logo {
+nav.large .logo {
   padding: 20px;
   font-size: 225%;
 }
 
-body > nav ul {
+nav ul {
   list-style: none;
 }
 
-body > nav ul li {
+nav ul li {
   float: left;
 }
 
