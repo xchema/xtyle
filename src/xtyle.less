@@ -116,10 +116,10 @@
 @import "less/classes.less";
 
 // TABLETS
-@media screen and (max-width: @mediaTablet){
+@media screen and (max-width: @mediaTablet), #mkr_page[view=table]{
   @import "less/tablet.less";
 }
 // MOBILE PHONES
-@media screen and (max-width: @mediaMobile){
+@media screen and (max-width: @mediaMobile), #mkr_page[view=phone]{
   @import "less/mobile.less";
 }
