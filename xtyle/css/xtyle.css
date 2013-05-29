@@ -2793,87 +2793,203 @@ div.resize {
   }
 }
 
+#mkr_page[view=tablet] html.responsive .grid6,
+#mkr_page[view=tablet] html.responsive .grid7,
+#mkr_page[view=tablet] html.responsive .grid8,
+#mkr_page[view=tablet] html.responsive .grid9,
+#mkr_page[view=tablet] html.responsive .grid10,
+#mkr_page[view=tablet] html.responsive .grid11,
+#mkr_page[view=tablet] html.responsive .grid12 {
+  width: 100%;
+}
+
+#mkr_page[view=tablet] html.responsive .layout-fixed-center,
+#mkr_page[view=tablet] html.responsive .layout-fixed {
+  width: auto;
+}
+
+#mkr_page[view=tablet] html.responsive .desktop {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  html.responsive {
+  {
     -webkit-text-size-adjust: none;
     /* Prevent font scaling in landscape */
   
   }
-  html.responsive .layout-fixed,
-  html.responsive .layout-fixed-center {
+  .layout-fixed,
+  .layout-fixed-center {
     width: auto;
   }
-  html.responsive .position-fixed {
+  .position-fixed {
     position: absolute;
   }
-  html.responsive aside {
+  aside {
     display: none;
   }
-  html.responsive .margin-nav-large,
-  html.responsive .margin-nav {
+  .margin-nav-large,
+  .margin-nav {
     margin-top: 0 !important;
   }
-  html.responsive nav {
+  nav {
     position: static;
     display: block;
   }
-  html.responsive nav a {
+  nav a {
     display: none;
     float: none;
     border-top: 1px solid #e0e3e4;
   }
-  html.responsive nav .float-right {
+  nav .float-right {
     float: none;
   }
-  html.responsive nav .logo {
+  nav .logo {
     display: block;
     float: none;
   }
-  html.responsive .mobile {
+  .mobile {
     display: inline-block;
     *display: inline;
     zoom: 1;
   }
-  html.responsive .desktop,
-  html.responsive .tablet {
+  .desktop,
+  .tablet {
     display: none !important;
   }
-  html.responsive table,
-  html.responsive select,
-  html.responsive input[type=text],
-  html.responsive input[type=email],
-  html.responsive input[type=password],
-  html.responsive input[type=number],
-  html.responsive input[type=submit],
-  html.responsive textarea,
-  html.responsive .btn,
-  html.responsive button {
+  table,
+  select,
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=number],
+  input[type=submit],
+  textarea,
+  .btn,
+  button {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
   }
-  html.responsive .grid1,
-  html.responsive .grid2,
-  html.responsive .grid3,
-  html.responsive .grid4,
-  html.responsive .grid5 {
+  .grid1,
+  .grid2,
+  .grid3,
+  .grid4,
+  .grid5 {
     width: 100%;
   }
-  html.responsive .grid1,
-  html.responsive .grid2,
-  html.responsive .grid4,
-  html.responsive .grid3,
-  html.responsive .grid5,
-  html.responsive .grid6,
-  html.responsive .grid7,
-  html.responsive .grid8,
-  html.responsive .grid9,
-  html.responsive .grid10,
-  html.responsive .grid11,
-  html.responsive .grid12 {
+  .grid1,
+  .grid2,
+  .grid4,
+  .grid3,
+  .grid5,
+  .grid6,
+  .grid7,
+  .grid8,
+  .grid9,
+  .grid10,
+  .grid11,
+  .grid12 {
     float: none;
   }
-  html.responsive .responsive-background {
+  .responsive-background {
     background-size: auto 100% !important;
   }
+}
+
+#mkr_page[view=phone] {
+  -webkit-text-size-adjust: none;
+  /* Prevent font scaling in landscape */
+
+}
+
+#mkr_page[view=phone] .layout-fixed,
+#mkr_page[view=phone] .layout-fixed-center {
+  width: auto;
+}
+
+#mkr_page[view=phone] .position-fixed {
+  position: absolute;
+}
+
+#mkr_page[view=phone] aside {
+  display: none;
+}
+
+#mkr_page[view=phone] .margin-nav-large,
+#mkr_page[view=phone] .margin-nav {
+  margin-top: 0 !important;
+}
+
+#mkr_page[view=phone] nav {
+  position: static;
+  display: block;
+}
+
+#mkr_page[view=phone] nav a {
+  display: none;
+  float: none;
+  border-top: 1px solid #e0e3e4;
+}
+
+#mkr_page[view=phone] nav .float-right {
+  float: none;
+}
+
+#mkr_page[view=phone] nav .logo {
+  display: block;
+  float: none;
+}
+
+#mkr_page[view=phone] .mobile {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+#mkr_page[view=phone] .desktop,
+#mkr_page[view=phone] .tablet {
+  display: none !important;
+}
+
+#mkr_page[view=phone] table,
+#mkr_page[view=phone] select,
+#mkr_page[view=phone] input[type=text],
+#mkr_page[view=phone] input[type=email],
+#mkr_page[view=phone] input[type=password],
+#mkr_page[view=phone] input[type=number],
+#mkr_page[view=phone] input[type=submit],
+#mkr_page[view=phone] textarea,
+#mkr_page[view=phone] .btn,
+#mkr_page[view=phone] button {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#mkr_page[view=phone] .grid1,
+#mkr_page[view=phone] .grid2,
+#mkr_page[view=phone] .grid3,
+#mkr_page[view=phone] .grid4,
+#mkr_page[view=phone] .grid5 {
+  width: 100%;
+}
+
+#mkr_page[view=phone] .grid1,
+#mkr_page[view=phone] .grid2,
+#mkr_page[view=phone] .grid4,
+#mkr_page[view=phone] .grid3,
+#mkr_page[view=phone] .grid5,
+#mkr_page[view=phone] .grid6,
+#mkr_page[view=phone] .grid7,
+#mkr_page[view=phone] .grid8,
+#mkr_page[view=phone] .grid9,
+#mkr_page[view=phone] .grid10,
+#mkr_page[view=phone] .grid11,
+#mkr_page[view=phone] .grid12 {
+  float: none;
+}
+
+#mkr_page[view=phone] .responsive-background {
+  background-size: auto 100% !important;
 }

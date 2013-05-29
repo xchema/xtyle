@@ -119,7 +119,14 @@
 @media screen and (max-width: @mediaTablet){
   @import "less/tablet.less";
 }
+#mkr_page[view=tablet]{
+  @import "less/tablet.less";
+}
+
 // MOBILE PHONES
 @media screen and (max-width: @mediaMobile){
+  @import "less/mobile.less";
+}
+#mkr_page[view=phone]{
   @import "less/mobile.less";
 }
