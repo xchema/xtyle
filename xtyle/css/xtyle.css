@@ -2774,127 +2774,23 @@ div.resize {
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px) {
-  html.responsive .grid6,
-  html.responsive .grid7,
-  html.responsive .grid8,
-  html.responsive .grid9,
-  html.responsive .grid10,
-  html.responsive .grid11,
-  html.responsive .grid12 {
-    width: 100%;
-  }
-  html.responsive .layout-fixed-center,
-  html.responsive .layout-fixed {
-    width: auto;
-  }
-  html.responsive .desktop {
-    display: none;
-  }
-}
-
-#mkr_page[view=tablet] html.responsive .grid6,
-#mkr_page[view=tablet] html.responsive .grid7,
-#mkr_page[view=tablet] html.responsive .grid8,
-#mkr_page[view=tablet] html.responsive .grid9,
-#mkr_page[view=tablet] html.responsive .grid10,
-#mkr_page[view=tablet] html.responsive .grid11,
-#mkr_page[view=tablet] html.responsive .grid12 {
+#mkr_page[view=tablet] .grid6,
+#mkr_page[view=tablet] .grid7,
+#mkr_page[view=tablet] .grid8,
+#mkr_page[view=tablet] .grid9,
+#mkr_page[view=tablet] .grid10,
+#mkr_page[view=tablet] .grid11,
+#mkr_page[view=tablet] .grid12 {
   width: 100%;
 }
 
-#mkr_page[view=tablet] html.responsive .layout-fixed-center,
-#mkr_page[view=tablet] html.responsive .layout-fixed {
+#mkr_page[view=tablet] .layout-fixed-center,
+#mkr_page[view=tablet] .layout-fixed {
   width: auto;
 }
 
-#mkr_page[view=tablet] html.responsive .desktop {
+#mkr_page[view=tablet] .desktop {
   display: none;
-}
-
-@media screen and (max-width: 600px) {
-  {
-    -webkit-text-size-adjust: none;
-    /* Prevent font scaling in landscape */
-  
-  }
-  .layout-fixed,
-  .layout-fixed-center {
-    width: auto;
-  }
-  .position-fixed {
-    position: absolute;
-  }
-  aside {
-    display: none;
-  }
-  .margin-nav-large,
-  .margin-nav {
-    margin-top: 0 !important;
-  }
-  nav {
-    position: static;
-    display: block;
-  }
-  nav a {
-    display: none;
-    float: none;
-    border-top: 1px solid #e0e3e4;
-  }
-  nav .float-right {
-    float: none;
-  }
-  nav .logo {
-    display: block;
-    float: none;
-  }
-  .mobile {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-  }
-  .desktop,
-  .tablet {
-    display: none !important;
-  }
-  table,
-  select,
-  input[type=text],
-  input[type=email],
-  input[type=password],
-  input[type=number],
-  input[type=submit],
-  textarea,
-  .btn,
-  button {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .grid1,
-  .grid2,
-  .grid3,
-  .grid4,
-  .grid5 {
-    width: 100%;
-  }
-  .grid1,
-  .grid2,
-  .grid4,
-  .grid3,
-  .grid5,
-  .grid6,
-  .grid7,
-  .grid8,
-  .grid9,
-  .grid10,
-  .grid11,
-  .grid12 {
-    float: none;
-  }
-  .responsive-background {
-    background-size: auto 100% !important;
-  }
 }
 
 #mkr_page[view=phone] {
@@ -2992,4 +2888,108 @@ div.resize {
 
 #mkr_page[view=phone] .responsive-background {
   background-size: auto 100% !important;
+}
+
+@media screen and (max-width: 900px) {
+  html.responsive .grid6,
+  html.responsive .grid7,
+  html.responsive .grid8,
+  html.responsive .grid9,
+  html.responsive .grid10,
+  html.responsive .grid11,
+  html.responsive .grid12 {
+    width: 100%;
+  }
+  html.responsive .layout-fixed-center,
+  html.responsive .layout-fixed {
+    width: auto;
+  }
+  html.responsive .desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html.responsive {
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
+  
+  }
+  html.responsive .layout-fixed,
+  html.responsive .layout-fixed-center {
+    width: auto;
+  }
+  html.responsive .position-fixed {
+    position: absolute;
+  }
+  html.responsive aside {
+    display: none;
+  }
+  html.responsive .margin-nav-large,
+  html.responsive .margin-nav {
+    margin-top: 0 !important;
+  }
+  html.responsive nav {
+    position: static;
+    display: block;
+  }
+  html.responsive nav a {
+    display: none;
+    float: none;
+    border-top: 1px solid #e0e3e4;
+  }
+  html.responsive nav .float-right {
+    float: none;
+  }
+  html.responsive nav .logo {
+    display: block;
+    float: none;
+  }
+  html.responsive .mobile {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
+  html.responsive .desktop,
+  html.responsive .tablet {
+    display: none !important;
+  }
+  html.responsive table,
+  html.responsive select,
+  html.responsive input[type=text],
+  html.responsive input[type=email],
+  html.responsive input[type=password],
+  html.responsive input[type=number],
+  html.responsive input[type=submit],
+  html.responsive textarea,
+  html.responsive .btn,
+  html.responsive button {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  html.responsive .grid1,
+  html.responsive .grid2,
+  html.responsive .grid3,
+  html.responsive .grid4,
+  html.responsive .grid5 {
+    width: 100%;
+  }
+  html.responsive .grid1,
+  html.responsive .grid2,
+  html.responsive .grid4,
+  html.responsive .grid3,
+  html.responsive .grid5,
+  html.responsive .grid6,
+  html.responsive .grid7,
+  html.responsive .grid8,
+  html.responsive .grid9,
+  html.responsive .grid10,
+  html.responsive .grid11,
+  html.responsive .grid12 {
+    float: none;
+  }
+  html.responsive .responsive-background {
+    background-size: auto 100% !important;
+  }
 }
