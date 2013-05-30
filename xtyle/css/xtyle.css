@@ -14,8 +14,8 @@
   font-family: 'fontello';
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/fontello/fontello.eot");
-  src: url("fonts/fontello/fontello.eot?#iefix") format('embedded-opentype'), url("fonts/fontello/fontello.woff") format('font-woff'), url("fonts/fontello/fontello.ttf") format('truetype'), url("fonts/fontello/fontello.svg#fontello") format('svg');
+  src: url("fonts/fontello/fontello.eot?64263336");
+  src: url("fonts/fontello/fontello.eot?64263336#iefix") format('embedded-opentype'), url("fonts/fontello/fontello.woff?64263336") format('font-woff'), url("fonts/fontello/fontello.ttf?64263336") format('truetype'), url("fonts/fontello/fontello.svg?64263336#fontello") format('svg');
 }
 
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
