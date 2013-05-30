@@ -1,16 +1,25 @@
 Font license info
 
 
-## entypo
+## Entypo
 
    Copyright (C) 2012 by Daniel Bruce
 
    Author:    Daniel Bruce
-   License:   SIL (http://scripts.sil.org/OFL)
+   License:   CC BY-SA (http://creativecommons.org/licenses/by-sa/2.0/)
    Homepage:  http://www.entypo.com
 
 
-## fontawesome
+## MFG Labs
+
+   Copyright (C) 2012 by Daniel Bruce
+
+   Author:    MFG Labs
+   License:   SIL (http://scripts.sil.org/OFL)
+   Homepage:  http://www.mfglabs.com/
+
+
+## Font Awesome
 
    Copyright (C) 2012 by Dave Gandy
 
@@ -19,30 +28,21 @@ Font license info
    Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
-## modernpics
+## Elusive
 
-   Copyright (c) 2012 by John Caserta. All rights reserved.
+   Copyright (C) 2013 by Aristeides Stathopoulos
 
-   Author:    John Caserta
+   Author:    Aristeides Stathopoulos
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://thedesignoffice.org/project/modern-pictograms/
+   Homepage:  http://aristeides.com/
 
 
-## iconic
+## Typicons
 
-   Copyright (C) 2012 by P.J. Onori
+   (c) Stephen Hutchings 2012
 
-   Author:    P.J. Onori
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://somerandomdude.com/work/iconic/
-
-
-## websymbols
-
-   Copyright (c) 2011 by Just Be Nice studio. All rights reserved.
-
-   Author:    Just Be Nice studio
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://www.justbenicestudio.com/studio/websymbols/
+   Author:    Stephen Hutchings
+   License:   CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
+   Homepage:  http://typicons.com/
 
 
