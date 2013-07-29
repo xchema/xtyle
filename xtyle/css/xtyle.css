@@ -2768,6 +2768,31 @@ div.resize {
   border-left: 1px solid #e0e3e4;
 }
 
+.border2x {
+  border: 1px solid #e0e3e4;
+  border-width: 2px;
+}
+
+.border-top2x {
+  border-top: 1px solid #e0e3e4;
+  border-top-width: 2px;
+}
+
+.border-right2x {
+  border-right: 1px solid #e0e3e4;
+  border-right-width: 2px;
+}
+
+.border-bottom2x {
+  border-bottom: 1px solid #e0e3e4;
+  border-bottom-width: 2px;
+}
+
+.border-left2x {
+  border-left: 1px solid #e0e3e4;
+  border-left-width: 2px;
+}
+
 .border-none {
   border: 0 !important;
 }
