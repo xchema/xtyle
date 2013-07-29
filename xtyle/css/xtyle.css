@@ -1533,7 +1533,6 @@ fieldset legend {
 
 a {
   color: #41b4e6;
-  text-decoration: none;
   -webkit-transition: color 0.1s linear;
      -moz-transition: color 0.1s linear;
       -ms-transition: color 0.1s linear;
@@ -2143,9 +2142,9 @@ nav ul li {
 }
 
 .box-inner-shadow {
-  -webkit-box-shadow: 1px 1px 3px #000000 inset;
-     -moz-box-shadow: 1px 1px 3px #000000 inset;
-          box-shadow: 1px 1px 3px #000000 inset;
+  -webkit-box-shadow: 1px 1px 1px #000000 inset;
+     -moz-box-shadow: 1px 1px 1px #000000 inset;
+          box-shadow: 1px 1px 1px #000000 inset;
 }
 
 .border-radius-none {
