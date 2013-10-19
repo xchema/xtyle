@@ -27,11 +27,11 @@
       </span>
 
       <div class="float-right">
-        <a href="/">home</a>
+        <a href="index.html">home</a>
         <a href="typography.html">typography</a>
         <a href="forms.html">forms</a>
         <a href="layouts.html">layouts</a>
-        <a href="#" class="btn info small info border-radius" style="margin-top: 13px;">download</a>
+        <a href="https://github.com/xchema/xtyle/archive/0.0.3.zip" class="btn info small info border-radius" style="margin-top: 13px;">download</a>
       </div><!-- .float-right -->
     </div><!-- .layout-fixed-center -->
   </nav>
@@ -51,7 +51,7 @@
   <section class="border-radius2x">
     <header><h4>Font</h4></header>
     <p>
-      Xtyle uses the excellent Roboto font from Google as its default body font. You can change this option at any time on top of the xtyle.css file.
+      Xtyle uses the excellent <a href="http://developer.android.com/design/style/typography.html">Roboto</a> font from Google as its default body font. You can change this option at any time on top of the <strong>xtyle.css</strong> file.
     </p>
 
     <div class="grid">
@@ -394,19 +394,19 @@
         <div class="border border-radius">
           <!-- ATTENTION -->
           <p>
-              <alert class="attention"><i class="icon-attention"></i><strong>Warning!</strong>Use this tag for items that require attention.</alert>
+              <alert class="attention"><i class="icon-help-circled"></i><strong>Warning!</strong>Use this tag for items that require attention.</alert>
           </p>
           <!-- ERROR -->
           <p>
-              <alert class="error"><i class="icon-block"></i><strong>Alert!</strong>Use this tag when something goes wrong.</alert>
+              <alert class="error"><i class="icon-cancel-circled"></i><strong>Alert!</strong>Use this tag when something goes wrong.</alert>
           </p>
           <!-- INFO -->
           <p>
-              <alert class="info"><i class="icon-info"></i><strong>Information!</strong>Use this tag to provide important information.</alert>
+              <alert class="info"><i class="icon-info-circled"></i><strong>Information!</strong>Use this tag to provide important information.</alert>
           </p>
           <!-- SUCCESS -->
           <p>
-              <alert class="success"><i class="icon-check"></i><strong>Success!</strong>Use this tag when some task or action end successfuly.</alert>   
+              <alert class="success"><i class="icon-ok-circle"></i><strong>Success!</strong>Use this tag when some task or action end successfuly.</alert>   
           </p>
         </div>
       </div>
@@ -618,5 +618,18 @@
   </div>
   </div>
 </footer>
+
+<!-- GOOGLE ANALYTICS -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38177537-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>
