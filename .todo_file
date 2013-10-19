@@ -1,3 +1,6 @@
++ check: https://github.com/FinelySliced/leanModal.js
++ check: https://github.com/codrops/ModalWindowEffects
++ check: https://github.com/voronianski/jquery.avgrund.js
 + icons for ios
 + problem with font-size % on input fields, do not match with links size
 + word-wrap for <code> and <tag> elements
