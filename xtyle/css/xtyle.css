@@ -1147,6 +1147,7 @@ a.upload input[type=file] {
   filter: alpha(opacity=0);
 }
 
+input,
 input[type=text],
 input[type=email],
 input[type=password],
@@ -1168,6 +1169,7 @@ textarea {
           transition: border-color 0.2s ease-in-out;
 }
 
+input:hover,
 input[type=text]:hover,
 input[type=email]:hover,
 input[type=password]:hover,
@@ -1176,6 +1178,7 @@ textarea:hover {
   border-color: #cacfd1;
 }
 
+input:focus,
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus,
@@ -1184,6 +1187,7 @@ textarea:focus {
   border-color: #1ab2ff;
 }
 
+input:focus.dark,
 input[type=text]:focus.dark,
 input[type=email]:focus.dark,
 input[type=password]:focus.dark,
@@ -1192,6 +1196,7 @@ textarea:focus.dark {
   border-color: #333333;
 }
 
+input:focus.attention,
 input[type=text]:focus.attention,
 input[type=email]:focus.attention,
 input[type=password]:focus.attention,
@@ -1200,6 +1205,7 @@ textarea:focus.attention {
   border-color: #ffc826;
 }
 
+input:focus.info,
 input[type=text]:focus.info,
 input[type=email]:focus.info,
 input[type=password]:focus.info,
@@ -1208,6 +1214,7 @@ textarea:focus.info {
   border-color: #07a3f3;
 }
 
+input:focus.success,
 input[type=text]:focus.success,
 input[type=email]:focus.success,
 input[type=password]:focus.success,
@@ -1216,6 +1223,7 @@ textarea:focus.success {
   border-color: #00c233;
 }
 
+input:focus.alert,
 input[type=text]:focus.alert,
 input[type=email]:focus.alert,
 input[type=password]:focus.alert,
@@ -1224,6 +1232,7 @@ textarea:focus.alert {
   border-color: #ff1006;
 }
 
+input.small,
 input[type=text].small,
 input[type=email].small,
 input[type=password].small,
@@ -1233,6 +1242,7 @@ textarea.small {
   font-size: 80%;
 }
 
+input.medium,
 input[type=text].medium,
 input[type=email].medium,
 input[type=password].medium,
@@ -1242,6 +1252,7 @@ textarea.medium {
   font-size: 120%;
 }
 
+input.large,
 input[type=text].large,
 input[type=email].large,
 input[type=password].large,
@@ -1495,6 +1506,44 @@ button.large,
 a.btn.large {
   padding: 20px 60px;
   font-size: 150%;
+}
+
+input[type=submit] {
+  padding: 10px 24px;
+}
+
+input[type=submit].small {
+  padding: 8.849557522123895px 20px 8.928571428571427px 20px;
+}
+
+input[type=submit].medium {
+  padding: 13px 30px;
+}
+
+input[type=submit].large {
+  padding: 15px 60px;
+}
+
+button {
+  padding: 12.5px 24px;
+}
+
+button.small {
+  padding: 11px 20px 10px 20px;
+  margin: 9.09090909090909px 6.666666666666667px;
+}
+
+button.medium {
+  padding: 15px 30px 16px 30px;
+}
+
+button.large {
+  padding: 18px 60px 19px 60px;
+}
+
+input[type=submit],
+button {
+  font-weight: 400;
 }
 
 input[disabled='disabled'],
