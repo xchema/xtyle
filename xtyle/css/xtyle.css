@@ -1306,7 +1306,7 @@ a.btn {
 input[type=submit],
 button,
 a.btn {
-  padding: 10px 25px;
+  padding: 10px 28px;
   margin: 10px 5px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
@@ -1902,7 +1902,7 @@ tag {
 code {
   padding: 2px 4px;
   color: #d50e14;
-  background: #f7f7f7;
+  background: #ffffff;
   border: 1px solid #e0e3e4;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -1916,7 +1916,7 @@ pre {
   margin: 10px 0 20px;
   font-size: 90%;
   color: #3F639E;
-  background: #f7f7f7;
+  background: #ffffff;
   border: 1px solid #e0e3e4;
 }
 
@@ -2312,6 +2312,12 @@ a.yellow:hover {
   font-weight: bold;
 }
 
+a.yellow.btn:hover,
+a.yellow.button:hover {
+  color: #ffffff;
+  background-color: #f0c757;
+}
+
 .yellow.background,
 .yellow.bg,
 .yellow.btn,
@@ -2339,6 +2345,12 @@ a.red:hover {
 .red.btn,
 .red.button {
   font-weight: bold;
+}
+
+a.red.btn:hover,
+a.red.button:hover {
+  color: #ffffff;
+  background-color: #dd6155;
 }
 
 .red.background,
@@ -2370,6 +2382,12 @@ a.blue:hover {
   font-weight: bold;
 }
 
+a.blue.btn:hover,
+a.blue.button:hover {
+  color: #ffffff;
+  background-color: #37a4d1;
+}
+
 .blue.background,
 .blue.bg,
 .blue.btn,
@@ -2397,6 +2415,12 @@ a.green:hover {
 .green.btn,
 .green.button {
   font-weight: bold;
+}
+
+a.green.btn:hover,
+a.green.button:hover {
+  color: #ffffff;
+  background-color: #27a896;
 }
 
 .green.background,
@@ -2428,6 +2452,12 @@ a.carbon:hover {
   font-weight: bold;
 }
 
+a.carbon.btn:hover,
+a.carbon.button:hover {
+  color: #ffffff;
+  background-color: #43525d;
+}
+
 .carbon.background,
 .carbon.bg,
 .carbon.btn,
@@ -2455,6 +2485,12 @@ a.silver:hover {
 .silver.btn,
 .silver.button {
   font-weight: bold;
+}
+
+a.silver.btn:hover,
+a.silver.button:hover {
+  color: #ffffff;
+  background-color: #b5b6b6;
 }
 
 .silver.background,
@@ -2486,6 +2522,12 @@ a.black:hover {
   font-weight: bold;
 }
 
+a.black.btn:hover,
+a.black.button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .black.background,
 .black.bg,
 .black.btn,
@@ -2513,6 +2555,13 @@ a.white:hover {
 .white.btn,
 .white.button {
   font-weight: bold;
+  color: #53626f;
+}
+
+a.white.btn:hover,
+a.white.button:hover {
+  color: #53626f;
+  background-color: #f5f5f5;
 }
 
 .white.background,
