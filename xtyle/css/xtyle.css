@@ -1301,6 +1301,7 @@ input[type=file],
 button,
 a.btn {
   cursor: pointer;
+  border: 0;
 }
 
 input[type=submit],
@@ -1336,155 +1337,6 @@ button:active,
 a.btn:active {
   color: #ffffff;
   background-color: #53626f;
-}
-
-input[type=submit].dark,
-button.dark,
-a.btn.dark,
-input[type=submit].attention,
-button.attention,
-a.btn.attention,
-input[type=submit].info,
-button.info,
-a.btn.info,
-input[type=submit].alert,
-button.alert,
-a.btn.alert,
-input[type=submit].success,
-button.success,
-a.btn.success {
-  color: white;
-}
-
-input[type=submit].dark i,
-button.dark i,
-a.btn.dark i,
-input[type=submit].attention i,
-button.attention i,
-a.btn.attention i,
-input[type=submit].info i,
-button.info i,
-a.btn.info i,
-input[type=submit].alert i,
-button.alert i,
-a.btn.alert i,
-input[type=submit].success i,
-button.success i,
-a.btn.success i {
-  color: white;
-}
-
-input[type=submit].dark,
-button.dark,
-a.btn.dark {
-  background: #000000;
-}
-
-input[type=submit].dark:hover,
-button.dark:hover,
-a.btn.dark:hover,
-input[type=submit].dark:focus,
-button.dark:focus,
-a.btn.dark:focus {
-  background: #333333;
-}
-
-input[type=submit].dark:active,
-button.dark:active,
-a.btn.dark:active {
-  background: #000000;
-  border-color: #000000;
-}
-
-input[type=submit].attention,
-button.attention,
-a.btn.attention {
-  background: #fab613;
-}
-
-input[type=submit].attention:hover,
-button.attention:hover,
-a.btn.attention:hover,
-input[type=submit].attention:focus,
-button.attention:focus,
-a.btn.attention:focus {
-  background: #ffcc0e;
-}
-
-input[type=submit].attention:active,
-button.attention:active,
-a.btn.attention:active {
-  background: #fab613;
-}
-
-input[type=submit].alert,
-button.alert,
-a.btn.alert {
-  background: #e32a22;
-}
-
-input[type=submit].alert:hover,
-button.alert:hover,
-a.btn.alert:hover,
-input[type=submit].alert:focus,
-button.alert:focus,
-a.btn.alert:focus {
-  background: #ff1006;
-}
-
-input[type=submit].alert:active,
-button.alert:active,
-a.btn.alert:active {
-  background: #e32a22;
-}
-
-input[type=submit].info,
-button.info,
-a.btn.info {
-  background: #1d8bc4;
-}
-
-input[type=submit].info:hover,
-button.info:hover,
-a.btn.info:hover,
-input[type=submit].info:focus,
-button.info:focus,
-a.btn.info:focus {
-  background: #07a3f3;
-}
-
-input[type=submit].info:active,
-button.info:active,
-a.btn.info:active {
-  background: #1d8bc4;
-}
-
-input[type=submit].info-white,
-button.info-white,
-a.btn.info-white {
-  color: #1d8bc4;
-  background: #fff;
-}
-
-input[type=submit].success,
-button.success,
-a.btn.success {
-  background: #09aa33;
-}
-
-input[type=submit].success:hover,
-button.success:hover,
-a.btn.success:hover,
-input[type=submit].success:focus,
-button.success:focus,
-a.btn.success:focus {
-  background: #00c233;
-}
-
-input[type=submit].success:active,
-button.success:active,
-a.btn.success:active {
-  background: #09aa33;
 }
 
 input[type=submit].small,
@@ -2313,15 +2165,26 @@ a.yellow:hover {
 }
 
 a.yellow.btn:hover,
-a.yellow.button:hover {
+a.yellow.button:hover,
+input[type=submit].yellow:hover,
+button.yellow:hover {
   color: #ffffff;
   background-color: #f0c757;
+}
+
+a.yellow.btn:active,
+a.yellow.button:active,
+input[type=submit].yellow:active,
+button.yellow:active {
+  background-color: #ffd35b;
 }
 
 .yellow.background,
 .yellow.bg,
 .yellow.btn,
-.yellow.button {
+.yellow.button,
+input[type=submit].yellow,
+button.yellow {
   color: white;
   background-color: #ffd35b;
 }
@@ -2329,7 +2192,9 @@ a.yellow.button:hover {
 .yellow.background.active,
 .yellow.bg.active,
 .yellow.btn.active,
-.yellow.button.active {
+.yellow.button.active,
+input[type=submit].yellow.active,
+button.yellow.active {
   background-color: #f0c757;
 }
 
@@ -2348,15 +2213,26 @@ a.red:hover {
 }
 
 a.red.btn:hover,
-a.red.button:hover {
+a.red.button:hover,
+input[type=submit].red:hover,
+button.red:hover {
   color: #ffffff;
   background-color: #dd6155;
+}
+
+a.red.btn:active,
+a.red.button:active,
+input[type=submit].red:active,
+button.red:active {
+  background-color: #ed6a5b;
 }
 
 .red.background,
 .red.bg,
 .red.btn,
-.red.button {
+.red.button,
+input[type=submit].red,
+button.red {
   color: white;
   background-color: #ed6a5b;
 }
@@ -2364,7 +2240,9 @@ a.red.button:hover {
 .red.background.active,
 .red.bg.active,
 .red.btn.active,
-.red.button.active {
+.red.button.active,
+input[type=submit].red.active,
+button.red.active {
   background-color: #dd6155;
 }
 
@@ -2383,15 +2261,26 @@ a.blue:hover {
 }
 
 a.blue.btn:hover,
-a.blue.button:hover {
+a.blue.button:hover,
+input[type=submit].blue:hover,
+button.blue:hover {
   color: #ffffff;
   background-color: #37a4d1;
+}
+
+a.blue.btn:active,
+a.blue.button:active,
+input[type=submit].blue:active,
+button.blue:active {
+  background-color: #41b4e6;
 }
 
 .blue.background,
 .blue.bg,
 .blue.btn,
-.blue.button {
+.blue.button,
+input[type=submit].blue,
+button.blue {
   color: white;
   background-color: #41b4e6;
 }
@@ -2399,7 +2288,9 @@ a.blue.button:hover {
 .blue.background.active,
 .blue.bg.active,
 .blue.btn.active,
-.blue.button.active {
+.blue.button.active,
+input[type=submit].blue.active,
+button.blue.active {
   background-color: #37a4d1;
 }
 
@@ -2418,15 +2309,26 @@ a.green:hover {
 }
 
 a.green.btn:hover,
-a.green.button:hover {
+a.green.button:hover,
+input[type=submit].green:hover,
+button.green:hover {
   color: #ffffff;
   background-color: #27a896;
+}
+
+a.green.btn:active,
+a.green.button:active,
+input[type=submit].green:active,
+button.green:active {
+  background-color: #2dbaa6;
 }
 
 .green.background,
 .green.bg,
 .green.btn,
-.green.button {
+.green.button,
+input[type=submit].green,
+button.green {
   color: white;
   background-color: #2dbaa6;
 }
@@ -2434,7 +2336,9 @@ a.green.button:hover {
 .green.background.active,
 .green.bg.active,
 .green.btn.active,
-.green.button.active {
+.green.button.active,
+input[type=submit].green.active,
+button.green.active {
   background-color: #27a896;
 }
 
@@ -2453,15 +2357,26 @@ a.carbon:hover {
 }
 
 a.carbon.btn:hover,
-a.carbon.button:hover {
+a.carbon.button:hover,
+input[type=submit].carbon:hover,
+button.carbon:hover {
   color: #ffffff;
   background-color: #43525d;
+}
+
+a.carbon.btn:active,
+a.carbon.button:active,
+input[type=submit].carbon:active,
+button.carbon:active {
+  background-color: #53626f;
 }
 
 .carbon.background,
 .carbon.bg,
 .carbon.btn,
-.carbon.button {
+.carbon.button,
+input[type=submit].carbon,
+button.carbon {
   color: white;
   background-color: #53626f;
 }
@@ -2469,7 +2384,9 @@ a.carbon.button:hover {
 .carbon.background.active,
 .carbon.bg.active,
 .carbon.btn.active,
-.carbon.button.active {
+.carbon.button.active,
+input[type=submit].carbon.active,
+button.carbon.active {
   background-color: #43525d;
 }
 
@@ -2488,15 +2405,26 @@ a.silver:hover {
 }
 
 a.silver.btn:hover,
-a.silver.button:hover {
+a.silver.button:hover,
+input[type=submit].silver:hover,
+button.silver:hover {
   color: #ffffff;
   background-color: #b5b6b6;
+}
+
+a.silver.btn:active,
+a.silver.button:active,
+input[type=submit].silver:active,
+button.silver:active {
+  background-color: #cccccc;
 }
 
 .silver.background,
 .silver.bg,
 .silver.btn,
-.silver.button {
+.silver.button,
+input[type=submit].silver,
+button.silver {
   color: white;
   background-color: #cccccc;
 }
@@ -2504,7 +2432,9 @@ a.silver.button:hover {
 .silver.background.active,
 .silver.bg.active,
 .silver.btn.active,
-.silver.button.active {
+.silver.button.active,
+input[type=submit].silver.active,
+button.silver.active {
   background-color: #b5b6b6;
 }
 
@@ -2523,15 +2453,26 @@ a.black:hover {
 }
 
 a.black.btn:hover,
-a.black.button:hover {
+a.black.button:hover,
+input[type=submit].black:hover,
+button.black:hover {
   color: #ffffff;
   background-color: #000000;
+}
+
+a.black.btn:active,
+a.black.button:active,
+input[type=submit].black:active,
+button.black:active {
+  background-color: #3d4248;
 }
 
 .black.background,
 .black.bg,
 .black.btn,
-.black.button {
+.black.button,
+input[type=submit].black,
+button.black {
   color: white;
   background-color: #3d4248;
 }
@@ -2539,7 +2480,9 @@ a.black.button:hover {
 .black.background.active,
 .black.bg.active,
 .black.btn.active,
-.black.button.active {
+.black.button.active,
+input[type=submit].black.active,
+button.black.active {
   background-color: #000000;
 }
 
@@ -2559,22 +2502,35 @@ a.white:hover {
 }
 
 a.white.btn:hover,
-a.white.button:hover {
+a.white.button:hover,
+input[type=submit].white:hover,
+button.white:hover {
   color: #53626f;
   background-color: #f5f5f5;
+}
+
+a.white.btn:active,
+a.white.button:active,
+input[type=submit].white:active,
+button.white:active {
+  background-color: #ffffff;
 }
 
 .white.background,
 .white.bg,
 .white.btn,
-.white.button {
+.white.button,
+input[type=submit].white,
+button.white {
   background-color: #ffffff;
 }
 
 .white.background.active,
 .white.bg.active,
 .white.btn.active,
-.white.button.active {
+.white.button.active,
+input[type=submit].white.active,
+button.white.active {
   background-color: #f5f5f5;
 }
 

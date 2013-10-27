@@ -148,6 +148,7 @@ input[type=submit],
 input[type=file],
 button, a.btn
 {
+  border: 0;
   cursor: pointer;
 }
 
@@ -163,73 +164,12 @@ button, a.btn{
   text-align: center;
   .transition(background, .1s, linear);
   &:hover, &:focus{
-    color: @white;
     background-color: @carbondark;
+    color: @white;
   }
   &:active{
     color: @white;
     background-color: @carbon;
-  }
-
-  &.dark, &.attention, &.info, &.alert, &.success{
-    i{
-      color: white;
-    }
-    color: white;
-  }
-
-  &.dark{
-      background: @dark;
-    
-    &:hover, &:focus{
-      background: lighten(@dark, 20%);
-    }
-    &:active{
-      background: @dark;
-      border-color: @dark;
-    }
-  }
-  &.attention{
-    background: @color-attention;
-    &:hover, &:focus{
-      background: saturate(spin(@color-attention, 5), 20%);
-    }
-    &:active{
-      background: @color-attention;
-    }
-  }
-  &.alert{
-      background: @alert;
-    &:hover, &:focus{
-      //background: lighten(saturate(@alert, 15%), 5%);
-      background: saturate(@alert, 300%);
-    }
-    &:active{
-      background: @alert;
-    }
-  }
-  &.info{
-      background: @color-info;
-    &:hover, &:focus{
-      background: lighten(saturate(@color-info, 20%), 5%);
-    }
-    &:active{
-      background: @color-info;
-    }     
-  }
-  &.info-white{
-    background: #fff;
-    color: @color-info;
-  }
-  &.success{
-    background: @success;
-    
-    &:hover, &:focus{
-      background: lighten(saturate(@success, 50%), 3%);
-    }
-    &:active{
-      background: @success;
-    }
   }
   &.small{
     font-size: @fontSmall;
