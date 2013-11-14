@@ -761,9 +761,9 @@ input[type=email],
 input[type=number],
 input[type=button],
 input[type=submit] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
 }
 
 :-moz-placeholder {
