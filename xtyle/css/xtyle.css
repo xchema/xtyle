@@ -763,7 +763,8 @@ input[type=button],
 input[type=submit] {
   -webkit-appearance: button;
      -moz-appearance: button;
-          appearance: button;
+  /*appearance: button;*/
+
 }
 
 :-moz-placeholder {
@@ -1308,6 +1309,10 @@ button,
 a.btn {
   cursor: pointer;
   border: 0;
+}
+
+a.btn {
+  text-decoration: none;
 }
 
 input[type=submit],
