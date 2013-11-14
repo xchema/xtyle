@@ -1315,6 +1315,10 @@ a.btn {
   text-decoration: none;
 }
 
+a.btn:hover {
+  text-decoration: none;
+}
+
 input[type=submit],
 button,
 a.btn {
