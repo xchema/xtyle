@@ -312,6 +312,12 @@
 
 /* '' */
 
+.icon-mail:before {
+  content: '\e865';
+}
+
+/* '' */
+
 .icon-camera:before {
   content: '\e803';
 }
