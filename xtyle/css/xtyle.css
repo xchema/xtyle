@@ -1938,6 +1938,10 @@ nav a {
   text-decoration: none;
 }
 
+nav.white a {
+  color: #ffffff;
+}
+
 nav h1,
 nav h2,
 nav h3,
@@ -2113,11 +2117,13 @@ nav.bottom {
 /* COLORS */
 
 .yellow.color,
-a.yellow {
+a.yellow,
+nav.yellow a {
   color: #ffd35b;
 }
 
-a.yellow:hover {
+a.yellow:hover,
+nav.yellow a:hover {
   color: #f0c757;
 }
 
@@ -2161,11 +2167,13 @@ button.yellow.active {
 }
 
 .red.color,
-a.red {
+a.red,
+nav.red a {
   color: #ed6a5b;
 }
 
-a.red:hover {
+a.red:hover,
+nav.red a:hover {
   color: #dd6155;
 }
 
@@ -2209,11 +2217,13 @@ button.red.active {
 }
 
 .blue.color,
-a.blue {
+a.blue,
+nav.blue a {
   color: #41b4e6;
 }
 
-a.blue:hover {
+a.blue:hover,
+nav.blue a:hover {
   color: #37a4d1;
 }
 
@@ -2257,11 +2267,13 @@ button.blue.active {
 }
 
 .green.color,
-a.green {
+a.green,
+nav.green a {
   color: #2dbaa6;
 }
 
-a.green:hover {
+a.green:hover,
+nav.green a:hover {
   color: #27a896;
 }
 
@@ -2305,11 +2317,13 @@ button.green.active {
 }
 
 .carbon.color,
-a.carbon {
+a.carbon,
+nav.carbon a {
   color: #53626f;
 }
 
-a.carbon:hover {
+a.carbon:hover,
+nav.carbon a:hover {
   color: #43525d;
 }
 
@@ -2353,11 +2367,13 @@ button.carbon.active {
 }
 
 .silver.color,
-a.silver {
+a.silver,
+nav.silver a {
   color: #cccccc;
 }
 
-a.silver:hover {
+a.silver:hover,
+nav.silver a:hover {
   color: #b5b6b6;
 }
 
@@ -2401,11 +2417,13 @@ button.silver.active {
 }
 
 .black.color,
-a.black {
+a.black,
+nav.black a {
   color: #000000;
 }
 
-a.black:hover {
+a.black:hover,
+nav.black a:hover {
   color: #000000;
 }
 
@@ -2449,11 +2467,13 @@ button.black.active {
 }
 
 .white.color,
-a.white {
+a.white,
+nav.white a {
   color: #ffffff;
 }
 
-a.white:hover {
+a.white:hover,
+nav.white a:hover {
   color: #ffffff;
 }
 
