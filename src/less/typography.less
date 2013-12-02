@@ -63,20 +63,26 @@ blockquote{
         border-left: none;
         border-right: 3px solid @blockquote;
     }
-    &.dark{
-        border-color: @dark;
+    &.silver{
+        border-color: @silver;
     }
-    &.attention{
-        border-color: lighten(@attention, 10%);
+    &.carbon{
+        border-color: @carbon;
     }
-    &.alert{
-        border-color: lighten(@alert, 10%);
+    &.black{
+        border-color: @black;
     }
-    &.info{
-        border-color: @info;
+    &.yellow{
+        border-color: @yellow;
     }
-    &.success{
-        border-color: @success;
+    &.red{
+        border-color: @red;
+    }
+    &.blue{
+        border-color: @blue;
+    }
+    &.green{
+        border-color: @green;
     }
 }
 section{
@@ -119,17 +125,23 @@ table{
 }
 tr{
     .transition(background, .1s, linear);
-    &.attention{
-        background: lighten(@attention, 39%);
+    &.yellow{
+        background: lighten(@yellow, 39%);
     }
     &.alert{
-        background: lighten(@alert, 42%);
+        background: lighten(@red, 42%);
     }
-    &.info{
-        background: lighten(@info, 50%);
+    &.blue{
+        background: lighten(@blue, 50%);
     }
-    &.success{
-        background: desaturate(lighten(@success, 58%), 30%);
+    &.green{
+        background: desaturate(lighten(@green, 58%), 30%);
+    }
+    &.silver{
+        background: lighten(@silver, 40%);
+    }
+    &.carbon{
+        background: lighten(@carbon, 40%);
     }
 }
 th{

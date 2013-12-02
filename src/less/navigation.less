@@ -1,70 +1,34 @@
-.margin-nav{
+.nav-margin{
     margin-top: @padding*3.6 !important;
 }
-.margin-nav2x{
+.nav-margin2x{
     margin-top: @padding*5.6 !important;
 }
 
 nav{
 
-    background: white;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    z-index: @zIndex;
     display: block;
-    top: 0;
 
     a{
-        float: left;
         padding: @padding;
+        text-decoration: none;
     }
     
     h1,h2,h3,h4,h5,h6{
         margin: 0;
     }
 
-    &.dark{
-        background: darken(@background, 100%);
-        
-        color: white;
-        h1,h2,h3,h4,h5,h6{
-            color: inherit;
-        }
-        a{
-            color: darken(white, 30%);
-            &:hover{
-                color: white;
-            }
-            &.active{
-                background: darken(@background, 83%);  
-            }
-        }
+    &.bar{
+        background: @white;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        z-index: @zIndex;
+        top: 0;
     }
 
     &.bottom{
         top: auto;
         bottom: 0;
-    }
-
-    .logo{
-        font-size: @font-large;
-        padding: @padding/1.6 @padding*1.5;
-        float: left;
-    }
-    &.large{
-        a, li{
-            padding: @padding*2 @padding*2.8;
-        }
-        .logo{
-            font-size: @fontLarge*1.5;
-            padding: @padding*2;
-        }
-    }
-    ul{
-        list-style: none;
-    }
-    ul li{
-        float: left;
     }
 }

@@ -1540,24 +1540,32 @@ blockquote.right {
   border-left: none;
 }
 
-blockquote.dark {
+blockquote.silver {
+  border-color: #cccccc;
+}
+
+blockquote.carbon {
+  border-color: #53626f;
+}
+
+blockquote.black {
   border-color: #000000;
 }
 
-blockquote.attention {
-  border-color: #f5d063;
+blockquote.yellow {
+  border-color: #ffd35b;
 }
 
-blockquote.alert {
-  border-color: #e9564f;
+blockquote.red {
+  border-color: #ed6a5b;
 }
 
-blockquote.info {
-  border-color: #1d8bc4;
+blockquote.blue {
+  border-color: #41b4e6;
 }
 
-blockquote.success {
-  border-color: #09aa33;
+blockquote.green {
+  border-color: #2dbaa6;
 }
 
 section {
@@ -1612,20 +1620,28 @@ tr {
           transition: background 0.1s linear;
 }
 
-tr.attention {
-  background: #fefaee;
+tr.yellow {
+  background: #ffffff;
 }
 
 tr.alert {
-  background: #fbe1e0;
+  background: #ffffff;
 }
 
-tr.info {
-  background: #e5f4fb;
+tr.blue {
+  background: #ffffff;
 }
 
-tr.success {
-  background: #e3f8e8;
+tr.green {
+  background: #ffffff;
+}
+
+tr.silver {
+  background: #ffffff;
+}
+
+tr.carbon {
+  background: #bfc8cf;
 }
 
 th {
@@ -1905,27 +1921,21 @@ ul.inline li {
   padding: 5px;
 }
 
-.margin-nav {
+.nav-margin {
   margin-top: 36px !important;
 }
 
-.margin-nav2x {
+.nav-margin2x {
   margin-top: 56px !important;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
   display: block;
-  width: 100%;
-  background: white;
 }
 
 nav a {
-  float: left;
   padding: 10px;
+  text-decoration: none;
 }
 
 nav h1,
@@ -1937,59 +1947,18 @@ nav h6 {
   margin: 0;
 }
 
-nav.dark {
-  color: white;
-  background: #000000;
-}
-
-nav.dark h1,
-nav.dark h2,
-nav.dark h3,
-nav.dark h4,
-nav.dark h5,
-nav.dark h6 {
-  color: inherit;
-}
-
-nav.dark a {
-  color: #b3b3b3;
-}
-
-nav.dark a:hover {
-  color: white;
-}
-
-nav.dark a.active {
-  background: #232323;
+nav.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background: #ffffff;
 }
 
 nav.bottom {
   top: auto;
   bottom: 0;
-}
-
-nav .logo {
-  float: left;
-  padding: 6.25px 15px;
-  font-size: 150%;
-}
-
-nav.large a,
-nav.large li {
-  padding: 20px 28px;
-}
-
-nav.large .logo {
-  padding: 20px;
-  font-size: 225%;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  float: left;
 }
 
 .display-nav {
@@ -2139,34 +2108,6 @@ nav ul li {
       -ms-border-radius: 100%;
        -o-border-radius: 100%;
           border-radius: 100%;
-}
-
-.background-color {
-  background-color: #f7f7f7;
-}
-
-.bg-light {
-  background-color: #f7f7f7;
-}
-
-.bg-info {
-  background-color: #1d8bc4;
-}
-
-.bg-attention {
-  background-color: #fab613;
-}
-
-.bg-dark {
-  background-color: #000000;
-}
-
-.bg-success {
-  background-color: #09aa33;
-}
-
-.bg-error {
-  background-color: #e32a22;
 }
 
 /* COLORS */
@@ -2461,7 +2402,7 @@ button.silver.active {
 
 .black.color,
 a.black {
-  color: #3d4248;
+  color: #000000;
 }
 
 a.black:hover {
@@ -2485,7 +2426,7 @@ a.black.btn:active,
 a.black.button:active,
 input[type=submit].black:active,
 button.black:active {
-  background-color: #3d4248;
+  background-color: #000000;
 }
 
 .black.background,
@@ -2495,7 +2436,7 @@ button.black:active {
 input[type=submit].black,
 button.black {
   color: white;
-  background-color: #3d4248;
+  background-color: #000000;
 }
 
 .black.background.active,
@@ -2527,7 +2468,7 @@ a.white.button:hover,
 input[type=submit].white:hover,
 button.white:hover {
   color: #53626f;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 a.white.btn:active,
@@ -2552,7 +2493,7 @@ button.white {
 .white.button.active,
 input[type=submit].white.active,
 button.white.active {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .background-size-cover {
@@ -2918,8 +2859,8 @@ div.resize {
   display: none;
 }
 
-#mkr_page[view=phone] .margin-nav-large,
-#mkr_page[view=phone] .margin-nav {
+#mkr_page[view=phone] .nav-margin,
+#mkr_page[view=phone] .nav-margin2x {
   margin-top: 0 !important;
 }
 
@@ -3130,8 +3071,8 @@ div.resize {
   html.responsive aside {
     display: none;
   }
-  html.responsive .margin-nav-large,
-  html.responsive .margin-nav {
+  html.responsive .nav-margin,
+  html.responsive .nav-margin2x {
     margin-top: 0 !important;
   }
   html.responsive nav {
