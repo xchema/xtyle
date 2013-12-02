@@ -2450,11 +2450,11 @@ button.black.active {
 
 .white.color,
 a.white {
-  color: #cccccc;
+  color: #ffffff;
 }
 
 a.white:hover {
-  color: #b5b6b6;
+  color: #ffffff;
 }
 
 .white.btn,
