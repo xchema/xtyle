@@ -2484,6 +2484,7 @@ button.white:active {
 .white.button,
 input[type=submit].white,
 button.white {
+  color: #53626f;
   background-color: #ffffff;
 }
 
