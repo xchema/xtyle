@@ -81,6 +81,18 @@
 .border-radius-circle{
   .borderRadius (100%);
 }
+.border-radius-top-left{
+  .borderRadiusCustom(@padding, 0, 0, 0);
+}
+.border-radius-bottom-left{
+  .borderRadiusCustom(0, 0, @padding, 0);
+}
+.border-radius-top-right{
+ .borderRadiusCustom(0, @padding, 0, 0); 
+}
+.border-radius-bottom-right{
+ .borderRadiusCustom(0, 0, 0, @padding);
+}
 
 
 /* COLORS */

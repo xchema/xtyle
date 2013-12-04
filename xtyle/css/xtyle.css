@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:regular,thin,italic,bold);
+@import url(http://fonts.googleapis.com/css?family=Roboto:thin,regular,medium,bold,italic);
 
 /*!	xchema | xtyle 2013
  *	license: MIT
@@ -1933,12 +1933,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a,
-nav span {
-  padding: 0 10px;
-  line-height: 40px;
-}
-
 nav h1,
 nav h2,
 nav h3,
@@ -1946,6 +1940,12 @@ nav h4,
 nav h5,
 nav h6 {
   margin: 0;
+}
+
+nav a,
+nav span {
+  padding: 0 10px;
+  line-height: 50px;
 }
 
 nav.bar {
@@ -2112,6 +2112,38 @@ nav .menu {
       -ms-border-radius: 100%;
        -o-border-radius: 100%;
           border-radius: 100%;
+}
+
+.border-radius-top-left {
+  -webkit-border-radius: 10px 0 0 0;
+     -moz-border-radius: 10px 0 0 0;
+      -ms-border-radius: 10px 0 0 0;
+       -o-border-radius: 10px 0 0 0;
+          border-radius: 10px 0 0 0;
+}
+
+.border-radius-bottom-left {
+  -webkit-border-radius: 0 0 0 10px;
+     -moz-border-radius: 0 0 0 10px;
+      -ms-border-radius: 0 0 0 10px;
+       -o-border-radius: 0 0 0 10px;
+          border-radius: 0 0 0 10px;
+}
+
+.border-radius-top-right {
+  -webkit-border-radius: 0 10px 0 0;
+     -moz-border-radius: 0 10px 0 0;
+      -ms-border-radius: 0 10px 0 0;
+       -o-border-radius: 0 10px 0 0;
+          border-radius: 0 10px 0 0;
+}
+
+.border-radius-bottom-right {
+  -webkit-border-radius: 0 0 10px 0;
+     -moz-border-radius: 0 0 10px 0;
+      -ms-border-radius: 0 0 10px 0;
+       -o-border-radius: 0 0 10px 0;
+          border-radius: 0 0 10px 0;
 }
 
 /* COLORS */
