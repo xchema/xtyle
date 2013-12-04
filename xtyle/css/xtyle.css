@@ -1962,7 +1962,7 @@ nav.bottom {
   bottom: 0;
 }
 
-nav .logo {
+nav .menu {
   display: none;
   cursor: pointer;
   -webkit-user-select: none;
@@ -2901,7 +2901,7 @@ div.resize {
   float: none;
 }
 
-#mkr_page[view=phone] nav .logo {
+#mkr_page[view=phone] nav .menu {
   display: block;
   float: none;
 }
@@ -3113,7 +3113,7 @@ div.resize {
   html.responsive nav .float-right {
     float: none;
   }
-  html.responsive nav .logo {
+  html.responsive nav .menu {
     display: block;
     float: none;
   }

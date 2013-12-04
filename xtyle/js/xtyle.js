@@ -104,7 +104,7 @@
       x.controller._debug("XTYLE JS LOADED");
 
       // verify if is in MOBILE view
-      $("nav .logo").on("click", function(){
+      $("nav .menu").on("click", function(){
         if($( "nav a").css("display") === "none" ){
           $("nav a").addClass("nav-display");
         }else{
