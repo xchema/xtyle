@@ -1954,7 +1954,6 @@ nav.bar {
   left: 0;
   z-index: 100;
   width: 100%;
-  background: #ffffff;
 }
 
 nav.bottom {
@@ -2153,7 +2152,8 @@ button.yellow:active {
 .yellow.btn,
 .yellow.button,
 input[type=submit].yellow,
-button.yellow {
+button.yellow,
+nav.yellow.bg {
   color: white;
   background-color: #ffd35b;
 }
@@ -2163,7 +2163,8 @@ button.yellow {
 .yellow.btn.active,
 .yellow.button.active,
 input[type=submit].yellow.active,
-button.yellow.active {
+button.yellow.active,
+nav.yellow.bg.active {
   background-color: #f0c757;
 }
 
@@ -2203,7 +2204,8 @@ button.red:active {
 .red.btn,
 .red.button,
 input[type=submit].red,
-button.red {
+button.red,
+nav.red.bg {
   color: white;
   background-color: #ed6a5b;
 }
@@ -2213,7 +2215,8 @@ button.red {
 .red.btn.active,
 .red.button.active,
 input[type=submit].red.active,
-button.red.active {
+button.red.active,
+nav.red.bg.active {
   background-color: #dd6155;
 }
 
@@ -2253,7 +2256,8 @@ button.blue:active {
 .blue.btn,
 .blue.button,
 input[type=submit].blue,
-button.blue {
+button.blue,
+nav.blue.bg {
   color: white;
   background-color: #41b4e6;
 }
@@ -2263,7 +2267,8 @@ button.blue {
 .blue.btn.active,
 .blue.button.active,
 input[type=submit].blue.active,
-button.blue.active {
+button.blue.active,
+nav.blue.bg.active {
   background-color: #37a4d1;
 }
 
@@ -2303,7 +2308,8 @@ button.green:active {
 .green.btn,
 .green.button,
 input[type=submit].green,
-button.green {
+button.green,
+nav.green.bg {
   color: white;
   background-color: #2dbaa6;
 }
@@ -2313,7 +2319,8 @@ button.green {
 .green.btn.active,
 .green.button.active,
 input[type=submit].green.active,
-button.green.active {
+button.green.active,
+nav.green.bg.active {
   background-color: #27a896;
 }
 
@@ -2353,7 +2360,8 @@ button.carbon:active {
 .carbon.btn,
 .carbon.button,
 input[type=submit].carbon,
-button.carbon {
+button.carbon,
+nav.carbon.bg {
   color: white;
   background-color: #53626f;
 }
@@ -2363,7 +2371,8 @@ button.carbon {
 .carbon.btn.active,
 .carbon.button.active,
 input[type=submit].carbon.active,
-button.carbon.active {
+button.carbon.active,
+nav.carbon.bg.active {
   background-color: #43525d;
 }
 
@@ -2403,7 +2412,8 @@ button.silver:active {
 .silver.btn,
 .silver.button,
 input[type=submit].silver,
-button.silver {
+button.silver,
+nav.silver.bg {
   color: white;
   background-color: #cccccc;
 }
@@ -2413,7 +2423,8 @@ button.silver {
 .silver.btn.active,
 .silver.button.active,
 input[type=submit].silver.active,
-button.silver.active {
+button.silver.active,
+nav.silver.bg.active {
   background-color: #b5b6b6;
 }
 

@@ -1,3 +1,4 @@
++ remove jquery requirement, native JS code
 + check: https://github.com/FinelySliced/leanModal.js
 + check: https://github.com/codrops/ModalWindowEffects
 + check: https://github.com/voronianski/jquery.avgrund.js
@@ -5,7 +6,6 @@
 + problem with font-size % on input fields, do not match with links size
 + word-wrap for <code> and <tag> elements
 + xtyle-android, xtyle-ios, xtyle-firefox ... .css
-+ fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
 + clode buttons and links inside alert/tag going to a lighter color
 + JS - select box
 + JS - scroller
@@ -127,3 +127,4 @@
 - make input focus have the different colors
 - jekyll site
 - open/close navigation in mobile not working
+- fix navigation dropdown, if enter in mobile do not trigger drop event, viceversa
