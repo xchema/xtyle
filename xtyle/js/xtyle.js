@@ -106,9 +106,9 @@
       // verify if is in MOBILE view
       $("nav .logo").on("click", function(){
         if($( "nav a").css("display") === "none" ){
-          $("nav a").addClass("display-nav");
+          $("nav a").addClass("nav-display");
         }else{
-          $("nav a").removeClass("display-nav");
+          $("nav a").removeClass("nav-display");
         } // if
       }); // on
 

@@ -1929,17 +1929,14 @@ ul.inline li {
   margin-top: 56px !important;
 }
 
-nav {
-  display: block;
-}
-
 nav a {
-  padding: 10px;
   text-decoration: none;
 }
 
-nav.white a {
-  color: #ffffff;
+nav a,
+nav span {
+  padding: 0 10px;
+  line-height: 40px;
 }
 
 nav h1,
@@ -1965,9 +1962,9 @@ nav.bottom {
   bottom: 0;
 }
 
-.display-nav {
-  display: block !important;
-  width: 100% !important;
+nav .logo {
+  display: none;
+  cursor: pointer;
 }
 
 .user-select-none {
@@ -2916,6 +2913,10 @@ div.resize {
   display: none !important;
 }
 
+#mkr_page[view=phone] .nav-display {
+  display: block;
+}
+
 #mkr_page[view=phone] table,
 #mkr_page[view=phone] select,
 #mkr_page[view=phone] input[type=text],
@@ -3120,6 +3121,9 @@ div.resize {
   html.responsive .desktop,
   html.responsive .tablet {
     display: none !important;
+  }
+  html.responsive .nav-display {
+    display: block;
   }
   html.responsive table,
   html.responsive select,
