@@ -2190,13 +2190,13 @@ nav.yellow.bg {
   background-color: #ffd35b;
 }
 
-.yellow.background.active,
-.yellow.bg.active,
-.yellow.btn.active,
-.yellow.button.active,
-input[type=submit].yellow.active,
-button.yellow.active,
-nav.yellow.bg.active {
+.yellow.background.dark,
+.yellow.bg.dark,
+.yellow.btn.dark,
+.yellow.button.dark,
+input[type=submit].yellow.dark,
+button.yellow.dark,
+nav.yellow.bg.dark {
   background-color: #f0c757;
 }
 
@@ -2242,13 +2242,13 @@ nav.red.bg {
   background-color: #ed6a5b;
 }
 
-.red.background.active,
-.red.bg.active,
-.red.btn.active,
-.red.button.active,
-input[type=submit].red.active,
-button.red.active,
-nav.red.bg.active {
+.red.background.dark,
+.red.bg.dark,
+.red.btn.dark,
+.red.button.dark,
+input[type=submit].red.dark,
+button.red.dark,
+nav.red.bg.dark {
   background-color: #dd6155;
 }
 
@@ -2294,13 +2294,13 @@ nav.blue.bg {
   background-color: #41b4e6;
 }
 
-.blue.background.active,
-.blue.bg.active,
-.blue.btn.active,
-.blue.button.active,
-input[type=submit].blue.active,
-button.blue.active,
-nav.blue.bg.active {
+.blue.background.dark,
+.blue.bg.dark,
+.blue.btn.dark,
+.blue.button.dark,
+input[type=submit].blue.dark,
+button.blue.dark,
+nav.blue.bg.dark {
   background-color: #37a4d1;
 }
 
@@ -2346,14 +2346,24 @@ nav.green.bg {
   background-color: #2dbaa6;
 }
 
-.green.background.active,
-.green.bg.active,
-.green.btn.active,
-.green.button.active,
-input[type=submit].green.active,
-button.green.active,
-nav.green.bg.active {
-  background-color: #27a896;
+.green.background.dark,
+.green.bg.dark,
+.green.btn.dark,
+.green.button.dark,
+input[type=submit].green.dark,
+button.green.dark,
+nav.green.bg.dark {
+  background-color: #28a594;
+}
+
+.green.background.light,
+.green.bg.light,
+.green.btn.light,
+.green.button.light,
+input[type=submit].green.light,
+button.green.light,
+nav.green.bg.light {
+  background-color: #33ceb8;
 }
 
 .carbon.color,
@@ -2398,14 +2408,24 @@ nav.carbon.bg {
   background-color: #53626f;
 }
 
-.carbon.background.active,
-.carbon.bg.active,
-.carbon.btn.active,
-.carbon.button.active,
-input[type=submit].carbon.active,
-button.carbon.active,
-nav.carbon.bg.active {
-  background-color: #43525d;
+.carbon.background.dark,
+.carbon.bg.dark,
+.carbon.btn.dark,
+.carbon.button.dark,
+input[type=submit].carbon.dark,
+button.carbon.dark,
+nav.carbon.bg.dark {
+  background-color: #485560;
+}
+
+.carbon.background.light,
+.carbon.bg.light,
+.carbon.btn.light,
+.carbon.button.light,
+input[type=submit].carbon.light,
+button.carbon.light,
+nav.carbon.bg.light {
+  background-color: #5e6f7e;
 }
 
 .silver.color,
@@ -2450,14 +2470,24 @@ nav.silver.bg {
   background-color: #cccccc;
 }
 
-.silver.background.active,
-.silver.bg.active,
-.silver.btn.active,
-.silver.button.active,
-input[type=submit].silver.active,
-button.silver.active,
-nav.silver.bg.active {
-  background-color: #b5b6b6;
+.silver.background.dark,
+.silver.bg.dark,
+.silver.btn.dark,
+.silver.button.dark,
+input[type=submit].silver.dark,
+button.silver.dark,
+nav.silver.bg.dark {
+  background-color: #bfbfbf;
+}
+
+.silver.background.light,
+.silver.bg.light,
+.silver.btn.light,
+.silver.button.light,
+input[type=submit].silver.light,
+button.silver.light,
+nav.silver.bg.light {
+  background-color: #d9d9d9;
 }
 
 .black.color,
@@ -2501,12 +2531,12 @@ button.black {
   background-color: #000000;
 }
 
-.black.background.active,
-.black.bg.active,
-.black.btn.active,
-.black.button.active,
-input[type=submit].black.active,
-button.black.active {
+.black.background.dark,
+.black.bg.dark,
+.black.btn.dark,
+.black.button.dark,
+input[type=submit].black.dark,
+button.black.dark {
   background-color: #000000;
 }
 
@@ -2552,12 +2582,12 @@ button.white {
   background-color: #ffffff;
 }
 
-.white.background.active,
-.white.bg.active,
-.white.btn.active,
-.white.button.active,
-input[type=submit].white.active,
-button.white.active {
+.white.background.dark,
+.white.bg.dark,
+.white.btn.dark,
+.white.button.dark,
+input[type=submit].white.dark,
+button.white.dark {
   background-color: #ffffff;
 }
 

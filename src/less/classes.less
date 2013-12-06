@@ -119,8 +119,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @yellow;
-    &.active{
-      background-color: @yellowdark;
+    &.dark{
+      background-color: darken(@yellow, 5%);
+    }
+    &.light{
+      background-color: lighten(@yellow, 5%); 
     }
   }
 }
@@ -148,8 +151,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @red;
-    &.active{
-      background-color: @reddark;
+    &.dark{
+      background-color: darken(@red, 5%);
+    }
+    &.light{
+      background-color: lighten(@red, 5%); 
     }
   }
 }
@@ -177,8 +183,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @blue;
-    &.active{
-      background-color: @bluedark;
+    &.dark{
+      background-color: darken(@blue, 5%);
+    }
+    &.light{
+      background-color: lighten(@blue, 5%); 
     }
   }
 }
@@ -206,8 +215,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @green;
-    &.active{
-      background-color: @greendark;
+    &.dark{
+      background-color: darken(@green, 5%);
+    }
+    &.light{
+      background-color: lighten(@green, 5%); 
     }
   }
 }
@@ -235,8 +247,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @carbon;
-    &.active{
-      background-color: @carbondark;
+    &.dark{
+      background-color: darken(@carbon, 5%);
+    }
+    &.light{
+      background-color: lighten(@carbon, 5%); 
     }
   }
 }
@@ -264,8 +279,11 @@
   input[type=submit]&, button&, nav&.bg{
     color: white;
     background-color: @silver;
-    &.active{
-      background-color: @silverdark;
+    &.dark{
+      background-color: darken(@silver, 5%);
+    }
+    &.light{
+      background-color: lighten(@silver, 5%); 
     }
   }
 }
@@ -293,7 +311,7 @@
   input[type=submit]&, button&{
     color: white;
     background-color: @black;
-    &.active{
+    &.dark{
       background-color: @black;
     }
   }
@@ -323,7 +341,7 @@
   input[type=submit]&, button&{
     color: @carbon;
     background-color: @white;
-    &.active{
+    &.dark{
       background-color: @white;
     }
   }
