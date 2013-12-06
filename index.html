@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="xtyle/css/xtyle.css">
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
-<body style="background-color: #FAFAFA">
+<body style="background-color: #FAFAFA; background-image: url('./shattered.png');">
 
   <div style="background-image:url('/assets/img/bg2.png'); background-size: 960px; background-position: top center; height: 310px;" class="bg green">
     <div class="layout-fixed-center center padding2x" style="padding-top: 80px;">
@@ -132,27 +132,22 @@
             Xtyle uses the excellent <a href="http://developer.android.com/design/style/typography.html" target="_blank">Google's Roboto</a> font as its default font. You can change this option at any time on top of the <code>xtyle.css</code> file.
           </p>
           <div class="center">
-            <div class="grid5">
+            <div class="grid4">
               <div class="bg white border-radius">
                 <h1 class="lighter">Thin</h1>
               </div>
             </div>
-            <div class="grid5">
+            <div class="grid4">
               <div class="bg white border-radius">
                 <h1 class="normal">Regular</h1>
               </div>
             </div>
-            <div class="grid5">
-              <div class="bg white border-radius">
-                <h1 class="medium">Medium</h1>
-              </div>
-            </div>
-            <div class="grid5">
+            <div class="grid4">
               <div class="bg white border-radius">
                 <h1>Bold</h1>
               </div>
             </div>
-            <div class="grid5">
+            <div class="grid4">
               <div class="bg white border-radius">
                 <h1 class="normal"><i>Italic</i></h1>
               </div>
@@ -165,13 +160,22 @@
           <!-- TEXT COLOR -->
           <h4 class="silver color">Text-color</h4>
           <p>
-            To change text color you just need to include one of the <a href="#typography-color">color classes</a> in addition to the <b>reserved class name</b> <code>.color</code>. For example, if I want my paragraph with color <b class="color green">green</b> I just need to write <code>&lt;p class='color green'&gt;My Paragraph&lt;/p&gt;</code>.
+            To change text color you just need to include one of the <a href="#typography-color">color classes</a> in addition to the <b>reserved class name</b> <code>.color</code>. For example, if you want your paragraph with color <code>green</code>, you would write something like the following:
           </p>
-          <div class="grid1 bg white">
-            <div class="margin-bottom-none padding-bottom-none border-radius-top2x">
+          
+
+          <div class="grid1 bg white border-radius-top">
+            <div class="color green">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique tellus et vulputate lacinia. Etiam sapien est, congue vitae ultricies non, eleifend sed justo. Ut feugiat diam est, sed fermentum elit mollis a. Aenean eu posuere dolor, in interdum elit.
             </div>
           </div>
+          <div class="grid1 bg carbon light border-radius-bottom margin-bottom border-top">
+            <div class="padding-none">
+              &lt;p class='<b>color green</b>'&gt;...&lt;/p&gt;
+            </div>
+          </div>        
+
+
         </div>
       </div>
       <div class="grid1">
