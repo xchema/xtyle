@@ -61,10 +61,10 @@
   .borderRadius ();
 }
 .border-radius-top{
-  .borderRadiusTop ();
+  .borderRadiusCustom (@padding, @padding, 0, 0);
 }
 .border-radius-bottom{
-  .borderRadiusBottom ();
+  .borderRadiusCustom (0, 0, @padding, @padding);
 }
 .border-radius2x{
   .borderRadius ( 2 * @borderRadius );

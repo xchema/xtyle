@@ -1858,6 +1858,25 @@ h6.lighter {
   font-weight: 300;
 }
 
+h1.normal,
+h2.normal,
+h3.normal,
+h4.normal,
+h5.normal,
+h6.normal {
+  font-style: normal !important;
+  font-weight: normal !important;
+}
+
+h1.medium,
+h2.medium,
+h3.medium,
+h4.medium,
+h5.medium,
+h6.medium {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 225%;
 }
@@ -2197,7 +2216,17 @@ nav.yellow.bg {
 input[type=submit].yellow.dark,
 button.yellow.dark,
 nav.yellow.bg.dark {
-  background-color: #f0c757;
+  background-color: #ffcc42;
+}
+
+.yellow.background.light,
+.yellow.bg.light,
+.yellow.btn.light,
+.yellow.button.light,
+input[type=submit].yellow.light,
+button.yellow.light,
+nav.yellow.bg.light {
+  background-color: #ffda75;
 }
 
 .red.color,
@@ -2249,7 +2278,17 @@ nav.red.bg {
 input[type=submit].red.dark,
 button.red.dark,
 nav.red.bg.dark {
-  background-color: #dd6155;
+  background-color: #ea5544;
+}
+
+.red.background.light,
+.red.bg.light,
+.red.btn.light,
+.red.button.light,
+input[type=submit].red.light,
+button.red.light,
+nav.red.bg.light {
+  background-color: #f07f72;
 }
 
 .blue.color,
@@ -2301,7 +2340,17 @@ nav.blue.bg {
 input[type=submit].blue.dark,
 button.blue.dark,
 nav.blue.bg.dark {
-  background-color: #37a4d1;
+  background-color: #2aabe3;
+}
+
+.blue.background.light,
+.blue.bg.light,
+.blue.btn.light,
+.blue.button.light,
+input[type=submit].blue.light,
+button.blue.light,
+nav.blue.bg.light {
+  background-color: #58bde9;
 }
 
 .green.color,

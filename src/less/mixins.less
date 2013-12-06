@@ -42,20 +42,7 @@
        -o-border-radius: @radius;
           border-radius: @radius;
 }
-.borderRadiusTop ( @radius: @borderRadius ) {
-  -webkit-border-radius: @radius @radius 0px 0px;
-     -moz-border-radius: @radius @radius 0px 0px;
-      -ms-border-radius: @radius @radius 0px 0px;
-       -o-border-radius: @radius @radius 0px 0px;
-          border-radius: @radius @radius 0px 0px;
-}
-.borderRadiusBottom ( @radius: @borderRadius ) {
-  -webkit-border-radius: 0px 0px @radius @radius;
-     -moz-border-radius: 0px 0px @radius @radius;
-      -ms-border-radius: 0px 0px @radius @radius;
-       -o-border-radius: 0px 0px @radius @radius;
-          border-radius: 0px 0px @radius @radius;
-}
+
 .borderRadiusCustom (@topleft: @borderRadius, @topright: @borderRadius, @bottomleft: @borderRadius, @bottomright: @borderRadius){
   -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
      -moz-border-radius: @topleft @topright @bottomright @bottomleft;
