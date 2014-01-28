@@ -2576,11 +2576,13 @@ button.black.dark {
 }
 
 .white.color,
-a.white {
+a.white,
+.white a {
   color: #ffffff;
 }
 
-a.white:hover {
+a.white:hover,
+.white a:hover {
   color: #ffffff;
 }
 

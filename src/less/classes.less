@@ -257,7 +257,7 @@
 }
 
 .silver{
-  &.color, a&{
+  &.color, a&, & a{
     color: @silver;
   }
   a&:hover{
@@ -289,10 +289,10 @@
 }
 
 .black{
-  &.color, a&{
+  &.color, a&, & a{
     color: @black;
   }
-  a&:hover{
+  a&:hover, & a:hover{
     color: @black;
   }
   &.btn, &.button{
@@ -318,10 +318,10 @@
 }
 
 .white{
-  &.color, a&{
+  &.color, a&, & a{
     color: @white;
   }
-  a&:hover{
+  a&:hover, & a:hover{
     color: @white;
   }
   &.btn, &.button{
