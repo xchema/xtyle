@@ -2167,15 +2167,6 @@ nav .menu {
 
 /* COLORS */
 
-.yellow.color,
-a.yellow {
-  color: #ffd35b;
-}
-
-a.yellow:hover {
-  color: #f0c757;
-}
-
 .yellow.btn,
 .yellow.button {
   font-weight: bold;
@@ -2225,15 +2216,6 @@ input[type=submit].yellow.light,
 button.yellow.light,
 nav.yellow.bg.light {
   background-color: #ffda75;
-}
-
-.red.color,
-a.red {
-  color: #ed6a5b;
-}
-
-a.red:hover {
-  color: #dd6155;
 }
 
 .red.btn,
@@ -2287,15 +2269,6 @@ nav.red.bg.light {
   background-color: #f07f72;
 }
 
-.blue.color,
-a.blue {
-  color: #41b4e6;
-}
-
-a.blue:hover {
-  color: #37a4d1;
-}
-
 .blue.btn,
 .blue.button {
   font-weight: bold;
@@ -2345,15 +2318,6 @@ input[type=submit].blue.light,
 button.blue.light,
 nav.blue.bg.light {
   background-color: #58bde9;
-}
-
-.green.color,
-a.green {
-  color: #2dbaa6;
-}
-
-a.green:hover {
-  color: #27a896;
 }
 
 .green.btn,
@@ -2467,15 +2431,6 @@ nav.carbon.bg.light {
   background-color: #5e6f7e;
 }
 
-.silver.color,
-a.silver {
-  color: #cccccc;
-}
-
-a.silver:hover {
-  color: #b5b6b6;
-}
-
 .silver.btn,
 .silver.button {
   font-weight: bold;
@@ -2527,15 +2482,6 @@ nav.silver.bg.light {
   background-color: #d9d9d9;
 }
 
-.black.color,
-a.black {
-  color: #000000;
-}
-
-a.black:hover {
-  color: #000000;
-}
-
 .black.btn,
 .black.button {
   font-weight: bold;
@@ -2573,17 +2519,6 @@ button.black {
 input[type=submit].black.dark,
 button.black.dark {
   background-color: #000000;
-}
-
-.white.color,
-a.white,
-.white a {
-  color: #ffffff;
-}
-
-a.white:hover,
-.white a:hover {
-  color: #ffffff;
 }
 
 .white.btn,
