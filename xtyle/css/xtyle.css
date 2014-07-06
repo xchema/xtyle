@@ -2218,6 +2218,10 @@ nav.yellow.bg.light {
   background-color: #ffda75;
 }
 
+.red {
+  color: #ed6a5b;
+}
+
 .red.btn,
 .red.button {
   font-weight: bold;
