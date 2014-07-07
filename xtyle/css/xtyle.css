@@ -1804,7 +1804,7 @@ pre {
   padding: 10px;
   margin: 10px 0 20px;
   font-size: 90%;
-  color: #3F639E;
+  color: #dd6155;
   background: #ffffff;
   border: 1px solid #e0e3e4;
 }
@@ -2078,19 +2078,19 @@ nav .menu {
 }
 
 .border-radius-top {
-  -webkit-border-radius: 10px 10px 0 0;
-     -moz-border-radius: 10px 10px 0 0;
-      -ms-border-radius: 10px 10px 0 0;
-       -o-border-radius: 10px 10px 0 0;
-          border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+     -moz-border-radius: 5px 5px 0 0;
+      -ms-border-radius: 5px 5px 0 0;
+       -o-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
 }
 
 .border-radius-bottom {
-  -webkit-border-radius: 0 0 10px 10px;
-     -moz-border-radius: 0 0 10px 10px;
-      -ms-border-radius: 0 0 10px 10px;
-       -o-border-radius: 0 0 10px 10px;
-          border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 5px 5px;
+     -moz-border-radius: 0 0 5px 5px;
+      -ms-border-radius: 0 0 5px 5px;
+       -o-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
 }
 
 .border-radius2x {
@@ -2134,38 +2134,47 @@ nav .menu {
 }
 
 .border-radius-top-left {
-  -webkit-border-radius: 10px 0 0 0;
-     -moz-border-radius: 10px 0 0 0;
-      -ms-border-radius: 10px 0 0 0;
-       -o-border-radius: 10px 0 0 0;
-          border-radius: 10px 0 0 0;
+  -webkit-border-radius: 5px 0 0 0;
+     -moz-border-radius: 5px 0 0 0;
+      -ms-border-radius: 5px 0 0 0;
+       -o-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0;
 }
 
 .border-radius-bottom-left {
-  -webkit-border-radius: 0 0 0 10px;
-     -moz-border-radius: 0 0 0 10px;
-      -ms-border-radius: 0 0 0 10px;
-       -o-border-radius: 0 0 0 10px;
-          border-radius: 0 0 0 10px;
+  -webkit-border-radius: 0 0 0 5px;
+     -moz-border-radius: 0 0 0 5px;
+      -ms-border-radius: 0 0 0 5px;
+       -o-border-radius: 0 0 0 5px;
+          border-radius: 0 0 0 5px;
 }
 
 .border-radius-top-right {
-  -webkit-border-radius: 0 10px 0 0;
-     -moz-border-radius: 0 10px 0 0;
-      -ms-border-radius: 0 10px 0 0;
-       -o-border-radius: 0 10px 0 0;
-          border-radius: 0 10px 0 0;
+  -webkit-border-radius: 0 5px 0 0;
+     -moz-border-radius: 0 5px 0 0;
+      -ms-border-radius: 0 5px 0 0;
+       -o-border-radius: 0 5px 0 0;
+          border-radius: 0 5px 0 0;
 }
 
 .border-radius-bottom-right {
-  -webkit-border-radius: 0 0 10px 0;
-     -moz-border-radius: 0 0 10px 0;
-      -ms-border-radius: 0 0 10px 0;
-       -o-border-radius: 0 0 10px 0;
-          border-radius: 0 0 10px 0;
+  -webkit-border-radius: 0 0 5px 0;
+     -moz-border-radius: 0 0 5px 0;
+      -ms-border-radius: 0 0 5px 0;
+       -o-border-radius: 0 0 5px 0;
+          border-radius: 0 0 5px 0;
 }
 
 /* COLORS */
+
+.yellow.color,
+a.yellow {
+  color: #ffd35b;
+}
+
+a.yellow:hover {
+  color: #f0c757;
+}
 
 .yellow.btn,
 .yellow.button {
@@ -2218,8 +2227,13 @@ nav.yellow.bg.light {
   background-color: #ffda75;
 }
 
-.red {
+.red.color,
+a.red {
   color: #ed6a5b;
+}
+
+a.red:hover {
+  color: #dd6155;
 }
 
 .red.btn,
@@ -2273,6 +2287,15 @@ nav.red.bg.light {
   background-color: #f07f72;
 }
 
+.blue.color,
+a.blue {
+  color: #41b4e6;
+}
+
+a.blue:hover {
+  color: #37a4d1;
+}
+
 .blue.btn,
 .blue.button {
   font-weight: bold;
@@ -2322,6 +2345,15 @@ input[type=submit].blue.light,
 button.blue.light,
 nav.blue.bg.light {
   background-color: #58bde9;
+}
+
+.green.color,
+a.green {
+  color: #2dbaa6;
+}
+
+a.green:hover {
+  color: #27a896;
 }
 
 .green.btn,
@@ -2435,6 +2467,15 @@ nav.carbon.bg.light {
   background-color: #5e6f7e;
 }
 
+.silver.color,
+a.silver {
+  color: #cccccc;
+}
+
+a.silver:hover {
+  color: #b5b6b6;
+}
+
 .silver.btn,
 .silver.button {
   font-weight: bold;
@@ -2486,6 +2527,15 @@ nav.silver.bg.light {
   background-color: #d9d9d9;
 }
 
+.black.color,
+a.black {
+  color: #000000;
+}
+
+a.black:hover {
+  color: #000000;
+}
+
 .black.btn,
 .black.button {
   font-weight: bold;
@@ -2523,6 +2573,15 @@ button.black {
 input[type=submit].black.dark,
 button.black.dark {
   background-color: #000000;
+}
+
+.white.color,
+a.white {
+  color: #ffffff;
+}
+
+a.white:hover {
+  color: #ffffff;
 }
 
 .white.btn,

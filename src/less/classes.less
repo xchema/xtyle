@@ -61,10 +61,10 @@
   .borderRadius ();
 }
 .border-radius-top{
-  .borderRadiusCustom (@padding, @padding, 0, 0);
+  .borderRadiusCustom (@borderRadius, @borderRadius, 0, 0);
 }
 .border-radius-bottom{
-  .borderRadiusCustom (0, 0, @padding, @padding);
+  .borderRadiusCustom (0, 0, @borderRadius, @borderRadius);
 }
 .border-radius2x{
   .borderRadius ( 2 * @borderRadius );
@@ -82,21 +82,27 @@
   .borderRadius (100%);
 }
 .border-radius-top-left{
-  .borderRadiusCustom(@padding, 0, 0, 0);
+  .borderRadiusCustom(@borderRadius, 0, 0, 0);
 }
 .border-radius-bottom-left{
-  .borderRadiusCustom(0, 0, @padding, 0);
+  .borderRadiusCustom(0, 0, @borderRadius, 0);
 }
 .border-radius-top-right{
- .borderRadiusCustom(0, @padding, 0, 0);
+ .borderRadiusCustom(0, @borderRadius, 0, 0);
 }
 .border-radius-bottom-right{
- .borderRadiusCustom(0, 0, 0, @padding);
+ .borderRadiusCustom(0, 0, 0, @borderRadius);
 }
 
 
 /* COLORS */
 .yellow{
+  &.color, a&{
+    color: @yellow;
+  }
+  a&:hover{
+    color: @yellowdark;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -123,7 +129,12 @@
 }
 
 .red{
-  color: @red;
+  &.color, a&{
+    color: @red;
+  }
+  a&:hover{
+    color: @reddark;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -150,6 +161,12 @@
 }
 
 .blue{
+  &.color, a&{
+    color: @blue;
+  }
+  a&:hover{
+    color: @bluedark;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -176,6 +193,12 @@
 }
 
 .green{
+  &.color, a&{
+    color: @green;
+  }
+  a&:hover{
+    color: @greendark;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -234,6 +257,12 @@
 }
 
 .silver{
+  &.color, a&{
+    color: @silver;
+  }
+  a&:hover{
+    color: @silverdark;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -260,6 +289,12 @@
 }
 
 .black{
+  &.color, a&{
+    color: @black;
+  }
+  a&:hover{
+    color: @black;
+  }
   &.btn, &.button{
     font-weight: bold;
   }
@@ -283,6 +318,12 @@
 }
 
 .white{
+  &.color, a&{
+    color: @white;
+  }
+  a&:hover{
+    color: @white;
+  }
   &.btn, &.button{
     color: @carbon;
     font-weight: bold;
