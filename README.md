@@ -2,7 +2,7 @@ xtyle
 ======
 Simple HTML, CSS, and JavaScript framework for creating amazing web applications.
 
-Website: [http://xtyle.xchema.com](http://xtyle.xchema.com)<br>
+Website: [http://xchema.com/xtyle](http://xchema.com/xtyle)<br>
 Wiki: [https://github.com/xchema/xtyle/wiki](https://github.com/xchema/xtyle/wiki)
 
 Wiki
